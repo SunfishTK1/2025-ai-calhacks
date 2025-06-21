@@ -1,0 +1,143 @@
+2025-06-21 16:39:55,479 - INFO - === GraphRAG Builder Starting ===
+2025-06-21 16:39:55,520 - INFO - Initializing GraphRAGBuilder with chunk_size=500
+2025-06-21 16:39:55,520 - INFO - GraphRAGBuilder initialized successfully
+2025-06-21 16:39:55,520 - INFO - Converting CSV to text...
+2025-06-21 16:39:55,520 - INFO - Starting CSV to text conversion for: biz.csv
+2025-06-21 16:39:55,558 - INFO - Successfully loaded CSV with 12335 rows and 21 columns
+2025-06-21 16:39:55,559 - INFO - CSV columns: ['APN', 'RecordID', 'BusDesc', 'B1_PER_SUB_TYPE', 'DBA', 'NAICS', 'Tax_Code', 'Employee_Num', 'Bus_Own_Type', 'B1_BUSINESS_NAME', 'B1_ADDRESS1', 'B1_ADDRESS2', 'B1_CITY', 'B1_STATE', 'B1_ZIP', 'B1_CONTACT_TYPE', 'B1_FULL_ADDRESS', 'B1_SITUS_CITY', 'B1_SITUS_STATE', 'B1_SITUS_ZIP', 'Business_Location']
+2025-06-21 16:39:55,563 - INFO - Processed 100/12335 rows
+2025-06-21 16:39:55,565 - INFO - Processed 200/12335 rows
+2025-06-21 16:39:55,567 - INFO - Processed 300/12335 rows
+2025-06-21 16:39:55,568 - INFO - Processed 400/12335 rows
+2025-06-21 16:39:55,571 - INFO - Processed 500/12335 rows
+2025-06-21 16:39:55,573 - INFO - Processed 600/12335 rows
+2025-06-21 16:39:55,575 - INFO - Processed 700/12335 rows
+2025-06-21 16:39:55,577 - INFO - Processed 800/12335 rows
+2025-06-21 16:39:55,579 - INFO - Processed 900/12335 rows
+2025-06-21 16:39:55,580 - INFO - Processed 1000/12335 rows
+2025-06-21 16:39:55,582 - INFO - Processed 1100/12335 rows
+2025-06-21 16:39:55,584 - INFO - Processed 1200/12335 rows
+2025-06-21 16:39:55,585 - INFO - Processed 1300/12335 rows
+2025-06-21 16:39:55,587 - INFO - Processed 1400/12335 rows
+2025-06-21 16:39:55,589 - INFO - Processed 1500/12335 rows
+2025-06-21 16:39:55,591 - INFO - Processed 1600/12335 rows
+2025-06-21 16:39:55,593 - INFO - Processed 1700/12335 rows
+2025-06-21 16:39:55,595 - INFO - Processed 1800/12335 rows
+2025-06-21 16:39:55,597 - INFO - Processed 1900/12335 rows
+2025-06-21 16:39:55,598 - INFO - Processed 2000/12335 rows
+2025-06-21 16:39:55,600 - INFO - Processed 2100/12335 rows
+2025-06-21 16:39:55,602 - INFO - Processed 2200/12335 rows
+2025-06-21 16:39:55,604 - INFO - Processed 2300/12335 rows
+2025-06-21 16:39:55,606 - INFO - Processed 2400/12335 rows
+2025-06-21 16:39:55,608 - INFO - Processed 2500/12335 rows
+2025-06-21 16:39:55,610 - INFO - Processed 2600/12335 rows
+2025-06-21 16:39:55,612 - INFO - Processed 2700/12335 rows
+2025-06-21 16:39:55,614 - INFO - Processed 2800/12335 rows
+2025-06-21 16:39:55,615 - INFO - Processed 2900/12335 rows
+2025-06-21 16:39:55,617 - INFO - Processed 3000/12335 rows
+2025-06-21 16:39:55,619 - INFO - Processed 3100/12335 rows
+2025-06-21 16:39:55,621 - INFO - Processed 3200/12335 rows
+2025-06-21 16:39:55,623 - INFO - Processed 3300/12335 rows
+2025-06-21 16:39:55,625 - INFO - Processed 3400/12335 rows
+2025-06-21 16:39:55,626 - INFO - Processed 3500/12335 rows
+2025-06-21 16:39:55,628 - INFO - Processed 3600/12335 rows
+2025-06-21 16:39:55,630 - INFO - Processed 3700/12335 rows
+2025-06-21 16:39:55,631 - INFO - Processed 3800/12335 rows
+2025-06-21 16:39:55,633 - INFO - Processed 3900/12335 rows
+2025-06-21 16:39:55,635 - INFO - Processed 4000/12335 rows
+2025-06-21 16:39:55,636 - INFO - Processed 4100/12335 rows
+2025-06-21 16:39:55,638 - INFO - Processed 4200/12335 rows
+2025-06-21 16:39:55,640 - INFO - Processed 4300/12335 rows
+2025-06-21 16:39:55,641 - INFO - Processed 4400/12335 rows
+2025-06-21 16:39:55,643 - INFO - Processed 4500/12335 rows
+2025-06-21 16:39:55,645 - INFO - Processed 4600/12335 rows
+2025-06-21 16:39:55,646 - INFO - Processed 4700/12335 rows
+2025-06-21 16:39:55,648 - INFO - Processed 4800/12335 rows
+2025-06-21 16:39:55,650 - INFO - Processed 4900/12335 rows
+2025-06-21 16:39:55,651 - INFO - Processed 5000/12335 rows
+2025-06-21 16:39:55,653 - INFO - Processed 5100/12335 rows
+2025-06-21 16:39:55,655 - INFO - Processed 5200/12335 rows
+2025-06-21 16:39:55,657 - INFO - Processed 5300/12335 rows
+2025-06-21 16:39:55,658 - INFO - Processed 5400/12335 rows
+2025-06-21 16:39:55,660 - INFO - Processed 5500/12335 rows
+2025-06-21 16:39:55,661 - INFO - Processed 5600/12335 rows
+2025-06-21 16:39:55,663 - INFO - Processed 5700/12335 rows
+2025-06-21 16:39:55,665 - INFO - Processed 5800/12335 rows
+2025-06-21 16:39:55,666 - INFO - Processed 5900/12335 rows
+2025-06-21 16:39:55,668 - INFO - Processed 6000/12335 rows
+2025-06-21 16:39:55,670 - INFO - Processed 6100/12335 rows
+2025-06-21 16:39:55,672 - INFO - Processed 6200/12335 rows
+2025-06-21 16:39:55,673 - INFO - Processed 6300/12335 rows
+2025-06-21 16:39:55,675 - INFO - Processed 6400/12335 rows
+2025-06-21 16:39:55,677 - INFO - Processed 6500/12335 rows
+2025-06-21 16:39:55,679 - INFO - Processed 6600/12335 rows
+2025-06-21 16:39:55,681 - INFO - Processed 6700/12335 rows
+2025-06-21 16:39:55,682 - INFO - Processed 6800/12335 rows
+2025-06-21 16:39:55,684 - INFO - Processed 6900/12335 rows
+2025-06-21 16:39:55,686 - INFO - Processed 7000/12335 rows
+2025-06-21 16:39:55,687 - INFO - Processed 7100/12335 rows
+2025-06-21 16:39:55,689 - INFO - Processed 7200/12335 rows
+2025-06-21 16:39:55,691 - INFO - Processed 7300/12335 rows
+2025-06-21 16:39:55,692 - INFO - Processed 7400/12335 rows
+2025-06-21 16:39:55,694 - INFO - Processed 7500/12335 rows
+2025-06-21 16:39:55,696 - INFO - Processed 7600/12335 rows
+2025-06-21 16:39:55,698 - INFO - Processed 7700/12335 rows
+2025-06-21 16:39:55,699 - INFO - Processed 7800/12335 rows
+2025-06-21 16:39:55,701 - INFO - Processed 7900/12335 rows
+2025-06-21 16:39:55,703 - INFO - Processed 8000/12335 rows
+2025-06-21 16:39:55,705 - INFO - Processed 8100/12335 rows
+2025-06-21 16:39:55,707 - INFO - Processed 8200/12335 rows
+2025-06-21 16:39:55,709 - INFO - Processed 8300/12335 rows
+2025-06-21 16:39:55,711 - INFO - Processed 8400/12335 rows
+2025-06-21 16:39:55,713 - INFO - Processed 8500/12335 rows
+2025-06-21 16:39:55,714 - INFO - Processed 8600/12335 rows
+2025-06-21 16:39:55,716 - INFO - Processed 8700/12335 rows
+2025-06-21 16:39:55,718 - INFO - Processed 8800/12335 rows
+2025-06-21 16:39:55,720 - INFO - Processed 8900/12335 rows
+2025-06-21 16:39:55,722 - INFO - Processed 9000/12335 rows
+2025-06-21 16:39:55,724 - INFO - Processed 9100/12335 rows
+2025-06-21 16:39:55,726 - INFO - Processed 9200/12335 rows
+2025-06-21 16:39:55,728 - INFO - Processed 9300/12335 rows
+2025-06-21 16:39:55,729 - INFO - Processed 9400/12335 rows
+2025-06-21 16:39:55,731 - INFO - Processed 9500/12335 rows
+2025-06-21 16:39:55,733 - INFO - Processed 9600/12335 rows
+2025-06-21 16:39:55,734 - INFO - Processed 9700/12335 rows
+2025-06-21 16:39:55,736 - INFO - Processed 9800/12335 rows
+2025-06-21 16:39:55,738 - INFO - Processed 9900/12335 rows
+2025-06-21 16:39:55,740 - INFO - Processed 10000/12335 rows
+2025-06-21 16:39:55,742 - INFO - Processed 10100/12335 rows
+2025-06-21 16:39:55,743 - INFO - Processed 10200/12335 rows
+2025-06-21 16:39:55,745 - INFO - Processed 10300/12335 rows
+2025-06-21 16:39:55,747 - INFO - Processed 10400/12335 rows
+2025-06-21 16:39:55,748 - INFO - Processed 10500/12335 rows
+2025-06-21 16:39:55,750 - INFO - Processed 10600/12335 rows
+2025-06-21 16:39:55,752 - INFO - Processed 10700/12335 rows
+2025-06-21 16:39:55,753 - INFO - Processed 10800/12335 rows
+2025-06-21 16:39:55,755 - INFO - Processed 10900/12335 rows
+2025-06-21 16:39:55,757 - INFO - Processed 11000/12335 rows
+2025-06-21 16:39:55,758 - INFO - Processed 11100/12335 rows
+2025-06-21 16:39:55,760 - INFO - Processed 11200/12335 rows
+2025-06-21 16:39:55,762 - INFO - Processed 11300/12335 rows
+2025-06-21 16:39:55,763 - INFO - Processed 11400/12335 rows
+2025-06-21 16:39:55,765 - INFO - Processed 11500/12335 rows
+2025-06-21 16:39:55,767 - INFO - Processed 11600/12335 rows
+2025-06-21 16:39:55,768 - INFO - Processed 11700/12335 rows
+2025-06-21 16:39:55,770 - INFO - Processed 11800/12335 rows
+2025-06-21 16:39:55,772 - INFO - Processed 11900/12335 rows
+2025-06-21 16:39:55,774 - INFO - Processed 12000/12335 rows
+2025-06-21 16:39:55,775 - INFO - Processed 12100/12335 rows
+2025-06-21 16:39:55,777 - INFO - Processed 12200/12335 rows
+2025-06-21 16:39:55,779 - INFO - Processed 12300/12335 rows
+2025-06-21 16:39:55,782 - INFO - CSV conversion complete. Generated text with 6261055 characters
+2025-06-21 16:39:55,787 - INFO - Chunking text...
+2025-06-21 16:39:55,788 - INFO - Starting text chunking with chunk_size=500
+2025-06-21 16:39:55,803 - INFO - Total words to chunk: 512875
+2025-06-21 16:39:55,813 - INFO - Created 1026 chunks
+2025-06-21 16:39:55,817 - INFO - Processing 1026 chunks...
+2025-06-21 16:39:55,817 - INFO - Processing chunk 1/1026...
+2025-06-21 16:40:36,966 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:40:37,074 - INFO - Extracted 56 entities and 42 relationships
+2025-06-21 16:40:37,579 - INFO - Processing chunk 2/1026...
+2025-06-21 16:40:57,803 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:40:57,806 - INFO - Extracted 29 entities and 27 relationships
+2025-06-21 16:40:58,308 - INFO - Processing chunk 3/1026...

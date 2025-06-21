@@ -10,8 +10,23 @@ from dotenv import load_dotenv
 import re
 from collections import defaultdict
 import time
+import logging
+from datetime import datetime
 
 load_dotenv()
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('graphrag_build.log'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
+
+logger.info("=== GraphRAG Builder Starting ===")
 
 # Configuration
 endpoint = os.getenv("ENDPOINT_URL", "https://2025-ai-hackberkeley.openai.azure.com/")
@@ -31,6 +46,7 @@ client = AzureOpenAI(
 
 class GraphRAGBuilder:
     def __init__(self, chunk_size=1000):
+        logger.info(f"Initializing GraphRAGBuilder with chunk_size={chunk_size}")
         self.graph = nx.Graph()
         self.embeddings = {}
         self.chunks = []
@@ -38,36 +54,69 @@ class GraphRAGBuilder:
         self.entity_map = {}
         self.relationship_map = defaultdict(list)
         
+        # Initialize output file for model responses
+        self.output_file = f"model_outputs_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        with open(self.output_file, 'w') as f:
+            f.write(f"GraphRAG Model Outputs - {datetime.now()}\n")
+            f.write("=" * 50 + "\n\n")
+        
+        logger.info(f"GraphRAGBuilder initialized successfully. Model outputs will be saved to: {self.output_file}")
+        
     def csv_to_text(self, csv_path: str) -> str:
         """Convert CSV file to text format"""
-        df = pd.read_csv(csv_path)
+        logger.info(f"Starting CSV to text conversion for: {csv_path}")
+        
+        try:
+            df = pd.read_csv(csv_path)
+            logger.info(f"Successfully loaded CSV with {len(df)} rows and {len(df.columns)} columns")
+            logger.info(f"CSV columns: {list(df.columns)}")
+        except Exception as e:
+            logger.error(f"Failed to load CSV file: {e}")
+            raise
         
         # Convert each row to a text description
         text_chunks = []
+        processed_rows = 0
+        
         for idx, row in df.iterrows():
             row_text = f"Record {idx + 1}: "
             row_items = []
+            non_null_values = 0
+            
             for col, val in row.items():
                 if pd.notna(val):
                     row_items.append(f"{col}={val}")
+                    non_null_values += 1
+            
             row_text += ", ".join(row_items)
             text_chunks.append(row_text)
+            processed_rows += 1
+            
+            if processed_rows % 100 == 0:
+                logger.info(f"Processed {processed_rows}/{len(df)} rows")
         
-        return "\n".join(text_chunks)
+        combined_text = "\n".join(text_chunks)
+        logger.info(f"CSV conversion complete. Generated text with {len(combined_text)} characters")
+        return combined_text
     
     def chunk_text(self, text: str) -> List[str]:
         """Split text into chunks for processing"""
+        logger.info(f"Starting text chunking with chunk_size={self.chunk_size}")
         words = text.split()
+        logger.info(f"Total words to chunk: {len(words)}")
         chunks = []
         
         for i in range(0, len(words), self.chunk_size):
             chunk = " ".join(words[i:i + self.chunk_size])
             chunks.append(chunk)
             
+        logger.info(f"Created {len(chunks)} chunks")
         return chunks
     
     def extract_entities_relationships(self, text_chunk: str) -> Tuple[List[Dict], List[Dict]]:
         """Extract entities and relationships from text using LLM"""
+        logger.debug(f"Extracting entities from chunk of {len(text_chunk)} characters")
+        
         prompt = f"""Extract entities and their relationships from the following text. 
         Return the result in JSON format with two lists:
         1. "entities": list of objects with "name", "type", and "description"
@@ -88,6 +137,7 @@ class GraphRAGBuilder:
         """
         
         try:
+            logger.debug("Sending request to Azure OpenAI for entity extraction")
             response = client.chat.completions.create(
                 model=deployment,
                 messages=[
@@ -98,77 +148,163 @@ class GraphRAGBuilder:
             )
             
             result = response.choices[0].message.content
+            logger.debug(f"Received response of {len(result)} characters")
+            
+            # Save raw model output to file
+            with open(self.output_file, 'a') as f:
+                f.write(f"\n{'='*60}\n")
+                f.write(f"CHUNK EXTRACTION - {datetime.now()}\n")
+                f.write(f"{'='*60}\n")
+                f.write(f"Input chunk ({len(text_chunk)} chars):\n")
+                f.write(f"{text_chunk[:500]}{'...' if len(text_chunk) > 500 else ''}\n\n")
+                f.write(f"Model Response:\n")
+                f.write(f"{result}\n")
+                f.write(f"{'='*60}\n\n")
+            
             # Extract JSON from response
             json_match = re.search(r'\{.*\}', result, re.DOTALL)
             if json_match:
                 parsed = json.loads(json_match.group())
-                return parsed.get("entities", []), parsed.get("relationships", [])
+                entities = parsed.get("entities", [])
+                relationships = parsed.get("relationships", [])
+                
+                # Log extraction details to file
+                with open(self.output_file, 'a') as f:
+                    f.write(f"EXTRACTION RESULTS:\n")
+                    f.write(f"Entities extracted: {len(entities)}\n")
+                    for i, entity in enumerate(entities[:10]):  # First 10 entities
+                        f.write(f"  {i+1}. {entity.get('name', 'N/A')} ({entity.get('type', 'N/A')}): {entity.get('description', 'N/A')}\n")
+                    if len(entities) > 10:
+                        f.write(f"  ... and {len(entities) - 10} more entities\n")
+                    
+                    f.write(f"\nRelationships extracted: {len(relationships)}\n")
+                    for i, rel in enumerate(relationships[:10]):  # First 10 relationships
+                        f.write(f"  {i+1}. {rel.get('source', 'N/A')} -> {rel.get('target', 'N/A')} ({rel.get('type', 'N/A')})\n")
+                    if len(relationships) > 10:
+                        f.write(f"  ... and {len(relationships) - 10} more relationships\n")
+                    f.write(f"\n")
+                
+                logger.info(f"Extracted {len(entities)} entities and {len(relationships)} relationships")
+                return entities, relationships
+            else:
+                logger.warning("No JSON found in response")
+                with open(self.output_file, 'a') as f:
+                    f.write(f"WARNING: No JSON found in response\n\n")
             
         except Exception as e:
-            print(f"Error extracting entities: {e}")
+            logger.error(f"Error extracting entities: {e}")
+            with open(self.output_file, 'a') as f:
+                f.write(f"ERROR: {e}\n\n")
             
+        logger.warning("Returning empty entities and relationships")
         return [], []
     
     def get_embedding(self, text: str) -> List[float]:
         """Get embedding for text using Azure OpenAI"""
+        logger.debug(f"Getting embedding for text of length {len(text)}")
         try:
             response = client.embeddings.create(
                 model=embedding_deployment,
                 input=text
             )
+            logger.debug(f"Successfully got embedding with {len(response.data[0].embedding)} dimensions")
             return response.data[0].embedding
         except Exception as e:
-            print(f"Error getting embedding: {e}")
+            logger.error(f"Error getting embedding: {e}")
+            logger.warning("Using random embedding as fallback")
             # Return random embedding as fallback
             return list(np.random.rand(1536))
     
     def build_graph_from_csv(self, csv_path: str):
         """Build knowledge graph from CSV file"""
-        print("Converting CSV to text...")
+        logger.info("Converting CSV to text...")
         text = self.csv_to_text(csv_path)
         
-        print("Chunking text...")
+        logger.info("Chunking text...")
         self.chunks = self.chunk_text(text)
         
-        print(f"Processing {len(self.chunks)} chunks...")
+        logger.info(f"Processing {len(self.chunks)} chunks...")
         all_entities = []
         all_relationships = []
         
         for i, chunk in enumerate(self.chunks):
-            print(f"Processing chunk {i+1}/{len(self.chunks)}...")
+            logger.info(f"Processing chunk {i+1}/{len(self.chunks)}...")
             entities, relationships = self.extract_entities_relationships(chunk)
             all_entities.extend(entities)
             all_relationships.extend(relationships)
+            
+            # Log progress to file
+            with open(self.output_file, 'a') as f:
+                f.write(f"CHUNK {i+1}/{len(self.chunks)} COMPLETE - Total entities so far: {len(all_entities)}, Total relationships so far: {len(all_relationships)}\n\n")
+            
+            logger.info(f"Chunk {i+1} complete - Running totals: {len(all_entities)} entities, {len(all_relationships)} relationships")
             
             # Add small delay to avoid rate limiting
             time.sleep(0.5)
         
         # Build graph
-        print("Building graph structure...")
+        logger.info("Building graph structure...")
+        logger.info(f"Adding {len(all_entities)} entities to graph...")
+        
+        # Log final summary to file
+        with open(self.output_file, 'a') as f:
+            f.write(f"\n{'='*60}\n")
+            f.write(f"FINAL EXTRACTION SUMMARY - {datetime.now()}\n")
+            f.write(f"{'='*60}\n")
+            f.write(f"Total entities extracted: {len(all_entities)}\n")
+            f.write(f"Total relationships extracted: {len(all_relationships)}\n")
+            f.write(f"Processing {len(self.chunks)} chunks complete.\n")
+            f.write(f"{'='*60}\n\n")
+        
+        entities_added = 0
         for entity in all_entities:
             entity_id = entity['name']
             self.graph.add_node(entity_id, **entity)
             self.entity_map[entity_id] = entity
+            entities_added += 1
+            
+            if entities_added % 100 == 0:
+                logger.info(f"Added {entities_added}/{len(all_entities)} entities to graph")
             
             # Get embedding for entity
             entity_text = f"{entity['name']} ({entity['type']}): {entity.get('description', '')}"
+            logger.debug(f"Getting embedding for entity: {entity_id}")
             self.embeddings[entity_id] = self.get_embedding(entity_text)
         
+        logger.info(f"Adding {len(all_relationships)} relationships to graph...")
+        edges_added = 0
         for rel in all_relationships:
             if rel['source'] in self.graph and rel['target'] in self.graph:
                 self.graph.add_edge(rel['source'], rel['target'], **rel)
                 self.relationship_map[rel['source']].append(rel)
                 self.relationship_map[rel['target']].append(rel)
+                edges_added += 1
+            else:
+                logger.debug(f"Skipping relationship - missing nodes: {rel['source']} -> {rel['target']}")
         
-        print(f"Graph built with {self.graph.number_of_nodes()} nodes and {self.graph.number_of_edges()} edges")
+        logger.info(f"Graph built with {self.graph.number_of_nodes()} nodes and {self.graph.number_of_edges()} edges")
+        logger.info(f"Successfully added {edges_added} out of {len(all_relationships)} relationships")
+        
+        # Log final graph stats to file
+        with open(self.output_file, 'a') as f:
+            f.write(f"FINAL GRAPH STATISTICS - {datetime.now()}\n")
+            f.write(f"Nodes in graph: {self.graph.number_of_nodes()}\n")
+            f.write(f"Edges in graph: {self.graph.number_of_edges()}\n")
+            f.write(f"Entities processed: {entities_added}\n")
+            f.write(f"Relationships added: {edges_added}/{len(all_relationships)}\n")
+            f.write(f"{'='*60}\n\n")
     
     def create_community_summaries(self):
         """Create summaries for communities in the graph"""
+        logger.info("Creating community summaries...")
+        
         # Detect communities using Louvain method
         try:
             import community as community_louvain
             communities = community_louvain.best_partition(self.graph)
-        except:
+            logger.info("Using Louvain method for community detection")
+        except ImportError:
+            logger.warning("Community package not available, using connected components fallback")
             # Fallback to simple connected components
             communities = {}
             for i, component in enumerate(nx.connected_components(self.graph)):
@@ -180,10 +316,16 @@ class GraphRAGBuilder:
         for node, comm_id in communities.items():
             community_groups[comm_id].append(node)
         
+        logger.info(f"Found {len(community_groups)} communities")
+        
         # Create summaries for each community
         self.community_summaries = {}
+        communities_processed = 0
+        
         for comm_id, nodes in community_groups.items():
             if len(nodes) > 1:
+                logger.info(f"Creating summary for community {comm_id} with {len(nodes)} nodes")
+                
                 # Get entities in this community
                 entities_desc = []
                 for node in nodes[:10]:  # Limit to first 10 nodes
@@ -196,6 +338,7 @@ class GraphRAGBuilder:
                 Provide a 1-2 sentence summary of what connects these entities."""
                 
                 try:
+                    logger.debug(f"Requesting community summary for community {comm_id}")
                     response = client.chat.completions.create(
                         model=deployment,
                         messages=[
@@ -205,13 +348,33 @@ class GraphRAGBuilder:
                         max_completion_tokens=90000,
                     )
                     
+                    summary_text = response.choices[0].message.content
+                    
+                    # Log community summary to file
+                    with open(self.output_file, 'a') as f:
+                        f.write(f"\n{'='*40}\n")
+                        f.write(f"COMMUNITY {comm_id} SUMMARY - {datetime.now()}\n")
+                        f.write(f"{'='*40}\n")
+                        f.write(f"Nodes in community: {len(nodes)}\n")
+                        f.write(f"Entities: {', '.join(entities_desc)}\n")
+                        f.write(f"Summary: {summary_text}\n")
+                        f.write(f"{'='*40}\n\n")
+                    
                     self.community_summaries[comm_id] = {
-                        "summary": response.choices[0].message.content,
+                        "summary": summary_text,
                         "nodes": nodes,
-                        "embedding": self.get_embedding(response.choices[0].message.content)
+                        "embedding": self.get_embedding(summary_text)
                     }
+                    
+                    communities_processed += 1
+                    logger.info(f"Community {comm_id} summary created ({communities_processed} total)")
+                    
                 except Exception as e:
-                    print(f"Error creating community summary: {e}")
+                    logger.error(f"Error creating community summary for community {comm_id}: {e}")
+                    with open(self.output_file, 'a') as f:
+                        f.write(f"ERROR creating summary for community {comm_id}: {e}\n\n")
+        
+        logger.info(f"Created {communities_processed} community summaries")
     
     def save_graph(self, output_path: str):
         """Save the graph and associated data"""
@@ -227,7 +390,7 @@ class GraphRAGBuilder:
         with open(output_path, 'wb') as f:
             pickle.dump(graph_data, f)
         
-        print(f"Graph saved to {output_path}")
+        logger.info(f"Graph saved to {output_path}")
         
         # Also save a JSON summary for inspection
         summary = {
@@ -253,8 +416,8 @@ def main():
         builder.create_community_summaries()
         builder.save_graph("knowledge_graph.pkl")
     else:
-        print(f"CSV file not found: {csv_path}")
-        print("Please provide a valid CSV file path.")
+        logger.error(f"CSV file not found: {csv_path}")
+        logger.info("Please provide a valid CSV file path.")
 
 if __name__ == "__main__":
     main()
