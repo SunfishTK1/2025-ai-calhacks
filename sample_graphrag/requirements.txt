@@ -1,0 +1,8 @@
+openai>=1.0.0
+python-dotenv
+pandas
+networkx
+numpy
+scikit-learn
+python-louvain  # For community detection (optional)
+matplotlib  # For graph visualization (optional)
