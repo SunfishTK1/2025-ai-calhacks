@@ -141,3 +141,192 @@
 2025-06-21 16:40:57,803 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
 2025-06-21 16:40:57,806 - INFO - Extracted 29 entities and 27 relationships
 2025-06-21 16:40:58,308 - INFO - Processing chunk 3/1026...
+2025-06-21 16:43:58,182 - INFO - === GraphRAG Builder Starting ===
+2025-06-21 16:43:58,221 - INFO - Initializing GraphRAGBuilder with chunk_size=500
+2025-06-21 16:43:58,222 - INFO - GraphRAGBuilder initialized successfully. Model outputs will be saved to: model_outputs_20250621_164358.txt
+2025-06-21 16:43:58,222 - INFO - Converting CSV to text...
+2025-06-21 16:43:58,222 - INFO - Starting CSV to text conversion for: biz.csv
+2025-06-21 16:43:58,259 - INFO - Successfully loaded CSV with 12335 rows and 21 columns
+2025-06-21 16:43:58,259 - INFO - CSV columns: ['APN', 'RecordID', 'BusDesc', 'B1_PER_SUB_TYPE', 'DBA', 'NAICS', 'Tax_Code', 'Employee_Num', 'Bus_Own_Type', 'B1_BUSINESS_NAME', 'B1_ADDRESS1', 'B1_ADDRESS2', 'B1_CITY', 'B1_STATE', 'B1_ZIP', 'B1_CONTACT_TYPE', 'B1_FULL_ADDRESS', 'B1_SITUS_CITY', 'B1_SITUS_STATE', 'B1_SITUS_ZIP', 'Business_Location']
+2025-06-21 16:43:58,264 - INFO - Processed 100/12335 rows
+2025-06-21 16:43:58,266 - INFO - Processed 200/12335 rows
+2025-06-21 16:43:58,268 - INFO - Processed 300/12335 rows
+2025-06-21 16:43:58,269 - INFO - Processed 400/12335 rows
+2025-06-21 16:43:58,271 - INFO - Processed 500/12335 rows
+2025-06-21 16:43:58,273 - INFO - Processed 600/12335 rows
+2025-06-21 16:43:58,274 - INFO - Processed 700/12335 rows
+2025-06-21 16:43:58,276 - INFO - Processed 800/12335 rows
+2025-06-21 16:43:58,278 - INFO - Processed 900/12335 rows
+2025-06-21 16:43:58,280 - INFO - Processed 1000/12335 rows
+2025-06-21 16:43:58,282 - INFO - Processed 1100/12335 rows
+2025-06-21 16:43:58,284 - INFO - Processed 1200/12335 rows
+2025-06-21 16:43:58,286 - INFO - Processed 1300/12335 rows
+2025-06-21 16:43:58,288 - INFO - Processed 1400/12335 rows
+2025-06-21 16:43:58,290 - INFO - Processed 1500/12335 rows
+2025-06-21 16:43:58,291 - INFO - Processed 1600/12335 rows
+2025-06-21 16:43:58,293 - INFO - Processed 1700/12335 rows
+2025-06-21 16:43:58,295 - INFO - Processed 1800/12335 rows
+2025-06-21 16:43:58,297 - INFO - Processed 1900/12335 rows
+2025-06-21 16:43:58,299 - INFO - Processed 2000/12335 rows
+2025-06-21 16:43:58,301 - INFO - Processed 2100/12335 rows
+2025-06-21 16:43:58,302 - INFO - Processed 2200/12335 rows
+2025-06-21 16:43:58,304 - INFO - Processed 2300/12335 rows
+2025-06-21 16:43:58,306 - INFO - Processed 2400/12335 rows
+2025-06-21 16:43:58,308 - INFO - Processed 2500/12335 rows
+2025-06-21 16:43:58,310 - INFO - Processed 2600/12335 rows
+2025-06-21 16:43:58,311 - INFO - Processed 2700/12335 rows
+2025-06-21 16:43:58,313 - INFO - Processed 2800/12335 rows
+2025-06-21 16:43:58,315 - INFO - Processed 2900/12335 rows
+2025-06-21 16:43:58,317 - INFO - Processed 3000/12335 rows
+2025-06-21 16:43:58,318 - INFO - Processed 3100/12335 rows
+2025-06-21 16:43:58,320 - INFO - Processed 3200/12335 rows
+2025-06-21 16:43:58,322 - INFO - Processed 3300/12335 rows
+2025-06-21 16:43:58,323 - INFO - Processed 3400/12335 rows
+2025-06-21 16:43:58,325 - INFO - Processed 3500/12335 rows
+2025-06-21 16:43:58,327 - INFO - Processed 3600/12335 rows
+2025-06-21 16:43:58,329 - INFO - Processed 3700/12335 rows
+2025-06-21 16:43:58,331 - INFO - Processed 3800/12335 rows
+2025-06-21 16:43:58,332 - INFO - Processed 3900/12335 rows
+2025-06-21 16:43:58,334 - INFO - Processed 4000/12335 rows
+2025-06-21 16:43:58,336 - INFO - Processed 4100/12335 rows
+2025-06-21 16:43:58,337 - INFO - Processed 4200/12335 rows
+2025-06-21 16:43:58,339 - INFO - Processed 4300/12335 rows
+2025-06-21 16:43:58,341 - INFO - Processed 4400/12335 rows
+2025-06-21 16:43:58,342 - INFO - Processed 4500/12335 rows
+2025-06-21 16:43:58,344 - INFO - Processed 4600/12335 rows
+2025-06-21 16:43:58,346 - INFO - Processed 4700/12335 rows
+2025-06-21 16:43:58,347 - INFO - Processed 4800/12335 rows
+2025-06-21 16:43:58,349 - INFO - Processed 4900/12335 rows
+2025-06-21 16:43:58,351 - INFO - Processed 5000/12335 rows
+2025-06-21 16:43:58,352 - INFO - Processed 5100/12335 rows
+2025-06-21 16:43:58,354 - INFO - Processed 5200/12335 rows
+2025-06-21 16:43:58,356 - INFO - Processed 5300/12335 rows
+2025-06-21 16:43:58,358 - INFO - Processed 5400/12335 rows
+2025-06-21 16:43:58,359 - INFO - Processed 5500/12335 rows
+2025-06-21 16:43:58,361 - INFO - Processed 5600/12335 rows
+2025-06-21 16:43:58,363 - INFO - Processed 5700/12335 rows
+2025-06-21 16:43:58,364 - INFO - Processed 5800/12335 rows
+2025-06-21 16:43:58,366 - INFO - Processed 5900/12335 rows
+2025-06-21 16:43:58,368 - INFO - Processed 6000/12335 rows
+2025-06-21 16:43:58,369 - INFO - Processed 6100/12335 rows
+2025-06-21 16:43:58,371 - INFO - Processed 6200/12335 rows
+2025-06-21 16:43:58,373 - INFO - Processed 6300/12335 rows
+2025-06-21 16:43:58,374 - INFO - Processed 6400/12335 rows
+2025-06-21 16:43:58,376 - INFO - Processed 6500/12335 rows
+2025-06-21 16:43:58,378 - INFO - Processed 6600/12335 rows
+2025-06-21 16:43:58,380 - INFO - Processed 6700/12335 rows
+2025-06-21 16:43:58,381 - INFO - Processed 6800/12335 rows
+2025-06-21 16:43:58,383 - INFO - Processed 6900/12335 rows
+2025-06-21 16:43:58,384 - INFO - Processed 7000/12335 rows
+2025-06-21 16:43:58,386 - INFO - Processed 7100/12335 rows
+2025-06-21 16:43:58,388 - INFO - Processed 7200/12335 rows
+2025-06-21 16:43:58,389 - INFO - Processed 7300/12335 rows
+2025-06-21 16:43:58,391 - INFO - Processed 7400/12335 rows
+2025-06-21 16:43:58,393 - INFO - Processed 7500/12335 rows
+2025-06-21 16:43:58,395 - INFO - Processed 7600/12335 rows
+2025-06-21 16:43:58,396 - INFO - Processed 7700/12335 rows
+2025-06-21 16:43:58,398 - INFO - Processed 7800/12335 rows
+2025-06-21 16:43:58,399 - INFO - Processed 7900/12335 rows
+2025-06-21 16:43:58,401 - INFO - Processed 8000/12335 rows
+2025-06-21 16:43:58,403 - INFO - Processed 8100/12335 rows
+2025-06-21 16:43:58,404 - INFO - Processed 8200/12335 rows
+2025-06-21 16:43:58,406 - INFO - Processed 8300/12335 rows
+2025-06-21 16:43:58,407 - INFO - Processed 8400/12335 rows
+2025-06-21 16:43:58,409 - INFO - Processed 8500/12335 rows
+2025-06-21 16:43:58,411 - INFO - Processed 8600/12335 rows
+2025-06-21 16:43:58,413 - INFO - Processed 8700/12335 rows
+2025-06-21 16:43:58,415 - INFO - Processed 8800/12335 rows
+2025-06-21 16:43:58,416 - INFO - Processed 8900/12335 rows
+2025-06-21 16:43:58,418 - INFO - Processed 9000/12335 rows
+2025-06-21 16:43:58,420 - INFO - Processed 9100/12335 rows
+2025-06-21 16:43:58,422 - INFO - Processed 9200/12335 rows
+2025-06-21 16:43:58,423 - INFO - Processed 9300/12335 rows
+2025-06-21 16:43:58,425 - INFO - Processed 9400/12335 rows
+2025-06-21 16:43:58,427 - INFO - Processed 9500/12335 rows
+2025-06-21 16:43:58,429 - INFO - Processed 9600/12335 rows
+2025-06-21 16:43:58,430 - INFO - Processed 9700/12335 rows
+2025-06-21 16:43:58,432 - INFO - Processed 9800/12335 rows
+2025-06-21 16:43:58,434 - INFO - Processed 9900/12335 rows
+2025-06-21 16:43:58,436 - INFO - Processed 10000/12335 rows
+2025-06-21 16:43:58,437 - INFO - Processed 10100/12335 rows
+2025-06-21 16:43:58,439 - INFO - Processed 10200/12335 rows
+2025-06-21 16:43:58,441 - INFO - Processed 10300/12335 rows
+2025-06-21 16:43:58,443 - INFO - Processed 10400/12335 rows
+2025-06-21 16:43:58,445 - INFO - Processed 10500/12335 rows
+2025-06-21 16:43:58,447 - INFO - Processed 10600/12335 rows
+2025-06-21 16:43:58,448 - INFO - Processed 10700/12335 rows
+2025-06-21 16:43:58,450 - INFO - Processed 10800/12335 rows
+2025-06-21 16:43:58,452 - INFO - Processed 10900/12335 rows
+2025-06-21 16:43:58,454 - INFO - Processed 11000/12335 rows
+2025-06-21 16:43:58,455 - INFO - Processed 11100/12335 rows
+2025-06-21 16:43:58,457 - INFO - Processed 11200/12335 rows
+2025-06-21 16:43:58,458 - INFO - Processed 11300/12335 rows
+2025-06-21 16:43:58,460 - INFO - Processed 11400/12335 rows
+2025-06-21 16:43:58,462 - INFO - Processed 11500/12335 rows
+2025-06-21 16:43:58,464 - INFO - Processed 11600/12335 rows
+2025-06-21 16:43:58,466 - INFO - Processed 11700/12335 rows
+2025-06-21 16:43:58,467 - INFO - Processed 11800/12335 rows
+2025-06-21 16:43:58,469 - INFO - Processed 11900/12335 rows
+2025-06-21 16:43:58,471 - INFO - Processed 12000/12335 rows
+2025-06-21 16:43:58,472 - INFO - Processed 12100/12335 rows
+2025-06-21 16:43:58,474 - INFO - Processed 12200/12335 rows
+2025-06-21 16:43:58,476 - INFO - Processed 12300/12335 rows
+2025-06-21 16:43:58,479 - INFO - CSV conversion complete. Generated text with 6261055 characters
+2025-06-21 16:43:58,482 - INFO - Chunking text...
+2025-06-21 16:43:58,482 - INFO - Starting text chunking with chunk_size=500
+2025-06-21 16:43:58,497 - INFO - Total words to chunk: 512875
+2025-06-21 16:43:58,506 - INFO - Created 1026 chunks
+2025-06-21 16:43:58,509 - INFO - Processing 1026 chunks...
+2025-06-21 16:43:58,509 - INFO - Processing chunk 1/1026...
+2025-06-21 16:44:21,499 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:44:21,508 - INFO - Extracted 39 entities and 28 relationships
+2025-06-21 16:44:21,509 - INFO - Chunk 1 complete - Running totals: 39 entities, 28 relationships
+2025-06-21 16:44:22,014 - INFO - Processing chunk 2/1026...
+2025-06-21 16:44:48,139 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:44:48,198 - INFO - Extracted 43 entities and 41 relationships
+2025-06-21 16:44:48,198 - INFO - Chunk 2 complete - Running totals: 82 entities, 69 relationships
+2025-06-21 16:44:48,703 - INFO - Processing chunk 3/1026...
+2025-06-21 16:46:29,137 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:46:29,143 - INFO - Extracted 100 entities and 151 relationships
+2025-06-21 16:46:29,143 - INFO - Chunk 3 complete - Running totals: 182 entities, 220 relationships
+2025-06-21 16:46:29,645 - INFO - Processing chunk 4/1026...
+2025-06-21 16:47:02,047 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:47:02,052 - INFO - Extracted 34 entities and 70 relationships
+2025-06-21 16:47:02,052 - INFO - Chunk 4 complete - Running totals: 216 entities, 290 relationships
+2025-06-21 16:47:02,555 - INFO - Processing chunk 5/1026...
+2025-06-21 16:47:26,298 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:47:26,303 - INFO - Extracted 41 entities and 42 relationships
+2025-06-21 16:47:26,303 - INFO - Chunk 5 complete - Running totals: 257 entities, 332 relationships
+2025-06-21 16:47:26,807 - INFO - Processing chunk 6/1026...
+2025-06-21 16:47:55,317 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:47:55,323 - INFO - Extracted 35 entities and 26 relationships
+2025-06-21 16:47:55,324 - INFO - Chunk 6 complete - Running totals: 292 entities, 358 relationships
+2025-06-21 16:47:55,829 - INFO - Processing chunk 7/1026...
+2025-06-21 16:48:36,607 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:48:36,613 - INFO - Extracted 40 entities and 26 relationships
+2025-06-21 16:48:36,613 - INFO - Chunk 7 complete - Running totals: 332 entities, 384 relationships
+2025-06-21 16:48:37,118 - INFO - Processing chunk 8/1026...
+2025-06-21 16:48:56,925 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:48:56,931 - INFO - Extracted 13 entities and 39 relationships
+2025-06-21 16:48:56,931 - INFO - Chunk 8 complete - Running totals: 345 entities, 423 relationships
+2025-06-21 16:48:57,437 - INFO - Processing chunk 9/1026...
+2025-06-21 16:49:27,537 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:49:27,545 - INFO - Extracted 42 entities and 36 relationships
+2025-06-21 16:49:27,546 - INFO - Chunk 9 complete - Running totals: 387 entities, 459 relationships
+2025-06-21 16:49:28,051 - INFO - Processing chunk 10/1026...
+2025-06-21 16:50:30,337 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:50:30,339 - INFO - Extracted 54 entities and 70 relationships
+2025-06-21 16:50:30,339 - INFO - Chunk 10 complete - Running totals: 441 entities, 529 relationships
+2025-06-21 16:50:30,844 - INFO - Processing chunk 11/1026...
+2025-06-21 16:50:58,103 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:50:58,105 - INFO - Extracted 30 entities and 24 relationships
+2025-06-21 16:50:58,105 - INFO - Chunk 11 complete - Running totals: 471 entities, 553 relationships
+2025-06-21 16:50:58,606 - INFO - Processing chunk 12/1026...
+2025-06-21 16:51:39,979 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:51:39,983 - INFO - Extracted 42 entities and 30 relationships
+2025-06-21 16:51:39,983 - INFO - Chunk 12 complete - Running totals: 513 entities, 583 relationships
+2025-06-21 16:51:40,485 - INFO - Processing chunk 13/1026...
+2025-06-21 16:52:10,201 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 16:52:10,208 - INFO - Extracted 41 entities and 37 relationships
+2025-06-21 16:52:10,209 - INFO - Chunk 13 complete - Running totals: 554 entities, 620 relationships
+2025-06-21 16:52:10,714 - INFO - Processing chunk 14/1026...

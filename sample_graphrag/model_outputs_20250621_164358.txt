@@ -1,0 +1,5057 @@
+GraphRAG Model Outputs - 2025-06-21 16:43:58.222018
+==================================================
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:44:21.507329
+============================================================
+Input chunk (6467 chars):
+Record 1: APN=055 187800400, RecordID=BL-032324, BusDesc=RESTAURANT, B1_PER_SUB_TYPE=Retail Trade, DBA=KIPS RESTAURANT, NAICS=722110, Tax_Code=R, Employee_Num=14, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=KIPS RESTAURANT, B1_ADDRESS1=2439 DURANT AVE, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=947041610, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2439 DURANT AVE, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 2: APN=057 205900600, RecordID=BL-018844, BusDesc=JAPANESE FOOD...
+
+Model Response:
+{"entities":[{"name":"KIPS RESTAURANT","type":"Business","description":"RESTAURANT, RecordID BL-032324, Employee_Num 14, Ownership Corporation, Tax_Code R"},{"name":"2439 DURANT AVE, BERKELEY, CA 94704.0","type":"Address","description":"Full address of KIPS RESTAURANT"},{"name":"722110","type":"NAICS","description":""},{"name":"KINDA SAKE BAR","type":"Business","description":"JAPANESE FOOD & DRINKS, RecordID BL-018844, Employee_Num 16, Ownership Corporation, Tax_Code R"},{"name":"1941 UNIVERSITY Ave, BERKELEY, CA 94704.0","type":"Address","description":"Full address of KINDA SAKE BAR"},{"name":"722513","type":"NAICS","description":"Limited-Service Restaurants"},{"name":"VIETNAM HOUSE","type":"Business","description":"RESTAURANT, RecordID BL-021115, Employee_Num 2, Ownership LLC, Tax_Code R"},{"name":"1986 SHATTUCK Ave, BERKELEY, CA 94708.0","type":"Address","description":"Full address of VIETNAM HOUSE"},{"name":"VIK'S CHAAT & MARKET, LLC","type":"Business","description":"RESTAURANT, RecordID BL-048399, Employee_Num 26, Ownership LLC, Tax_Code R"},{"name":"2390 FOURTH ST, BERKELEY, CA 94710.0","type":"Address","description":"Full address of VIK'S CHAAT & MARKET, LLC"},{"name":"722211","type":"NAICS","description":""},{"name":"DONAHUE RICHARD S","type":"Business","description":"ARCHITECT, RecordID BL-054096, Employee_Num 1, Ownership Sole Ownership, Tax_Code P"},{"name":"1743 ALCATRAZ AVE, BERKELEY, CA 94703.0","type":"Address","description":"Full address of DONAHUE RICHARD S"},{"name":"541310","type":"NAICS","description":"Architectural Services"},{"name":"GLAM COUTURE","type":"Business","description":"HAIR SALON, RecordID BL-046240, Employee_Num 1, Ownership Sole Ownership, Tax_Code B"},{"name":"3205 SACRAMENTO ST, BERKELEY, CA 94702.0","type":"Address","description":"Full address of GLAM COUTURE"},{"name":"812112","type":"NAICS","description":"Beauty Salons"},{"name":"CHIPOTLE MEXICAN GRILL #697","type":"Business","description":"RESTAURANT, RecordID BL-044072, Employee_Num 48, Ownership Corporation, Tax_Code R"},{"name":"2311 TELEGRAPH AVE, BERKELEY, CA 94704.0","type":"Address","description":"Full address of CHIPOTLE MEXICAN GRILL #697"},{"name":"SAHIN EMIRHAN","type":"Business","description":"FOOD STREET VENDOR, RecordID BL-021507, Employee_Num 0, Ownership Sole Ownership, Tax_Code R"},{"name":"0 VARIOUS, BERKELEY, CA 94704.0","type":"Address","description":"Full address of SAHIN EMIRHAN"},{"name":"454390","type":"NAICS","description":"Other Direct Selling Establishments"},{"name":"HOFFMAN CAROL L","type":"Business","description":"ATTORNEY, RecordID BL-052373, Employee_Num 1, Ownership Sole Ownership, Tax_Code P"},{"name":"1510 WALNUT ST, BERKELEY, CA 94709.0","type":"Address","description":"Full address of HOFFMAN CAROL L"},{"name":"541110","type":"NAICS","description":"Offices of Lawyers"},{"name":"BEN HARDY & COMPANY","type":"Business","description":"RESIDENTIAL CONSTRUCTION, RecordID BL-017452, Employee_Num 4, Ownership Corporation, Tax_Code C"},{"name":"0 VARIOUS, BERKELEY, CA 94704.0","type":"Address","description":"Full address of BEN HARDY & COMPANY"},{"name":"236118","type":"NAICS","description":"Residential Remodelers"},{"name":"ASHA TEA HOUSE","type":"Business","description":"TEA HOUSE, RecordID BL-051029, Employee_Num 22, Ownership LLC, Tax_Code R"},{"name":"2086 UNIVERSITY AVE, BERKELEY, CA 94704.0","type":"Address","description":"Full address of ASHA TEA HOUSE"},{"name":"722213","type":"NAICS","description":""},{"name":"RASPUTIN RECORDS","type":"Business","description":"RECORDS RETAIL, RecordID BL-011075, Employee_Num 20, Ownership Corporation, Tax_Code R"},{"name":"2401 TELEGRAPH AVE, BERKELEY, CA 94704.0","type":"Address","description":"Full address of RASPUTIN RECORDS"},{"name":"451220","type":"NAICS","description":""},{"name":"TANE VEGAN","type":"Business","description":"RESTAURANT, RecordID BL-016178, Employee_Num 16, Ownership Corporation, Tax_Code R"},{"name":"1956 SHATTUCK Ave, BERKELEY, CA 94704.0","type":"Address","description":"Full address of TANE VEGAN"},{"name":"722511","type":"NAICS","description":"Full-Service Restaurants"},{"name":"HAPPY GRILL LLC","type":"Business","description":"MOVING FOOD TRUCK, RecordID BL-017000, Employee_Num 1, Ownership LLC, Tax_Code R"},{"name":"0 VARIOUS, BERKELEY, CA 94704.0","type":"Address","description":"Full address of HAPPY GRILL LLC"}],"relationships":[{"source":"KIPS RESTAURANT","target":"2439 DURANT AVE, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"KIPS RESTAURANT","target":"722110","type":"classified_as","description":"NAICS code for business"},{"source":"KINDA SAKE BAR","target":"1941 UNIVERSITY Ave, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"KINDA SAKE BAR","target":"722513","type":"classified_as","description":"NAICS code and category for business"},{"source":"VIETNAM HOUSE","target":"1986 SHATTUCK Ave, BERKELEY, CA 94708.0","type":"located_at","description":"Business is located at this address"},{"source":"VIETNAM HOUSE","target":"722513","type":"classified_as","description":"NAICS code and category for business"},{"source":"VIK'S CHAAT & MARKET, LLC","target":"2390 FOURTH ST, BERKELEY, CA 94710.0","type":"located_at","description":"Business is located at this address"},{"source":"VIK'S CHAAT & MARKET, LLC","target":"722211","type":"classified_as","description":"NAICS code for business"},{"source":"DONAHUE RICHARD S","target":"1743 ALCATRAZ AVE, BERKELEY, CA 94703.0","type":"located_at","description":"Business is located at this address"},{"source":"DONAHUE RICHARD S","target":"541310","type":"classified_as","description":"NAICS code and category for business"},{"source":"GLAM COUTURE","target":"3205 SACRAMENTO ST, BERKELEY, CA 94702.0","type":"located_at","description":"Business is located at this address"},{"source":"GLAM COUTURE","target":"812112","type":"classified_as","description":"NAICS code and category for business"},{"source":"CHIPOTLE MEXICAN GRILL #697","target":"2311 TELEGRAPH AVE, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"CHIPOTLE MEXICAN GRILL #697","target":"722211","type":"classified_as","description":"NAICS code for business"},{"source":"SAHIN EMIRHAN","target":"0 VARIOUS, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"SAHIN EMIRHAN","target":"454390","type":"classified_as","description":"NAICS code and category for business"},{"source":"HOFFMAN CAROL L","target":"1510 WALNUT ST, BERKELEY, CA 94709.0","type":"located_at","description":"Business is located at this address"},{"source":"HOFFMAN CAROL L","target":"541110","type":"classified_as","description":"NAICS code and category for business"},{"source":"BEN HARDY & COMPANY","target":"0 VARIOUS, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"BEN HARDY & COMPANY","target":"236118","type":"classified_as","description":"NAICS code and category for business"},{"source":"ASHA TEA HOUSE","target":"2086 UNIVERSITY AVE, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"ASHA TEA HOUSE","target":"722213","type":"classified_as","description":"NAICS code for business"},{"source":"RASPUTIN RECORDS","target":"2401 TELEGRAPH AVE, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"RASPUTIN RECORDS","target":"451220","type":"classified_as","description":"NAICS code for business"},{"source":"TANE VEGAN","target":"1956 SHATTUCK Ave, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"TANE VEGAN","target":"722511","type":"classified_as","description":"NAICS code and category for business"},{"source":"HAPPY GRILL LLC","target":"0 VARIOUS, BERKELEY, CA 94704.0","type":"located_at","description":"Business is located at this address"},{"source":"HAPPY GRILL LLC","target":"722513","type":"classified_as","description":"NAICS code and category for business"}]}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 39
+  1. KIPS RESTAURANT (Business): RESTAURANT, RecordID BL-032324, Employee_Num 14, Ownership Corporation, Tax_Code R
+  2. 2439 DURANT AVE, BERKELEY, CA 94704.0 (Address): Full address of KIPS RESTAURANT
+  3. 722110 (NAICS): 
+  4. KINDA SAKE BAR (Business): JAPANESE FOOD & DRINKS, RecordID BL-018844, Employee_Num 16, Ownership Corporation, Tax_Code R
+  5. 1941 UNIVERSITY Ave, BERKELEY, CA 94704.0 (Address): Full address of KINDA SAKE BAR
+  6. 722513 (NAICS): Limited-Service Restaurants
+  7. VIETNAM HOUSE (Business): RESTAURANT, RecordID BL-021115, Employee_Num 2, Ownership LLC, Tax_Code R
+  8. 1986 SHATTUCK Ave, BERKELEY, CA 94708.0 (Address): Full address of VIETNAM HOUSE
+  9. VIK'S CHAAT & MARKET, LLC (Business): RESTAURANT, RecordID BL-048399, Employee_Num 26, Ownership LLC, Tax_Code R
+  10. 2390 FOURTH ST, BERKELEY, CA 94710.0 (Address): Full address of VIK'S CHAAT & MARKET, LLC
+  ... and 29 more entities
+
+Relationships extracted: 28
+  1. KIPS RESTAURANT -> 2439 DURANT AVE, BERKELEY, CA 94704.0 (located_at)
+  2. KIPS RESTAURANT -> 722110 (classified_as)
+  3. KINDA SAKE BAR -> 1941 UNIVERSITY Ave, BERKELEY, CA 94704.0 (located_at)
+  4. KINDA SAKE BAR -> 722513 (classified_as)
+  5. VIETNAM HOUSE -> 1986 SHATTUCK Ave, BERKELEY, CA 94708.0 (located_at)
+  6. VIETNAM HOUSE -> 722513 (classified_as)
+  7. VIK'S CHAAT & MARKET, LLC -> 2390 FOURTH ST, BERKELEY, CA 94710.0 (located_at)
+  8. VIK'S CHAAT & MARKET, LLC -> 722211 (classified_as)
+  9. DONAHUE RICHARD S -> 1743 ALCATRAZ AVE, BERKELEY, CA 94703.0 (located_at)
+  10. DONAHUE RICHARD S -> 541310 (classified_as)
+  ... and 18 more relationships
+
+CHUNK 1/1026 COMPLETE - Total entities so far: 39, Total relationships so far: 28
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:44:48.143422
+============================================================
+Input chunk (6294 chars):
+CORP, B1_PER_SUB_TYPE=Non Profit Organizations, DBA=PARKER STREET FOUNDATION, NAICS=813410 - Civic and Social Organizations, Tax_Code=N, Employee_Num=1, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=PARKER STREET FOUNDATION, B1_ADDRESS1=2330 PARKER ST, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94704-2818, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2330 PARKER ST, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 16: APN=056 194500301, RecordID=BL-018513, BusDesc=CATERING, B1_P...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "PARKER STREET FOUNDATION",
+      "type": "Organization",
+      "description": "Non Profit Organizations (Civic and Social Organizations)"
+    },
+    {
+      "name": "2330 PARKER ST, BERKELEY, CA 94704",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "813410 - Civic and Social Organizations",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "Corporation",
+      "type": "OwnershipType",
+      "description": ""
+    },
+    {
+      "name": "XULO",
+      "type": "Organization",
+      "description": "CATERING (721320 - Caterers)"
+    },
+    {
+      "name": "2326 FIFTH St, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "722320 - Caterers",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "LLC",
+      "type": "OwnershipType",
+      "description": ""
+    },
+    {
+      "name": "MARREE",
+      "type": "Organization",
+      "description": "HAND-DYED ACCESSORIES (Clothing Accessories Stores)"
+    },
+    {
+      "name": "1314 ALCATRAZ Ave, BERKELEY, CA 94702",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "448150 - Clothing Accessories Stores",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "Sole Ownership",
+      "type": "OwnershipType",
+      "description": ""
+    },
+    {
+      "name": "KAIZEN CHIROPRACTIC + WELLNESS",
+      "type": "Organization",
+      "description": "CHIROPRACTIC OFFICE (Offices of Chiropractors)"
+    },
+    {
+      "name": "2459 ASHBY Ave, BERKELEY, CA 94705",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "621310 - Offices of Chiropractors",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "PING KUEN CONST CO",
+      "type": "Organization",
+      "description": "GENERAL CONTRACTOR"
+    },
+    {
+      "name": "0 VARIOUS, BERKELEY, CA 94704",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "SHIBUMI GALLERY LLC",
+      "type": "Organization",
+      "description": "JEWELRY SALES (Jewelry Stores)"
+    },
+    {
+      "name": "1816 FOURTH St, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "448310 - Jewelry Stores",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "ASHKAR OMAR",
+      "type": "Organization",
+      "description": "GLASS WEAR/TABACCO (Tobacco Stores)"
+    },
+    {
+      "name": "1776 UNIVERSITY Ave, BERKELEY, CA 94703",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "453991 - Tobacco Stores",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "HESHY FRIED CATERING LLC",
+      "type": "Organization",
+      "description": "CATERING (Caterers)"
+    },
+    {
+      "name": "2307 MCGEE Ave, BERKELEY, CA 94703",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "SIYA",
+      "type": "Organization",
+      "description": "CLOTHING & JEWELRY (Jewelry Stores)"
+    },
+    {
+      "name": "1038 UNIVERSITY Ave, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "IYASARE",
+      "type": "Organization",
+      "description": "RESTAURANT (Full-Service Restaurants)"
+    },
+    {
+      "name": "1830 FOURTH St, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "722511 - Full-Service Restaurants",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "BERKELEY INN",
+      "type": "Organization",
+      "description": "MOTEL 27 ROOMS (Hotels and Motels)"
+    },
+    {
+      "name": "1720 SAN PABLO AVE, BERKELEY, CA 94702",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "721110 - Hotels (except Casino Hotels) and Motels",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "HANA DESIGN",
+      "type": "Organization",
+      "description": "FURNITURE & GIFTS (Furniture Stores)"
+    },
+    {
+      "name": "902 THE ALAMEDA, BERKELEY, CA 94707",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "442110 - Furniture Stores",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "SOVONIGHT",
+      "type": "Organization",
+      "description": "DIGITAL ART RETAIL (Art Dealers)"
+    },
+    {
+      "name": "2300 GRANT St, BERKELEY, CA 94703",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "453920 - Art Dealers",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "VINE STREET SALON",
+      "type": "Organization",
+      "description": "HAIR SALON (Beauty Salons)"
+    },
+    {
+      "name": "2118 VINE ST, BERKELEY, CA 94709",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "812112 - Beauty Salons",
+      "type": "NAICS Code",
+      "description": "Industry classification"
+    },
+    {
+      "name": "Partnership",
+      "type": "OwnershipType",
+      "description": ""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PARKER STREET FOUNDATION",
+      "target": "2330 PARKER ST, BERKELEY, CA 94704",
+      "type": "located_at",
+      "description": "Business located at this address"
+    },
+    {
+      "source": "PARKER STREET FOUNDATION",
+      "target": "813410 - Civic and Social Organizations",
+      "type": "has_NAICS",
+      "description": "Industry classification"
+    },
+    {
+      "source": "PARKER STREET FOUNDATION",
+      "target": "Corporation",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "XULO",
+      "target": "2326 FIFTH St, BERKELEY, CA 94710",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "XULO",
+      "target": "722320 - Caterers",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "XULO",
+      "target": "LLC",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "MARREE",
+      "target": "1314 ALCATRAZ Ave, BERKELEY, CA 94702",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "MARREE",
+      "target": "448150 - Clothing Accessories Stores",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "MARREE",
+      "target": "Sole Ownership",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "KAIZEN CHIROPRACTIC + WELLNESS",
+      "target": "2459 ASHBY Ave, BERKELEY, CA 94705",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "KAIZEN CHIROPRACTIC + WELLNESS",
+      "target": "621310 - Offices of Chiropractors",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "KAIZEN CHIROPRACTIC + WELLNESS",
+      "target": "Corporation",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "PING KUEN CONST CO",
+      "target": "0 VARIOUS, BERKELEY, CA 94704",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "PING KUEN CONST CO",
+      "target": "Corporation",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "SHIBUMI GALLERY LLC",
+      "target": "1816 FOURTH St, BERKELEY, CA 94710",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "SHIBUMI GALLERY LLC",
+      "target": "448310 - Jewelry Stores",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "SHIBUMI GALLERY LLC",
+      "target": "LLC",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "ASHKAR OMAR",
+      "target": "1776 UNIVERSITY Ave, BERKELEY, CA 94703",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "ASHKAR OMAR",
+      "target": "453991 - Tobacco Stores",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "ASHKAR OMAR",
+      "target": "Sole Ownership",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "HESHY FRIED CATERING LLC",
+      "target": "2307 MCGEE Ave, BERKELEY, CA 94703",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "HESHY FRIED CATERING LLC",
+      "target": "722320 - Caterers",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "HESHY FRIED CATERING LLC",
+      "target": "LLC",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "SIYA",
+      "target": "1038 UNIVERSITY Ave, BERKELEY, CA 94710",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "SIYA",
+      "target": "448310 - Jewelry Stores",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "SIYA",
+      "target": "Corporation",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "IYASARE",
+      "target": "1830 FOURTH St, BERKELEY, CA 94710",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "IYASARE",
+      "target": "722511 - Full-Service Restaurants",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "IYASARE",
+      "target": "LLC",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "BERKELEY INN",
+      "target": "1720 SAN PABLO AVE, BERKELEY, CA 94702",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "BERKELEY INN",
+      "target": "721110 - Hotels (except Casino Hotels) and Motels",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "BERKELEY INN",
+      "target": "LLC",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "HANA DESIGN",
+      "target": "902 THE ALAMEDA, BERKELEY, CA 94707",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "HANA DESIGN",
+      "target": "442110 - Furniture Stores",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "HANA DESIGN",
+      "target": "Sole Ownership",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "SOVONIGHT",
+      "target": "2300 GRANT St, BERKELEY, CA 94703",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "SOVONIGHT",
+      "target": "453920 - Art Dealers",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "SOVONIGHT",
+      "target": "Sole Ownership",
+      "type": "has_owner_type",
+      "description": ""
+    },
+    {
+      "source": "VINE STREET SALON",
+      "target": "2118 VINE ST, BERKELEY, CA 94709",
+      "type": "located_at",
+      "description": ""
+    },
+    {
+      "source": "VINE STREET SALON",
+      "target": "812112 - Beauty Salons",
+      "type": "has_NAICS",
+      "description": ""
+    },
+    {
+      "source": "VINE STREET SALON",
+      "target": "Partnership",
+      "type": "has_owner_type",
+      "description": ""
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 43
+  1. PARKER STREET FOUNDATION (Organization): Non Profit Organizations (Civic and Social Organizations)
+  2. 2330 PARKER ST, BERKELEY, CA 94704 (Address): Full situs address
+  3. 813410 - Civic and Social Organizations (NAICS Code): Industry classification
+  4. Corporation (OwnershipType): 
+  5. XULO (Organization): CATERING (721320 - Caterers)
+  6. 2326 FIFTH St, BERKELEY, CA 94710 (Address): Full situs address
+  7. 722320 - Caterers (NAICS Code): Industry classification
+  8. LLC (OwnershipType): 
+  9. MARREE (Organization): HAND-DYED ACCESSORIES (Clothing Accessories Stores)
+  10. 1314 ALCATRAZ Ave, BERKELEY, CA 94702 (Address): Full situs address
+  ... and 33 more entities
+
+Relationships extracted: 41
+  1. PARKER STREET FOUNDATION -> 2330 PARKER ST, BERKELEY, CA 94704 (located_at)
+  2. PARKER STREET FOUNDATION -> 813410 - Civic and Social Organizations (has_NAICS)
+  3. PARKER STREET FOUNDATION -> Corporation (has_owner_type)
+  4. XULO -> 2326 FIFTH St, BERKELEY, CA 94710 (located_at)
+  5. XULO -> 722320 - Caterers (has_NAICS)
+  6. XULO -> LLC (has_owner_type)
+  7. MARREE -> 1314 ALCATRAZ Ave, BERKELEY, CA 94702 (located_at)
+  8. MARREE -> 448150 - Clothing Accessories Stores (has_NAICS)
+  9. MARREE -> Sole Ownership (has_owner_type)
+  10. KAIZEN CHIROPRACTIC + WELLNESS -> 2459 ASHBY Ave, BERKELEY, CA 94705 (located_at)
+  ... and 31 more relationships
+
+CHUNK 2/1026 COMPLETE - Total entities so far: 82, Total relationships so far: 69
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:46:29.141821
+============================================================
+Input chunk (6370 chars):
+BusDesc=RETAIL COFFEE SHOP, B1_PER_SUB_TYPE=Retail Trade, DBA=PEET'S COFFEE INC., NAICS=722213, Tax_Code=R, Employee_Num=15, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=PEET'S COFFEE INC., B1_ADDRESS1=PO BOX 8000, B1_CITY=MONSEY, B1_STATE=NY, B1_ZIP=10952, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2501 TELEGRAPH AVE, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 30: APN=060 241101106, RecordID=BL-005055, BusDesc=MASSAGE & SKIN CARE, B1_PER_SUB_TYPE=Massage, DBA=NOUR...
+
+Model Response:
+```json
+{
+  "entities": [
+    {"name": "PEET'S COFFEE INC.", "type": "Organization", "description": "Retail Coffee Shop"},
+    {"name": "NOURISH", "type": "Organization", "description": "Massage & Skin Care"},
+    {"name": "HENKEL CORPORATION", "type": "Organization", "description": "Adhesive Manufacturing"},
+    {"name": "METRO LIGHTING AND CRAFTS", "type": "Organization", "description": "Lighting Fixtures Manufacturing"},
+    {"name": "F D THOMAS INC", "type": "Organization", "description": "General Contractor"},
+    {"name": "YEGANEH REZA", "type": "Organization", "description": "Residential Rental - 6 Units"},
+    {"name": "OXTAIL STUDIO LLC", "type": "Organization", "description": "Art Gallery/Retail"},
+    {"name": "TRAX", "type": "Organization", "description": "Art Gallery"},
+    {"name": "MUSIC LOVERS INC", "type": "Organization", "description": "Electronics Store"},
+    {"name": "INNER BLOOM", "type": "Organization", "description": "Florist"},
+    {"name": "ROCK THE WALLS DRYWALL", "type": "Organization", "description": "Drywall Installation Contractor"},
+    {"name": "FILLGOOD", "type": "Organization", "description": "Zero Waste General Merchandise"},
+    {"name": "SANDWICH ZONE", "type": "Organization", "description": "Sandwich Shop"},
+    {"name": "LUCA", "type": "Organization", "description": "Italian Restaurant"},
+    {"name": "COM NET", "type": "Organization", "description": "Computer Store"},
+    {"name": "060 241101106", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "053 165500202", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "056 197601600", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "ZZZZZZZZZZZZZ", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "059 226800601", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "053 159801600", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "057 209900602", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "055 182401801", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "058 214001201", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "062 287202200", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "057 203201000", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "056 197901500", "type": "Parcel", "description": "Assessor Parcel Number"},
+    {"name": "BL-005055", "type": "Record", "description": "Record ID"},
+    {"name": "BL-009731", "type": "Record", "description": "Record ID"},
+    {"name": "BL-030305", "type": "Record", "description": "Record ID"},
+    {"name": "BL-042333", "type": "Record", "description": "Record ID"},
+    {"name": "BL-038754", "type": "Record", "description": "Record ID"},
+    {"name": "BL-053797", "type": "Record", "description": "Record ID"},
+    {"name": "BL-021753", "type": "Record", "description": "Record ID"},
+    {"name": "BL-009293", "type": "Record", "description": "Record ID"},
+    {"name": "BL-018204", "type": "Record", "description": "Record ID"},
+    {"name": "BL-021856", "type": "Record", "description": "Record ID"},
+    {"name": "BL-019596", "type": "Record", "description": "Record ID"},
+    {"name": "BL-045354", "type": "Record", "description": "Record ID"},
+    {"name": "BL-050001", "type": "Record", "description": "Record ID"},
+    {"name": "BL-020823", "type": "Record", "description": "Record ID"},
+    {"name": "722213", "type": "IndustryClassification", "description": "Retail Coffee Shops"},
+    {"name": "812199", "type": "IndustryClassification", "description": "Other Personal Care Services"},
+    {"name": "325520", "type": "IndustryClassification", "description": "Adhesive Manufacturing"},
+    {"name": "331421", "type": "IndustryClassification", "description": "Lighting Fixture Manufacturing"},
+    {"name": "238160", "type": "IndustryClassification", "description": "Roofing Contractors"},
+    {"name": "531110", "type": "IndustryClassification", "description": "Lessors of Residential Buildings and Dwellings"},
+    {"name": "453920", "type": "IndustryClassification", "description": "Art Dealers"},
+    {"name": "443112", "type": "IndustryClassification", "description": "Electronics Stores"},
+    {"name": "453110", "type": "IndustryClassification", "description": "Florists"},
+    {"name": "238310", "type": "IndustryClassification", "description": "Drywall and Insulation Contractors"},
+    {"name": "452990", "type": "IndustryClassification", "description": "All Other General Merchandise Stores"},
+    {"name": "722211", "type": "IndustryClassification", "description": "Sandwich Shops"},
+    {"name": "722110", "type": "IndustryClassification", "description": "Full-Service Restaurants"},
+    {"name": "Retail Trade", "type": "BusinessSubtype", "description": "B1_PER_SUB_TYPE"},
+    {"name": "Massage", "type": "BusinessSubtype", "description": "B1_PER_SUB_TYPE"},
+    {"name": "Manufacturing", "type": "BusinessSubtype", "description": "B1_PER_SUB_TYPE"},
+    {"name": "Construction or Contractor", "type": "BusinessSubtype", "description": "B1_PER_SUB_TYPE"},
+    {"name": "Rental of Real Property", "type": "BusinessSubtype", "description": "B1_PER_SUB_TYPE"},
+    {"name": "Corporation", "type": "OwnershipType", "description": "Bus_Own_Type"},
+    {"name": "Sole Ownership", "type": "OwnershipType", "description": "Bus_Own_Type"},
+    {"name": "LLC", "type": "OwnershipType", "description": "Bus_Own_Type"},
+    {"name": "R", "type": "TaxCode", "description": "Retail"},
+    {"name": "BM", "type": "TaxCode", "description": "Business & Massage"},
+    {"name": "M", "type": "TaxCode", "description": "Manufacturing"},
+    {"name": "C", "type": "TaxCode", "description": "Construction"},
+    {"name": "L", "type": "TaxCode", "description": "Rental"},
+    {"name": "Business Owner", "type": "ContactType", "description": "B1_CONTACT_TYPE"},
+    {"name": "15", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "0", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "13", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "2", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "400", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "5", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "26", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "9", "type": "EmployeeNumber", "description": "Employee_Num"},
+    {"name": "PO BOX 8000, MONSEY, NY, 10952", "type": "Address", "description": "Mailing address"},
+    {"name": "2501 TELEGRAPH AVE, BERKELEY, CA, 94704", "type": "Address", "description": "Situs address"},
+    {"name": "1285 GILMAN ST, BERKELEY, CA, 94706-2351", "type": "Address", "description": "Mailing address"},
+    {"name": "1285 GILMAN St, BERKELEY, CA, 94706", "type": "Address", "description": "Situs address"},
+    {"name": "800 GRAYSON ST, BERKELEY, CA, 94710", "type": "Address", "description": "Mailing address"},
+    {"name": "742 GRAYSON ST, BERKELEY, CA, 94710", "type": "Address", "description": "Situs address"},
+    {"name": "2240 SAN PABLO AVE, BERKELEY, CA, 94702", "type": "Address", "description": "Mailing & Situs address"},
+    {"name": "PO BOX 4663, MEDFORD, OR, 97501", "type": "Address", "description": "Mailing address"},
+    {"name": "0 VARIOUS, BERKELEY, CA, 94704", "type": "Address", "description": "Situs address"},
+    {"name": "1531 CAMPUS DR, BERKELEY, CA, 94708-2042", "type": "Address", "description": "Mailing address"},
+    {"name": "1504 BONITA AVE, BERKELEY, CA, 94709", "type": "Address", "description": "Situs address"},
+    {"name": "2976 ADELINE ST, BERKELEY, CA, 94703", "type": "Address", "description": "Mailing & Situs address"},
+    {"name": "1812 5TH STREET, BERKELEY, CA, 94710", "type": "Address", "description": "Mailing address"},
+    {"name": "1812 FIFTH ST, BERKELEY, CA, 94710", "type": "Address", "description": "Situs address"},
+    {"name": "2116 BLAKE ST, BERKELEY, CA, 94704-2716", "type": "Address", "description": "Mailing address"},
+    {"name": "2116 BLAKE ST, BERKELEY, CA, 94704", "type": "Address", "description": "Situs address"},
+    {"name": "1345 FRANCISCO ST, BERKELEY, CA, 947021410", "type": "Address", "description": "Mailing address"},
+    {"name": "1345 FRANCISCO St, BERKELEY, CA, 94702", "type": "Address", "description": "Situs address"},
+    {"name": "787 BERYL PL, HAYWARD, CA, 94544", "type": "Address", "description": "Mailing address"},
+    {"name": "1579A SOLANO AVE, BERKELEY, CA, 94707", "type": "Address", "description": "Mailing address"},
+    {"name": "1579 SOLANO Ave, BERKELEY, CA, 94707", "type": "Address", "description": "Situs address"},
+    {"name": "2117 SHATTUCK AVE, BERKELEY, CA, 94704", "type": "Address", "description": "Mailing & Situs address"},
+    {"name": "1092 LARCH AVENUE, MORAGA, CA, 94556", "type": "Address", "description": "Mailing address"},
+    {"name": "2057 SAN PABLO AVE, BERKELEY, CA, 94702", "type": "Address", "description": "Situs address"}
+  ],
+  "relationships": [
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "722213",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "Corporation",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "15",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "PO BOX 8000, MONSEY, NY, 10952",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "PEET'S COFFEE INC.",
+      "target": "2501 TELEGRAPH AVE, BERKELEY, CA, 94704",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "NOURISH",
+      "target": "060 241101106",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "NOURISH",
+      "target": "BL-005055",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "NOURISH",
+      "target": "812199",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "NOURISH",
+      "target": "Other Personal Care Services",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "NOURISH",
+      "target": "Massage",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "NOURISH",
+      "target": "BM",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "NOURISH",
+      "target": "0",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "NOURISH",
+      "target": "Sole Ownership",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "NOURISH",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "NOURISH",
+      "target": "1285 GILMAN ST, BERKELEY, CA, 94706-2351",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "NOURISH",
+      "target": "1285 GILMAN St, BERKELEY, CA, 94706",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "053 165500202",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "BL-009731",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "325520",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "Adhesive Manufacturing",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "Manufacturing",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "M",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "13",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "Corporation",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "800 GRAYSON ST, BERKELEY, CA, 94710",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "HENKEL CORPORATION",
+      "target": "742 GRAYSON ST, BERKELEY, CA, 94710",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "056 197601600",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "BL-030305",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "331421",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "Lighting Fixture Manufacturing",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "Manufacturing",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "M",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "2",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "Sole Ownership",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "METRO LIGHTING AND CRAFTS",
+      "target": "2240 SAN PABLO AVE, BERKELEY, CA, 94702",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1 / B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "ZZZZZZZZZZZZZ",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "BL-042333",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "238160",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "Roofing Contractors",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "Construction or Contractor",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "C",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "400",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "Corporation",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "PO BOX 4663, MEDFORD, OR, 97501",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "F D THOMAS INC",
+      "target": "0 VARIOUS, BERKELEY, CA, 94704",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "059 226800601",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "BL-038754",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "531110",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "Lessors of Residential Buildings and Dwellings",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "Rental of Real Property",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "L",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "0",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "Sole Ownership",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "1531 CAMPUS DR, BERKELEY, CA, 94708-2042",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "YEGANEH REZA",
+      "target": "1504 BONITA AVE, BERKELEY, CA, 94709",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "053 159801600",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "BL-053797",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "453920",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "Art Dealers",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "0",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "LLC",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "OXTAIL STUDIO LLC",
+      "target": "2976 ADELINE ST, BERKELEY, CA, 94703",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1 / B1_FULL_ADDRESS"
+    },
+    {
+      "source": "TRAX",
+      "target": "057 209900602",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "TRAX",
+      "target": "BL-021753",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "TRAX",
+      "target": "453920",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "TRAX",
+      "target": "Art Dealers",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "TRAX",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "TRAX",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "TRAX",
+      "target": "0",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "TRAX",
+      "target": "Sole Ownership",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "TRAX",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "TRAX",
+      "target": "1812 5TH STREET, BERKELEY, CA, 94710",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "TRAX",
+      "target": "1812 FIFTH ST, BERKELEY, CA, 94710",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "055 182401801",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "BL-009293",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "443112",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "Electronics Stores",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "9",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "Corporation",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "2116 BLAKE ST, BERKELEY, CA, 94704-2716",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "MUSIC LOVERS INC",
+      "target": "2116 BLAKE ST, BERKELEY, CA, 94704",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "058 214001201",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "BL-018204",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "453110",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "Florists",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "0",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "Sole Ownership",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "1345 FRANCISCO ST, BERKELEY, CA, 947021410",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "INNER BLOOM",
+      "target": "1345 FRANCISCO St, BERKELEY, CA, 94702",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "ZZZZZZZZZZZZZ",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "BL-021856",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "238310",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "Drywall and Insulation Contractors",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "Construction or Contractor",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "C",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "15",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "Corporation",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "787 BERYL PL, HAYWARD, CA, 94544",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "ROCK THE WALLS DRYWALL",
+      "target": "0 VARIOUS, BERKELEY, CA, 94704",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "062 287202200",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "BL-019596",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "452990",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "All Other General Merchandise Stores",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "5",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "LLC",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "1579A SOLANO AVE, BERKELEY, CA, 94707",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "FILLGOOD",
+      "target": "1579 SOLANO Ave, BERKELEY, CA, 94707",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "057 203201000",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "BL-045354",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "722211",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "Sandwich Shops",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "2",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "Sole Ownership",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "SANDWICH ZONE",
+      "target": "2117 SHATTUCK AVE, BERKELEY, CA, 94704",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1 / Situs"
+    },
+    {
+      "source": "LUCA",
+      "target": "056 197901500",
+      "type": "has_parcel",
+      "description": "APN"
+    },
+    {
+      "source": "LUCA",
+      "target": "BL-050001",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "LUCA",
+      "target": "722110",
+      "type": "classified_as",
+      "description": "NAICS code"
+    },
+    {
+      "source": "LUCA",
+      "target": "Full-Service Restaurants",
+      "type": "naics_description",
+      "description": "Industry description"
+    },
+    {
+      "source": "LUCA",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    },
+    {
+      "source": "LUCA",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Tax_Code"
+    },
+    {
+      "source": "LUCA",
+      "target": "26",
+      "type": "has_employee_count",
+      "description": "Employee_Num"
+    },
+    {
+      "source": "LUCA",
+      "target": "Sole Ownership",
+      "type": "has_ownership_type",
+      "description": "Bus_Own_Type"
+    },
+    {
+      "source": "LUCA",
+      "target": "Business Owner",
+      "type": "has_contact_type",
+      "description": "B1_CONTACT_TYPE"
+    },
+    {
+      "source": "LUCA",
+      "target": "1092 LARCH AVENUE, MORAGA, CA, 94556",
+      "type": "has_mailing_address",
+      "description": "B1_ADDRESS1"
+    },
+    {
+      "source": "LUCA",
+      "target": "2057 SAN PABLO AVE, BERKELEY, CA, 94702",
+      "type": "has_situs_address",
+      "description": "B1_FULL_ADDRESS / Situs"
+    },
+    {
+      "source": "COM NET",
+      "target": "053 159801600",
+      "type": "has_parcel",
+      "description": "APN (incomplete in source)"
+    },
+    {
+      "source": "COM NET",
+      "target": "BL-020823",
+      "type": "documented_in",
+      "description": "RecordID"
+    },
+    {
+      "source": "COM NET",
+      "target": "Retail Trade",
+      "type": "has_business_subtype",
+      "description": "B1_PER_SUB_TYPE"
+    }
+  ]
+}
+```
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 100
+  1. PEET'S COFFEE INC. (Organization): Retail Coffee Shop
+  2. NOURISH (Organization): Massage & Skin Care
+  3. HENKEL CORPORATION (Organization): Adhesive Manufacturing
+  4. METRO LIGHTING AND CRAFTS (Organization): Lighting Fixtures Manufacturing
+  5. F D THOMAS INC (Organization): General Contractor
+  6. YEGANEH REZA (Organization): Residential Rental - 6 Units
+  7. OXTAIL STUDIO LLC (Organization): Art Gallery/Retail
+  8. TRAX (Organization): Art Gallery
+  9. MUSIC LOVERS INC (Organization): Electronics Store
+  10. INNER BLOOM (Organization): Florist
+  ... and 90 more entities
+
+Relationships extracted: 151
+  1. PEET'S COFFEE INC. -> 722213 (classified_as)
+  2. PEET'S COFFEE INC. -> Retail Trade (has_business_subtype)
+  3. PEET'S COFFEE INC. -> Corporation (has_ownership_type)
+  4. PEET'S COFFEE INC. -> R (has_tax_code)
+  5. PEET'S COFFEE INC. -> 15 (has_employee_count)
+  6. PEET'S COFFEE INC. -> Business Owner (has_contact_type)
+  7. PEET'S COFFEE INC. -> PO BOX 8000, MONSEY, NY, 10952 (has_mailing_address)
+  8. PEET'S COFFEE INC. -> 2501 TELEGRAPH AVE, BERKELEY, CA, 94704 (has_situs_address)
+  9. NOURISH -> 060 241101106 (has_parcel)
+  10. NOURISH -> BL-005055 (documented_in)
+  ... and 141 more relationships
+
+CHUNK 3/1026 COMPLETE - Total entities so far: 182, Total relationships so far: 220
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:47:02.050553
+============================================================
+Input chunk (6420 chars):
+NAICS=443120, Tax_Code=R, Employee_Num=0, Bus_Own_Type=Sole Ownership, B1_BUSINESS_NAME=COM NET, B1_ADDRESS1=1916 HASTE ST STE A, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94704, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=1916 HASTE ST, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 44: APN=055 182301400, RecordID=BL-008959, BusDesc=CATERING, B1_PER_SUB_TYPE=Retail Trade, DBA=MUSASHIYA CORPORATION, NAICS=722320 - Caterers, Tax_Code=R, Employee_Num=17, Bus_Own_Type=Corpor...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "COM NET",
+      "type": "Organization",
+      "description": "Retail trade business"
+    },
+    {
+      "name": "MUSASHIYA CORPORATION",
+      "type": "Organization",
+      "description": "Catering business"
+    },
+    {
+      "name": "GARDENSCAPE",
+      "type": "Organization",
+      "description": "Gardening and repair services"
+    },
+    {
+      "name": "SARA GAMBLE PHYSICAL THERAPY",
+      "type": "Organization",
+      "description": "In-home physical therapy services"
+    },
+    {
+      "name": "BERMAN LAW PC",
+      "type": "Organization",
+      "description": "Legal professional services"
+    },
+    {
+      "name": "DESIGN SITE",
+      "type": "Organization",
+      "description": "Graphic design services"
+    },
+    {
+      "name": "CANTERBURY PRESS",
+      "type": "Organization",
+      "description": "Periodical publishing"
+    },
+    {
+      "name": "AKI JAPANESE RESTAURANT",
+      "type": "Organization",
+      "description": "Full-service Japanese restaurant"
+    },
+    {
+      "name": "EMILIA'S PIZZERIA",
+      "type": "Organization",
+      "description": "Limited-service pizzeria"
+    },
+    {
+      "name": "LA CREPE A MOI",
+      "type": "Organization",
+      "description": "Catering business"
+    },
+    {
+      "name": "ECO-MANAGEMENT INC",
+      "type": "Organization",
+      "description": "Environmental consulting"
+    },
+    {
+      "name": "CHI OMEGA",
+      "type": "Organization",
+      "description": "Parking lot and garage operator (non-profit)"
+    },
+    {
+      "name": "AZN LLC",
+      "type": "Organization",
+      "description": "Lessors of residential dwellings"
+    },
+    {
+      "name": "SHAUGHNESSY ROOFING INC",
+      "type": "Organization",
+      "description": "Roofing contractor"
+    },
+    {
+      "name": "443120",
+      "type": "NAICS Code",
+      "description": "Retail Stores – Computer and Software Stores"
+    },
+    {
+      "name": "722320",
+      "type": "NAICS Code",
+      "description": "Caterers"
+    },
+    {
+      "name": "561730",
+      "type": "NAICS Code",
+      "description": "Landscaping Services"
+    },
+    {
+      "name": "621610",
+      "type": "NAICS Code",
+      "description": "Home Health Care Services"
+    },
+    {
+      "name": "541110",
+      "type": "NAICS Code",
+      "description": "Offices of Lawyers"
+    },
+    {
+      "name": "541430",
+      "type": "NAICS Code",
+      "description": "Graphic Design Services"
+    },
+    {
+      "name": "511120",
+      "type": "NAICS Code",
+      "description": "Periodical Publishers"
+    },
+    {
+      "name": "722511",
+      "type": "NAICS Code",
+      "description": "Full-Service Restaurants"
+    },
+    {
+      "name": "722211",
+      "type": "NAICS Code",
+      "description": "Limited-Service Eating Places"
+    },
+    {
+      "name": "541620",
+      "type": "NAICS Code",
+      "description": "Environmental Consulting Services"
+    },
+    {
+      "name": "812930",
+      "type": "NAICS Code",
+      "description": "Parking Lots and Garages"
+    },
+    {
+      "name": "531110",
+      "type": "NAICS Code",
+      "description": "Lessors of Residential Buildings and Dwellings"
+    },
+    {
+      "name": "238160",
+      "type": "NAICS Code",
+      "description": "Roofing Contractors"
+    },
+    {
+      "name": "R",
+      "type": "Tax Code",
+      "description": "Retail"
+    },
+    {
+      "name": "B",
+      "type": "Tax Code",
+      "description": "Business"
+    },
+    {
+      "name": "P",
+      "type": "Tax Code",
+      "description": "Professional"
+    },
+    {
+      "name": "M",
+      "type": "Tax Code",
+      "description": "Manufacturing"
+    },
+    {
+      "name": "N",
+      "type": "Tax Code",
+      "description": "Non-profit"
+    },
+    {
+      "name": "L",
+      "type": "Tax Code",
+      "description": "Lodging"
+    },
+    {
+      "name": "C",
+      "type": "Tax Code",
+      "description": "Construction"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COM NET",
+      "target": "443120",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "COM NET",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Retail tax code"
+    },
+    {
+      "source": "COM NET",
+      "target": "0",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "COM NET",
+      "target": "Sole Ownership",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "COM NET",
+      "target": "1916 HASTE ST STE A, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "MUSASHIYA CORPORATION",
+      "target": "722320",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "MUSASHIYA CORPORATION",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Retail tax code"
+    },
+    {
+      "source": "MUSASHIYA CORPORATION",
+      "target": "17",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "MUSASHIYA CORPORATION",
+      "target": "Corporation",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "MUSASHIYA CORPORATION",
+      "target": "2126 DWIGHT WAY, Berkeley, CA 94704-2015",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "GARDENSCAPE",
+      "target": "561730",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "GARDENSCAPE",
+      "target": "B",
+      "type": "has_tax_code",
+      "description": "Business tax code"
+    },
+    {
+      "source": "GARDENSCAPE",
+      "target": "0",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "GARDENSCAPE",
+      "target": "Sole Ownership",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "GARDENSCAPE",
+      "target": "1731 TENTH ST, Berkeley, CA 94710",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "SARA GAMBLE PHYSICAL THERAPY",
+      "target": "621610",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "SARA GAMBLE PHYSICAL THERAPY",
+      "target": "P",
+      "type": "has_tax_code",
+      "description": "Professional tax code"
+    },
+    {
+      "source": "SARA GAMBLE PHYSICAL THERAPY",
+      "target": "1",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "SARA GAMBLE PHYSICAL THERAPY",
+      "target": "Sole Ownership",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "SARA GAMBLE PHYSICAL THERAPY",
+      "target": "611 SAN LUIS RD, Berkeley, CA 94707-1725",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "BERMAN LAW PC",
+      "target": "541110",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "BERMAN LAW PC",
+      "target": "P",
+      "type": "has_tax_code",
+      "description": "Professional tax code"
+    },
+    {
+      "source": "BERMAN LAW PC",
+      "target": "2",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "BERMAN LAW PC",
+      "target": "Corporation",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "BERMAN LAW PC",
+      "target": "72 SAN MATEO RD, Berkeley, CA 94707-2016",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "DESIGN SITE",
+      "target": "541430",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "DESIGN SITE",
+      "target": "P",
+      "type": "has_tax_code",
+      "description": "Professional tax code"
+    },
+    {
+      "source": "DESIGN SITE",
+      "target": "1",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "DESIGN SITE",
+      "target": "Corporation",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "DESIGN SITE",
+      "target": "1984 BONITA AVE, Berkeley, CA 94704-1038",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "CANTERBURY PRESS",
+      "target": "511120",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "CANTERBURY PRESS",
+      "target": "M",
+      "type": "has_tax_code",
+      "description": "Manufacturing tax code"
+    },
+    {
+      "source": "CANTERBURY PRESS",
+      "target": "2",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "CANTERBURY PRESS",
+      "target": "Corporation",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "CANTERBURY PRESS",
+      "target": "1946 BONITA AVE, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "AKI JAPANESE RESTAURANT",
+      "target": "722511",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "AKI JAPANESE RESTAURANT",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Retail tax code"
+    },
+    {
+      "source": "AKI JAPANESE RESTAURANT",
+      "target": "2",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "AKI JAPANESE RESTAURANT",
+      "target": "Sole Ownership",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "AKI JAPANESE RESTAURANT",
+      "target": "2505 HEARST AVE STE C, Berkeley, CA 94709-1181",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "EMILIA'S PIZZERIA",
+      "target": "722211",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "EMILIA'S PIZZERIA",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Retail tax code"
+    },
+    {
+      "source": "EMILIA'S PIZZERIA",
+      "target": "2",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "EMILIA'S PIZZERIA",
+      "target": "LLC",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "EMILIA'S PIZZERIA",
+      "target": "2995 SHATTUCK AVE, Berkeley, CA 94705",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "LA CREPE A MOI",
+      "target": "722320",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "LA CREPE A MOI",
+      "target": "R",
+      "type": "has_tax_code",
+      "description": "Retail tax code"
+    },
+    {
+      "source": "LA CREPE A MOI",
+      "target": "7",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "LA CREPE A MOI",
+      "target": "Sole Ownership",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "LA CREPE A MOI",
+      "target": "2432 NINTH ST, Berkeley, CA 94710",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "ECO-MANAGEMENT INC",
+      "target": "541620",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "ECO-MANAGEMENT INC",
+      "target": "P",
+      "type": "has_tax_code",
+      "description": "Professional tax code"
+    },
+    {
+      "source": "ECO-MANAGEMENT INC",
+      "target": "1",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "ECO-MANAGEMENT INC",
+      "target": "Corporation",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "ECO-MANAGEMENT INC",
+      "target": "0 VARIOUS, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "CHI OMEGA",
+      "target": "812930",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "CHI OMEGA",
+      "target": "N",
+      "type": "has_tax_code",
+      "description": "Non-profit tax code"
+    },
+    {
+      "source": "CHI OMEGA",
+      "target": "6",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "CHI OMEGA",
+      "target": "Corporation",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "CHI OMEGA",
+      "target": "2421 PIEDMONT AVE, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "AZN LLC",
+      "target": "531110",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "AZN LLC",
+      "target": "L",
+      "type": "has_tax_code",
+      "description": "Lodging tax code"
+    },
+    {
+      "source": "AZN LLC",
+      "target": "1",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "AZN LLC",
+      "target": "LLC",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "AZN LLC",
+      "target": "1712 WARD ST, Berkeley, CA 94703",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "SHAUGHNESSY ROOFING INC",
+      "target": "238160",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "SHAUGHNESSY ROOFING INC",
+      "target": "C",
+      "type": "has_tax_code",
+      "description": "Construction tax code"
+    },
+    {
+      "source": "SHAUGHNESSY ROOFING INC",
+      "target": "15",
+      "type": "employs",
+      "description": "Number of employees"
+    },
+    {
+      "source": "SHAUGHNESSY ROOFING INC",
+      "target": "Cooperative Corporation",
+      "type": "ownership_type",
+      "description": "Business ownership"
+    },
+    {
+      "source": "SHAUGHNESSY ROOFING INC",
+      "target": "0 VARIOUS, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Business address"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 34
+  1. COM NET (Organization): Retail trade business
+  2. MUSASHIYA CORPORATION (Organization): Catering business
+  3. GARDENSCAPE (Organization): Gardening and repair services
+  4. SARA GAMBLE PHYSICAL THERAPY (Organization): In-home physical therapy services
+  5. BERMAN LAW PC (Organization): Legal professional services
+  6. DESIGN SITE (Organization): Graphic design services
+  7. CANTERBURY PRESS (Organization): Periodical publishing
+  8. AKI JAPANESE RESTAURANT (Organization): Full-service Japanese restaurant
+  9. EMILIA'S PIZZERIA (Organization): Limited-service pizzeria
+  10. LA CREPE A MOI (Organization): Catering business
+  ... and 24 more entities
+
+Relationships extracted: 70
+  1. COM NET -> 443120 (classified_as)
+  2. COM NET -> R (has_tax_code)
+  3. COM NET -> 0 (employs)
+  4. COM NET -> Sole Ownership (ownership_type)
+  5. COM NET -> 1916 HASTE ST STE A, Berkeley, CA 94704 (located_at)
+  6. MUSASHIYA CORPORATION -> 722320 (classified_as)
+  7. MUSASHIYA CORPORATION -> R (has_tax_code)
+  8. MUSASHIYA CORPORATION -> 17 (employs)
+  9. MUSASHIYA CORPORATION -> Corporation (ownership_type)
+  10. MUSASHIYA CORPORATION -> 2126 DWIGHT WAY, Berkeley, CA 94704-2015 (located_at)
+  ... and 60 more relationships
+
+CHUNK 4/1026 COMPLETE - Total entities so far: 216, Total relationships so far: 290
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:47:26.301639
+============================================================
+Input chunk (6307 chars):
+B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=DAVID PLAFKER, NAICS=611691 - Exam Preparation and Tutoring, Tax_Code=P, Employee_Num=0, Bus_Own_Type=Sole Ownership, B1_BUSINESS_NAME=DAVID PLAFKER, B1_ADDRESS1=2218 CURTIS ST, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94702, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2550 NINTH ST, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94710.0 Record 58: APN=ZZZZZZZZZZZZZ, RecordID=BL-021345, BusDesc=SELLING MEAT-BASED JERKY PRODUCTS, B1_PER...
+
+Model Response:
+```json
+{
+  "entities": [
+    {"name": "DAVID PLAFKER", "type": "Business", "description": "Exam Preparation and Tutoring"},
+    {"name": "BONJERK LLC", "type": "Business", "description": "Selling meat-based jerky products"},
+    {"name": "SHRIMATIS LTD", "type": "Business", "description": "Sarees, audio, video"},
+    {"name": "PULIDO DEBORAH", "type": "Business", "description": "Attorney"},
+    {"name": "HARRIS WATER HEATERS INC", "type": "Business", "description": "Water heater replace"},
+    {"name": "AQUAMATIC FIRE PROTECTION INC", "type": "Business", "description": "Fire protection contractor"},
+    {"name": "JEC ASSOCIATES", "type": "Business", "description": "Rental property"},
+    {"name": "CHEF'S CATERING", "type": "Business", "description": "Spices & seasoning wholesaler"},
+    {"name": "JACK YOUN", "type": "Business", "description": "Rental property"},
+    {"name": "JUANS PLACE", "type": "Business", "description": "Restaurant"},
+    {"name": "NOURISH YOU", "type": "Business", "description": "Catering"},
+    {"name": "VIKING PAVERS INC", "type": "Business", "description": "Paving contractor"},
+    {"name": "PRIDE INDUSTRIES ONE INC", "type": "Business", "description": "Janitorial services"},
+    {"name": "BIASIN MARIA RITA", "type": "Business", "description": "Author"},
+    {"name": "611691", "type": "Industry Classification", "description": "Exam Preparation and Tutoring"},
+    {"name": "445299", "type": "Industry Classification", "description": "All Other Specialty Food Stores"},
+    {"name": "451220", "type": "Industry Classification", "description": ""},
+    {"name": "541110", "type": "Industry Classification", "description": "Offices of Lawyers"},
+    {"name": "238220", "type": "Industry Classification", "description": "Plumbing, Heating, and Air-Conditioning Contractors"},
+    {"name": "315211", "type": "Industry Classification", "description": ""},
+    {"name": "531110", "type": "Industry Classification", "description": "Lessors of Residential Buildings and Dwellings"},
+    {"name": "424490", "type": "Industry Classification", "description": ""},
+    {"name": "722110", "type": "Industry Classification", "description": ""},
+    {"name": "722320", "type": "Industry Classification", "description": "Caterers"},
+    {"name": "238990", "type": "Industry Classification", "description": "All Other Specialty Trade Contractors"},
+    {"name": "561720", "type": "Industry Classification", "description": "Janitorial Services"},
+    {"name": "711510", "type": "Industry Classification", "description": "Independent Artists, Writers, and Performers"},
+    {"name": "Professional SemiProfessional", "type": "Business Subtype", "description": ""},
+    {"name": "Retail Trade", "type": "Business Subtype", "description": ""},
+    {"name": "Construction or Contractor", "type": "Business Subtype", "description": ""},
+    {"name": "Rental of Real Property", "type": "Business Subtype", "description": ""},
+    {"name": "Wholesale Trade", "type": "Business Subtype", "description": ""},
+    {"name": "Non Profit Organizations", "type": "Business Subtype", "description": ""},
+    {"name": "Entertainment Recreation", "type": "Business Subtype", "description": ""},
+    {"name": "BERKELEY, CA", "type": "Location", "description": "City in California"},
+    {"name": "SAN LEANDRO, CA", "type": "Location", "description": "City in California"},
+    {"name": "OAKLAND, CA", "type": "Location", "description": "City in California"},
+    {"name": "CASTRO VALLEY, CA", "type": "Location", "description": "City in California"},
+    {"name": "PITTSBURG, CA", "type": "Location", "description": "City in California"},
+    {"name": "EMERYVILLE, CA", "type": "Location", "description": "City in California"},
+    {"name": "POINT RICHMOND, CA", "type": "Location", "description": "City in California"}
+  ],
+  "relationships": [
+    {"source": "DAVID PLAFKER", "target": "611691", "type": "has_NAICS", "description": "Exam Preparation and Tutoring"},
+    {"source": "DAVID PLAFKER", "target": "Professional SemiProfessional", "type": "has_subtype", "description": ""},
+    {"source": "DAVID PLAFKER", "target": "BERKELEY, CA", "type": "located_in", "description": ""},
+    
+    {"source": "BONJERK LLC", "target": "445299", "type": "has_NAICS", "description": "All Other Specialty Food Stores"},
+    {"source": "BONJERK LLC", "target": "Retail Trade", "type": "has_subtype", "description": ""},
+    {"source": "BONJERK LLC", "target": "SAN LEANDRO, CA", "type": "located_in", "description": ""},
+    
+    {"source": "SHRIMATIS LTD", "target": "451220", "type": "has_NAICS", "description": ""},
+    {"source": "SHRIMATIS LTD", "target": "Retail Trade", "type": "has_subtype", "description": ""},
+    {"source": "SHRIMATIS LTD", "target": "BERKELEY, CA", "type": "located_in", "description": ""},
+    
+    {"source": "PULIDO DEBORAH", "target": "541110", "type": "has_NAICS", "description": "Offices of Lawyers"},
+    {"source": "PULIDO DEBORAH", "target": "Professional SemiProfessional", "type": "has_subtype", "description": ""},
+    {"source": "PULIDO DEBORAH", "target": "BERKELEY, CA", "type": "located_in", "description": ""},
+    
+    {"source": "HARRIS WATER HEATERS INC", "target": "238220", "type": "has_NAICS", "description": "Plumbing, Heating, and Air-Conditioning Contractors"},
+    {"source": "HARRIS WATER HEATERS INC", "target": "Construction or Contractor", "type": "has_subtype", "description": ""},
+    {"source": "HARRIS WATER HEATERS INC", "target": "CASTRO VALLEY, CA", "type": "located_in", "description": ""},
+    
+    {"source": "AQUAMATIC FIRE PROTECTION INC", "target": "315211", "type": "has_NAICS", "description": ""},
+    {"source": "AQUAMATIC FIRE PROTECTION INC", "target": "Construction or Contractor", "type": "has_subtype", "description": ""},
+    {"source": "AQUAMATIC FIRE PROTECTION INC", "target": "PITTSBURG, CA", "type": "located_in", "description": ""},
+    
+    {"source": "JEC ASSOCIATES", "target": "531110", "type": "has_NAICS", "description": "Lessors of Residential Buildings and Dwellings"},
+    {"source": "JEC ASSOCIATES", "target": "Rental of Real Property", "type": "has_subtype", "description": ""},
+    {"source": "JEC ASSOCIATES", "target": "BERKELEY, CA", "type": "located_in", "description": ""},
+    
+    {"source": "CHEF'S CATERING", "target": "424490", "type": "has_NAICS", "description": ""},
+    {"source": "CHEF'S CATERING", "target": "Wholesale Trade", "type": "has_subtype", "description": ""},
+    {"source": "CHEF'S CATERING", "target": "BERKELEY, CA", "type": "located_in", "description": ""},
+    
+    {"source": "JACK YOUN", "target": "531110", "type": "has_NAICS", "description": "Lessors of Residential Buildings and Dwellings"},
+    {"source": "JACK YOUN", "target": "Rental of Real Property", "type": "has_subtype", "description": ""},
+    {"source": "JACK YOUN", "target": "OAKLAND, CA", "type": "located_in", "description": ""},
+    
+    {"source": "JUANS PLACE", "target": "722110", "type": "has_NAICS", "description": ""},
+    {"source": "JUANS PLACE", "target": "Retail Trade", "type": "has_subtype", "description": ""},
+    {"source": "JUANS PLACE", "target": "BERKELEY, CA", "type": "located_in", "description": ""},
+    
+    {"source": "NOURISH YOU", "target": "722320", "type": "has_NAICS", "description": "Caterers"},
+    {"source": "NOURISH YOU", "target": "Retail Trade", "type": "has_subtype", "description": ""},
+    {"source": "NOURISH YOU", "target": "EMERYVILLE, CA", "type": "located_in", "description": ""},
+    
+    {"source": "VIKING PAVERS INC", "target": "238990", "type": "has_NAICS", "description": "All Other Specialty Trade Contractors"},
+    {"source": "VIKING PAVERS INC", "target": "Construction or Contractor", "type": "has_subtype", "description": ""},
+    {"source": "VIKING PAVERS INC", "target": "POINT RICHMOND, CA", "type": "located_in", "description": ""},
+    
+    {"source": "PRIDE INDUSTRIES ONE INC", "target": "561720", "type": "has_NAICS", "description": "Janitorial Services"},
+    {"source": "PRIDE INDUSTRIES ONE INC", "target": "Non Profit Organizations", "type": "has_subtype", "description": ""},
+    {"source": "PRIDE INDUSTRIES ONE INC", "target": "EMERYVILLE, CA", "type": "located_in", "description": ""},
+    
+    {"source": "BIASIN MARIA RITA", "target": "711510", "type": "has_NAICS", "description": "Independent Artists, Writers, and Performers"},
+    {"source": "BIASIN MARIA RITA", "target": "Entertainment Recreation", "type": "has_subtype", "description": ""},
+    {"source": "BIASIN MARIA RITA", "target": "BERKELEY, CA", "type": "located_in", "description": ""}
+  ]
+}
+```
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 41
+  1. DAVID PLAFKER (Business): Exam Preparation and Tutoring
+  2. BONJERK LLC (Business): Selling meat-based jerky products
+  3. SHRIMATIS LTD (Business): Sarees, audio, video
+  4. PULIDO DEBORAH (Business): Attorney
+  5. HARRIS WATER HEATERS INC (Business): Water heater replace
+  6. AQUAMATIC FIRE PROTECTION INC (Business): Fire protection contractor
+  7. JEC ASSOCIATES (Business): Rental property
+  8. CHEF'S CATERING (Business): Spices & seasoning wholesaler
+  9. JACK YOUN (Business): Rental property
+  10. JUANS PLACE (Business): Restaurant
+  ... and 31 more entities
+
+Relationships extracted: 42
+  1. DAVID PLAFKER -> 611691 (has_NAICS)
+  2. DAVID PLAFKER -> Professional SemiProfessional (has_subtype)
+  3. DAVID PLAFKER -> BERKELEY, CA (located_in)
+  4. BONJERK LLC -> 445299 (has_NAICS)
+  5. BONJERK LLC -> Retail Trade (has_subtype)
+  6. BONJERK LLC -> SAN LEANDRO, CA (located_in)
+  7. SHRIMATIS LTD -> 451220 (has_NAICS)
+  8. SHRIMATIS LTD -> Retail Trade (has_subtype)
+  9. SHRIMATIS LTD -> BERKELEY, CA (located_in)
+  10. PULIDO DEBORAH -> 541110 (has_NAICS)
+  ... and 32 more relationships
+
+CHUNK 5/1026 COMPLETE - Total entities so far: 257, Total relationships so far: 332
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:47:55.322488
+============================================================
+Input chunk (6301 chars):
+SUNSET LN, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94708-1535, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=5 SUNSET LN, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94708.0 Record 71: APN=061 260204401, RecordID=BL-014704, BusDesc=PIZZERIA, B1_PER_SUB_TYPE=Retail Trade, DBA=ZACHARY'S CHICAGO PIZZA, NAICS=722110, Tax_Code=R, Employee_Num=30, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=ZACHARY'S CHICAGO PIZZA, B1_ADDRESS1=5801 COLLEGE AVE, B1_CITY=OAKLAND, B1_STATE=CA, B1_ZIP=94618, B1...
+
+Model Response:
+```json
+{
+  "entities": [
+    {
+      "name": "ZACHARY'S CHICAGO PIZZA",
+      "type": "Business",
+      "description": "PIZZERIA (Retail Trade), 30 employees, Corporation"
+    },
+    {
+      "name": "EAGLE CAB CO /OWNER",
+      "type": "Business",
+      "description": "VEHICLE FOR HIRE/TAXI (Auto Vehicle For Hire), 0 employees, Sole Ownership"
+    },
+    {
+      "name": "OLIVEIRA MILLER",
+      "type": "Business",
+      "description": "HANDYMAN (Business Personal Repair Svs), 1 employee, Sole Ownership"
+    },
+    {
+      "name": "AIRWARE",
+      "type": "Business",
+      "description": "FRISBIE GOLF EQUIPMENT (Retail Trade), 0 employees, Partnership"
+    },
+    {
+      "name": "ABKIN LAW PLC",
+      "type": "Business",
+      "description": "LAW FIRM (Professional SemiProfessional), 3 employees, Corporation"
+    },
+    {
+      "name": "PEET'S COFFEE INC",
+      "type": "Business",
+      "description": "COFFEE/TEA BAR (Retail Trade), 21 employees, Corporation"
+    },
+    {
+      "name": "MOORE RESIDENTIAL ROOFING INC",
+      "type": "Business",
+      "description": "RE-ROOFING & REPAIRS (Construction or Contractor), 2 employees, LLC"
+    },
+    {
+      "name": "LA BURRITA",
+      "type": "Business",
+      "description": "RESTAURANT (Retail Trade), 4 employees, Partnership"
+    },
+    {
+      "name": "JAFFA COFFE ROASTERS",
+      "type": "Business",
+      "description": "COFFEE SHOP (Retail Trade), 3 employees, LLC"
+    },
+    {
+      "name": "BLUE BOTTLE COFFEE INC",
+      "type": "Business",
+      "description": "BREWING COLD BREW (Manufacturing), 5 employees, Corporation"
+    },
+    {
+      "name": "UCHI",
+      "type": "Business",
+      "description": "GARDEN & INDOOR FURNITURE (Retail Trade), 2 employees, LLC"
+    },
+    {
+      "name": "CHEESE N STUFF",
+      "type": "Business",
+      "description": "DELICATESSEN (Retail Trade), 5 employees, Sole Ownership"
+    },
+    {
+      "name": "GOLD BEAN CAFE LLC",
+      "type": "Business",
+      "description": "COFFEE SHOP (Retail Trade), 8 employees, LLC"
+    },
+    {
+      "name": "722110",
+      "type": "NAICS",
+      "description": "Pizzerias; Limited-Service Restaurants"
+    },
+    {
+      "name": "485310",
+      "type": "NAICS",
+      "description": "Taxi Service"
+    },
+    {
+      "name": "811490",
+      "type": "NAICS",
+      "description": "Other Personal and Household Goods Repair and Maintenance"
+    },
+    {
+      "name": "451110",
+      "type": "NAICS",
+      "description": "Sporting Goods Stores"
+    },
+    {
+      "name": "541110",
+      "type": "NAICS",
+      "description": "Offices of Lawyers"
+    },
+    {
+      "name": "722213",
+      "type": "NAICS",
+      "description": "Limited-Service Restaurants (Coffee/Tea Bar)"
+    },
+    {
+      "name": "238160",
+      "type": "NAICS",
+      "description": "Roofing Contractors"
+    },
+    {
+      "name": "722513",
+      "type": "NAICS",
+      "description": "Limited-Service Restaurants (Coffee Shop)"
+    },
+    {
+      "name": "311920",
+      "type": "NAICS",
+      "description": "Coffee and Tea Manufacturing"
+    },
+    {
+      "name": "442299",
+      "type": "NAICS",
+      "description": "All Other Home Furnishings Stores"
+    },
+    {
+      "name": "722211",
+      "type": "NAICS",
+      "description": "Delicatessens"
+    },
+    {
+      "name": "1853 SOLANO AVE, Berkeley, CA 94707",
+      "type": "Address",
+      "description": "Situs address for ZACHARY'S CHICAGO PIZZA"
+    },
+    {
+      "name": "0 VARIOUS, Berkeley, CA 94704",
+      "type": "Address",
+      "description": "Situs address for EAGLE CAB CO /OWNER and OLIVEIRA MILLER and MOORE RESIDENTIAL ROOFING INC"
+    },
+    {
+      "name": "1638 JOSEPHINE ST, Berkeley, CA 94703",
+      "type": "Address",
+      "description": "Situs address for AIRWARE"
+    },
+    {
+      "name": "803 HEARST Ave, Berkeley, CA 94710",
+      "type": "Address",
+      "description": "Situs address for ABKIN LAW PLC"
+    },
+    {
+      "name": "2124 VINE ST, Berkeley, CA 94709",
+      "type": "Address",
+      "description": "Situs address for PEET'S COFFEE INC"
+    },
+    {
+      "name": "1832 EUCLID AVE, Berkeley, CA 94709",
+      "type": "Address",
+      "description": "Situs address for LA BURRITA"
+    },
+    {
+      "name": "1701 UNIVERSITY Ave, Berkeley, CA 94703",
+      "type": "Address",
+      "description": "Situs address for JAFFA COFFE ROASTERS"
+    },
+    {
+      "name": "901 GILMAN St, Berkeley, CA 94710",
+      "type": "Address",
+      "description": "Situs address for BLUE BOTTLE COFFEE INC"
+    },
+    {
+      "name": "1325 SAN PABLO Ave, Berkeley, CA 94702",
+      "type": "Address",
+      "description": "Situs address for UCHI"
+    },
+    {
+      "name": "2442 DURANT AVE, Berkeley, CA 94704",
+      "type": "Address",
+      "description": "Situs address for CHEESE N STUFF"
+    },
+    {
+      "name": "2503 HEARST Ave, Berkeley, CA 94709",
+      "type": "Address",
+      "description": "Situs address for GOLD BEAN CAFE LLC"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ZACHARY'S CHICAGO PIZZA",
+      "target": "1853 SOLANO AVE, Berkeley, CA 94707",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "ZACHARY'S CHICAGO PIZZA",
+      "target": "722110",
+      "type": "classified_as",
+      "description": "NAICS 722110"
+    },
+    {
+      "source": "EAGLE CAB CO /OWNER",
+      "target": "0 VARIOUS, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "EAGLE CAB CO /OWNER",
+      "target": "485310",
+      "type": "classified_as",
+      "description": "NAICS 485310"
+    },
+    {
+      "source": "OLIVEIRA MILLER",
+      "target": "0 VARIOUS, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "OLIVEIRA MILLER",
+      "target": "811490",
+      "type": "classified_as",
+      "description": "NAICS 811490"
+    },
+    {
+      "source": "AIRWARE",
+      "target": "1638 JOSEPHINE ST, Berkeley, CA 94703",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "AIRWARE",
+      "target": "451110",
+      "type": "classified_as",
+      "description": "NAICS 451110"
+    },
+    {
+      "source": "ABKIN LAW PLC",
+      "target": "803 HEARST Ave, Berkeley, CA 94710",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "ABKIN LAW PLC",
+      "target": "541110",
+      "type": "classified_as",
+      "description": "NAICS 541110"
+    },
+    {
+      "source": "PEET'S COFFEE INC",
+      "target": "2124 VINE ST, Berkeley, CA 94709",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "PEET'S COFFEE INC",
+      "target": "722213",
+      "type": "classified_as",
+      "description": "NAICS 722213"
+    },
+    {
+      "source": "MOORE RESIDENTIAL ROOFING INC",
+      "target": "0 VARIOUS, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "MOORE RESIDENTIAL ROOFING INC",
+      "target": "238160",
+      "type": "classified_as",
+      "description": "NAICS 238160"
+    },
+    {
+      "source": "LA BURRITA",
+      "target": "1832 EUCLID AVE, Berkeley, CA 94709",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "LA BURRITA",
+      "target": "722110",
+      "type": "classified_as",
+      "description": "NAICS 722110"
+    },
+    {
+      "source": "JAFFA COFFE ROASTERS",
+      "target": "1701 UNIVERSITY Ave, Berkeley, CA 94703",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "JAFFA COFFE ROASTERS",
+      "target": "722513",
+      "type": "classified_as",
+      "description": "NAICS 722513"
+    },
+    {
+      "source": "BLUE BOTTLE COFFEE INC",
+      "target": "901 GILMAN St, Berkeley, CA 94710",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "BLUE BOTTLE COFFEE INC",
+      "target": "311920",
+      "type": "classified_as",
+      "description": "NAICS 311920"
+    },
+    {
+      "source": "UCHI",
+      "target": "1325 SAN PABLO Ave, Berkeley, CA 94702",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "UCHI",
+      "target": "442299",
+      "type": "classified_as",
+      "description": "NAICS 442299"
+    },
+    {
+      "source": "CHEESE N STUFF",
+      "target": "2442 DURANT AVE, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "CHEESE N STUFF",
+      "target": "722211",
+      "type": "classified_as",
+      "description": "NAICS 722211"
+    },
+    {
+      "source": "GOLD BEAN CAFE LLC",
+      "target": "2503 HEARST Ave, Berkeley, CA 94709",
+      "type": "located_at",
+      "description": "Situs address"
+    },
+    {
+      "source": "GOLD BEAN CAFE LLC",
+      "target": "722513",
+      "type": "classified_as",
+      "description": "NAICS 722513"
+    }
+  ]
+}
+```
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 35
+  1. ZACHARY'S CHICAGO PIZZA (Business): PIZZERIA (Retail Trade), 30 employees, Corporation
+  2. EAGLE CAB CO /OWNER (Business): VEHICLE FOR HIRE/TAXI (Auto Vehicle For Hire), 0 employees, Sole Ownership
+  3. OLIVEIRA MILLER (Business): HANDYMAN (Business Personal Repair Svs), 1 employee, Sole Ownership
+  4. AIRWARE (Business): FRISBIE GOLF EQUIPMENT (Retail Trade), 0 employees, Partnership
+  5. ABKIN LAW PLC (Business): LAW FIRM (Professional SemiProfessional), 3 employees, Corporation
+  6. PEET'S COFFEE INC (Business): COFFEE/TEA BAR (Retail Trade), 21 employees, Corporation
+  7. MOORE RESIDENTIAL ROOFING INC (Business): RE-ROOFING & REPAIRS (Construction or Contractor), 2 employees, LLC
+  8. LA BURRITA (Business): RESTAURANT (Retail Trade), 4 employees, Partnership
+  9. JAFFA COFFE ROASTERS (Business): COFFEE SHOP (Retail Trade), 3 employees, LLC
+  10. BLUE BOTTLE COFFEE INC (Business): BREWING COLD BREW (Manufacturing), 5 employees, Corporation
+  ... and 25 more entities
+
+Relationships extracted: 26
+  1. ZACHARY'S CHICAGO PIZZA -> 1853 SOLANO AVE, Berkeley, CA 94707 (located_at)
+  2. ZACHARY'S CHICAGO PIZZA -> 722110 (classified_as)
+  3. EAGLE CAB CO /OWNER -> 0 VARIOUS, Berkeley, CA 94704 (located_at)
+  4. EAGLE CAB CO /OWNER -> 485310 (classified_as)
+  5. OLIVEIRA MILLER -> 0 VARIOUS, Berkeley, CA 94704 (located_at)
+  6. OLIVEIRA MILLER -> 811490 (classified_as)
+  7. AIRWARE -> 1638 JOSEPHINE ST, Berkeley, CA 94703 (located_at)
+  8. AIRWARE -> 451110 (classified_as)
+  9. ABKIN LAW PLC -> 803 HEARST Ave, Berkeley, CA 94710 (located_at)
+  10. ABKIN LAW PLC -> 541110 (classified_as)
+  ... and 16 more relationships
+
+CHUNK 6/1026 COMPLETE - Total entities so far: 292, Total relationships so far: 358
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:48:36.610611
+============================================================
+Input chunk (6299 chars):
+Graphic Design Services, Tax_Code=P, Employee_Num=4, Bus_Own_Type=LLC, B1_BUSINESS_NAME=UNIQUE HOUSING LLC, B1_ADDRESS1=PO BOX 5453, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94705-2433, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=3000 COLLEGE AVE, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94705.0 Record 85: APN=063 298302000, RecordID=BL-005039, BusDesc=INTERNET GRAPHICS, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=CAT'S CLIPS, NAICS=541430 - Graphic Design Services, Tax_Co...
+
+Model Response:
+```json
+{
+  "entities": [
+    {
+      "name": "UNIQUE HOUSING LLC",
+      "type": "Organization",
+      "description": "Graphic Design Services"
+    },
+    {
+      "name": "CAT'S CLIPS",
+      "type": "Organization",
+      "description": "INTERNET GRAPHICS"
+    },
+    {
+      "name": "AMY S AU DDS INC",
+      "type": "Organization",
+      "description": "DENTISTRY"
+    },
+    {
+      "name": "LAW MARY M POTTERY",
+      "type": "Organization",
+      "description": "POTTERY"
+    },
+    {
+      "name": "MORRIS LAW PC",
+      "type": "Organization",
+      "description": "LAW FIRM"
+    },
+    {
+      "name": "TOUCAN REMODELING",
+      "type": "Organization",
+      "description": "CONTRACTOR GENERAL"
+    },
+    {
+      "name": "SOCCER PRO INC.",
+      "type": "Organization",
+      "description": "SPORTS STORE"
+    },
+    {
+      "name": "GOERIZ BUILDERS INC",
+      "type": "Organization",
+      "description": "CONSTRUCTION"
+    },
+    {
+      "name": "FARMER BROS CO",
+      "type": "Organization",
+      "description": "COFFEE"
+    },
+    {
+      "name": "HASHEMI HAMID",
+      "type": "Organization",
+      "description": "RENTAL PROPERTY/3 UNITS"
+    },
+    {
+      "name": "ROBERT HALF INC.",
+      "type": "Organization",
+      "description": "PERSONNEL AGENCY"
+    },
+    {
+      "name": "ALL SPORTS MASSAGE 360",
+      "type": "Organization",
+      "description": "SPORTS MASSAGE THERAPIST"
+    },
+    {
+      "name": "TRI VALLEY EXCAVATING CO INC",
+      "type": "Organization",
+      "description": "CONTRACTOR"
+    },
+    {
+      "name": "LIDA LAHIDJI",
+      "type": "Organization",
+      "description": "HAIRSTYLIST, BOOTH RENTAL"
+    },
+    {
+      "name": "541430",
+      "type": "NAICS_Code",
+      "description": "Graphic Design Services"
+    },
+    {
+      "name": "621210",
+      "type": "NAICS_Code",
+      "description": "Offices of Dentists"
+    },
+    {
+      "name": "327112",
+      "type": "NAICS_Code",
+      "description": "Pottery"
+    },
+    {
+      "name": "541110",
+      "type": "NAICS_Code",
+      "description": "Offices of Lawyers"
+    },
+    {
+      "name": "451110",
+      "type": "NAICS_Code",
+      "description": "Sporting Goods Stores"
+    },
+    {
+      "name": "236118",
+      "type": "NAICS_Code",
+      "description": "Residential Remodelers"
+    },
+    {
+      "name": "424490",
+      "type": "NAICS_Code",
+      "description": "Wholesale Trade – Coffee"
+    },
+    {
+      "name": "531110",
+      "type": "NAICS_Code",
+      "description": "Lessors of Residential Buildings and Dwellings"
+    },
+    {
+      "name": "561310",
+      "type": "NAICS_Code",
+      "description": "Personnel Agency"
+    },
+    {
+      "name": "812199",
+      "type": "NAICS_Code",
+      "description": "Other Personal Care Services"
+    },
+    {
+      "name": "238990",
+      "type": "NAICS_Code",
+      "description": "All Other Specialty Trade Contractors"
+    },
+    {
+      "name": "812112",
+      "type": "NAICS_Code",
+      "description": "Beauty Salons"
+    },
+    {
+      "name": "PO BOX 5453, BERKELEY, CA 94705-2433",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "2965 SHASTA RD, BERKELEY, CA 94708-2117",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "2300 DURANT AVE, BERKELEY, CA 94704-1607",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "1421 5TH ST, BERKELEY, CA 94710-1343",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "2025 ROSE ST STE 200, BERKELEY, CA 94709-1993",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "2656 LE CONTE AVE, BERKELEY, CA 94709-1025",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "6635 DUBLIN BLVD, DUBLIN, CA 94568-3000",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "5737 MORAGA AVE, PIEDMONT, CA 94611-3149",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "14501 NORTH FWY, FORT WORTH, TX 76177-3300",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "PO BOX 1166, ALAMO, CA 94507",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "3001 BISHOP DRIVE, SUITE 140, SAN RAMON, CA 94583",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "22335 FOOTHILL BLVD UNIT 2065, HAYWARD, CA 94541-2748",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "PO BOX 287, SUNOL, CA 94586",
+      "type": "Address",
+      "description": ""
+    },
+    {
+      "name": "1601 HOPKINS ST, BERKELEY, CA 94707-2712",
+      "type": "Address",
+      "description": ""
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UNIQUE HOUSING LLC",
+      "target": "PO BOX 5453, BERKELEY, CA 94705-2433",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "CAT'S CLIPS",
+      "target": "2965 SHASTA RD, BERKELEY, CA 94708-2117",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "AMY S AU DDS INC",
+      "target": "2300 DURANT AVE, BERKELEY, CA 94704-1607",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "LAW MARY M POTTERY",
+      "target": "1421 5TH ST, BERKELEY, CA 94710-1343",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "MORRIS LAW PC",
+      "target": "2025 ROSE ST STE 200, BERKELEY, CA 94709-1993",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "TOUCAN REMODELING",
+      "target": "2656 LE CONTE AVE, BERKELEY, CA 94709-1025",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "SOCCER PRO INC.",
+      "target": "6635 DUBLIN BLVD, DUBLIN, CA 94568-3000",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "GOERIZ BUILDERS INC",
+      "target": "5737 MORAGA AVE, PIEDMONT, CA 94611-3149",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "FARMER BROS CO",
+      "target": "14501 NORTH FWY, FORT WORTH, TX 76177-3300",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "HASHEMI HAMID",
+      "target": "PO BOX 1166, ALAMO, CA 94507",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "ROBERT HALF INC.",
+      "target": "3001 BISHOP DRIVE, SUITE 140, SAN RAMON, CA 94583",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "ALL SPORTS MASSAGE 360",
+      "target": "22335 FOOTHILL BLVD UNIT 2065, HAYWARD, CA 94541-2748",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "TRI VALLEY EXCAVATING CO INC",
+      "target": "PO BOX 287, SUNOL, CA 94586",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "LIDA LAHIDJI",
+      "target": "1601 HOPKINS ST, BERKELEY, CA 94707-2712",
+      "type": "located_at",
+      "description": "Primary mailing address"
+    },
+    {
+      "source": "CAT'S CLIPS",
+      "target": "541430",
+      "type": "has_industry_classification",
+      "description": "NAICS 541430 - Graphic Design Services"
+    },
+    {
+      "source": "AMY S AU DDS INC",
+      "target": "621210",
+      "type": "has_industry_classification",
+      "description": "NAICS 621210 - Offices of Dentists"
+    },
+    {
+      "source": "LAW MARY M POTTERY",
+      "target": "327112",
+      "type": "has_industry_classification",
+      "description": "NAICS 327112 - Pottery"
+    },
+    {
+      "source": "MORRIS LAW PC",
+      "target": "541110",
+      "type": "has_industry_classification",
+      "description": "NAICS 541110 - Offices of Lawyers"
+    },
+    {
+      "source": "SOCCER PRO INC.",
+      "target": "451110",
+      "type": "has_industry_classification",
+      "description": "NAICS 451110 - Sporting Goods Stores"
+    },
+    {
+      "source": "GOERIZ BUILDERS INC",
+      "target": "236118",
+      "type": "has_industry_classification",
+      "description": "NAICS 236118 - Residential Remodelers"
+    },
+    {
+      "source": "FARMER BROS CO",
+      "target": "424490",
+      "type": "has_industry_classification",
+      "description": "NAICS 424490"
+    },
+    {
+      "source": "HASHEMI HAMID",
+      "target": "531110",
+      "type": "has_industry_classification",
+      "description": "NAICS 531110 - Lessors of Residential Buildings and Dwellings"
+    },
+    {
+      "source": "ROBERT HALF INC.",
+      "target": "561310",
+      "type": "has_industry_classification",
+      "description": "NAICS 561310"
+    },
+    {
+      "source": "ALL SPORTS MASSAGE 360",
+      "target": "812199",
+      "type": "has_industry_classification",
+      "description": "NAICS 812199 - Other Personal Care Services"
+    },
+    {
+      "source": "TRI VALLEY EXCAVATING CO INC",
+      "target": "238990",
+      "type": "has_industry_classification",
+      "description": "NAICS 238990 - All Other Specialty Trade Contractors"
+    },
+    {
+      "source": "LIDA LAHIDJI",
+      "target": "812112",
+      "type": "has_industry_classification",
+      "description": "NAICS 812112 - Beauty Salons"
+    }
+  ]
+}
+```
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 40
+  1. UNIQUE HOUSING LLC (Organization): Graphic Design Services
+  2. CAT'S CLIPS (Organization): INTERNET GRAPHICS
+  3. AMY S AU DDS INC (Organization): DENTISTRY
+  4. LAW MARY M POTTERY (Organization): POTTERY
+  5. MORRIS LAW PC (Organization): LAW FIRM
+  6. TOUCAN REMODELING (Organization): CONTRACTOR GENERAL
+  7. SOCCER PRO INC. (Organization): SPORTS STORE
+  8. GOERIZ BUILDERS INC (Organization): CONSTRUCTION
+  9. FARMER BROS CO (Organization): COFFEE
+  10. HASHEMI HAMID (Organization): RENTAL PROPERTY/3 UNITS
+  ... and 30 more entities
+
+Relationships extracted: 26
+  1. UNIQUE HOUSING LLC -> PO BOX 5453, BERKELEY, CA 94705-2433 (located_at)
+  2. CAT'S CLIPS -> 2965 SHASTA RD, BERKELEY, CA 94708-2117 (located_at)
+  3. AMY S AU DDS INC -> 2300 DURANT AVE, BERKELEY, CA 94704-1607 (located_at)
+  4. LAW MARY M POTTERY -> 1421 5TH ST, BERKELEY, CA 94710-1343 (located_at)
+  5. MORRIS LAW PC -> 2025 ROSE ST STE 200, BERKELEY, CA 94709-1993 (located_at)
+  6. TOUCAN REMODELING -> 2656 LE CONTE AVE, BERKELEY, CA 94709-1025 (located_at)
+  7. SOCCER PRO INC. -> 6635 DUBLIN BLVD, DUBLIN, CA 94568-3000 (located_at)
+  8. GOERIZ BUILDERS INC -> 5737 MORAGA AVE, PIEDMONT, CA 94611-3149 (located_at)
+  9. FARMER BROS CO -> 14501 NORTH FWY, FORT WORTH, TX 76177-3300 (located_at)
+  10. HASHEMI HAMID -> PO BOX 1166, ALAMO, CA 94507 (located_at)
+  ... and 16 more relationships
+
+CHUNK 7/1026 COMPLETE - Total entities so far: 332, Total relationships so far: 384
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:48:56.929364
+============================================================
+Input chunk (6129 chars):
+B1_SITUS_ZIP=94707.0 Record 98: APN=056 197401100, RecordID=BL-022002, BusDesc=CATERING, EVENT MGMT & DESIGN, B1_PER_SUB_TYPE=Retail Trade, DBA=ALIMENT EVENTS, NAICS=722320 - Caterers, Tax_Code=R, Employee_Num=3, Bus_Own_Type=LLC, B1_BUSINESS_NAME=ALIMENT EVENTS, B1_ADDRESS1=2120 10TH ST, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94710, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2120 TENTH St, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94710.0 Record 99: APN=ZZZZZZZZZZZZZ, RecordID...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "ALIMENT EVENTS",
+      "type": "Business",
+      "description": "CATERING, EVENT MGMT & DESIGN; NAICS 722320 (Caterers); Tax Code R; Employees 3; Owner Type LLC"
+    },
+    {
+      "name": "BAYAT CONSTRUCTION",
+      "type": "Business",
+      "description": "RES & COM CONSTRUCTION; NAICS 236118 (Residential Remodelers); Tax Code C; Employees 0; Owner Type Sole Ownership"
+    },
+    {
+      "name": "HENRO LLC",
+      "type": "Business",
+      "description": "RESTAURANT; NAICS 722511 (Full-Service Restaurants); Tax Code R; Employees 12; Owner Type LLC"
+    },
+    {
+      "name": "GAB BAISAS PHOTOGRAPHY",
+      "type": "Business",
+      "description": "Professional/Semi-Professional; NAICS 541922 (Commercial Photography); Tax Code P; Employees 0; Owner Type Sole Ownership"
+    },
+    {
+      "name": "LOVE AT FIRST BITE",
+      "type": "Business",
+      "description": "BAKERY; NAICS 722513 (Limited-Service Restaurants); Tax Code R; Employees 5; Owner Type LLC"
+    },
+    {
+      "name": "SLINGFIN INC",
+      "type": "Business",
+      "description": "MOUNTAIN GEAR (Manufacturing); NAICS 315299; Tax Code M; Employees 3; Owner Type Corporation"
+    },
+    {
+      "name": "BROOKS SUSAN M",
+      "type": "Business",
+      "description": "JEWELER RETAIL; NAICS 448310 (Jewelry Stores); Tax Code R; Employees 0; Owner Type Sole Ownership"
+    },
+    {
+      "name": "SUM YUNCHEUNG & GANCHEE Y",
+      "type": "Business",
+      "description": "RES. RENTAL 10 UNITS; NAICS 531110 (Lessors of Residential Buildings and Dwellings); Tax Code L; Employees 1; Owner Type Sole Ownership"
+    },
+    {
+      "name": "S AND A PACIFIC CONSTRUCTION LLC",
+      "type": "Business",
+      "description": "CONSTRUCTION – CONCRETE; NAICS 238110 (Poured Concrete Foundation and Structure Contractors); Tax Code C; Employees 0; Owner Type Sole Ownership"
+    },
+    {
+      "name": "MAI KEE INC",
+      "type": "Business",
+      "description": "FOOD SERVICE; NAICS 722513 (Limited-Service Restaurants); Tax Code R; Employees 8; Owner Type Corporation"
+    },
+    {
+      "name": "SALAS O'BRIEN",
+      "type": "Business",
+      "description": "ENGINEERING DESIGN SVC; NAICS 541330 (Engineering Services); Tax Code P; Employees 74; Owner Type Corporation"
+    },
+    {
+      "name": "EMERALD CITIES COLLABORATIVE INC",
+      "type": "Business",
+      "description": "CIVIC & SOCIAL ORG.; NAICS 813410 (Civic and Social Organizations); Tax Code B; Employees 57; Owner Type Corporation"
+    },
+    {
+      "name": "CUSTOM EXTERIORS",
+      "type": "Business",
+      "description": "GENERAL CONTRACTOR; NAICS 238150 (Glass and Glazing Contractors); Tax Code C; Employees 2; Owner Type Corporation"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ALIMENT EVENTS",
+      "target": "056197401100",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "ALIMENT EVENTS",
+      "target": "BL-022002",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "ALIMENT EVENTS",
+      "target": "BERKELEY, CA 94710",
+      "type": "located_in",
+      "description": "Situs address"
+    },
+    {
+      "source": "BAYAT CONSTRUCTION",
+      "target": "ZZZZZZZZZZZZZ",
+      "type": "has_APN",
+      "description": "Assessor parcel number (masked)"
+    },
+    {
+      "source": "BAYAT CONSTRUCTION",
+      "target": "BL-013676",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "BAYAT CONSTRUCTION",
+      "target": "SAN LEANDRO, CA 94578-1360",
+      "type": "located_in",
+      "description": "Business mailing address"
+    },
+    {
+      "source": "HENRO LLC",
+      "target": "053165800100",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "HENRO LLC",
+      "target": "BL-042433",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "HENRO LLC",
+      "target": "BERKELEY, CA 94710",
+      "type": "located_in",
+      "description": "Business mailing and situs address"
+    },
+    {
+      "source": "GAB BAISAS PHOTOGRAPHY",
+      "target": "052156506000",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "GAB BAISAS PHOTOGRAPHY",
+      "target": "BL-020590",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "GAB BAISAS PHOTOGRAPHY",
+      "target": "BERKELEY, CA 94705",
+      "type": "located_in",
+      "description": "Business mailing and situs address"
+    },
+    {
+      "source": "LOVE AT FIRST BITE",
+      "target": "059226000201",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "LOVE AT FIRST BITE",
+      "target": "BL-013766",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "LOVE AT FIRST BITE",
+      "target": "BERKELEY, CA 94709",
+      "type": "located_in",
+      "description": "Business mailing and situs address"
+    },
+    {
+      "source": "SLINGFIN INC",
+      "target": "059234700100",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "SLINGFIN INC",
+      "target": "BL-051560",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "SLINGFIN INC",
+      "target": "BERKELEY, CA 94710",
+      "type": "located_in",
+      "description": "Business mailing and situs address"
+    },
+    {
+      "source": "BROOKS SUSAN M",
+      "target": "054177800101",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "BROOKS SUSAN M",
+      "target": "BL-017936",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "BROOKS SUSAN M",
+      "target": "BERKELEY, CA 94710-2579",
+      "type": "located_in",
+      "description": "Business mailing address"
+    },
+    {
+      "source": "SUM YUNCHEUNG & GANCHEE Y",
+      "target": "055183302400",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "SUM YUNCHEUNG & GANCHEE Y",
+      "target": "BL-020362",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "SUM YUNCHEUNG & GANCHEE Y",
+      "target": "SAN MATEO, CA 94401",
+      "type": "located_in",
+      "description": "Business mailing address"
+    },
+    {
+      "source": "S AND A PACIFIC CONSTRUCTION LLC",
+      "target": "ZZZZZZZZZZZZZ",
+      "type": "has_APN",
+      "description": "Assessor parcel number (masked)"
+    },
+    {
+      "source": "S AND A PACIFIC CONSTRUCTION LLC",
+      "target": "BL-020806",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "S AND A PACIFIC CONSTRUCTION LLC",
+      "target": "RICHMOND, CA 94804-1441",
+      "type": "located_in",
+      "description": "Business mailing address"
+    },
+    {
+      "source": "MAI KEE INC",
+      "target": "055187700800",
+      "type": "has_APN",
+      "description": "Assessor parcel number"
+    },
+    {
+      "source": "MAI KEE INC",
+      "target": "BL-018781",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "MAI KEE INC",
+      "target": "BERKELEY, CA 94704-1761",
+      "type": "located_in",
+      "description": "Business mailing and situs address"
+    },
+    {
+      "source": "SALAS O'BRIEN",
+      "target": "ZZZZZZZZZZZZZ",
+      "type": "has_APN",
+      "description": "Assessor parcel number (masked)"
+    },
+    {
+      "source": "SALAS O'BRIEN",
+      "target": "BL-015026",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "SALAS O'BRIEN",
+      "target": "SAN JOSE, CA 95112-2218",
+      "type": "located_in",
+      "description": "Business mailing address"
+    },
+    {
+      "source": "EMERALD CITIES COLLABORATIVE INC",
+      "target": "ZZZZZZZZZZZZZ",
+      "type": "has_APN",
+      "description": "Assessor parcel number (masked)"
+    },
+    {
+      "source": "EMERALD CITIES COLLABORATIVE INC",
+      "target": "BL-022554",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "EMERALD CITIES COLLABORATIVE INC",
+      "target": "WASHINGTON, DC 20036",
+      "type": "located_in",
+      "description": "Business mailing address"
+    },
+    {
+      "source": "CUSTOM EXTERIORS",
+      "target": "ZZZZZZZZZZZZZ",
+      "type": "has_APN",
+      "description": "Assessor parcel number (masked)"
+    },
+    {
+      "source": "CUSTOM EXTERIORS",
+      "target": "BL-043498",
+      "type": "has_RecordID",
+      "description": "Business license record identifier"
+    },
+    {
+      "source": "CUSTOM EXTERIORS",
+      "target": "PLEASANTON, CA 94566",
+      "type": "located_in",
+      "description": "Business mailing address"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 13
+  1. ALIMENT EVENTS (Business): CATERING, EVENT MGMT & DESIGN; NAICS 722320 (Caterers); Tax Code R; Employees 3; Owner Type LLC
+  2. BAYAT CONSTRUCTION (Business): RES & COM CONSTRUCTION; NAICS 236118 (Residential Remodelers); Tax Code C; Employees 0; Owner Type Sole Ownership
+  3. HENRO LLC (Business): RESTAURANT; NAICS 722511 (Full-Service Restaurants); Tax Code R; Employees 12; Owner Type LLC
+  4. GAB BAISAS PHOTOGRAPHY (Business): Professional/Semi-Professional; NAICS 541922 (Commercial Photography); Tax Code P; Employees 0; Owner Type Sole Ownership
+  5. LOVE AT FIRST BITE (Business): BAKERY; NAICS 722513 (Limited-Service Restaurants); Tax Code R; Employees 5; Owner Type LLC
+  6. SLINGFIN INC (Business): MOUNTAIN GEAR (Manufacturing); NAICS 315299; Tax Code M; Employees 3; Owner Type Corporation
+  7. BROOKS SUSAN M (Business): JEWELER RETAIL; NAICS 448310 (Jewelry Stores); Tax Code R; Employees 0; Owner Type Sole Ownership
+  8. SUM YUNCHEUNG & GANCHEE Y (Business): RES. RENTAL 10 UNITS; NAICS 531110 (Lessors of Residential Buildings and Dwellings); Tax Code L; Employees 1; Owner Type Sole Ownership
+  9. S AND A PACIFIC CONSTRUCTION LLC (Business): CONSTRUCTION – CONCRETE; NAICS 238110 (Poured Concrete Foundation and Structure Contractors); Tax Code C; Employees 0; Owner Type Sole Ownership
+  10. MAI KEE INC (Business): FOOD SERVICE; NAICS 722513 (Limited-Service Restaurants); Tax Code R; Employees 8; Owner Type Corporation
+  ... and 3 more entities
+
+Relationships extracted: 39
+  1. ALIMENT EVENTS -> 056197401100 (has_APN)
+  2. ALIMENT EVENTS -> BL-022002 (has_RecordID)
+  3. ALIMENT EVENTS -> BERKELEY, CA 94710 (located_in)
+  4. BAYAT CONSTRUCTION -> ZZZZZZZZZZZZZ (has_APN)
+  5. BAYAT CONSTRUCTION -> BL-013676 (has_RecordID)
+  6. BAYAT CONSTRUCTION -> SAN LEANDRO, CA 94578-1360 (located_in)
+  7. HENRO LLC -> 053165800100 (has_APN)
+  8. HENRO LLC -> BL-042433 (has_RecordID)
+  9. HENRO LLC -> BERKELEY, CA 94710 (located_in)
+  10. GAB BAISAS PHOTOGRAPHY -> 052156506000 (has_APN)
+  ... and 29 more relationships
+
+CHUNK 8/1026 COMPLETE - Total entities so far: 345, Total relationships so far: 423
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:49:27.543056
+============================================================
+Input chunk (6263 chars):
+VARIOUS, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 111: APN=060 241603100, RecordID=BL-014950, BusDesc=RES RENTAL 4 UNITS, B1_PER_SUB_TYPE=Rental of Real Property, DBA=BERKELEYS EDGE PROPERTIES LLC, NAICS=531110 - Lessors of Residential Buildings and Dwellings, Tax_Code=L, Employee_Num=1, Bus_Own_Type=LLC, B1_BUSINESS_NAME=BERKELEYS EDGE PROPERTIES LLC, B1_ADDRESS1=2027 LOS ANGELES AVE, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=947072428, B1_CONTACT_TYPE=Business Owner, ...
+
+Model Response:
+```json
+{
+  "entities": [
+    {
+      "name": "BERKELEYS EDGE PROPERTIES LLC",
+      "type": "Organization",
+      "description": "RES RENTAL 4 UNITS; Rental of Real Property; LLC; APN 060 241603100; RecordID BL-014950; Tax_Code L; Employees 1"
+    },
+    {
+      "name": "WHOLE FOODS MARKET",
+      "type": "Organization",
+      "description": "GROCERY - SUPERMARKET; Grocer; Corporation; APN 060 235500802; RecordID BL-002338; Tax_Code G; Employees 133"
+    },
+    {
+      "name": "UNLIMITED ELECTRONICS",
+      "type": "Organization",
+      "description": "CELLPHONE STORE; Retail Trade; Corporation; APN 057 203100900; RecordID BL-048940; Tax_Code R; Employees 2"
+    },
+    {
+      "name": "ALLEN DRYWALL & ASSOCIATES INC",
+      "type": "Organization",
+      "description": "DRYWALL SUBCONTRACTOR; Construction or Contractor; Corporation; APN ZZZZZZZZZZZZZ; RecordID BL-049589; Tax_Code C; Employees 65"
+    },
+    {
+      "name": "SMITH ENGINEERING INC",
+      "type": "Organization",
+      "description": "STRUCTURAL ENGINEERING; Professional SemiProfessional; Corporation; APN 056 195900200; RecordID BL-003127; Tax_Code P; Employees 4"
+    },
+    {
+      "name": "ORGANIC LICE GURU LLC",
+      "type": "Organization",
+      "description": "REMOVE HEAD LICE; Business Personal Repair Svs; LLC; APN ZZZZZZZZZZZZZ; RecordID BL-022066; Tax_Code B; Employees 4"
+    },
+    {
+      "name": "NICHOLAS HACK PSYCHOTHERAPY INC",
+      "type": "Organization",
+      "description": "PSYCHOTHERAPY; Professional SemiProfessional; Corporation; APN 053 158901500; RecordID BL-022207; Tax_Code P; Employees 1"
+    },
+    {
+      "name": "CHUN VIVIAN",
+      "type": "Organization",
+      "description": "2 COMMERCIAL RENTAL; Rental of Real Property; Sole Ownership; APN 062 287202400; RecordID BL-009835; Tax_Code L; Employees 0"
+    },
+    {
+      "name": "BERKELEY EMERGENCY MED GROUP",
+      "type": "Organization",
+      "description": "MED SERVICES; Professional SemiProfessional; Corporation; APN 052 157401404; RecordID BL-000679; Tax_Code P; Employees 50"
+    },
+    {
+      "name": "ZD FILMS",
+      "type": "Organization",
+      "description": "MEDIA REPRESENTATIVE; Professional SemiProfessional; Sole Ownership; APN 054 176401205; RecordID BL-047661; Tax_Code P; Employees 1"
+    },
+    {
+      "name": "ROBERT HAUSER CONSTRUCTION",
+      "type": "Organization",
+      "description": "GENERAL CONTRACTOR; Construction or Contractor; Sole Ownership; APN ZZZZZZZZZZZZZ; RecordID BL-016290; Tax_Code C; Employees 1"
+    },
+    {
+      "name": "WESTERN ROOFING SYSTEMS",
+      "type": "Organization",
+      "description": "GEN CONTRACTOR-ROOFING; Construction or Contractor; Corporation; APN ZZZZZZZZZZZZZ; RecordID BL-016227; Tax_Code C; Employees 4"
+    },
+    {
+      "name": "531110 - Lessors of Residential Buildings and Dwellings",
+      "type": "Industry",
+      "description": "NAICS code 531110"
+    },
+    {
+      "name": "445110 - Supermarkets and Other Grocery (except Convenience) Stores",
+      "type": "Industry",
+      "description": "NAICS code 445110"
+    },
+    {
+      "name": "443112",
+      "type": "Industry",
+      "description": "NAICS code 443112"
+    },
+    {
+      "name": "238310 - Drywall and Insulation Contractors",
+      "type": "Industry",
+      "description": "NAICS code 238310"
+    },
+    {
+      "name": "541330 - Engineering Services",
+      "type": "Industry",
+      "description": "NAICS code 541330"
+    },
+    {
+      "name": "812199 - Other Personal Care Services",
+      "type": "Industry",
+      "description": "NAICS code 812199"
+    },
+    {
+      "name": "621330 - Offices of Mental Health Practitioners (except Physicians)",
+      "type": "Industry",
+      "description": "NAICS code 621330"
+    },
+    {
+      "name": "531120 - Lessors of Nonresidential Buildings (except Miniwarehouses)",
+      "type": "Industry",
+      "description": "NAICS code 531120"
+    },
+    {
+      "name": "621111 - Offices of Physicians (except Mental Health Specialists)",
+      "type": "Industry",
+      "description": "NAICS code 621111"
+    },
+    {
+      "name": "541840 - Media Representatives",
+      "type": "Industry",
+      "description": "NAICS code 541840"
+    },
+    {
+      "name": "236115 - New Single-Family Housing Construction (except For-Sale Builders)",
+      "type": "Industry",
+      "description": "NAICS code 236115"
+    },
+    {
+      "name": "238160 - Roofing Contractors",
+      "type": "Industry",
+      "description": "NAICS code 238160"
+    },
+    {
+      "name": "Berkeley, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Austin, TX",
+      "type": "Location",
+      "description": "City in Texas"
+    },
+    {
+      "name": "Union City, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Hillsborough, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Encinitas, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Kensington, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Oakland, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "San Francisco, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Hayward, CA",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "1205 PERALTA Ave",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "1025 GILMAN St",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "2163 SHATTUCK AVE",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "0 VARIOUS",
+      "type": "Address",
+      "description": "Placeholder address for various sites"
+    },
+    {
+      "name": "732 ADDISON St",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "2991 SHATTUCK Ave",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "1573 SOLANO Ave",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "3000 COLBY ST",
+      "type": "Address",
+      "description": "Full situs address"
+    },
+    {
+      "name": "2600 TENTH ST",
+      "type": "Address",
+      "description": "Full situs address"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BERKELEYS EDGE PROPERTIES LLC",
+      "target": "531110 - Lessors of Residential Buildings and Dwellings",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "BERKELEYS EDGE PROPERTIES LLC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "BERKELEYS EDGE PROPERTIES LLC",
+      "target": "1205 PERALTA Ave",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "WHOLE FOODS MARKET",
+      "target": "445110 - Supermarkets and Other Grocery (except Convenience) Stores",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "WHOLE FOODS MARKET",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "WHOLE FOODS MARKET",
+      "target": "1025 GILMAN St",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "UNLIMITED ELECTRONICS",
+      "target": "443112",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "UNLIMITED ELECTRONICS",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "UNLIMITED ELECTRONICS",
+      "target": "2163 SHATTUCK AVE",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "ALLEN DRYWALL & ASSOCIATES INC",
+      "target": "238310 - Drywall and Insulation Contractors",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "ALLEN DRYWALL & ASSOCIATES INC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "ALLEN DRYWALL & ASSOCIATES INC",
+      "target": "0 VARIOUS",
+      "type": "has_address",
+      "description": "Situs full address placeholder"
+    },
+    {
+      "source": "SMITH ENGINEERING INC",
+      "target": "541330 - Engineering Services",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "SMITH ENGINEERING INC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "SMITH ENGINEERING INC",
+      "target": "732 ADDISON St",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "ORGANIC LICE GURU LLC",
+      "target": "812199 - Other Personal Care Services",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "ORGANIC LICE GURU LLC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "ORGANIC LICE GURU LLC",
+      "target": "0 VARIOUS",
+      "type": "has_address",
+      "description": "Situs full address placeholder"
+    },
+    {
+      "source": "NICHOLAS HACK PSYCHOTHERAPY INC",
+      "target": "621330 - Offices of Mental Health Practitioners (except Physicians)",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "NICHOLAS HACK PSYCHOTHERAPY INC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "NICHOLAS HACK PSYCHOTHERAPY INC",
+      "target": "2991 SHATTUCK Ave",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "CHUN VIVIAN",
+      "target": "531120 - Lessors of Nonresidential Buildings (except Miniwarehouses)",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "CHUN VIVIAN",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "CHUN VIVIAN",
+      "target": "1573 SOLANO Ave",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "BERKELEY EMERGENCY MED GROUP",
+      "target": "621111 - Offices of Physicians (except Mental Health Specialists)",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "BERKELEY EMERGENCY MED GROUP",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "BERKELEY EMERGENCY MED GROUP",
+      "target": "3000 COLBY ST",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "ZD FILMS",
+      "target": "541840 - Media Representatives",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "ZD FILMS",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "ZD FILMS",
+      "target": "2600 TENTH ST",
+      "type": "has_address",
+      "description": "Situs full address"
+    },
+    {
+      "source": "ROBERT HAUSER CONSTRUCTION",
+      "target": "236115 - New Single-Family Housing Construction (except For-Sale Builders)",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "ROBERT HAUSER CONSTRUCTION",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "ROBERT HAUSER CONSTRUCTION",
+      "target": "0 VARIOUS",
+      "type": "has_address",
+      "description": "Situs full address placeholder"
+    },
+    {
+      "source": "WESTERN ROOFING SYSTEMS",
+      "target": "238160 - Roofing Contractors",
+      "type": "classified_as",
+      "description": "NAICS classification"
+    },
+    {
+      "source": "WESTERN ROOFING SYSTEMS",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Situs city"
+    },
+    {
+      "source": "WESTERN ROOFING SYSTEMS",
+      "target": "0 VARIOUS",
+      "type": "has_address",
+      "description": "Situs full address placeholder"
+    }
+  ]
+}
+```
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 42
+  1. BERKELEYS EDGE PROPERTIES LLC (Organization): RES RENTAL 4 UNITS; Rental of Real Property; LLC; APN 060 241603100; RecordID BL-014950; Tax_Code L; Employees 1
+  2. WHOLE FOODS MARKET (Organization): GROCERY - SUPERMARKET; Grocer; Corporation; APN 060 235500802; RecordID BL-002338; Tax_Code G; Employees 133
+  3. UNLIMITED ELECTRONICS (Organization): CELLPHONE STORE; Retail Trade; Corporation; APN 057 203100900; RecordID BL-048940; Tax_Code R; Employees 2
+  4. ALLEN DRYWALL & ASSOCIATES INC (Organization): DRYWALL SUBCONTRACTOR; Construction or Contractor; Corporation; APN ZZZZZZZZZZZZZ; RecordID BL-049589; Tax_Code C; Employees 65
+  5. SMITH ENGINEERING INC (Organization): STRUCTURAL ENGINEERING; Professional SemiProfessional; Corporation; APN 056 195900200; RecordID BL-003127; Tax_Code P; Employees 4
+  6. ORGANIC LICE GURU LLC (Organization): REMOVE HEAD LICE; Business Personal Repair Svs; LLC; APN ZZZZZZZZZZZZZ; RecordID BL-022066; Tax_Code B; Employees 4
+  7. NICHOLAS HACK PSYCHOTHERAPY INC (Organization): PSYCHOTHERAPY; Professional SemiProfessional; Corporation; APN 053 158901500; RecordID BL-022207; Tax_Code P; Employees 1
+  8. CHUN VIVIAN (Organization): 2 COMMERCIAL RENTAL; Rental of Real Property; Sole Ownership; APN 062 287202400; RecordID BL-009835; Tax_Code L; Employees 0
+  9. BERKELEY EMERGENCY MED GROUP (Organization): MED SERVICES; Professional SemiProfessional; Corporation; APN 052 157401404; RecordID BL-000679; Tax_Code P; Employees 50
+  10. ZD FILMS (Organization): MEDIA REPRESENTATIVE; Professional SemiProfessional; Sole Ownership; APN 054 176401205; RecordID BL-047661; Tax_Code P; Employees 1
+  ... and 32 more entities
+
+Relationships extracted: 36
+  1. BERKELEYS EDGE PROPERTIES LLC -> 531110 - Lessors of Residential Buildings and Dwellings (classified_as)
+  2. BERKELEYS EDGE PROPERTIES LLC -> Berkeley, CA (located_in)
+  3. BERKELEYS EDGE PROPERTIES LLC -> 1205 PERALTA Ave (has_address)
+  4. WHOLE FOODS MARKET -> 445110 - Supermarkets and Other Grocery (except Convenience) Stores (classified_as)
+  5. WHOLE FOODS MARKET -> Berkeley, CA (located_in)
+  6. WHOLE FOODS MARKET -> 1025 GILMAN St (has_address)
+  7. UNLIMITED ELECTRONICS -> 443112 (classified_as)
+  8. UNLIMITED ELECTRONICS -> Berkeley, CA (located_in)
+  9. UNLIMITED ELECTRONICS -> 2163 SHATTUCK AVE (has_address)
+  10. ALLEN DRYWALL & ASSOCIATES INC -> 238310 - Drywall and Insulation Contractors (classified_as)
+  ... and 26 more relationships
+
+CHUNK 9/1026 COMPLETE - Total entities so far: 387, Total relationships so far: 459
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:50:30.338452
+============================================================
+Input chunk (6064 chars):
+Svs, DBA=MAXX ECO WASH, NAICS=561790 - Other Services to Buildings and Dwellings, Tax_Code=B, Employee_Num=4, Bus_Own_Type=LLC, B1_BUSINESS_NAME=MAXX ECO WASH, B1_ADDRESS1=820 SEA SPRAY LN APT 313, B1_CITY=FOSTER CITY, B1_STATE=CA, B1_ZIP=944042451, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=0 VARIOUS, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 124: APN=056 195400600, RecordID=BL-012327, BusDesc=STAINED GLASS ART STUDIO, B1_PER_SUB_TYPE=Retail Trade, DBA=HELIOS A...
+
+Model Response:
+```json
+{
+  "entities": [
+    {"name":"MAXX ECO WASH","type":"Organization","description":"Other Services to Buildings and Dwellings"},
+    {"name":"HELIOS ART GLASS","type":"Organization","description":"Stained Glass Art Studio"},
+    {"name":"BILCOR INC","type":"Organization","description":"Fire Safety Contractor"},
+    {"name":"BAYWOOD BUILDING & DESIGN INC","type":"Organization","description":"General Contractor"},
+    {"name":"THOR CONTRACTING CORPORATION","type":"Organization","description":"General Construction"},
+    {"name":"LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION","type":"Organization","description":"Graphic Designer"},
+    {"name":"PIC GROUP INC","type":"Organization","description":"Operations Services"},
+    {"name":"SANCHEZ ELECTRICAL CORP","type":"Organization","description":"Electrical Works"},
+    {"name":"KANEN COFFEE LLC","type":"Organization","description":"Coffee Machine Repair"},
+    {"name":"MUSIC CONNECTS","type":"Organization","description":"Music Instruction"},
+    {"name":"TINKLY BARTER INC","type":"Organization","description":"Online Seller of Children's Toys"},
+    {"name":"COLT BUILDERS CORP","type":"Organization","description":"Construction Framing"},
+    {"name":"561790","type":"NAICSCode","description":"Other Services to Buildings and Dwellings"},
+    {"name":"453920","type":"NAICSCode","description":"Art Dealers"},
+    {"name":"238990","type":"NAICSCode","description":"All Other Specialty Trade Contractors"},
+    {"name":"236116","type":"NAICSCode","description":"New Multifamily Housing Construction (except For-Sale Builders)"},
+    {"name":"236115","type":"NAICSCode","description":"New Single-Family Housing Construction (except For-Sale Builders)"},
+    {"name":"541430","type":"NAICSCode","description":"Graphic Design Services"},
+    {"name":"541611","type":"NAICSCode","description":"Administrative Management and General Management Consulting Services"},
+    {"name":"238210","type":"NAICSCode","description":"Electrical Contractors and Other Wiring Installation Contractors"},
+    {"name":"811310","type":"NAICSCode","description":"Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair"},
+    {"name":"611610","type":"NAICSCode","description":"Fine Arts Schools"},
+    {"name":"454111","type":"NAICSCode","description":"Electronic Shopping"},
+    {"name":"236118","type":"NAICSCode","description":"Residential Remodelers"},
+    {"name":"820 SEA SPRAY LN APT 313, FOSTER CITY, CA 944042451","type":"Address","description":""},
+    {"name":"1550 MCKINNON AVE, SAN FRANCISCO, CA 94124-2151","type":"Address","description":""},
+    {"name":"735 BATTERY ST FL 2, SAN FRANCISCO, CA 94111","type":"Address","description":""},
+    {"name":"5745 A HORTON ST, EMERYVILLE, CA 94608","type":"Address","description":""},
+    {"name":"4251 BAY ST APT 317, FREMONT, CA 94538-4252","type":"Address","description":""},
+    {"name":"1130 Hopkins St, Berkeley, CA 94702","type":"Address","description":""},
+    {"name":"1000 PARKWOOD CIR SE STE 1000, ATLANTA, GA 303392118","type":"Address","description":""},
+    {"name":"336 HOLLOWAY AVE, SAN FRANCISCO, CA 94112-2246","type":"Address","description":""},
+    {"name":"2319 4TH ST, BERKELEY, CA 94710-2401","type":"Address","description":""},
+    {"name":"1415 M L KING JR WAY, BERKELEY, CA 94709","type":"Address","description":""},
+    {"name":"1457 OLYMPUS AVE, BERKELEY, CA 94708-2207","type":"Address","description":""},
+    {"name":"211 W 4860 S, MURRAY, UT 84107-7985","type":"Address","description":""},
+    {"name":"LLC","type":"OwnerType","description":""},
+    {"name":"Corporation","type":"OwnerType","description":""},
+    {"name":"Sole Ownership","type":"OwnerType","description":""},
+    {"name":"B","type":"TaxCode","description":""},
+    {"name":"R","type":"TaxCode","description":""},
+    {"name":"C","type":"TaxCode","description":""},
+    {"name":"P","type":"TaxCode","description":""},
+    {"name":"BL-012327","type":"Record","description":"APN 056 195400600"},
+    {"name":"BL-017379","type":"Record","description":"APN ZZZZZZZZZZZZZ"},
+    {"name":"BL-008754","type":"Record","description":"APN ZZZZZZZZZZZZZ"},
+    {"name":"BL-021111","type":"Record","description":"APN ZZZZZZZZZZZZZ"},
+    {"name":"BL-017723","type":"Record","description":"APN 059 228800300"},
+    {"name":"BL-018492","type":"Record","description":"APN ZZZZZZZZZZZZZ"},
+    {"name":"BL-020955","type":"Record","description":"APN ZZZZZZZZZZZZZ"},
+    {"name":"BL-013986","type":"Record","description":"APN 056 194500301"},
+    {"name":"BL-051263","type":"Record","description":"APN 059 226903200"},
+    {"name":"BL-021914","type":"Record","description":"APN 060 248402700"},
+    {"name":"BL-014572","type":"Record","description":"APN ZZZZZZZZZZZZZ"}
+  ],
+  "relationships": [
+    {"source":"MAXX ECO WASH","target":"561790","type":"classified_as","description":"NAICS code"},
+    {"source":"MAXX ECO WASH","target":"820 SEA SPRAY LN APT 313, FOSTER CITY, CA 944042451","type":"located_at","description":"Business address"},
+    {"source":"MAXX ECO WASH","target":"LLC","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"MAXX ECO WASH","target":"B","type":"has_tax_code","description":"Tax_Code"},
+
+    {"source":"HELIOS ART GLASS","target":"453920","type":"classified_as","description":"NAICS code"},
+    {"source":"HELIOS ART GLASS","target":"1550 MCKINNON AVE, SAN FRANCISCO, CA 94124-2151","type":"located_at","description":"Business address"},
+    {"source":"HELIOS ART GLASS","target":"Corporation","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"HELIOS ART GLASS","target":"R","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"HELIOS ART GLASS","target":"BL-012327","type":"has_record","description":"RecordID"},
+    {"source":"HELIOS ART GLASS","target":"056 195400600","type":"has_APN","description":"APN"},
+
+    {"source":"BILCOR INC","target":"238990","type":"classified_as","description":"NAICS code"},
+    {"source":"BILCOR INC","target":"735 BATTERY ST FL 2, SAN FRANCISCO, CA 94111","type":"located_at","description":"Business address"},
+    {"source":"BILCOR INC","target":"Sole Ownership","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"BILCOR INC","target":"C","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"BILCOR INC","target":"BL-017379","type":"has_record","description":"RecordID"},
+    {"source":"BILCOR INC","target":"ZZZZZZZZZZZZZ","type":"has_APN","description":"APN"},
+
+    {"source":"BAYWOOD BUILDING & DESIGN INC","target":"236116","type":"classified_as","description":"NAICS code"},
+    {"source":"BAYWOOD BUILDING & DESIGN INC","target":"5745 A HORTON ST, EMERYVILLE, CA 94608","type":"located_at","description":"Business address"},
+    {"source":"BAYWOOD BUILDING & DESIGN INC","target":"Corporation","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"BAYWOOD BUILDING & DESIGN INC","target":"C","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"BAYWOOD BUILDING & DESIGN INC","target":"BL-008754","type":"has_record","description":"RecordID"},
+    {"source":"BAYWOOD BUILDING & DESIGN INC","target":"ZZZZZZZZZZZZZ","type":"has_APN","description":"APN"},
+
+    {"source":"THOR CONTRACTING CORPORATION","target":"236115","type":"classified_as","description":"NAICS code"},
+    {"source":"THOR CONTRACTING CORPORATION","target":"4251 BAY ST APT 317, FREMONT, CA 94538-4252","type":"located_at","description":"Business address"},
+    {"source":"THOR CONTRACTING CORPORATION","target":"Corporation","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"THOR CONTRACTING CORPORATION","target":"C","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"THOR CONTRACTING CORPORATION","target":"BL-021111","type":"has_record","description":"RecordID"},
+    {"source":"THOR CONTRACTING CORPORATION","target":"ZZZZZZZZZZZZZ","type":"has_APN","description":"APN"},
+
+    {"source":"LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION","target":"541430","type":"classified_as","description":"NAICS code"},
+    {"source":"LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION","target":"1130 Hopkins St, Berkeley, CA 94702","type":"located_at","description":"Business address"},
+    {"source":"LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION","target":"Sole Ownership","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION","target":"P","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION","target":"BL-017723","type":"has_record","description":"RecordID"},
+    {"source":"LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION","target":"059 228800300","type":"has_APN","description":"APN"},
+
+    {"source":"PIC GROUP INC","target":"541611","type":"classified_as","description":"NAICS code"},
+    {"source":"PIC GROUP INC","target":"1000 PARKWOOD CIR SE STE 1000, ATLANTA, GA 303392118","type":"located_at","description":"Business address"},
+    {"source":"PIC GROUP INC","target":"LLC","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"PIC GROUP INC","target":"P","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"PIC GROUP INC","target":"BL-018492","type":"has_record","description":"RecordID"},
+    {"source":"PIC GROUP INC","target":"ZZZZZZZZZZZZZ","type":"has_APN","description":"APN"},
+
+    {"source":"SANCHEZ ELECTRICAL CORP","target":"238210","type":"classified_as","description":"NAICS code"},
+    {"source":"SANCHEZ ELECTRICAL CORP","target":"336 HOLLOWAY AVE, SAN FRANCISCO, CA 94112-2246","type":"located_at","description":"Business address"},
+    {"source":"SANCHEZ ELECTRICAL CORP","target":"Corporation","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"SANCHEZ ELECTRICAL CORP","target":"C","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"SANCHEZ ELECTRICAL CORP","target":"BL-020955","type":"has_record","description":"RecordID"},
+    {"source":"SANCHEZ ELECTRICAL CORP","target":"ZZZZZZZZZZZZZ","type":"has_APN","description":"APN"},
+
+    {"source":"KANEN COFFEE LLC","target":"811310","type":"classified_as","description":"NAICS code"},
+    {"source":"KANEN COFFEE LLC","target":"2319 4TH ST, BERKELEY, CA 94710-2401","type":"located_at","description":"Business address"},
+    {"source":"KANEN COFFEE LLC","target":"LLC","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"KANEN COFFEE LLC","target":"B","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"KANEN COFFEE LLC","target":"BL-013986","type":"has_record","description":"RecordID"},
+    {"source":"KANEN COFFEE LLC","target":"056 194500301","type":"has_APN","description":"APN"},
+
+    {"source":"MUSIC CONNECTS","target":"611610","type":"classified_as","description":"NAICS code"},
+    {"source":"MUSIC CONNECTS","target":"1415 M L KING JR WAY, BERKELEY, CA 94709","type":"located_at","description":"Business address"},
+    {"source":"MUSIC CONNECTS","target":"Sole Ownership","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"MUSIC CONNECTS","target":"P","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"MUSIC CONNECTS","target":"BL-051263","type":"has_record","description":"RecordID"},
+    {"source":"MUSIC CONNECTS","target":"059 226903200","type":"has_APN","description":"APN"},
+
+    {"source":"TINKLY BARTER INC","target":"454111","type":"classified_as","description":"NAICS code"},
+    {"source":"TINKLY BARTER INC","target":"1457 OLYMPUS AVE, BERKELEY, CA 94708-2207","type":"located_at","description":"Business address"},
+    {"source":"TINKLY BARTER INC","target":"Corporation","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"TINKLY BARTER INC","target":"R","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"TINKLY BARTER INC","target":"BL-021914","type":"has_record","description":"RecordID"},
+    {"source":"TINKLY BARTER INC","target":"060 248402700","type":"has_APN","description":"APN"},
+
+    {"source":"COLT BUILDERS CORP","target":"236118","type":"classified_as","description":"NAICS code"},
+    {"source":"COLT BUILDERS CORP","target":"211 W 4860 S, MURRAY, UT 84107-7985","type":"located_at","description":"Business address"},
+    {"source":"COLT BUILDERS CORP","target":"Corporation","type":"has_owner_type","description":"Bus_Own_Type"},
+    {"source":"COLT BUILDERS CORP","target":"C","type":"has_tax_code","description":"Tax_Code"},
+    {"source":"COLT BUILDERS CORP","target":"BL-014572","type":"has_record","description":"RecordID"},
+    {"source":"COLT BUILDERS CORP","target":"ZZZZZZZZZZZZZ","type":"has_APN","description":"APN"}
+  ]
+}
+```
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 54
+  1. MAXX ECO WASH (Organization): Other Services to Buildings and Dwellings
+  2. HELIOS ART GLASS (Organization): Stained Glass Art Studio
+  3. BILCOR INC (Organization): Fire Safety Contractor
+  4. BAYWOOD BUILDING & DESIGN INC (Organization): General Contractor
+  5. THOR CONTRACTING CORPORATION (Organization): General Construction
+  6. LIBBY LEE-EGAN GRAPHIC DESIGN & ILLUSTRATION (Organization): Graphic Designer
+  7. PIC GROUP INC (Organization): Operations Services
+  8. SANCHEZ ELECTRICAL CORP (Organization): Electrical Works
+  9. KANEN COFFEE LLC (Organization): Coffee Machine Repair
+  10. MUSIC CONNECTS (Organization): Music Instruction
+  ... and 44 more entities
+
+Relationships extracted: 70
+  1. MAXX ECO WASH -> 561790 (classified_as)
+  2. MAXX ECO WASH -> 820 SEA SPRAY LN APT 313, FOSTER CITY, CA 944042451 (located_at)
+  3. MAXX ECO WASH -> LLC (has_owner_type)
+  4. MAXX ECO WASH -> B (has_tax_code)
+  5. HELIOS ART GLASS -> 453920 (classified_as)
+  6. HELIOS ART GLASS -> 1550 MCKINNON AVE, SAN FRANCISCO, CA 94124-2151 (located_at)
+  7. HELIOS ART GLASS -> Corporation (has_owner_type)
+  8. HELIOS ART GLASS -> R (has_tax_code)
+  9. HELIOS ART GLASS -> BL-012327 (has_record)
+  10. HELIOS ART GLASS -> 056 195400600 (has_APN)
+  ... and 60 more relationships
+
+CHUNK 10/1026 COMPLETE - Total entities so far: 441, Total relationships so far: 529
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:50:58.104858
+============================================================
+Input chunk (6093 chars):
+COACHING, REIKI, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=MAGNOLIA SOMATICS, NAICS=621399 - Offices of All Other Miscellaneous Health Practitioners, Tax_Code=P, Employee_Num=1, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=MAGNOLIA SOMATICS, B1_ADDRESS1=1225 DWIGHT WAY, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94702-2059, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=1911 ADDISON St, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 136: APN=ZZZZZZZZZZZZZ, RecordID=BL-...
+
+Model Response:
+```json
+{
+  "entities": [
+    {
+      "name": "MAGNOLIA SOMATICS",
+      "type": "Organization",
+      "description": "COACHING, REIKI; Professional SemiProfessional"
+    },
+    {
+      "name": "ALL SEASONS CONSTRUCTION",
+      "type": "Organization",
+      "description": "RESIDENTIAL REMODEL; Construction or Contractor"
+    },
+    {
+      "name": "A J BONO PLUMBING",
+      "type": "Organization",
+      "description": "PLUMBING CONTRACTOR; Construction or Contractor"
+    },
+    {
+      "name": "NEIL MARQUIS CATERING",
+      "type": "Organization",
+      "description": "CATERER; Retail Trade"
+    },
+    {
+      "name": "ATHLETA #1413",
+      "type": "Organization",
+      "description": "SPORTSWEAR; Retail Trade"
+    },
+    {
+      "name": "RAJ PROPERTIES LLC",
+      "type": "Organization",
+      "description": "RES. RENTAL - 36 UNITS; Rental of Real Property"
+    },
+    {
+      "name": "NOWAKOWSKI MONICA LCSW",
+      "type": "Organization",
+      "description": "PSYCHOTHERAPY/ELDER CARE; Professional SemiProfessional"
+    },
+    {
+      "name": "OCEANWORKS",
+      "type": "Organization",
+      "description": "AUTO REPAIR; Business Personal Repair Svs"
+    },
+    {
+      "name": "BURLEY DESIGN & CONSTRUCTION",
+      "type": "Organization",
+      "description": "GENERAL CONTRACTOR; Construction or Contractor"
+    },
+    {
+      "name": "ANNEKE FAAS YOGA",
+      "type": "Organization",
+      "description": "YOGA INSTRUCTION; Entertainment Recreation"
+    },
+    {
+      "name": "CREATIVE WINDOW INTERIORS INC",
+      "type": "Organization",
+      "description": "INSTALL WINDOW COVERING; Construction or Contractor"
+    },
+    {
+      "name": "KAPOOR PARTAP & ELLEN",
+      "type": "Organization",
+      "description": "RES. RENTAL - 6 UNITS; Rental of Real Property"
+    },
+    {
+      "name": "Offices of All Other Miscellaneous Health Practitioners",
+      "type": "Industry",
+      "description": "NAICS 621399"
+    },
+    {
+      "name": "Residential Remodelers",
+      "type": "Industry",
+      "description": "NAICS 236118"
+    },
+    {
+      "name": "Plumbing, Heating, and Air-Conditioning Contractors",
+      "type": "Industry",
+      "description": "NAICS 238220"
+    },
+    {
+      "name": "Caterers",
+      "type": "Industry",
+      "description": "NAICS 722320"
+    },
+    {
+      "name": "Women's Clothing Stores",
+      "type": "Industry",
+      "description": "NAICS 448120"
+    },
+    {
+      "name": "Lessors of Residential Buildings and Dwellings",
+      "type": "Industry",
+      "description": "NAICS 531110"
+    },
+    {
+      "name": "Offices of Mental Health Practitioners (except Physicians)",
+      "type": "Industry",
+      "description": "NAICS 621330"
+    },
+    {
+      "name": "General Automotive Repair",
+      "type": "Industry",
+      "description": "NAICS 811111"
+    },
+    {
+      "name": "New Single-Family Housing Construction (except For-Sale Builders)",
+      "type": "Industry",
+      "description": "NAICS 236115"
+    },
+    {
+      "name": "Fitness and Recreational Sports Centers",
+      "type": "Industry",
+      "description": "NAICS 713940"
+    },
+    {
+      "name": "Glass and Glazing Contractors",
+      "type": "Industry",
+      "description": "NAICS 238150"
+    },
+    {
+      "name": "Berkeley",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Oakland",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Concord",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Albuquerque",
+      "type": "Location",
+      "description": "City in New Mexico"
+    },
+    {
+      "name": "Richmond",
+      "type": "Location",
+      "description": "City in California"
+    },
+    {
+      "name": "Castro Valley",
+      "type": "Location",
+      "description": "Census-designated place in California"
+    },
+    {
+      "name": "San Jose",
+      "type": "Location",
+      "description": "City in California"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAGNOLIA SOMATICS",
+      "target": "Offices of All Other Miscellaneous Health Practitioners",
+      "type": "classified_as",
+      "description": "NAICS 621399"
+    },
+    {
+      "source": "ALL SEASONS CONSTRUCTION",
+      "target": "Residential Remodelers",
+      "type": "classified_as",
+      "description": "NAICS 236118"
+    },
+    {
+      "source": "A J BONO PLUMBING",
+      "target": "Plumbing, Heating, and Air-Conditioning Contractors",
+      "type": "classified_as",
+      "description": "NAICS 238220"
+    },
+    {
+      "source": "NEIL MARQUIS CATERING",
+      "target": "Caterers",
+      "type": "classified_as",
+      "description": "NAICS 722320"
+    },
+    {
+      "source": "ATHLETA #1413",
+      "target": "Women's Clothing Stores",
+      "type": "classified_as",
+      "description": "NAICS 448120"
+    },
+    {
+      "source": "RAJ PROPERTIES LLC",
+      "target": "Lessors of Residential Buildings and Dwellings",
+      "type": "classified_as",
+      "description": "NAICS 531110"
+    },
+    {
+      "source": "NOWAKOWSKI MONICA LCSW",
+      "target": "Offices of Mental Health Practitioners (except Physicians)",
+      "type": "classified_as",
+      "description": "NAICS 621330"
+    },
+    {
+      "source": "OCEANWORKS",
+      "target": "General Automotive Repair",
+      "type": "classified_as",
+      "description": "NAICS 811111"
+    },
+    {
+      "source": "BURLEY DESIGN & CONSTRUCTION",
+      "target": "New Single-Family Housing Construction (except For-Sale Builders)",
+      "type": "classified_as",
+      "description": "NAICS 236115"
+    },
+    {
+      "source": "ANNEKE FAAS YOGA",
+      "target": "Fitness and Recreational Sports Centers",
+      "type": "classified_as",
+      "description": "NAICS 713940"
+    },
+    {
+      "source": "CREATIVE WINDOW INTERIORS INC",
+      "target": "Glass and Glazing Contractors",
+      "type": "classified_as",
+      "description": "NAICS 238150"
+    },
+    {
+      "source": "KAPOOR PARTAP & ELLEN",
+      "target": "Lessors of Residential Buildings and Dwellings",
+      "type": "classified_as",
+      "description": "NAICS 531110"
+    },
+    {
+      "source": "MAGNOLIA SOMATICS",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "ALL SEASONS CONSTRUCTION",
+      "target": "Oakland",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "A J BONO PLUMBING",
+      "target": "Concord",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "NEIL MARQUIS CATERING",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "ATHLETA #1413",
+      "target": "Albuquerque",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "RAJ PROPERTIES LLC",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "NOWAKOWSKI MONICA LCSW",
+      "target": "Richmond",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "OCEANWORKS",
+      "target": "Castro Valley",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "BURLEY DESIGN & CONSTRUCTION",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "ANNEKE FAAS YOGA",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "CREATIVE WINDOW INTERIORS INC",
+      "target": "San Jose",
+      "type": "located_in",
+      "description": "Business address city"
+    },
+    {
+      "source": "KAPOOR PARTAP & ELLEN",
+      "target": "Richmond",
+      "type": "located_in",
+      "description": "Business address city"
+    }
+  ]
+}
+```
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 30
+  1. MAGNOLIA SOMATICS (Organization): COACHING, REIKI; Professional SemiProfessional
+  2. ALL SEASONS CONSTRUCTION (Organization): RESIDENTIAL REMODEL; Construction or Contractor
+  3. A J BONO PLUMBING (Organization): PLUMBING CONTRACTOR; Construction or Contractor
+  4. NEIL MARQUIS CATERING (Organization): CATERER; Retail Trade
+  5. ATHLETA #1413 (Organization): SPORTSWEAR; Retail Trade
+  6. RAJ PROPERTIES LLC (Organization): RES. RENTAL - 36 UNITS; Rental of Real Property
+  7. NOWAKOWSKI MONICA LCSW (Organization): PSYCHOTHERAPY/ELDER CARE; Professional SemiProfessional
+  8. OCEANWORKS (Organization): AUTO REPAIR; Business Personal Repair Svs
+  9. BURLEY DESIGN & CONSTRUCTION (Organization): GENERAL CONTRACTOR; Construction or Contractor
+  10. ANNEKE FAAS YOGA (Organization): YOGA INSTRUCTION; Entertainment Recreation
+  ... and 20 more entities
+
+Relationships extracted: 24
+  1. MAGNOLIA SOMATICS -> Offices of All Other Miscellaneous Health Practitioners (classified_as)
+  2. ALL SEASONS CONSTRUCTION -> Residential Remodelers (classified_as)
+  3. A J BONO PLUMBING -> Plumbing, Heating, and Air-Conditioning Contractors (classified_as)
+  4. NEIL MARQUIS CATERING -> Caterers (classified_as)
+  5. ATHLETA #1413 -> Women's Clothing Stores (classified_as)
+  6. RAJ PROPERTIES LLC -> Lessors of Residential Buildings and Dwellings (classified_as)
+  7. NOWAKOWSKI MONICA LCSW -> Offices of Mental Health Practitioners (except Physicians) (classified_as)
+  8. OCEANWORKS -> General Automotive Repair (classified_as)
+  9. BURLEY DESIGN & CONSTRUCTION -> New Single-Family Housing Construction (except For-Sale Builders) (classified_as)
+  10. ANNEKE FAAS YOGA -> Fitness and Recreational Sports Centers (classified_as)
+  ... and 14 more relationships
+
+CHUNK 11/1026 COMPLETE - Total entities so far: 471, Total relationships so far: 553
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:51:39.981655
+============================================================
+Input chunk (6042 chars):
+of Residential Buildings and Dwellings, Tax_Code=L, Employee_Num=0, Bus_Own_Type=LLC, B1_BUSINESS_NAME=SHAHNAMEH LLC, B1_ADDRESS1=PO BOX 3492, B1_CITY=OAKLAND, B1_STATE=CA, B1_ZIP=946090492, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=1611 RUSSELL St, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94703.0 Record 148: APN=062 291600400, RecordID=BL-031135, BusDesc=PRIVATE INVESTIGATOR, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=CLARICK G. BROWN INVEST., NAICS=561611 - Investi...
+
+Model Response:
+{  
+  "entities": [
+    {
+      "name": "SHAHNAMEH LLC",
+      "type": "Organization",
+      "description": "RecordID: BL-?, APN: ?, Tax Code: L, Ownership: LLC, Employees: 0, NAICS: 531110"
+    },
+    {
+      "name": "PO BOX 3492, OAKLAND, CA 94609-0492",
+      "type": "Address",
+      "description": "Mailing address for SHAHNAMEH LLC"
+    },
+    {
+      "name": "1611 RUSSELL St, BERKELEY, CA 94703",
+      "type": "Address",
+      "description": "Situs address for SHAHNAMEH LLC"
+    },
+    {
+      "name": "531110 - Lessors of Residential Buildings and Dwellings",
+      "type": "NAICS",
+      "description": "Industry classification for SHAHNAMEH LLC"
+    },
+    {
+      "name": "CLARICK G. BROWN INVEST.",
+      "type": "Organization",
+      "description": "RecordID: BL-031135, APN: 062 291600400, Description: PRIVATE INVESTIGATOR, Tax Code: P, Ownership: Sole Ownership, Employees: 0, NAICS: 561611"
+    },
+    {
+      "name": "37 AVIS RD, BERKELEY, CA 94707",
+      "type": "Address",
+      "description": "Mailing & situs address for CLARICK G. BROWN INVEST."
+    },
+    {
+      "name": "561611 - Investigation Services",
+      "type": "NAICS",
+      "description": "Industry classification for CLARICK G. BROWN INVEST."
+    },
+    {
+      "name": "BAY AREA UNDERPINNING",
+      "type": "Organization",
+      "description": "RecordID: BL-051081, APN: ZZZZZZZZZZZZZ, Description: GENERAL CONTRACTOR, Tax Code: C, Ownership: Corporation, Employees: 5, NAICS: 236115"
+    },
+    {
+      "name": "2333 COURAGE DR STE C, FAIRFIELD, CA 94533-6715",
+      "type": "Address",
+      "description": "Mailing address for BAY AREA UNDERPINNING"
+    },
+    {
+      "name": "BERKELEY, CA 94704",
+      "type": "Address",
+      "description": "Situs city/state/zip for BAY AREA UNDERPINNING"
+    },
+    {
+      "name": "236115 - New Single-Family Housing Construction (except For-Sale Builders)",
+      "type": "NAICS",
+      "description": "Industry classification for BAY AREA UNDERPINNING"
+    },
+    {
+      "name": "INGRAM PUBLISHER SERVICES LLC",
+      "type": "Organization",
+      "description": "RecordID: BL-028430, APN: 056 196301506, Description: CORPORATE HEADQUARTERS, Tax Code: Q, Ownership: LLC, Employees: 21, NAICS: 561110"
+    },
+    {
+      "name": "1 INGRAM BLVD, LA VERGNE, TN 37086",
+      "type": "Address",
+      "description": "Mailing address for INGRAM PUBLISHER SERVICES LLC"
+    },
+    {
+      "name": "819 BANCROFT Way, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Situs address for INGRAM PUBLISHER SERVICES LLC"
+    },
+    {
+      "name": "561110 - Office Administrative Services",
+      "type": "NAICS",
+      "description": "Industry classification for INGRAM PUBLISHER SERVICES LLC"
+    },
+    {
+      "name": "TONI A JOHNS",
+      "type": "Organization",
+      "description": "RecordID: BL-042296, APN: 056 193202200, Description: RENTAL PROPERTY - 4 UNITS, Tax Code: L, Ownership: Sole Ownership, Employees: 0, NAICS: 531110"
+    },
+    {
+      "name": "2407 TENTH ST, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Mailing address for TONI A JOHNS"
+    },
+    {
+      "name": "2409 TENTH ST, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Situs address for TONI A JOHNS"
+    },
+    {
+      "name": "MINOL INC",
+      "type": "Organization",
+      "description": "RecordID: BL-018900, APN: ZZZZZZZZZZZZZ, Description: WATER SUBMETERS FOR MULTI-FAMILY BLDGS, Tax Code: C, Ownership: Corporation, Employees: 0, NAICS: 238220"
+    },
+    {
+      "name": "15280 ADDISON RD STE 100, ADDISON, TX 75001-4503",
+      "type": "Address",
+      "description": "Mailing address for MINOL INC"
+    },
+    {
+      "name": "BERKELEY, CA 94704",
+      "type": "Address",
+      "description": "Situs city/state/zip for MINOL INC"
+    },
+    {
+      "name": "238220 - Plumbing, Heating, and Air-Conditioning Contractors",
+      "type": "NAICS",
+      "description": "Industry classification for MINOL INC"
+    },
+    {
+      "name": "BEATON MELINA",
+      "type": "Organization",
+      "description": "RecordID: BL-018616, APN: 052 152002100, Description: RENTAL PROPERTY -TRIPLEX, Tax Code: L, Ownership: Sole Ownership, Employees: 0, NAICS: 531110"
+    },
+    {
+      "name": "1536 HARMON ST, BERKELEY, CA 94703-2620",
+      "type": "Address",
+      "description": "Mailing address for BEATON MELINA"
+    },
+    {
+      "name": "1536 HARMON St, BERKELEY, CA 94703",
+      "type": "Address",
+      "description": "Situs address for BEATON MELINA"
+    },
+    {
+      "name": "ZEBRA INC",
+      "type": "Organization",
+      "description": "RecordID: BL-021217, APN: 055 187502802, Description: TATTOO PARLOR, Tax Code: B, Ownership: Corporation, Employees: 12, NAICS: 812199"
+    },
+    {
+      "name": "2467 TELEGRAPH AVE, BERKELEY, CA 94704",
+      "type": "Address",
+      "description": "Mailing address for ZEBRA INC"
+    },
+    {
+      "name": "2467 TELEGRAPH AVE, BERKELEY, CA 94705",
+      "type": "Address",
+      "description": "Situs address for ZEBRA INC"
+    },
+    {
+      "name": "812199 - Other Personal Care Services",
+      "type": "NAICS",
+      "description": "Industry classification for ZEBRA INC"
+    },
+    {
+      "name": "KAVA MASSIH ARCHITECTS",
+      "type": "Organization",
+      "description": "RecordID: BL-028349, APN: 053 165800304, Description: ARCHITECT SERVICES, Tax Code: P, Ownership: Corporation, Employees: 10, NAICS: 541310"
+    },
+    {
+      "name": "920 GRAYSON ST, BERKELEY, CA 94710-2618",
+      "type": "Address",
+      "description": "Mailing address for KAVA MASSIH ARCHITECTS"
+    },
+    {
+      "name": "920 GRAYSON ST, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Situs address for KAVA MASSIH ARCHITECTS"
+    },
+    {
+      "name": "541310 - Architectural Services",
+      "type": "NAICS",
+      "description": "Industry classification for KAVA MASSIH ARCHITECTS"
+    },
+    {
+      "name": "LAWRENCE EDWARD H JR TR",
+      "type": "Organization",
+      "description": "RecordID: BL-035392, APN: 056 193700300, Description: RESIDENTIAL -, Tax Code: L, Ownership: Sole Ownership, Employees: 2, NAICS: 531110"
+    },
+    {
+      "name": "1905 MAR WEST ST, BELVEDERE TIBURON, CA 94920",
+      "type": "Address",
+      "description": "Mailing address for LAWRENCE EDWARD H JR TR"
+    },
+    {
+      "name": "938 BANCROFT WAY, BERKELEY, CA 94710",
+      "type": "Address",
+      "description": "Situs address for LAWRENCE EDWARD H JR TR"
+    },
+    {
+      "name": "AMY L. ATTIYEH",
+      "type": "Organization",
+      "description": "RecordID: BL-037341, APN: 057 206400200, Description: PSYCHOTHERAPY, Tax Code: P, Ownership: Sole Ownership, Employees: 0, NAICS: 621330"
+    },
+    {
+      "name": "1806 M L KING JR WAY, BERKELEY, CA 94709",
+      "type": "Address",
+      "description": "Mailing & situs address for AMY L. ATTIYEH"
+    },
+    {
+      "name": "621330 - Offices of Mental Health Practitioners (except Physicians)",
+      "type": "NAICS",
+      "description": "Industry classification for AMY L. ATTIYEH"
+    },
+    {
+      "name": "WILLIAMS SUSAN MA MFT",
+      "type": "Organization",
+      "description": "RecordID: BL-050193, APN: 052 155700200, Description: PSYCHOTHERAPY, Tax Code: P, Ownership: Sole Ownership, Employees: 0, NAICS: 621330"
+    },
+    {
+      "name": "2832 WEBSTER ST, BERKELEY, CA 94705",
+      "type": "Address",
+      "description": "Mailing address for WILLIAMS SUSAN MA MFT"
+    },
+    {
+      "name": "3120 TELEGRAPH AVE, BERKELEY, CA 94705",
+      "type": "Address",
+      "description": "Situs address for WILLIAMS SUSAN MA MFT"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SHAHNAMEH LLC",
+      "target": "PO BOX 3492, OAKLAND, CA 94609-0492",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "SHAHNAMEH LLC",
+      "target": "1611 RUSSELL St, BERKELEY, CA 94703",
+      "type": "situs_at",
+      "description": "Property location"
+    },
+    {
+      "source": "SHAHNAMEH LLC",
+      "target": "531110 - Lessors of Residential Buildings and Dwellings",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "CLARICK G. BROWN INVEST.",
+      "target": "37 AVIS RD, BERKELEY, CA 94707",
+      "type": "located_at",
+      "description": "Mailing & situs address"
+    },
+    {
+      "source": "CLARICK G. BROWN INVEST.",
+      "target": "561611 - Investigation Services",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "BAY AREA UNDERPINNING",
+      "target": "2333 COURAGE DR STE C, FAIRFIELD, CA 94533-6715",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "BAY AREA UNDERPINNING",
+      "target": "BERKELEY, CA 94704",
+      "type": "situs_at",
+      "description": "City/State/ZIP of property"
+    },
+    {
+      "source": "BAY AREA UNDERPINNING",
+      "target": "236115 - New Single-Family Housing Construction (except For-Sale Builders)",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "INGRAM PUBLISHER SERVICES LLC",
+      "target": "1 INGRAM BLVD, LA VERGNE, TN 37086",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "INGRAM PUBLISHER SERVICES LLC",
+      "target": "819 BANCROFT Way, BERKELEY, CA 94710",
+      "type": "situs_at",
+      "description": "Property location"
+    },
+    {
+      "source": "INGRAM PUBLISHER SERVICES LLC",
+      "target": "561110 - Office Administrative Services",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "TONI A JOHNS",
+      "target": "2407 TENTH ST, BERKELEY, CA 94710",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "TONI A JOHNS",
+      "target": "2409 TENTH ST, BERKELEY, CA 94710",
+      "type": "situs_at",
+      "description": "Property location"
+    },
+    {
+      "source": "MINOL INC",
+      "target": "15280 ADDISON RD STE 100, ADDISON, TX 75001-4503",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "MINOL INC",
+      "target": "BERKELEY, CA 94704",
+      "type": "situs_at",
+      "description": "City/State/ZIP of property"
+    },
+    {
+      "source": "MINOL INC",
+      "target": "238220 - Plumbing, Heating, and Air-Conditioning Contractors",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "BEATON MELINA",
+      "target": "1536 HARMON ST, BERKELEY, CA 94703-2620",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "BEATON MELINA",
+      "target": "1536 HARMON St, BERKELEY, CA 94703",
+      "type": "situs_at",
+      "description": "Property location"
+    },
+    {
+      "source": "ZEBRA INC",
+      "target": "2467 TELEGRAPH AVE, BERKELEY, CA 94704",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "ZEBRA INC",
+      "target": "2467 TELEGRAPH AVE, BERKELEY, CA 94705",
+      "type": "situs_at",
+      "description": "Property location"
+    },
+    {
+      "source": "ZEBRA INC",
+      "target": "812199 - Other Personal Care Services",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "KAVA MASSIH ARCHITECTS",
+      "target": "920 GRAYSON ST, BERKELEY, CA 94710-2618",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "KAVA MASSIH ARCHITECTS",
+      "target": "920 GRAYSON ST, BERKELEY, CA 94710",
+      "type": "situs_at",
+      "description": "Property location"
+    },
+    {
+      "source": "KAVA MASSIH ARCHITECTS",
+      "target": "541310 - Architectural Services",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "LAWRENCE EDWARD H JR TR",
+      "target": "1905 MAR WEST ST, BELVEDERE TIBURON, CA 94920",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "LAWRENCE EDWARD H JR TR",
+      "target": "938 BANCROFT WAY, BERKELEY, CA 94710",
+      "type": "situs_at",
+      "description": "Property location"
+    },
+    {
+      "source": "AMY L. ATTIYEH",
+      "target": "1806 M L KING JR WAY, BERKELEY, CA 94709",
+      "type": "located_at",
+      "description": "Mailing & situs address"
+    },
+    {
+      "source": "AMY L. ATTIYEH",
+      "target": "621330 - Offices of Mental Health Practitioners (except Physicians)",
+      "type": "classified_as",
+      "description": "NAICS industry code"
+    },
+    {
+      "source": "WILLIAMS SUSAN MA MFT",
+      "target": "2832 WEBSTER ST, BERKELEY, CA 94705",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "WILLIAMS SUSAN MA MFT",
+      "target": "3120 TELEGRAPH AVE, BERKELEY, CA 94705",
+      "type": "situs_at",
+      "description": "Property location"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 42
+  1. SHAHNAMEH LLC (Organization): RecordID: BL-?, APN: ?, Tax Code: L, Ownership: LLC, Employees: 0, NAICS: 531110
+  2. PO BOX 3492, OAKLAND, CA 94609-0492 (Address): Mailing address for SHAHNAMEH LLC
+  3. 1611 RUSSELL St, BERKELEY, CA 94703 (Address): Situs address for SHAHNAMEH LLC
+  4. 531110 - Lessors of Residential Buildings and Dwellings (NAICS): Industry classification for SHAHNAMEH LLC
+  5. CLARICK G. BROWN INVEST. (Organization): RecordID: BL-031135, APN: 062 291600400, Description: PRIVATE INVESTIGATOR, Tax Code: P, Ownership: Sole Ownership, Employees: 0, NAICS: 561611
+  6. 37 AVIS RD, BERKELEY, CA 94707 (Address): Mailing & situs address for CLARICK G. BROWN INVEST.
+  7. 561611 - Investigation Services (NAICS): Industry classification for CLARICK G. BROWN INVEST.
+  8. BAY AREA UNDERPINNING (Organization): RecordID: BL-051081, APN: ZZZZZZZZZZZZZ, Description: GENERAL CONTRACTOR, Tax Code: C, Ownership: Corporation, Employees: 5, NAICS: 236115
+  9. 2333 COURAGE DR STE C, FAIRFIELD, CA 94533-6715 (Address): Mailing address for BAY AREA UNDERPINNING
+  10. BERKELEY, CA 94704 (Address): Situs city/state/zip for BAY AREA UNDERPINNING
+  ... and 32 more entities
+
+Relationships extracted: 30
+  1. SHAHNAMEH LLC -> PO BOX 3492, OAKLAND, CA 94609-0492 (located_at)
+  2. SHAHNAMEH LLC -> 1611 RUSSELL St, BERKELEY, CA 94703 (situs_at)
+  3. SHAHNAMEH LLC -> 531110 - Lessors of Residential Buildings and Dwellings (classified_as)
+  4. CLARICK G. BROWN INVEST. -> 37 AVIS RD, BERKELEY, CA 94707 (located_at)
+  5. CLARICK G. BROWN INVEST. -> 561611 - Investigation Services (classified_as)
+  6. BAY AREA UNDERPINNING -> 2333 COURAGE DR STE C, FAIRFIELD, CA 94533-6715 (located_at)
+  7. BAY AREA UNDERPINNING -> BERKELEY, CA 94704 (situs_at)
+  8. BAY AREA UNDERPINNING -> 236115 - New Single-Family Housing Construction (except For-Sale Builders) (classified_as)
+  9. INGRAM PUBLISHER SERVICES LLC -> 1 INGRAM BLVD, LA VERGNE, TN 37086 (located_at)
+  10. INGRAM PUBLISHER SERVICES LLC -> 819 BANCROFT Way, BERKELEY, CA 94710 (situs_at)
+  ... and 20 more relationships
+
+CHUNK 12/1026 COMPLETE - Total entities so far: 513, Total relationships so far: 583
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 16:52:10.207189
+============================================================
+Input chunk (6185 chars):
+Svs, DBA=MOOREBEAUTYLOVE LLC, NAICS=812112 - Beauty Salons, Tax_Code=B, Employee_Num=4, Bus_Own_Type=LLC, B1_BUSINESS_NAME=MOOREBEAUTYLOVE LLC, B1_ADDRESS1=PO BOX 7464, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94707, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=1831 SOLANO Ave, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 160: APN=054 171501500, RecordID=BL-034605, BusDesc=RESIDENTIAL RENTAL DUPLEX, B1_PER_SUB_TYPE=Rental of Real Property, DBA=SPRAGUE ETHAN & JESSICA, N...
+
+Model Response:
+{"entities":[
+  {"name":"MOOREBEAUTYLOVE LLC","type":"Organization","description":"Beauty Salons (NAICS 812112); LLC; 4 employees; Tax Code B"},
+  {"name":"SPRAGUE ETHAN & JESSICA","type":"Organization","description":"Residential Rental Duplex; Partnership; 0 employees; Tax Code L"},
+  {"name":"CHENG FU-TUNG","type":"Organization","description":"Commercial Rental; Sole Ownership; 0 employees; Tax Code L"},
+  {"name":"AMBER FLOORING INC","type":"Organization","description":"Flooring Contractor; Corporation; 30 employees; Tax Code C"},
+  {"name":"HY FLOOR & GAMELINE PAINTING","type":"Organization","description":"Floor Contractor; Corporation; 15 employees; Tax Code C"},
+  {"name":"LEKTRICMAN","type":"Organization","description":"Electrical Contractor; Corporation; 2 employees; Tax Code C"},
+  {"name":"QUEST DIAGNOSTICS DOI","type":"Organization","description":"Clinical Lab Draw Station; Corporation; 1 employee; Tax Code P"},
+  {"name":"DANKO ANNE","type":"Organization","description":"Landscape Gardener; Sole Ownership; 0 employees; Tax Code B"},
+  {"name":"MCH ELECTRIC INC","type":"Organization","description":"Electrical Contractor; Corporation; 221 employees; Tax Code C"},
+  {"name":"LAKIREDDY JAY ETAL","type":"Organization","description":"Rental Property; Sole Ownership; 1 employee; Tax Code L"},
+  {"name":"SWEET PEA LLC","type":"Organization","description":"Rental Property; LLC; 0 employees; Tax Code L"},
+  {"name":"CAL COAST WINDOW & DOOR","type":"Organization","description":"Window & Door Install; Corporation; 4 employees; Tax Code C"},
+  {"name":"ROSOV CONSULTING LLC","type":"Organization","description":"Educational Consulting; LLC; 15 employees; Tax Code P"},
+  {"name":"812112 - Beauty Salons","type":"Industry","description":"NAICS code 812112: Beauty Salons"},
+  {"name":"531110 - Lessors of Residential Buildings and Dwellings","type":"Industry","description":"NAICS code 531110"},
+  {"name":"531120 - Lessors of Nonresidential Buildings (except Miniwarehouses)","type":"Industry","description":"NAICS code 531120"},
+  {"name":"238330 - Flooring Contractors","type":"Industry","description":"NAICS code 238330"},
+  {"name":"238210 - Electrical Contractors and Other Wiring Installation Contractors","type":"Industry","description":"NAICS code 238210"},
+  {"name":"621511 - Medical Laboratories","type":"Industry","description":"NAICS code 621511"},
+  {"name":"561730 - Landscaping Services","type":"Industry","description":"NAICS code 561730"},
+  {"name":"711310 - Promoters of Performing Arts, Sports, and Similar Events with Facilities","type":"Industry","description":"NAICS code 711310"},
+  {"name":"236115 - New Single-Family Housing Construction (except For-Sale Builders)","type":"Industry","description":"NAICS code 236115"},
+  {"name":"611710 - Educational Support Services","type":"Industry","description":"NAICS code 611710"},
+  {"name":"054 171501500","type":"Property","description":"APN 054 171501500"},
+  {"name":"053 166100503","type":"Property","description":"APN 053 166100503"},
+  {"name":"ZZZZZZZZZZZZZ","type":"Property","description":"APN placeholder"},
+  {"name":"052 151902800","type":"Property","description":"APN 052 151902800"},
+  {"name":"057 202401400","type":"Property","description":"APN 057 202401400"},
+  {"name":"052 143901500","type":"Property","description":"APN 052 143901500"},
+  {"name":"BL-034605","type":"Record","description":"Record for SPRAGUE ETHAN & JESSICA"},
+  {"name":"BL-032285","type":"Record","description":"Record for CHENG FU-TUNG"},
+  {"name":"BL-031442","type":"Record","description":"Record for AMBER FLOORING INC"},
+  {"name":"BL-037061","type":"Record","description":"Record for HY FLOOR & GAMELINE PAINTING"},
+  {"name":"BL-043930","type":"Record","description":"Record for LEKTRICMAN"},
+  {"name":"BL-039217","type":"Record","description":"Record for QUEST DIAGNOSTICS DOI"},
+  {"name":"BL-025171","type":"Record","description":"Record for DANKO ANNE"},
+  {"name":"BL-046183","type":"Record","description":"Record for MCH ELECTRIC INC"},
+  {"name":"BL-019712","type":"Record","description":"Record for LAKIREDDY JAY ETAL"},
+  {"name":"BL-052417","type":"Record","description":"Record for SWEET PEA LLC"},
+  {"name":"BL-012561","type":"Record","description":"Record for CAL COAST WINDOW & DOOR"},
+  {"name":"BL-047567","type":"Record","description":"Record for ROSOV CONSULTING LLC"}
+],
+"relationships":[
+  {"source":"MOOREBEAUTYLOVE LLC","target":"812112 - Beauty Salons","type":"in_industry","description":"Operates as a beauty salon"},
+  {"source":"SPRAGUE ETHAN & JESSICA","target":"531110 - Lessors of Residential Buildings and Dwellings","type":"in_industry","description":"Residential rental lessor"},
+  {"source":"CHENG FU-TUNG","target":"531120 - Lessors of Nonresidential Buildings (except Miniwarehouses)","type":"in_industry","description":"Commercial rental lessor"},
+  {"source":"AMBER FLOORING INC","target":"238330 - Flooring Contractors","type":"in_industry","description":"Flooring contractor"},
+  {"source":"HY FLOOR & GAMELINE PAINTING","target":"238330 - Flooring Contractors","type":"in_industry","description":"Floor contractor"},
+  {"source":"LEKTRICMAN","target":"238210 - Electrical Contractors and Other Wiring Installation Contractors","type":"in_industry","description":"Electrical contractor"},
+  {"source":"QUEST DIAGNOSTICS DOI","target":"621511 - Medical Laboratories","type":"in_industry","description":"Medical laboratory"},
+  {"source":"DANKO ANNE","target":"561730 - Landscaping Services","type":"in_industry","description":"Landscaping services"},
+  {"source":"MCH ELECTRIC INC","target":"238210 - Electrical Contractors and Other Wiring Installation Contractors","type":"in_industry","description":"Electrical contractor"},
+  {"source":"LAKIREDDY JAY ETAL","target":"711310 - Promoters of Performing Arts, Sports, and Similar Events with Facilities","type":"in_industry","description":"Event promoter & rental property"},
+  {"source":"SWEET PEA LLC","target":"531120 - Lessors of Nonresidential Buildings (except Miniwarehouses)","type":"in_industry","description":"Nonresidential rental lessor"},
+  {"source":"CAL COAST WINDOW & DOOR","target":"236115 - New Single-Family Housing Construction (except For-Sale Builders)","type":"in_industry","description":"Window & door installation"},
+  {"source":"ROSOV CONSULTING LLC","target":"611710 - Educational Support Services","type":"in_industry","description":"Educational consulting"},
+  {"source":"SPRAGUE ETHAN & JESSICA","target":"BL-034605","type":"has_record","description":"Associated business record"},
+  {"source":"CHENG FU-TUNG","target":"BL-032285","type":"has_record","description":"Associated business record"},
+  {"source":"AMBER FLOORING INC","target":"BL-031442","type":"has_record","description":"Associated business record"},
+  {"source":"HY FLOOR & GAMELINE PAINTING","target":"BL-037061","type":"has_record","description":"Associated business record"},
+  {"source":"LEKTRICMAN","target":"BL-043930","type":"has_record","description":"Associated business record"},
+  {"source":"QUEST DIAGNOSTICS DOI","target":"BL-039217","type":"has_record","description":"Associated business record"},
+  {"source":"DANKO ANNE","target":"BL-025171","type":"has_record","description":"Associated business record"},
+  {"source":"MCH ELECTRIC INC","target":"BL-046183","type":"has_record","description":"Associated business record"},
+  {"source":"LAKIREDDY JAY ETAL","target":"BL-019712","type":"has_record","description":"Associated business record"},
+  {"source":"SWEET PEA LLC","target":"BL-052417","type":"has_record","description":"Associated business record"},
+  {"source":"CAL COAST WINDOW & DOOR","target":"BL-012561","type":"has_record","description":"Associated business record"},
+  {"source":"ROSOV CONSULTING LLC","target":"BL-047567","type":"has_record","description":"Associated business record"},
+  {"source":"BL-034605","target":"054 171501500","type":"has_property","description":"Property APN"},
+  {"source":"BL-032285","target":"053 166100503","type":"has_property","description":"Property APN"},
+  {"source":"BL-031442","target":"ZZZZZZZZZZZZZ","type":"has_property","description":"Property APN placeholder"},
+  {"source":"BL-037061","target":"ZZZZZZZZZZZZZ","type":"has_property","description":"Property APN placeholder"},
+  {"source":"BL-043930","target":"ZZZZZZZZZZZZZ","type":"has_property","description":"Property APN placeholder"},
+  {"source":"BL-039217","target":"052 151902800","type":"has_property","description":"Property APN"},
+  {"source":"BL-025171","target":"ZZZZZZZZZZZZZ","type":"has_property","description":"Property APN placeholder"},
+  {"source":"BL-046183","target":"ZZZZZZZZZZZZZ","type":"has_property","description":"Property APN placeholder"},
+  {"source":"BL-019712","target":"057 202401400","type":"has_property","description":"Property APN"},
+  {"source":"BL-052417","target":"052 143901500","type":"has_property","description":"Property APN"},
+  {"source":"BL-012561","target":"ZZZZZZZZZZZZZ","type":"has_property","description":"Property APN placeholder"},
+  {"source":"BL-047567","target":"ZZZZZZZZZZZZZ","type":"has_property","description":"Property APN placeholder"}
+]}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 41
+  1. MOOREBEAUTYLOVE LLC (Organization): Beauty Salons (NAICS 812112); LLC; 4 employees; Tax Code B
+  2. SPRAGUE ETHAN & JESSICA (Organization): Residential Rental Duplex; Partnership; 0 employees; Tax Code L
+  3. CHENG FU-TUNG (Organization): Commercial Rental; Sole Ownership; 0 employees; Tax Code L
+  4. AMBER FLOORING INC (Organization): Flooring Contractor; Corporation; 30 employees; Tax Code C
+  5. HY FLOOR & GAMELINE PAINTING (Organization): Floor Contractor; Corporation; 15 employees; Tax Code C
+  6. LEKTRICMAN (Organization): Electrical Contractor; Corporation; 2 employees; Tax Code C
+  7. QUEST DIAGNOSTICS DOI (Organization): Clinical Lab Draw Station; Corporation; 1 employee; Tax Code P
+  8. DANKO ANNE (Organization): Landscape Gardener; Sole Ownership; 0 employees; Tax Code B
+  9. MCH ELECTRIC INC (Organization): Electrical Contractor; Corporation; 221 employees; Tax Code C
+  10. LAKIREDDY JAY ETAL (Organization): Rental Property; Sole Ownership; 1 employee; Tax Code L
+  ... and 31 more entities
+
+Relationships extracted: 37
+  1. MOOREBEAUTYLOVE LLC -> 812112 - Beauty Salons (in_industry)
+  2. SPRAGUE ETHAN & JESSICA -> 531110 - Lessors of Residential Buildings and Dwellings (in_industry)
+  3. CHENG FU-TUNG -> 531120 - Lessors of Nonresidential Buildings (except Miniwarehouses) (in_industry)
+  4. AMBER FLOORING INC -> 238330 - Flooring Contractors (in_industry)
+  5. HY FLOOR & GAMELINE PAINTING -> 238330 - Flooring Contractors (in_industry)
+  6. LEKTRICMAN -> 238210 - Electrical Contractors and Other Wiring Installation Contractors (in_industry)
+  7. QUEST DIAGNOSTICS DOI -> 621511 - Medical Laboratories (in_industry)
+  8. DANKO ANNE -> 561730 - Landscaping Services (in_industry)
+  9. MCH ELECTRIC INC -> 238210 - Electrical Contractors and Other Wiring Installation Contractors (in_industry)
+  10. LAKIREDDY JAY ETAL -> 711310 - Promoters of Performing Arts, Sports, and Similar Events with Facilities (in_industry)
+  ... and 27 more relationships
+
+CHUNK 13/1026 COMPLETE - Total entities so far: 554, Total relationships so far: 620
+

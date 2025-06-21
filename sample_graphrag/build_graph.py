@@ -12,6 +12,8 @@ from collections import defaultdict
 import time
 import logging
 from datetime import datetime
+import concurrent.futures
+import threading
 
 load_dotenv()
 
@@ -59,6 +61,9 @@ class GraphRAGBuilder:
         with open(self.output_file, 'w') as f:
             f.write(f"GraphRAG Model Outputs - {datetime.now()}\n")
             f.write("=" * 50 + "\n\n")
+        
+        # Thread lock for file writing
+        self.file_lock = threading.Lock()
         
         logger.info(f"GraphRAGBuilder initialized successfully. Model outputs will be saved to: {self.output_file}")
         
@@ -151,15 +156,16 @@ class GraphRAGBuilder:
             logger.debug(f"Received response of {len(result)} characters")
             
             # Save raw model output to file
-            with open(self.output_file, 'a') as f:
-                f.write(f"\n{'='*60}\n")
-                f.write(f"CHUNK EXTRACTION - {datetime.now()}\n")
-                f.write(f"{'='*60}\n")
-                f.write(f"Input chunk ({len(text_chunk)} chars):\n")
-                f.write(f"{text_chunk[:500]}{'...' if len(text_chunk) > 500 else ''}\n\n")
-                f.write(f"Model Response:\n")
-                f.write(f"{result}\n")
-                f.write(f"{'='*60}\n\n")
+            with self.file_lock:
+                with open(self.output_file, 'a') as f:
+                    f.write(f"\n{'='*60}\n")
+                    f.write(f"CHUNK EXTRACTION - {datetime.now()}\n")
+                    f.write(f"{'='*60}\n")
+                    f.write(f"Input chunk ({len(text_chunk)} chars):\n")
+                    f.write(f"{text_chunk[:500]}{'...' if len(text_chunk) > 500 else ''}\n\n")
+                    f.write(f"Model Response:\n")
+                    f.write(f"{result}\n")
+                    f.write(f"{'='*60}\n\n")
             
             # Extract JSON from response
             json_match = re.search(r'\{.*\}', result, re.DOTALL)
@@ -169,32 +175,35 @@ class GraphRAGBuilder:
                 relationships = parsed.get("relationships", [])
                 
                 # Log extraction details to file
-                with open(self.output_file, 'a') as f:
-                    f.write(f"EXTRACTION RESULTS:\n")
-                    f.write(f"Entities extracted: {len(entities)}\n")
-                    for i, entity in enumerate(entities[:10]):  # First 10 entities
-                        f.write(f"  {i+1}. {entity.get('name', 'N/A')} ({entity.get('type', 'N/A')}): {entity.get('description', 'N/A')}\n")
-                    if len(entities) > 10:
-                        f.write(f"  ... and {len(entities) - 10} more entities\n")
-                    
-                    f.write(f"\nRelationships extracted: {len(relationships)}\n")
-                    for i, rel in enumerate(relationships[:10]):  # First 10 relationships
-                        f.write(f"  {i+1}. {rel.get('source', 'N/A')} -> {rel.get('target', 'N/A')} ({rel.get('type', 'N/A')})\n")
-                    if len(relationships) > 10:
-                        f.write(f"  ... and {len(relationships) - 10} more relationships\n")
-                    f.write(f"\n")
+                with self.file_lock:
+                    with open(self.output_file, 'a') as f:
+                        f.write(f"EXTRACTION RESULTS:\n")
+                        f.write(f"Entities extracted: {len(entities)}\n")
+                        for i, entity in enumerate(entities[:10]):  # First 10 entities
+                            f.write(f"  {i+1}. {entity.get('name', 'N/A')} ({entity.get('type', 'N/A')}): {entity.get('description', 'N/A')}\n")
+                        if len(entities) > 10:
+                            f.write(f"  ... and {len(entities) - 10} more entities\n")
+                        
+                        f.write(f"\nRelationships extracted: {len(relationships)}\n")
+                        for i, rel in enumerate(relationships[:10]):  # First 10 relationships
+                            f.write(f"  {i+1}. {rel.get('source', 'N/A')} -> {rel.get('target', 'N/A')} ({rel.get('type', 'N/A')})\n")
+                        if len(relationships) > 10:
+                            f.write(f"  ... and {len(relationships) - 10} more relationships\n")
+                        f.write(f"\n")
                 
                 logger.info(f"Extracted {len(entities)} entities and {len(relationships)} relationships")
                 return entities, relationships
             else:
                 logger.warning("No JSON found in response")
-                with open(self.output_file, 'a') as f:
-                    f.write(f"WARNING: No JSON found in response\n\n")
+                with self.file_lock:
+                    with open(self.output_file, 'a') as f:
+                        f.write(f"WARNING: No JSON found in response\n\n")
             
         except Exception as e:
             logger.error(f"Error extracting entities: {e}")
-            with open(self.output_file, 'a') as f:
-                f.write(f"ERROR: {e}\n\n")
+            with self.file_lock:
+                with open(self.output_file, 'a') as f:
+                    f.write(f"ERROR: {e}\n\n")
             
         logger.warning("Returning empty entities and relationships")
         return [], []
@@ -223,24 +232,38 @@ class GraphRAGBuilder:
         logger.info("Chunking text...")
         self.chunks = self.chunk_text(text)
         
-        logger.info(f"Processing {len(self.chunks)} chunks...")
+        logger.info(f"Processing {len(self.chunks)} chunks with 10 concurrent workers...")
         all_entities = []
         all_relationships = []
         
-        for i, chunk in enumerate(self.chunks):
-            logger.info(f"Processing chunk {i+1}/{len(self.chunks)}...")
-            entities, relationships = self.extract_entities_relationships(chunk)
+        # Process chunks in parallel
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            # Submit all chunks for processing
+            chunk_futures = {
+                executor.submit(self.process_chunk, (i, chunk)): i 
+                for i, chunk in enumerate(self.chunks)
+            }
+            
+            # Collect results as they complete
+            completed_chunks = {}
+            for future in concurrent.futures.as_completed(chunk_futures):
+                chunk_index, entities, relationships = future.result()
+                completed_chunks[chunk_index] = (entities, relationships)
+                
+                logger.info(f"Completed chunk {chunk_index + 1}/{len(self.chunks)}")
+        
+        # Process results in order to maintain consistency
+        logger.info("Processing completed chunks in order...")
+        for i in range(len(self.chunks)):
+            entities, relationships = completed_chunks[i]
             all_entities.extend(entities)
             all_relationships.extend(relationships)
             
             # Log progress to file
             with open(self.output_file, 'a') as f:
-                f.write(f"CHUNK {i+1}/{len(self.chunks)} COMPLETE - Total entities so far: {len(all_entities)}, Total relationships so far: {len(all_relationships)}\n\n")
+                f.write(f"CHUNK {i+1}/{len(self.chunks)} PROCESSED - Total entities so far: {len(all_entities)}, Total relationships so far: {len(all_relationships)}\n\n")
             
-            logger.info(f"Chunk {i+1} complete - Running totals: {len(all_entities)} entities, {len(all_relationships)} relationships")
-            
-            # Add small delay to avoid rate limiting
-            time.sleep(0.5)
+            logger.info(f"Processed chunk {i+1}/{len(self.chunks)} - Running totals: {len(all_entities)} entities, {len(all_relationships)} relationships")
         
         # Build graph
         logger.info("Building graph structure...")
@@ -403,6 +426,21 @@ class GraphRAGBuilder:
         
         with open(output_path.replace('.pkl', '_summary.json'), 'w') as f:
             json.dump(summary, f, indent=2)
+
+    def process_chunk(self, chunk_data: Tuple[int, str]) -> Tuple[int, List[Dict], List[Dict]]:
+        """Process a single chunk and return its index with extracted entities and relationships"""
+        chunk_index, text_chunk = chunk_data
+        logger.info(f"Processing chunk {chunk_index + 1}...")
+        
+        entities, relationships = self.extract_entities_relationships(text_chunk)
+        
+        # Log progress to file with thread safety
+        with self.file_lock:
+            with open(self.output_file, 'a') as f:
+                f.write(f"CHUNK {chunk_index + 1} COMPLETE - Entities: {len(entities)}, Relationships: {len(relationships)}\n")
+        
+        logger.info(f"Chunk {chunk_index + 1} complete - Extracted {len(entities)} entities, {len(relationships)} relationships")
+        return chunk_index, entities, relationships
 
 def main():
     # Example usage
