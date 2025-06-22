@@ -1,0 +1,10 @@
+graph TD;
+  UserInput-->LettaProxy;
+  LettaProxy-->OpenAI;
+  LettaProxy-->Claude;
+  LettaProxy-->Gemini;
+  OpenAI-->LettaProxy;
+  Claude-->LettaProxy;
+  Gemini-->LettaProxy;
+  LettaProxy-->AppBackend;
+  AppBackend-->Frontend;
