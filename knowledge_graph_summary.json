@@ -1,0 +1,18 @@
+{
+  "num_nodes": 12804,
+  "num_edges": 5786,
+  "num_chunks": 313,
+  "num_communities": 2227,
+  "sample_entities": [
+    "Kip\u2019s Restaurant",
+    "2439 Durant Avenue",
+    "Berkeley",
+    "CA",
+    "Kip\u2019s Restaurant phone number",
+    "https://www.kipsberkeley.com",
+    "facebook.com/KipsBerkeley",
+    "@kipsberkeley",
+    "Tri-Tip Steak Sandwich",
+    "Blueberry Pancakes"
+  ]
+}
