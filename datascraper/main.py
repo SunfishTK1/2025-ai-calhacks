@@ -4,8 +4,8 @@ import os
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
-import openai
 from flask import Flask, jsonify, render_template_string, request
+from openai import AzureOpenAI
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -38,7 +38,13 @@ class YelpFusionBridge:
     """Bridge class that simulates Yelp Fusion API calls through OpenAI"""
 
     def __init__(self, openai_api_key: str):
-        self.client = openai.OpenAI(api_key=openai_api_key)
+        print("openai key", openai_api_key)
+        self.client = AzureOpenAI(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            azure_endpoint="https://2025-ai-hackberkeley.openai.azure.com/",
+            api_version="2024-12-01-preview",  # Match this with the latest SDK-supported version,
+            azure_deployment="o4-mini",
+        )
 
     def search_businesses(
         self,
@@ -164,7 +170,6 @@ class YelpFusionBridge:
                 ],
                 functions=[function_definition],
                 function_call={"name": "search_businesses"},
-                temperature=0.7,
             )
 
             # Extract the function call response
@@ -447,7 +452,12 @@ class LocalSearchAgent:
 
     def __init__(self, openai_api_key: str):
         self.yelp_bridge = YelpFusionBridge(openai_api_key)
-        self.client = openai.OpenAI(api_key=openai_api_key)
+        self.client = AzureOpenAI(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            azure_endpoint="https://2025-ai-hackberkeley.openai.azure.com/",
+            api_version="2024-12-01-preview",  # Match this with the latest SDK-supported version
+            azure_deployment="o4-mini",
+        )
 
     def process_search_query(self, user_query: str) -> Dict[str, Any]:
         """Process a natural language search query and return results"""
@@ -457,10 +467,9 @@ class LocalSearchAgent:
             You are a local search assistant that helps users find businesses. 
             Parse the user's query and extract relevant search parameters for Yelp API.
             
-            Extract the following information:
+            Extract ONLY the following information:
             - Search term (what they're looking for)
             - Location (where to search)
-            - Any specific preferences (price, rating, etc.)
             
             Return the parameters in JSON format.
             """
@@ -471,7 +480,6 @@ class LocalSearchAgent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_query},
                 ],
-                temperature=0.3,
             )
 
             # Parse the response to extract search parameters
@@ -493,6 +501,8 @@ class LocalSearchAgent:
                 )
 
             # Perform the search
+            print("here are the params I extracted...", params)
+
             search_results = self.yelp_bridge.search_businesses(**params)
 
             # Generate a natural language response
@@ -586,7 +596,6 @@ class LocalSearchAgent:
                     """,
                     },
                 ],
-                temperature=0.7,
             )
 
             return response.choices[0].message.content
@@ -879,10 +888,10 @@ def main():
     agent = LocalSearchAgent(openai_api_key)
     print("✅ AI Local Search Agent initialized successfully!")
     print("🌐 Starting web server...")
-    print("📱 Open your browser and go to: http://localhost:5000")
+    print("📱 Open your browser and go to: http://localhost:8080")
 
     # Run the Flask app
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=8080)
 
 
 if __name__ == "__main__":
