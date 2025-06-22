@@ -1,0 +1,200 @@
+{
+  "entities": {
+    "john_smith": {
+      "id": "john_smith",
+      "name": "John Smith",
+      "type": "PERSON",
+      "properties": {
+        "age": 30,
+        "department": "Engineering"
+      }
+    },
+    "alice_johnson": {
+      "id": "alice_johnson",
+      "name": "Alice Johnson",
+      "type": "PERSON",
+      "properties": {
+        "age": 28,
+        "department": "Marketing"
+      }
+    },
+    "bob_wilson": {
+      "id": "bob_wilson",
+      "name": "Bob Wilson",
+      "type": "PERSON",
+      "properties": {
+        "age": 35,
+        "department": "Sales"
+      }
+    },
+    "tech_corp": {
+      "id": "tech_corp",
+      "name": "Tech Corp",
+      "type": "ORGANIZATION",
+      "properties": {
+        "industry": "Technology",
+        "employees": 500
+      }
+    },
+    "data_corp": {
+      "id": "data_corp",
+      "name": "Data Corp",
+      "type": "ORGANIZATION",
+      "properties": {
+        "industry": "Data Analytics",
+        "employees": 200
+      }
+    },
+    "san_francisco": {
+      "id": "san_francisco",
+      "name": "San Francisco",
+      "type": "LOCATION",
+      "properties": {
+        "state": "California",
+        "population": 875000
+      }
+    },
+    "new_york": {
+      "id": "new_york",
+      "name": "New York",
+      "type": "LOCATION",
+      "properties": {
+        "state": "New York",
+        "population": 8400000
+      }
+    },
+    "ai_project": {
+      "id": "ai_project",
+      "name": "AI Development Project",
+      "type": "CONCEPT",
+      "properties": {
+        "status": "active",
+        "budget": 1000000
+      }
+    },
+    "data_analysis": {
+      "id": "data_analysis",
+      "name": "Data Analysis",
+      "type": "CONCEPT",
+      "properties": {
+        "status": "completed",
+        "duration": "6 months"
+      }
+    },
+    "conference_2024": {
+      "id": "conference_2024",
+      "name": "Tech Conference 2024",
+      "type": "EVENT",
+      "properties": {
+        "date": "2024-03-15",
+        "attendees": 1000
+      }
+    }
+  },
+  "relations": {
+    "rel_1": {
+      "id": "rel_1",
+      "source": "john_smith",
+      "target": "tech_corp",
+      "relation_type": "WORKS_AT",
+      "properties": {
+        "role": "Senior Engineer"
+      }
+    },
+    "rel_2": {
+      "id": "rel_2",
+      "source": "alice_johnson",
+      "target": "tech_corp",
+      "relation_type": "WORKS_AT",
+      "properties": {
+        "role": "Marketing Manager"
+      }
+    },
+    "rel_3": {
+      "id": "rel_3",
+      "source": "bob_wilson",
+      "target": "data_corp",
+      "relation_type": "WORKS_AT",
+      "properties": {
+        "role": "Sales Director"
+      }
+    },
+    "rel_4": {
+      "id": "rel_4",
+      "source": "tech_corp",
+      "target": "san_francisco",
+      "relation_type": "LOCATED_IN",
+      "properties": {}
+    },
+    "rel_5": {
+      "id": "rel_5",
+      "source": "data_corp",
+      "target": "new_york",
+      "relation_type": "LOCATED_IN",
+      "properties": {}
+    },
+    "rel_6": {
+      "id": "rel_6",
+      "source": "john_smith",
+      "target": "ai_project",
+      "relation_type": "WORKS_ON",
+      "properties": {
+        "contribution": "lead developer"
+      }
+    },
+    "rel_7": {
+      "id": "rel_7",
+      "source": "alice_johnson",
+      "target": "ai_project",
+      "relation_type": "MANAGES",
+      "properties": {
+        "responsibility": "project coordination"
+      }
+    },
+    "rel_8": {
+      "id": "rel_8",
+      "source": "bob_wilson",
+      "target": "data_analysis",
+      "relation_type": "COMPLETED",
+      "properties": {
+        "role": "client liaison"
+      }
+    },
+    "rel_9": {
+      "id": "rel_9",
+      "source": "tech_corp",
+      "target": "data_corp",
+      "relation_type": "PARTNERS_WITH",
+      "properties": {
+        "partnership_type": "strategic"
+      }
+    },
+    "rel_10": {
+      "id": "rel_10",
+      "source": "john_smith",
+      "target": "conference_2024",
+      "relation_type": "PRESENTS_AT",
+      "properties": {
+        "topic": "AI in Enterprise"
+      }
+    },
+    "rel_11": {
+      "id": "rel_11",
+      "source": "alice_johnson",
+      "target": "conference_2024",
+      "relation_type": "ATTENDS",
+      "properties": {
+        "purpose": "networking"
+      }
+    },
+    "rel_12": {
+      "id": "rel_12",
+      "source": "ai_project",
+      "target": "data_analysis",
+      "relation_type": "BUILDS_ON",
+      "properties": {
+        "dependency": "uses insights from"
+      }
+    }
+  }
+}
