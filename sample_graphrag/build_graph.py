@@ -14,6 +14,7 @@ import logging
 from datetime import datetime
 import concurrent.futures
 import threading
+from collections import deque
 
 load_dotenv()
 
@@ -29,6 +30,35 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 logger.info("=== GraphRAG Builder Starting ===")
+
+# Rate limiting setup
+class RateLimiter:
+    def __init__(self, max_requests_per_minute=700):
+        self.max_requests = max_requests_per_minute
+        self.requests = deque()
+        self.lock = threading.Lock()
+    
+    def wait_if_needed(self):
+        with self.lock:
+            now = time.time()
+            # Remove requests older than 1 minute
+            while self.requests and now - self.requests[0] > 60:
+                self.requests.popleft()
+            
+            # If we're at the limit, wait
+            if len(self.requests) >= self.max_requests:
+                sleep_time = 60 - (now - self.requests[0]) + 0.1  # Small buffer
+                logger.info(f"Rate limit reached, sleeping for {sleep_time:.2f} seconds")
+                time.sleep(sleep_time)
+                # Clean up again after sleeping
+                now = time.time()
+                while self.requests and now - self.requests[0] > 60:
+                    self.requests.popleft()
+            
+            # Record this request
+            self.requests.append(now)
+
+rate_limiter = RateLimiter(max_requests_per_minute=700)
 
 # Configuration
 endpoint = os.getenv("ENDPOINT_URL", "https://2025-ai-hackberkeley.openai.azure.com/")
@@ -143,6 +173,10 @@ class GraphRAGBuilder:
         
         try:
             logger.debug("Sending request to Azure OpenAI for entity extraction")
+            
+            # Apply rate limiting before making the request
+            rate_limiter.wait_if_needed()
+            
             response = client.chat.completions.create(
                 model=deployment,
                 messages=[
@@ -212,6 +246,9 @@ class GraphRAGBuilder:
         """Get embedding for text using Azure OpenAI"""
         logger.debug(f"Getting embedding for text of length {len(text)}")
         try:
+            # Apply rate limiting before making the request
+            rate_limiter.wait_if_needed()
+            
             response = client.embeddings.create(
                 model=embedding_deployment,
                 input=text
@@ -232,12 +269,12 @@ class GraphRAGBuilder:
         logger.info("Chunking text...")
         self.chunks = self.chunk_text(text)
         
-        logger.info(f"Processing {len(self.chunks)} chunks with 10 concurrent workers...")
+        logger.info(f"Processing {len(self.chunks)} chunks with 50 concurrent workers...")
         all_entities = []
         all_relationships = []
         
         # Process chunks in parallel
-        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
             # Submit all chunks for processing
             chunk_futures = {
                 executor.submit(self.process_chunk, (i, chunk)): i 
@@ -362,6 +399,10 @@ class GraphRAGBuilder:
                 
                 try:
                     logger.debug(f"Requesting community summary for community {comm_id}")
+                    
+                    # Apply rate limiting before making the request
+                    rate_limiter.wait_if_needed()
+                    
                     response = client.chat.completions.create(
                         model=deployment,
                         messages=[
