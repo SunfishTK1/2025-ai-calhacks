@@ -1,0 +1,435 @@
+GraphRAG Model Outputs - 2025-06-21 17:47:37.335692
+==================================================
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 3 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 4 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 41 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 16 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 48 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 38 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 35 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 25 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 42 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 11 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 14 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 8 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 44 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 45 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 29 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 34 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 1 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 51 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 52 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 53 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 54 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 55 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 56 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 57 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 58 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 59 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 60 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 61 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 62 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 63 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 66 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 67 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 50 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 72 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 73 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 74 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 75 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 76 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 77 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 78 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 79 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 80 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 81 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 18 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 82 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 27 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 70 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 83 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 64 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 84 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 86 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 85 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 91 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 93 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 92 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 94 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 99 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 97 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 100 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 101 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 102 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 103 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 104 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 105 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 49 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 106 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 107 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 108 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 36 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 110 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 111 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 47 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 69 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 89 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 98 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 71 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 112 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 6 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 37 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 113 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 2 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 117 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 26 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 116 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 23 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 10 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 40 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 33 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 43 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 5 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 22 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 118 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 21 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 31 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 19 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 32 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 46 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 12 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 20 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 30 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 65 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 120 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 121 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 122 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 126 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 128 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 129 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 130 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 131 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 133 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 135 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 134 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 132 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 136 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 139 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 137 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 140 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 138 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 109 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 142 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 95 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 152 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 153 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 155 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 156 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 160 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 161 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 162 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 164 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 163 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 96 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 165 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 166 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 167 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 88 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 123 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 124 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 172 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 127 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 141 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 173 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 90 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 174 COMPLETE - Entities: 0, Relationships: 0
+ERROR: Error code: 400 - {'error': {'message': 'max_tokens is too large: 90000. This model supports at most 32768 completion tokens, whereas you provided 90000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 175 COMPLETE - Entities: 0, Relationships: 0

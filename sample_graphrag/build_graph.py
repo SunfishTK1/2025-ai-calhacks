@@ -31,9 +31,23 @@ logger = logging.getLogger(__name__)
 
 logger.info("=== GraphRAG Builder Starting ===")
 
+# Multi-model configuration
+CHAT_MODELS = {
+    "gpt-4.1-mini": {"tpm": 250000, "rpm": 250},
+    "o4-mini": {"tpm": 100000, "rpm": 600},
+    "gpt-4.1": {"tpm": 250000, "rpm": 250},
+    "o3-mini": {"tpm": 2500000, "rpm": 250},
+    "gpt-4o": {"tpm": 250000, "rpm": 1500}
+}
+
+EMBEDDING_MODELS = {
+    "text-embedding-3-large": {"tpm": 150000, "rpm": 900}
+}
+
 # Rate limiting setup
-class RateLimiter:
-    def __init__(self, max_requests_per_minute=700, max_tokens_per_minute=100000):
+class ModelRateLimiter:
+    def __init__(self, model_name: str, max_requests_per_minute: int, max_tokens_per_minute: int):
+        self.model_name = model_name
         self.max_requests = max_requests_per_minute
         self.max_tokens = max_tokens_per_minute
         self.requests = deque()
@@ -75,9 +89,9 @@ class RateLimiter:
             sleep_time = max(requests_sleep, tokens_sleep)
             if sleep_time > 0:
                 if requests_sleep > tokens_sleep:
-                    logger.info(f"Request rate limit reached, sleeping for {sleep_time:.2f} seconds")
+                    logger.info(f"{self.model_name}: Request rate limit reached, sleeping for {sleep_time:.2f} seconds")
                 else:
-                    logger.info(f"Token rate limit reached ({current_tokens} tokens), sleeping for {sleep_time:.2f} seconds")
+                    logger.info(f"{self.model_name}: Token rate limit reached ({current_tokens} tokens), sleeping for {sleep_time:.2f} seconds")
                 time.sleep(sleep_time)
                 
                 # Clean up again after sleeping
@@ -100,11 +114,95 @@ class RateLimiter:
             while self.tokens and now - self.tokens[0][0] > 60:
                 self.tokens.popleft()
 
-rate_limiter = RateLimiter(max_requests_per_minute=700, max_tokens_per_minute=100000)
+class MultiModelManager:
+    def __init__(self):
+        # Create rate limiters for each model
+        self.chat_limiters = {}
+        for model_name, limits in CHAT_MODELS.items():
+            self.chat_limiters[model_name] = ModelRateLimiter(
+                model_name, limits["rpm"], limits["tpm"]
+            )
+        
+        self.embedding_limiters = {}
+        for model_name, limits in EMBEDDING_MODELS.items():
+            self.embedding_limiters[model_name] = ModelRateLimiter(
+                model_name, limits["rpm"], limits["tpm"]
+            )
+        
+        # Calculate weighted distribution based on model capacities
+        self._calculate_model_weights()
+        
+        # Model selection state
+        self.model_counter = 0
+        self.model_lock = threading.Lock()
+    
+    def _calculate_model_weights(self):
+        """Calculate weighted distribution based on RPM and TPM limits"""
+        # Use the minimum of RPM and TPM capacity (normalized) as the weight
+        total_capacity = 0
+        model_capacities = {}
+        
+        for model_name, limits in CHAT_MODELS.items():
+            # Normalize capacity - assume average 2000 tokens per request (more realistic for entity extraction)
+            rpm_capacity = limits["rpm"]
+            tpm_capacity = limits["tpm"] // 2000  # Convert TPM to effective RPM
+            
+            # Use the limiting factor as the model's effective capacity
+            effective_capacity = min(rpm_capacity, tpm_capacity)
+            model_capacities[model_name] = effective_capacity
+            total_capacity += effective_capacity
+        
+        # Create weighted distribution list
+        self.weighted_models = []
+        for model_name, capacity in model_capacities.items():
+            # Add model multiple times based on its capacity ratio
+            weight = max(1, round((capacity / total_capacity) * 100))
+            self.weighted_models.extend([model_name] * weight)
+        
+        logger.info(f"Model weights calculated:")
+        for model_name, capacity in model_capacities.items():
+            percentage = (capacity / total_capacity) * 100
+            logger.info(f"  {model_name}: {capacity} effective RPM ({percentage:.1f}% of workload)")
+        
+        logger.info(f"Total effective capacity: {total_capacity} RPM")
+    
+    def get_next_chat_model(self):
+        """Get the next chat model using weighted distribution"""
+        with self.model_lock:
+            model = self.weighted_models[self.model_counter % len(self.weighted_models)]
+            self.model_counter += 1
+            return model
+    
+    def get_next_embedding_model(self):
+        """Get the next available embedding model in round-robin fashion"""
+        # Only one embedding model, so just return it
+        return list(EMBEDDING_MODELS.keys())[0]
+    
+    def wait_for_chat_model(self, model_name: str, estimated_tokens: int):
+        """Apply rate limiting for a specific chat model"""
+        self.chat_limiters[model_name].wait_if_needed(estimated_tokens)
+    
+    def wait_for_embedding_model(self, model_name: str, estimated_tokens: int):
+        """Apply rate limiting for a specific embedding model"""
+        self.embedding_limiters[model_name].wait_if_needed(estimated_tokens)
+    
+    def record_chat_tokens(self, model_name: str, token_count: int):
+        """Record token usage for a chat model"""
+        self.chat_limiters[model_name].record_tokens(token_count)
+    
+    def record_embedding_tokens(self, model_name: str, token_count: int):
+        """Record token usage for an embedding model"""
+        self.embedding_limiters[model_name].record_tokens(token_count)
+
+# Import itertools for cycling through models
+import itertools
+
+# Initialize multi-model manager
+model_manager = MultiModelManager()
 
 # Configuration
 endpoint = os.getenv("ENDPOINT_URL", "https://2025-ai-hackberkeley.openai.azure.com/")
-deployment = os.getenv("DEPLOYMENT_NAME", "o4-mini")
+deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4.1-mini")
 subscription_key = os.getenv("AZURE_OPENAI_API_KEY")
 embedding_deployment = os.getenv("EMBEDDING_DEPLOYMENT_NAME", "text-embedding-3-large")
 
@@ -194,6 +292,9 @@ class GraphRAGBuilder:
         """Extract entities and relationships from text using LLM"""
         logger.debug(f"Extracting entities from chunk of {len(text_chunk)} characters")
         
+        # Get the next available chat model
+        model_name = model_manager.get_next_chat_model()
+        
         prompt = f"""Extract entities and their relationships from the following text. 
         Return the result in JSON format with two lists:
         1. "entities": list of objects with "name", "type", and "description"
@@ -214,40 +315,40 @@ class GraphRAGBuilder:
         """
         
         try:
-            logger.debug("Sending request to Azure OpenAI for entity extraction")
+            logger.debug(f"Sending request to {model_name} for entity extraction")
             
             # Estimate token usage (rough approximation: 1 token ≈ 4 characters)
             estimated_tokens = (len(text_chunk) + len(prompt)) // 4 + 2000  # Add buffer for response
             
             # Apply rate limiting before making the request
-            rate_limiter.wait_if_needed(estimated_tokens)
+            model_manager.wait_for_chat_model(model_name, estimated_tokens)
             
             response = client.chat.completions.create(
-                model=deployment,
+                model=model_name,
                 messages=[
                     {"role": "system", "content": "You are an expert at extracting structured information from text."},
                     {"role": "user", "content": prompt}
                 ],
-                max_completion_tokens=90000,
+                max_completion_tokens=15000,
             )
             
             # Record actual token usage if available
             if hasattr(response, 'usage') and response.usage:
                 actual_tokens = response.usage.total_tokens
-                rate_limiter.record_tokens(actual_tokens)
-                logger.debug(f"Used {actual_tokens} tokens for this request")
+                model_manager.record_chat_tokens(model_name, actual_tokens)
+                logger.debug(f"Used {actual_tokens} tokens on {model_name}")
             else:
                 # Fallback to estimated tokens
-                rate_limiter.record_tokens(estimated_tokens)
+                model_manager.record_chat_tokens(model_name, estimated_tokens)
             
             result = response.choices[0].message.content
-            logger.debug(f"Received response of {len(result)} characters")
+            logger.debug(f"Received response of {len(result)} characters from {model_name}")
             
             # Save raw model output to file
             with self.file_lock:
                 with open(self.output_file, 'a') as f:
                     f.write(f"\n{'='*60}\n")
-                    f.write(f"CHUNK EXTRACTION - {datetime.now()}\n")
+                    f.write(f"CHUNK EXTRACTION - {datetime.now()} - Model: {model_name}\n")
                     f.write(f"{'='*60}\n")
                     f.write(f"Input chunk ({len(text_chunk)} chars):\n")
                     f.write(f"{text_chunk[:500]}{'...' if len(text_chunk) > 500 else ''}\n\n")
@@ -279,19 +380,19 @@ class GraphRAGBuilder:
                             f.write(f"  ... and {len(relationships) - 10} more relationships\n")
                         f.write(f"\n")
                 
-                logger.info(f"Extracted {len(entities)} entities and {len(relationships)} relationships")
+                logger.info(f"Extracted {len(entities)} entities and {len(relationships)} relationships using {model_name}")
                 return entities, relationships
             else:
-                logger.warning("No JSON found in response")
+                logger.warning(f"No JSON found in response from {model_name}")
                 with self.file_lock:
                     with open(self.output_file, 'a') as f:
-                        f.write(f"WARNING: No JSON found in response\n\n")
+                        f.write(f"WARNING: No JSON found in response from {model_name}\n\n")
             
         except Exception as e:
-            logger.error(f"Error extracting entities: {e}")
+            logger.error(f"Error extracting entities using {model_name}: {e}")
             with self.file_lock:
                 with open(self.output_file, 'a') as f:
-                    f.write(f"ERROR: {e}\n\n")
+                    f.write(f"ERROR using {model_name}: {e}\n\n")
             
         logger.warning("Returning empty entities and relationships")
         return [], []
@@ -300,26 +401,29 @@ class GraphRAGBuilder:
         """Get embedding for text using Azure OpenAI"""
         logger.debug(f"Getting embedding for text of length {len(text)}")
         try:
+            # Get the next available embedding model
+            model_name = model_manager.get_next_embedding_model()
+            
             # Estimate token usage for embeddings (typically much smaller than chat completions)
             estimated_tokens = len(text) // 4 + 10
             
             # Apply rate limiting before making the request
-            rate_limiter.wait_if_needed(estimated_tokens)
+            model_manager.wait_for_embedding_model(model_name, estimated_tokens)
             
             response = client.embeddings.create(
-                model=embedding_deployment,
+                model=model_name,
                 input=text
             )
             
             # Record token usage (embeddings usually return token count in usage)
             if hasattr(response, 'usage') and response.usage:
                 actual_tokens = response.usage.total_tokens
-                rate_limiter.record_tokens(actual_tokens)
-                logger.debug(f"Used {actual_tokens} tokens for embedding")
+                model_manager.record_embedding_tokens(model_name, actual_tokens)
+                logger.debug(f"Used {actual_tokens} tokens for embedding with {model_name}")
             else:
-                rate_limiter.record_tokens(estimated_tokens)
+                model_manager.record_embedding_tokens(model_name, estimated_tokens)
             
-            logger.debug(f"Successfully got embedding with {len(response.data[0].embedding)} dimensions")
+            logger.debug(f"Successfully got embedding with {len(response.data[0].embedding)} dimensions using {model_name}")
             return response.data[0].embedding
         except Exception as e:
             logger.error(f"Error getting embedding: {e}")
@@ -335,12 +439,25 @@ class GraphRAGBuilder:
         logger.info("Chunking text...")
         self.chunks = self.chunk_text(text)
         
-        logger.info(f"Processing {len(self.chunks)} chunks with 50 concurrent workers...")
+        # Calculate optimal concurrency based on weighted model distribution
+        # Get the effective capacity from the model manager
+        total_effective_rpm = sum(min(limits["rpm"], limits["tpm"] // 2000) for limits in CHAT_MODELS.values())
+        
+        # Conservative approach: Use 80% of total capacity to account for rate limiting overhead
+        usable_capacity = int(total_effective_rpm * 0.8)
+        
+        # Each worker processes roughly 1 chunk per minute on average (including wait times)
+        # So optimal workers ≈ effective RPM capacity
+        optimal_workers = min(usable_capacity, 100)  # Cap at 100 for stability
+        
+        logger.info(f"Processing {len(self.chunks)} chunks with {optimal_workers} concurrent workers...")
+        logger.info(f"Effective capacity: {total_effective_rpm} RPM, using {usable_capacity} RPM ({optimal_workers} workers)")
+        logger.info(f"Weighted distribution will favor o3-mini (~37% of requests) due to superior token capacity")
         all_entities = []
         all_relationships = []
         
         # Process chunks in parallel
-        with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=optimal_workers) as executor:
             # Submit all chunks for processing
             chunk_futures = {
                 executor.submit(self.process_chunk, (i, chunk)): i 
@@ -383,33 +500,69 @@ class GraphRAGBuilder:
             f.write(f"{'='*60}\n\n")
         
         entities_added = 0
+        skipped_entities = 0
+        valid_entities = []  # Store valid entities for parallel embedding processing
+        
         for entity in all_entities:
-            entity_id = entity['name']
+            # Check if entity has required keys
+            if not isinstance(entity, dict):
+                logger.debug(f"Skipping non-dict entity: {entity}")
+                skipped_entities += 1
+                continue
+                
+            entity_name = entity.get('name')
+            if not entity_name:
+                logger.debug(f"Skipping entity with missing name: {entity}")
+                skipped_entities += 1
+                continue
+                
+            entity_id = entity_name
             self.graph.add_node(entity_id, **entity)
             self.entity_map[entity_id] = entity
+            valid_entities.append((entity_id, entity))
             entities_added += 1
             
             if entities_added % 100 == 0:
                 logger.info(f"Added {entities_added}/{len(all_entities)} entities to graph")
-            
-            # Get embedding for entity
-            entity_text = f"{entity['name']} ({entity['type']}): {entity.get('description', '')}"
-            logger.debug(f"Getting embedding for entity: {entity_id}")
-            self.embeddings[entity_id] = self.get_embedding(entity_text)
+        
+        if skipped_entities > 0:
+            logger.warning(f"Skipped {skipped_entities} invalid entities")
+        
+        # Generate embeddings in parallel
+        logger.info(f"Generating embeddings for {len(valid_entities)} entities using parallel processing...")
+        self._generate_embeddings_parallel(valid_entities)
         
         logger.info(f"Adding {len(all_relationships)} relationships to graph...")
         edges_added = 0
+        skipped_relationships = 0
         for rel in all_relationships:
-            if rel['source'] in self.graph and rel['target'] in self.graph:
-                self.graph.add_edge(rel['source'], rel['target'], **rel)
-                self.relationship_map[rel['source']].append(rel)
-                self.relationship_map[rel['target']].append(rel)
+            # Check if relationship has required keys
+            if not isinstance(rel, dict):
+                logger.debug(f"Skipping non-dict relationship: {rel}")
+                skipped_relationships += 1
+                continue
+                
+            source = rel.get('source')
+            target = rel.get('target')
+            
+            if not source or not target:
+                logger.debug(f"Skipping relationship with missing source/target: {rel}")
+                skipped_relationships += 1
+                continue
+                
+            if source in self.graph and target in self.graph:
+                self.graph.add_edge(source, target, **rel)
+                self.relationship_map[source].append(rel)
+                self.relationship_map[target].append(rel)
                 edges_added += 1
             else:
-                logger.debug(f"Skipping relationship - missing nodes: {rel['source']} -> {rel['target']}")
+                logger.debug(f"Skipping relationship - missing nodes: {source} -> {target}")
+                skipped_relationships += 1
         
         logger.info(f"Graph built with {self.graph.number_of_nodes()} nodes and {self.graph.number_of_edges()} edges")
         logger.info(f"Successfully added {edges_added} out of {len(all_relationships)} relationships")
+        if skipped_relationships > 0:
+            logger.warning(f"Skipped {skipped_relationships} invalid relationships")
         
         # Log final graph stats to file
         with open(self.output_file, 'a') as f:
@@ -466,28 +619,31 @@ class GraphRAGBuilder:
                 try:
                     logger.debug(f"Requesting community summary for community {comm_id}")
                     
+                    # Get the next available chat model
+                    model_name = model_manager.get_next_chat_model()
+                    
                     # Estimate token usage for community summary
                     estimated_tokens = len(summary_prompt) // 4 + 500  # Smaller response expected
                     
                     # Apply rate limiting before making the request
-                    rate_limiter.wait_if_needed(estimated_tokens)
+                    model_manager.wait_for_chat_model(model_name, estimated_tokens)
                     
                     response = client.chat.completions.create(
-                        model=deployment,
+                        model=model_name,
                         messages=[
                             {"role": "system", "content": "You are an expert at summarizing relationships between entities."},
                             {"role": "user", "content": summary_prompt}
                         ],
-                        max_completion_tokens=90000,
+                        max_completion_tokens=15000,
                     )
                     
                     # Record actual token usage if available
                     if hasattr(response, 'usage') and response.usage:
                         actual_tokens = response.usage.total_tokens
-                        rate_limiter.record_tokens(actual_tokens)
-                        logger.debug(f"Used {actual_tokens} tokens for community summary")
+                        model_manager.record_chat_tokens(model_name, actual_tokens)
+                        logger.debug(f"Used {actual_tokens} tokens for community summary with {model_name}")
                     else:
-                        rate_limiter.record_tokens(estimated_tokens)
+                        model_manager.record_chat_tokens(model_name, estimated_tokens)
                     
                     summary_text = response.choices[0].message.content
                     
@@ -559,6 +715,50 @@ class GraphRAGBuilder:
         
         logger.info(f"Chunk {chunk_index + 1} complete - Extracted {len(entities)} entities, {len(relationships)} relationships")
         return chunk_index, entities, relationships
+
+    def _generate_embeddings_parallel(self, valid_entities: List[Tuple[str, Dict]]):
+        """Generate embeddings for entities in parallel to maximize throughput"""
+        
+        # Calculate optimal workers for embeddings
+        # text-embedding-3-large: 900 RPM, 150,000 TPM
+        # Embeddings use ~10-50 tokens each, so TPM is rarely the limit
+        embedding_rpm = 900
+        embedding_workers = min(int(embedding_rpm * 0.8 / 60 * 10), 90, len(valid_entities))  # 10-second batches, cap at 90
+        
+        logger.info(f"Using {embedding_workers} workers for parallel embedding generation")
+        
+        def process_entity_embedding(entity_data):
+            entity_id, entity = entity_data
+            entity_text = f"{entity.get('name', '')} ({entity.get('type', '')}): {entity.get('description', '')}"
+            embedding = self.get_embedding(entity_text)
+            return entity_id, embedding
+        
+        # Process embeddings in parallel
+        embeddings_completed = 0
+        with concurrent.futures.ThreadPoolExecutor(max_workers=embedding_workers) as executor:
+            # Submit all embedding tasks
+            embedding_futures = {
+                executor.submit(process_entity_embedding, entity_data): entity_data[0]
+                for entity_data in valid_entities
+            }
+            
+            # Collect results as they complete
+            for future in concurrent.futures.as_completed(embedding_futures):
+                try:
+                    entity_id, embedding = future.result()
+                    self.embeddings[entity_id] = embedding
+                    embeddings_completed += 1
+                    
+                    if embeddings_completed % 100 == 0:
+                        logger.info(f"Generated {embeddings_completed}/{len(valid_entities)} embeddings")
+                        
+                except Exception as e:
+                    entity_id = embedding_futures[future]
+                    logger.error(f"Error generating embedding for {entity_id}: {e}")
+                    # Use random embedding as fallback
+                    self.embeddings[entity_id] = list(np.random.rand(1536))
+        
+        logger.info(f"Completed embedding generation for {embeddings_completed} entities")
 
 def main():
     # Example usage

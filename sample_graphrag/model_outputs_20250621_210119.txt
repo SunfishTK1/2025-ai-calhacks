@@ -1,0 +1,2334 @@
+GraphRAG Model Outputs - 2025-06-21 21:01:19.146021
+==================================================
+
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 89 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 86 COMPLETE - Entities: 0, Relationships: 0
+CHUNK 85 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 94 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 88 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 84 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 92 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 99 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 90 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 87 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 91 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 96 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 95 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 83 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 98 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 101 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 100 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 93 COMPLETE - Entities: 0, Relationships: 0
+ERROR using gpt-4o: Error code: 400 - {'error': {'message': 'max_tokens is too large: 30000. This model supports at most 16384 completion tokens, whereas you provided 30000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+CHUNK 97 COMPLETE - Entities: 0, Relationships: 0
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:26.968681 - Model: gpt-4.1-mini
+============================================================
+Input chunk (5844 chars):
+of Residential Buildings and Dwellings, Tax_Code=L, Employee_Num=4, Bus_Own_Type=Sole Ownership, B1_BUSINESS_NAME=ADABI HOSSEIN & NOUSHIN, B1_ADDRESS1=1560 GRAND VIEW DR, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94705-1636, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2636 WARRING ST, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 184: APN=060 248201400, RecordID=BL-017267, BusDesc=HOME HEALTH SERVICES, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=DEVELOPING LITTLE ...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "DEVELOPING LITTLE CHAMPIONS THERAPY",
+      "type": "Organization",
+      "description": "Home Health Services, Sole Ownership business with 1 employee, located at 1400 SHATTUCK AVE STE 12 PMB 324, Berkeley, CA 94709"
+    },
+    {
+      "name": "UA HOMES LP",
+      "type": "Organization",
+      "description": "Low Income Housing, LLC with 0 employees, located at 2220 OXFORD ST, Berkeley, CA 94704-0138"
+    },
+    {
+      "name": "ACE CASH EXPRESS",
+      "type": "Organization",
+      "description": "Check Cashing Services, Corporation with 2 employees, located at 300 E JOHN CARPENTER FWY STE 900, Irving, TX 75062-2789"
+    },
+    {
+      "name": "ONEMILKTEABERKELEY LLC",
+      "type": "Organization",
+      "description": "Boba Tea Cafe, LLC with 0 employees, located at 1343 MARTIN LUTHER KING JR WAY, Berkeley, CA 94709-1912"
+    },
+    {
+      "name": "STERLING BERKELEY ADDISON LP",
+      "type": "Organization",
+      "description": "Residential 27 Units, 1 Commercial, LLC with 0 employees, located at 3411 RICHMOND AVE STE 500, Houston, TX 77046-3409"
+    },
+    {
+      "name": "PLAYCORE WISCONSIN INC",
+      "type": "Organization",
+      "description": "Install Playground Equipment, Corporation with 0 employees, located at 544 CHESTNUT ST, Chattanooga, TN 37402-4906"
+    },
+    {
+      "name": "2329 PARKER LLC",
+      "type": "Organization",
+      "description": "Rental - 4 Units, LLC with 0 employees, located at PO BOX 3562, Oshkosh, WI 54903"
+    },
+    {
+      "name": "ESLAMI A ALI",
+      "type": "Person",
+      "description": "Residential Rental, Sole Ownership with 4 employees, located at PO BOX 4623, Berkeley, CA 94704-0623"
+    },
+    {
+      "name": "MI BUILDERS",
+      "type": "Organization",
+      "description": "Handyman, Sole Ownership with 0 employees, located at 1645 DWIGHT WAY, Berkeley, CA 94703"
+    },
+    {
+      "name": "RESCUE HEARTS AND MINDS MINISTRY",
+      "type": "Organization",
+      "description": "Religious Organization, Sole Ownership with 2 employees, located at 1474 UNIVERSITY AVE #227, Berkeley, CA 94702-1509"
+    },
+    {
+      "name": "ARLENE'S CLEANERS",
+      "type": "Organization",
+      "description": "Drycleaners, LLC with 2 employees, located at 3319 HAMPSTEAD CT, Livermore, CA 94551-1780"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DEVELOPING LITTLE CHAMPIONS THERAPY",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Business located in Berkeley, CA"
+    },
+    {
+      "source": "UA HOMES LP",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Business located in Berkeley, CA"
+    },
+    {
+      "source": "ACE CASH EXPRESS",
+      "target": "Irving, TX",
+      "type": "located_in",
+      "description": "Business located in Irving, TX"
+    },
+    {
+      "source": "ONEMILKTEABERKELEY LLC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Business located in Berkeley, CA"
+    },
+    {
+      "source": "STERLING BERKELEY ADDISON LP",
+      "target": "Houston, TX",
+      "type": "located_in",
+      "description": "Business located in Houston, TX"
+    },
+    {
+      "source": "PLAYCORE WISCONSIN INC",
+      "target": "Chattanooga, TN",
+      "type": "located_in",
+      "description": "Business located in Chattanooga, TN"
+    },
+    {
+      "source": "2329 PARKER LLC",
+      "target": "Oshkosh, WI",
+      "type": "located_in",
+      "description": "Business located in Oshkosh, WI"
+    },
+    {
+      "source": "ESLAMI A ALI",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Person located in Berkeley, CA"
+    },
+    {
+      "source": "MI BUILDERS",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Business located in Berkeley, CA"
+    },
+    {
+      "source": "RESCUE HEARTS AND MINDS MINISTRY",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Business located in Berkeley, CA"
+    },
+    {
+      "source": "ARLENE'S CLEANERS",
+      "target": "Livermore, CA",
+      "type": "located_in",
+      "description": "Business located in Livermore, CA"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 11
+  1. DEVELOPING LITTLE CHAMPIONS THERAPY (Organization): Home Health Services, Sole Ownership business with 1 employee, located at 1400 SHATTUCK AVE STE 12 PMB 324, Berkeley, CA 94709
+  2. UA HOMES LP (Organization): Low Income Housing, LLC with 0 employees, located at 2220 OXFORD ST, Berkeley, CA 94704-0138
+  3. ACE CASH EXPRESS (Organization): Check Cashing Services, Corporation with 2 employees, located at 300 E JOHN CARPENTER FWY STE 900, Irving, TX 75062-2789
+  4. ONEMILKTEABERKELEY LLC (Organization): Boba Tea Cafe, LLC with 0 employees, located at 1343 MARTIN LUTHER KING JR WAY, Berkeley, CA 94709-1912
+  5. STERLING BERKELEY ADDISON LP (Organization): Residential 27 Units, 1 Commercial, LLC with 0 employees, located at 3411 RICHMOND AVE STE 500, Houston, TX 77046-3409
+  6. PLAYCORE WISCONSIN INC (Organization): Install Playground Equipment, Corporation with 0 employees, located at 544 CHESTNUT ST, Chattanooga, TN 37402-4906
+  7. 2329 PARKER LLC (Organization): Rental - 4 Units, LLC with 0 employees, located at PO BOX 3562, Oshkosh, WI 54903
+  8. ESLAMI A ALI (Person): Residential Rental, Sole Ownership with 4 employees, located at PO BOX 4623, Berkeley, CA 94704-0623
+  9. MI BUILDERS (Organization): Handyman, Sole Ownership with 0 employees, located at 1645 DWIGHT WAY, Berkeley, CA 94703
+  10. RESCUE HEARTS AND MINDS MINISTRY (Organization): Religious Organization, Sole Ownership with 2 employees, located at 1474 UNIVERSITY AVE #227, Berkeley, CA 94702-1509
+  ... and 1 more entities
+
+Relationships extracted: 11
+  1. DEVELOPING LITTLE CHAMPIONS THERAPY -> Berkeley, CA (located_in)
+  2. UA HOMES LP -> Berkeley, CA (located_in)
+  3. ACE CASH EXPRESS -> Irving, TX (located_in)
+  4. ONEMILKTEABERKELEY LLC -> Berkeley, CA (located_in)
+  5. STERLING BERKELEY ADDISON LP -> Houston, TX (located_in)
+  6. PLAYCORE WISCONSIN INC -> Chattanooga, TN (located_in)
+  7. 2329 PARKER LLC -> Oshkosh, WI (located_in)
+  8. ESLAMI A ALI -> Berkeley, CA (located_in)
+  9. MI BUILDERS -> Berkeley, CA (located_in)
+  10. RESCUE HEARTS AND MINDS MINISTRY -> Berkeley, CA (located_in)
+  ... and 1 more relationships
+
+CHUNK 15 COMPLETE - Entities: 11, Relationships: 11
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:27.663389 - Model: gpt-4.1-mini
+============================================================
+Input chunk (6263 chars):
+VARIOUS, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 111: APN=060 241603100, RecordID=BL-014950, BusDesc=RES RENTAL 4 UNITS, B1_PER_SUB_TYPE=Rental of Real Property, DBA=BERKELEYS EDGE PROPERTIES LLC, NAICS=531110 - Lessors of Residential Buildings and Dwellings, Tax_Code=L, Employee_Num=1, Bus_Own_Type=LLC, B1_BUSINESS_NAME=BERKELEYS EDGE PROPERTIES LLC, B1_ADDRESS1=2027 LOS ANGELES AVE, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=947072428, B1_CONTACT_TYPE=Business Owner, ...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "BERKELEYS EDGE PROPERTIES LLC",
+      "type": "Organization",
+      "description": "Rental of Real Property business, DBA BERKELEYS EDGE PROPERTIES LLC, located at 2027 LOS ANGELES AVE, BERKELEY, CA 94707-2428 with 1 employee."
+    },
+    {
+      "name": "WHOLE FOODS MARKET",
+      "type": "Organization",
+      "description": "Grocery - Supermarket business, DBA WHOLE FOODS MARKET, located at PO BOX 684786, AUSTIN, TX 78768-4786 with 133 employees."
+    },
+    {
+      "name": "UNLIMITED ELECTRONICS",
+      "type": "Organization",
+      "description": "Cellphone store business, DBA UNLIMITED ELECTRONICS, located at PO BOX 2225, UNION CITY, CA 94587 with 2 employees."
+    },
+    {
+      "name": "ALLEN DRYWALL & ASSOCIATES INC",
+      "type": "Organization",
+      "description": "Drywall subcontractor business, DBA ALLEN DRYWALL & ASSOCIATES INC, located at 380 LANG ROAD, HILLSBOROUGH, CA 94010 with 65 employees."
+    },
+    {
+      "name": "SMITH ENGINEERING INC",
+      "type": "Organization",
+      "description": "Structural engineering services business, DBA SMITH ENGINEERING INC, located at 732 ADDISON ST STE B, BERKELEY, CA 94710-1908 with 4 employees."
+    },
+    {
+      "name": "ORGANIC LICE GURU LLC",
+      "type": "Organization",
+      "description": "Remove head lice business, DBA ORGANIC LICE GURU LLC, located at 2033 RED COACH LN, ENCINITAS, CA 92024 with 4 employees."
+    },
+    {
+      "name": "NICHOLAS HACK PSYCHOTHERAPY INC",
+      "type": "Organization",
+      "description": "Psychotherapy business, DBA NICHOLAS HACK PSYCHOTHERAPY INC, located at 2991 SHATTUCK AVE STE 303, BERKELEY, CA 94705 with 1 employee."
+    },
+    {
+      "name": "CHUN VIVIAN",
+      "type": "Person",
+      "description": "Commercial rental property owner, located at 163 HIGHLAND BLVD, KENSINGTON, CA 94708-1022."
+    },
+    {
+      "name": "BERKELEY EMERGENCY MED GROUP",
+      "type": "Organization",
+      "description": "Medical services business, DBA BERKELEY EMERGENCY MED GROUP, located at 6114 LA SALLE AVE BOX 334, OAKLAND, CA 94611 with 50 employees."
+    },
+    {
+      "name": "ZD FILMS",
+      "type": "Organization",
+      "description": "Media representative business, DBA ZD FILMS, located at 2600 TENTH ST STE 418, BERKELEY, CA 94710 with 1 employee."
+    },
+    {
+      "name": "ROBERT HAUSER CONSTRUCTION",
+      "type": "Organization",
+      "description": "General contractor business, DBA ROBERT HAUSER CONSTRUCTION, located at PO BOX 410394, SAN FRANCISCO, CA 94141-0394 with 1 employee."
+    },
+    {
+      "name": "WESTERN ROOFING SYSTEMS",
+      "type": "Organization",
+      "description": "General contractor - roofing business, DBA WESTERN ROOFING SYSTEMS, located at 211 JACKSON ST, HAYWARD, CA 94544-1949 with 4 employees."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BERKELEYS EDGE PROPERTIES LLC",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Business located in city of Berkeley, CA."
+    },
+    {
+      "source": "WHOLE FOODS MARKET",
+      "target": "AUSTIN",
+      "type": "located_in",
+      "description": "Business located in city of Austin, TX."
+    },
+    {
+      "source": "UNLIMITED ELECTRONICS",
+      "target": "UNION CITY",
+      "type": "located_in",
+      "description": "Business located in city of Union City, CA."
+    },
+    {
+      "source": "ALLEN DRYWALL & ASSOCIATES INC",
+      "target": "HILLSBOROUGH",
+      "type": "located_in",
+      "description": "Business located in city of Hillsborough, CA."
+    },
+    {
+      "source": "SMITH ENGINEERING INC",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Business located in city of Berkeley, CA."
+    },
+    {
+      "source": "ORGANIC LICE GURU LLC",
+      "target": "ENCINITAS",
+      "type": "located_in",
+      "description": "Business located in city of Encinitas, CA."
+    },
+    {
+      "source": "NICHOLAS HACK PSYCHOTHERAPY INC",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Business located in city of Berkeley, CA."
+    },
+    {
+      "source": "CHUN VIVIAN",
+      "target": "KENSINGTON",
+      "type": "located_in",
+      "description": "Person located in city of Kensington, CA."
+    },
+    {
+      "source": "BERKELEY EMERGENCY MED GROUP",
+      "target": "OAKLAND",
+      "type": "located_in",
+      "description": "Business located in city of Oakland, CA."
+    },
+    {
+      "source": "ZD FILMS",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Business located in city of Berkeley, CA."
+    },
+    {
+      "source": "ROBERT HAUSER CONSTRUCTION",
+      "target": "SAN FRANCISCO",
+      "type": "located_in",
+      "description": "Business located in city of San Francisco, CA."
+    },
+    {
+      "source": "WESTERN ROOFING SYSTEMS",
+      "target": "HAYWARD",
+      "type": "located_in",
+      "description": "Business located in city of Hayward, CA."
+    }
+  ]
+}
+============================================================
+
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:27.664646 - Model: gpt-4.1-mini
+============================================================
+Input chunk (6112 chars):
+B1_ADDRESS1=39 WYOMING ST, B1_CITY=PLEASANTON, B1_STATE=CA, B1_ZIP=94566-6277, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=0 VARIOUS, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 1384: APN=053 166101400, RecordID=BL-008491, BusDesc=PRINT SHOP, B1_PER_SUB_TYPE=Manufacturing, DBA=MERCURIO BROS PRINTING, NAICS=323119, Tax_Code=M, Employee_Num=3, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=MERCURIO BROS PRINTING, B1_ADDRESS1=2830 SAN PABLO AVE, B1_CITY=BERKELEY, B1_STATE...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "MERCURIO BROS PRINTING",
+      "type": "Organization",
+      "description": "Print Shop, Manufacturing, Corporation, 3 employees"
+    },
+    {
+      "name": "LINNANE CHRISTINE & AUSTIN",
+      "type": "Organization",
+      "description": "Rental Property/3 Units, Rental of Real Property, Sole Ownership, 0 employees"
+    },
+    {
+      "name": "1940 HASTE STREET LLC",
+      "type": "Organization",
+      "description": "SFR Rental (U1), Rental of Real Property, LLC, 2 employees"
+    },
+    {
+      "name": "R BROTHERS WATERPROOFING INC",
+      "type": "Organization",
+      "description": "Waterproofing, Construction or Contractor, Corporation, 60 employees"
+    },
+    {
+      "name": "M G WEST COMPANY",
+      "type": "Organization",
+      "description": "Retail Furniture, Retail Trade, Corporation, 35 employees"
+    },
+    {
+      "name": "DELA INC",
+      "type": "Organization",
+      "description": "Landscape Design Firm, Professional SemiProfessional, Corporation, 1 employee"
+    },
+    {
+      "name": "DEAN MARY HOPE LCSW",
+      "type": "Person",
+      "description": "Social Worker, Professional SemiProfessional, Sole Ownership, 0 employees"
+    },
+    {
+      "name": "ADDISON BUILDING PROPERTIES LL",
+      "type": "Organization",
+      "description": "Commercial Rental, Rental of Real Property, Sole Ownership, 0 employees"
+    },
+    {
+      "name": "IACOFANO DANIEL/GOLTSMAN S",
+      "type": "Organization",
+      "description": "Commercial Rental, Rental of Real Property, Sole Ownership, 0 employees"
+    },
+    {
+      "name": "WILSON DELANG CONSTRUCTION GROUP",
+      "type": "Organization",
+      "description": "Removal of Decommissioned Boiler Unit, Construction or Contractor, Corporation, 3 employees"
+    },
+    {
+      "name": "CHIPOTLE MEXICAN GRILL #2303",
+      "type": "Organization",
+      "description": "Mexican Restaurant, Retail Trade, Corporation, 30 employees"
+    },
+    {
+      "name": "SEQUOIA APARTMENTS",
+      "type": "Organization",
+      "description": "Residential Rental - 43 Units, Rental of Real Property, Sole Ownership, 0 employees"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MERCURIO BROS PRINTING",
+      "target": "BERKELEY, CA 94702",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "LINNANE CHRISTINE & AUSTIN",
+      "target": "PIEDMONT, CA 94611-3849",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "1940 HASTE STREET LLC",
+      "target": "BERKELEY, CA 94705-1129",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "R BROTHERS WATERPROOFING INC",
+      "target": "SAN JOSE, CA 95110",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "M G WEST COMPANY",
+      "target": "SAN FRANCISCO, CA 94120",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "DELA INC",
+      "target": "BERKELEY, CA 94705",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "DEAN MARY HOPE LCSW",
+      "target": "BERKELEY, CA 94708",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "ADDISON BUILDING PROPERTIES LL",
+      "target": "BERKELEY, CA 94704-1322",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "IACOFANO DANIEL/GOLTSMAN S",
+      "target": "BERKELEY, CA 94710",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "WILSON DELANG CONSTRUCTION GROUP",
+      "target": "SANTA CLARITA, CA 91355-4034",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "CHIPOTLE MEXICAN GRILL #2303",
+      "target": "COLUMBUS, OH 43218-2566",
+      "type": "located_at",
+      "description": "Business address and city"
+    },
+    {
+      "source": "SEQUOIA APARTMENTS",
+      "target": "BERKELEY",
+      "type": "located_at",
+      "description": "Business city (address truncated in text)"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. BERKELEYS EDGE PROPERTIES LLC (Organization): Rental of Real Property business, DBA BERKELEYS EDGE PROPERTIES LLC, located at 2027 LOS ANGELES AVE, BERKELEY, CA 94707-2428 with 1 employee.
+  2. WHOLE FOODS MARKET (Organization): Grocery - Supermarket business, DBA WHOLE FOODS MARKET, located at PO BOX 684786, AUSTIN, TX 78768-4786 with 133 employees.
+  3. UNLIMITED ELECTRONICS (Organization): Cellphone store business, DBA UNLIMITED ELECTRONICS, located at PO BOX 2225, UNION CITY, CA 94587 with 2 employees.
+  4. ALLEN DRYWALL & ASSOCIATES INC (Organization): Drywall subcontractor business, DBA ALLEN DRYWALL & ASSOCIATES INC, located at 380 LANG ROAD, HILLSBOROUGH, CA 94010 with 65 employees.
+  5. SMITH ENGINEERING INC (Organization): Structural engineering services business, DBA SMITH ENGINEERING INC, located at 732 ADDISON ST STE B, BERKELEY, CA 94710-1908 with 4 employees.
+  6. ORGANIC LICE GURU LLC (Organization): Remove head lice business, DBA ORGANIC LICE GURU LLC, located at 2033 RED COACH LN, ENCINITAS, CA 92024 with 4 employees.
+  7. NICHOLAS HACK PSYCHOTHERAPY INC (Organization): Psychotherapy business, DBA NICHOLAS HACK PSYCHOTHERAPY INC, located at 2991 SHATTUCK AVE STE 303, BERKELEY, CA 94705 with 1 employee.
+  8. CHUN VIVIAN (Person): Commercial rental property owner, located at 163 HIGHLAND BLVD, KENSINGTON, CA 94708-1022.
+  9. BERKELEY EMERGENCY MED GROUP (Organization): Medical services business, DBA BERKELEY EMERGENCY MED GROUP, located at 6114 LA SALLE AVE BOX 334, OAKLAND, CA 94611 with 50 employees.
+  10. ZD FILMS (Organization): Media representative business, DBA ZD FILMS, located at 2600 TENTH ST STE 418, BERKELEY, CA 94710 with 1 employee.
+  ... and 2 more entities
+
+Relationships extracted: 12
+  1. BERKELEYS EDGE PROPERTIES LLC -> BERKELEY (located_in)
+  2. WHOLE FOODS MARKET -> AUSTIN (located_in)
+  3. UNLIMITED ELECTRONICS -> UNION CITY (located_in)
+  4. ALLEN DRYWALL & ASSOCIATES INC -> HILLSBOROUGH (located_in)
+  5. SMITH ENGINEERING INC -> BERKELEY (located_in)
+  6. ORGANIC LICE GURU LLC -> ENCINITAS (located_in)
+  7. NICHOLAS HACK PSYCHOTHERAPY INC -> BERKELEY (located_in)
+  8. CHUN VIVIAN -> KENSINGTON (located_in)
+  9. BERKELEY EMERGENCY MED GROUP -> OAKLAND (located_in)
+  10. ZD FILMS -> BERKELEY (located_in)
+  ... and 2 more relationships
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. MERCURIO BROS PRINTING (Organization): Print Shop, Manufacturing, Corporation, 3 employees
+  2. LINNANE CHRISTINE & AUSTIN (Organization): Rental Property/3 Units, Rental of Real Property, Sole Ownership, 0 employees
+  3. 1940 HASTE STREET LLC (Organization): SFR Rental (U1), Rental of Real Property, LLC, 2 employees
+  4. R BROTHERS WATERPROOFING INC (Organization): Waterproofing, Construction or Contractor, Corporation, 60 employees
+  5. M G WEST COMPANY (Organization): Retail Furniture, Retail Trade, Corporation, 35 employees
+  6. DELA INC (Organization): Landscape Design Firm, Professional SemiProfessional, Corporation, 1 employee
+  7. DEAN MARY HOPE LCSW (Person): Social Worker, Professional SemiProfessional, Sole Ownership, 0 employees
+  8. ADDISON BUILDING PROPERTIES LL (Organization): Commercial Rental, Rental of Real Property, Sole Ownership, 0 employees
+  9. IACOFANO DANIEL/GOLTSMAN S (Organization): Commercial Rental, Rental of Real Property, Sole Ownership, 0 employees
+  10. WILSON DELANG CONSTRUCTION GROUP (Organization): Removal of Decommissioned Boiler Unit, Construction or Contractor, Corporation, 3 employees
+  ... and 2 more entities
+
+Relationships extracted: 12
+  1. MERCURIO BROS PRINTING -> BERKELEY, CA 94702 (located_at)
+  2. LINNANE CHRISTINE & AUSTIN -> PIEDMONT, CA 94611-3849 (located_at)
+  3. 1940 HASTE STREET LLC -> BERKELEY, CA 94705-1129 (located_at)
+  4. R BROTHERS WATERPROOFING INC -> SAN JOSE, CA 95110 (located_at)
+  5. M G WEST COMPANY -> SAN FRANCISCO, CA 94120 (located_at)
+  6. DELA INC -> BERKELEY, CA 94705 (located_at)
+  7. DEAN MARY HOPE LCSW -> BERKELEY, CA 94708 (located_at)
+  8. ADDISON BUILDING PROPERTIES LL -> BERKELEY, CA 94704-1322 (located_at)
+  9. IACOFANO DANIEL/GOLTSMAN S -> BERKELEY, CA 94710 (located_at)
+  10. WILSON DELANG CONSTRUCTION GROUP -> SANTA CLARITA, CA 91355-4034 (located_at)
+  ... and 2 more relationships
+
+CHUNK 9 COMPLETE - Entities: 12, Relationships: 12
+CHUNK 115 COMPLETE - Entities: 12, Relationships: 12
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:27.785587 - Model: gpt-4.1
+============================================================
+Input chunk (5987 chars):
+BusDesc=RENTAL APARTMENTS, B1_PER_SUB_TYPE=Rental of Real Property, DBA=K & N ESTATE LLC, NAICS=531110 - Lessors of Residential Buildings and Dwellings, Tax_Code=L, Employee_Num=1, Bus_Own_Type=LLC, B1_BUSINESS_NAME=K & N ESTATE LLC, B1_ADDRESS1=2171 ALLSTON WAY, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94704, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2450 MILVIA St, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 471: APN=ZZZZZZZZZZZZZ, RecordID=BL-020952, BusDesc=PLAS...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "K & N ESTATE LLC",
+      "type": "Organization",
+      "description": "Rental apartments business operating as LLC with 1 employee in Berkeley, CA. NAICS: 531110."
+    },
+    {
+      "name": "RICK RUTHERFORD PLASTERING INC",
+      "type": "Organization",
+      "description": "Plaster construction/contractor company operating as corporation with 1 employee. Located in El Cerrito, operates in Berkeley. NAICS: 238310."
+    },
+    {
+      "name": "KATO BRYAN",
+      "type": "Person",
+      "description": "Computer consulting business owner, sole ownership, 1 employee. NAICS: 519130. Location: Berkeley, CA."
+    },
+    {
+      "name": "LORD BRADFORD/STEIBER BARBARA",
+      "type": "Person",
+      "description": "Residential rental (4 units), sole ownership, 0 employees in Berkeley, CA. NAICS: 531110."
+    },
+    {
+      "name": "CLOVER FOOD VENTURES INC",
+      "type": "Organization",
+      "description": "Restaurant business, corporation, 6 employees. NAICS: 722513. Base address in San Ramon, operates in Berkeley, CA."
+    },
+    {
+      "name": "VOILLEQUE MICHELE",
+      "type": "Person",
+      "description": "Music classes provider, sole ownership, 0 employees. NAICS: 611610. Based in Berkeley, CA."
+    },
+    {
+      "name": "CLEAN HARBOR ENV SERVICES",
+      "type": "Organization",
+      "description": "Environmental services company, corporation, 2 employees. NAICS: 562211. Based in Norwell, MA, operates in Berkeley, CA."
+    },
+    {
+      "name": "WELSH DAVID P",
+      "type": "Person",
+      "description": "Residential rental (3 units), sole ownership, 0 employees. NAICS: 531110. Location: Berkeley, CA."
+    },
+    {
+      "name": "SMITH & WALTERS INC",
+      "type": "Organization",
+      "description": "Commercial rental company, corporation, 0 employees. NAICS: 531110. Based in Oakland, operates in Berkeley, CA."
+    },
+    {
+      "name": "TRACHTENBERG ROBERT",
+      "type": "Person",
+      "description": "Commercial rental property owner, sole ownership, 0 employees. NAICS: 531120. Location: Berkeley, CA."
+    },
+    {
+      "name": "ANTI-SEISMIC SYSTEMS INTERNATIONAL SOCIETY INC",
+      "type": "Organization",
+      "description": "Professional society (non-profit), corporation, 0 employees. NAICS: 541330. Location: Berkeley, CA."
+    },
+    {
+      "name": "SHOEMAKER HEIDA Q S",
+      "type": "Person",
+      "description": "Art conservation professional, sole ownership, 0 employees. NAICS: 541430. Location: Berkeley, CA."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "K & N ESTATE LLC",
+      "target": "BERKELEY, CA",
+      "type": "operates_in",
+      "description": "K & N ESTATE LLC provides rental apartments in Berkeley, CA."
+    },
+    {
+      "source": "RICK RUTHERFORD PLASTERING INC",
+      "target": "BERKELEY, CA",
+      "type": "operates_in",
+      "description": "RICK RUTHERFORD PLASTERING INC provides plaster/construction services in Berkeley, CA."
+    },
+    {
+      "source": "KATO BRYAN",
+      "target": "BERKELEY, CA",
+      "type": "owner_and_operator_in",
+      "description": "KATO BRYAN operates a computer consulting business in Berkeley, CA."
+    },
+    {
+      "source": "LORD BRADFORD/STEIBER BARBARA",
+      "target": "BERKELEY, CA",
+      "type": "owner_of_rental_units",
+      "description": "LORD BRADFORD/STEIBER BARBARA owns a residential rental property with 4 units in Berkeley, CA."
+    },
+    {
+      "source": "CLOVER FOOD VENTURES INC",
+      "target": "BERKELEY, CA",
+      "type": "operates_restaurant_in",
+      "description": "CLOVER FOOD VENTURES INC operates a restaurant in Berkeley, CA."
+    },
+    {
+      "source": "VOILLEQUE MICHELE",
+      "target": "BERKELEY, CA",
+      "type": "teaches_music_in",
+      "description": "VOILLEQUE MICHELE provides music classes in Berkeley, CA."
+    },
+    {
+      "source": "CLEAN HARBOR ENV SERVICES",
+      "target": "BERKELEY, CA",
+      "type": "provides_environmental_services_in",
+      "description": "CLEAN HARBOR ENV SERVICES offers environmental services in Berkeley, CA."
+    },
+    {
+      "source": "WELSH DAVID P",
+      "target": "BERKELEY, CA",
+      "type": "owner_of_rental_units",
+      "description": "WELSH DAVID P owns a residential rental property with 3 units in Berkeley, CA."
+    },
+    {
+      "source": "SMITH & WALTERS INC",
+      "target": "BERKELEY, CA",
+      "type": "commercial_rental_operation_in",
+      "description": "SMITH & WALTERS INC operates a commercial rental business in Berkeley, CA."
+    },
+    {
+      "source": "TRACHTENBERG ROBERT",
+      "target": "BERKELEY, CA",
+      "type": "commercial_property_owner_in",
+      "description": "TRACHTENBERG ROBERT owns a commercial rental property in Berkeley, CA."
+    },
+    {
+      "source": "ANTI-SEISMIC SYSTEMS INTERNATIONAL SOCIETY INC",
+      "target": "BERKELEY, CA",
+      "type": "society_based_in",
+      "description": "ANTI-SEISMIC SYSTEMS INTERNATIONAL SOCIETY INC is based and operates in Berkeley, CA."
+    },
+    {
+      "source": "SHOEMAKER HEIDA Q S",
+      "target": "BERKELEY, CA",
+      "type": "provides_art_conservation_in",
+      "description": "SHOEMAKER HEIDA Q S provides art conservation and graphic design services in Berkeley, CA."
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. K & N ESTATE LLC (Organization): Rental apartments business operating as LLC with 1 employee in Berkeley, CA. NAICS: 531110.
+  2. RICK RUTHERFORD PLASTERING INC (Organization): Plaster construction/contractor company operating as corporation with 1 employee. Located in El Cerrito, operates in Berkeley. NAICS: 238310.
+  3. KATO BRYAN (Person): Computer consulting business owner, sole ownership, 1 employee. NAICS: 519130. Location: Berkeley, CA.
+  4. LORD BRADFORD/STEIBER BARBARA (Person): Residential rental (4 units), sole ownership, 0 employees in Berkeley, CA. NAICS: 531110.
+  5. CLOVER FOOD VENTURES INC (Organization): Restaurant business, corporation, 6 employees. NAICS: 722513. Base address in San Ramon, operates in Berkeley, CA.
+  6. VOILLEQUE MICHELE (Person): Music classes provider, sole ownership, 0 employees. NAICS: 611610. Based in Berkeley, CA.
+  7. CLEAN HARBOR ENV SERVICES (Organization): Environmental services company, corporation, 2 employees. NAICS: 562211. Based in Norwell, MA, operates in Berkeley, CA.
+  8. WELSH DAVID P (Person): Residential rental (3 units), sole ownership, 0 employees. NAICS: 531110. Location: Berkeley, CA.
+  9. SMITH & WALTERS INC (Organization): Commercial rental company, corporation, 0 employees. NAICS: 531110. Based in Oakland, operates in Berkeley, CA.
+  10. TRACHTENBERG ROBERT (Person): Commercial rental property owner, sole ownership, 0 employees. NAICS: 531120. Location: Berkeley, CA.
+  ... and 2 more entities
+
+Relationships extracted: 12
+  1. K & N ESTATE LLC -> BERKELEY, CA (operates_in)
+  2. RICK RUTHERFORD PLASTERING INC -> BERKELEY, CA (operates_in)
+  3. KATO BRYAN -> BERKELEY, CA (owner_and_operator_in)
+  4. LORD BRADFORD/STEIBER BARBARA -> BERKELEY, CA (owner_of_rental_units)
+  5. CLOVER FOOD VENTURES INC -> BERKELEY, CA (operates_restaurant_in)
+  6. VOILLEQUE MICHELE -> BERKELEY, CA (teaches_music_in)
+  7. CLEAN HARBOR ENV SERVICES -> BERKELEY, CA (provides_environmental_services_in)
+  8. WELSH DAVID P -> BERKELEY, CA (owner_of_rental_units)
+  9. SMITH & WALTERS INC -> BERKELEY, CA (commercial_rental_operation_in)
+  10. TRACHTENBERG ROBERT -> BERKELEY, CA (commercial_property_owner_in)
+  ... and 2 more relationships
+
+CHUNK 39 COMPLETE - Entities: 12, Relationships: 12
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:28.062910 - Model: gpt-4.1-mini
+============================================================
+Input chunk (6033 chars):
+B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2986 COLLEGE Ave, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94705.0 Record 195: APN=057 205102700, RecordID=BL-008224, BusDesc=RENTAL APARTMENT, B1_PER_SUB_TYPE=Rental of Real Property, DBA=BERKELEY SEQUOIA ASSET MANAGEMENT LLC, NAICS=531110 - Lessors of Residential Buildings and Dwellings, Tax_Code=L, Employee_Num=0, Bus_Own_Type=LLC, B1_BUSINESS_NAME=BERKELEY SEQUOIA ASSET MANAGEMENT LLC, B1_ADDRESS1=2578 Grappa Place, B1_CITY=Pleas...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "BERKELEY SEQUOIA ASSET MANAGEMENT LLC",
+      "type": "Organization",
+      "description": "Rental apartment business, LLC owned, located at 2578 Grappa Place, Pleasanton, CA 94566"
+    },
+    {
+      "name": "SYSTEM PAVERS",
+      "type": "Organization",
+      "description": "Paving and walls construction firm, Corporation, located at 32950 ALVARADO NILES RD, UNION CITY, CA 94587-3133"
+    },
+    {
+      "name": "LAW OFFICE OF ANN R DANFORTH",
+      "type": "Organization",
+      "description": "Legal services provider, Sole Ownership, located at 560 SPRUCE ST, BERKELEY, CA 94707"
+    },
+    {
+      "name": "ELECTRONIC INNOVATIONS INC",
+      "type": "Organization",
+      "description": "Security contractor, Corporation, located at 45 PARR BLVD, RICHMOND, CA 94801-1007"
+    },
+    {
+      "name": "COCOBE'S",
+      "type": "Organization",
+      "description": "Wedding planner, Sole Ownership, located at 2035 9TH ST., #C, BERKELEY, CA 94710-2140"
+    },
+    {
+      "name": "ADVANCE CONSTRUCTION TECHNOLOGY INC",
+      "type": "Organization",
+      "description": "General building contractor, Corporation, located at 23575 CABOT BLVD, HAYWARD, CA 94545-1657"
+    },
+    {
+      "name": "SUTORIK & COMPANY",
+      "type": "Organization",
+      "description": "Electrical contractor, Sole Ownership, located at 48 EUCALYPTUS RD, BERKELEY, CA 94705"
+    },
+    {
+      "name": "BOSS ROBOT HOBBY",
+      "type": "Organization",
+      "description": "Hobby shop, Sole Ownership, located at 2619 ASHBY AVE, BERKELEY, CA 94705"
+    },
+    {
+      "name": "RUBIN JANE PH.D",
+      "type": "Person",
+      "description": "Psychotherapist, Sole Ownership, located at 2033 BLAKE ST APT 409, Berkeley, CA 94704"
+    },
+    {
+      "name": "CHEN ELLEN & TAO",
+      "type": "Person",
+      "description": "Residential Rental - 4 units, Sole Ownership, located at 2443 Fillmore St #380-6624, San Francisco, CA 94115"
+    },
+    {
+      "name": "AVM FIRE PROTECTION",
+      "type": "Organization",
+      "description": "Fire sprinkler installation, Corporation, located at 2969 BARRETT ST, OAKLAND, CA 94605-5309"
+    },
+    {
+      "name": "AMERICAN PRODUCE COMPANY INC",
+      "type": "Organization",
+      "description": "Rental property - 3 units, Corporation"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BERKELEY SEQUOIA ASSET MANAGEMENT LLC",
+      "target": "2578 Grappa Place, Pleasanton, CA 94566",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "SYSTEM PAVERS",
+      "target": "32950 ALVARADO NILES RD, UNION CITY, CA 94587-3133",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "LAW OFFICE OF ANN R DANFORTH",
+      "target": "560 SPRUCE ST, BERKELEY, CA 94707",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "ELECTRONIC INNOVATIONS INC",
+      "target": "45 PARR BLVD, RICHMOND, CA 94801-1007",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "COCOBE'S",
+      "target": "2035 9TH ST., #C, BERKELEY, CA 94710-2140",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "ADVANCE CONSTRUCTION TECHNOLOGY INC",
+      "target": "23575 CABOT BLVD, HAYWARD, CA 94545-1657",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "SUTORIK & COMPANY",
+      "target": "48 EUCALYPTUS RD, BERKELEY, CA 94705",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "BOSS ROBOT HOBBY",
+      "target": "2619 ASHBY AVE, BERKELEY, CA 94705",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "RUBIN JANE PH.D",
+      "target": "2033 BLAKE ST APT 409, Berkeley, CA 94704",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "CHEN ELLEN & TAO",
+      "target": "2443 Fillmore St #380-6624, San Francisco, CA 94115",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "AVM FIRE PROTECTION",
+      "target": "2969 BARRETT ST, OAKLAND, CA 94605-5309",
+      "type": "located_at",
+      "description": "Physical business address"
+    },
+    {
+      "source": "AMERICAN PRODUCE COMPANY INC",
+      "target": "Rental property - 3 units",
+      "type": "business_activity",
+      "description": "Engaged in rental of residential property"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. BERKELEY SEQUOIA ASSET MANAGEMENT LLC (Organization): Rental apartment business, LLC owned, located at 2578 Grappa Place, Pleasanton, CA 94566
+  2. SYSTEM PAVERS (Organization): Paving and walls construction firm, Corporation, located at 32950 ALVARADO NILES RD, UNION CITY, CA 94587-3133
+  3. LAW OFFICE OF ANN R DANFORTH (Organization): Legal services provider, Sole Ownership, located at 560 SPRUCE ST, BERKELEY, CA 94707
+  4. ELECTRONIC INNOVATIONS INC (Organization): Security contractor, Corporation, located at 45 PARR BLVD, RICHMOND, CA 94801-1007
+  5. COCOBE'S (Organization): Wedding planner, Sole Ownership, located at 2035 9TH ST., #C, BERKELEY, CA 94710-2140
+  6. ADVANCE CONSTRUCTION TECHNOLOGY INC (Organization): General building contractor, Corporation, located at 23575 CABOT BLVD, HAYWARD, CA 94545-1657
+  7. SUTORIK & COMPANY (Organization): Electrical contractor, Sole Ownership, located at 48 EUCALYPTUS RD, BERKELEY, CA 94705
+  8. BOSS ROBOT HOBBY (Organization): Hobby shop, Sole Ownership, located at 2619 ASHBY AVE, BERKELEY, CA 94705
+  9. RUBIN JANE PH.D (Person): Psychotherapist, Sole Ownership, located at 2033 BLAKE ST APT 409, Berkeley, CA 94704
+  10. CHEN ELLEN & TAO (Person): Residential Rental - 4 units, Sole Ownership, located at 2443 Fillmore St #380-6624, San Francisco, CA 94115
+  ... and 2 more entities
+
+Relationships extracted: 12
+  1. BERKELEY SEQUOIA ASSET MANAGEMENT LLC -> 2578 Grappa Place, Pleasanton, CA 94566 (located_at)
+  2. SYSTEM PAVERS -> 32950 ALVARADO NILES RD, UNION CITY, CA 94587-3133 (located_at)
+  3. LAW OFFICE OF ANN R DANFORTH -> 560 SPRUCE ST, BERKELEY, CA 94707 (located_at)
+  4. ELECTRONIC INNOVATIONS INC -> 45 PARR BLVD, RICHMOND, CA 94801-1007 (located_at)
+  5. COCOBE'S -> 2035 9TH ST., #C, BERKELEY, CA 94710-2140 (located_at)
+  6. ADVANCE CONSTRUCTION TECHNOLOGY INC -> 23575 CABOT BLVD, HAYWARD, CA 94545-1657 (located_at)
+  7. SUTORIK & COMPANY -> 48 EUCALYPTUS RD, BERKELEY, CA 94705 (located_at)
+  8. BOSS ROBOT HOBBY -> 2619 ASHBY AVE, BERKELEY, CA 94705 (located_at)
+  9. RUBIN JANE PH.D -> 2033 BLAKE ST APT 409, Berkeley, CA 94704 (located_at)
+  10. CHEN ELLEN & TAO -> 2443 Fillmore St #380-6624, San Francisco, CA 94115 (located_at)
+  ... and 2 more relationships
+
+CHUNK 16 COMPLETE - Entities: 12, Relationships: 12
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:28.364924 - Model: gpt-4.1-mini
+============================================================
+Input chunk (5857 chars):
+B1_STATE=CA, B1_ZIP=94704-2918, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2441 HASTE St, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 1396: APN=057 202501001, RecordID=BL-017966, BusDesc=BUSINESS CONSULTING, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=ALIX SHEILANI, NAICS=541611 - Administrative Management and General Management Consulting Services, Tax_Code=P, Employee_Num=1, Bus_Own_Type=Sole Ownership, B1_BUSINESS_NAME=ALIX SHEILANI, B1_ADDRESS1=1700 SHA...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "ALIX SHEILANI",
+      "type": "Business",
+      "description": "Business consulting, Sole Ownership, 1 employee, NAICS 541611, located at 1700 SHATTUCK AVE # 241, Berkeley, CA 94709"
+    },
+    {
+      "name": "HSIEH JOHN SU",
+      "type": "Business",
+      "description": "Residential rental - 24 units, Sole Ownership, 0 employees, NAICS 531110, located at 1068 CRAGMONT AVE, C/O GARET O'KEEFE, Berkeley, CA 94708"
+    },
+    {
+      "name": "HEADS ABOVE THE REST II",
+      "type": "Business",
+      "description": "Hair salon, Sole Ownership, 1 employee, NAICS 812112, located at 1732 ALCATRAZ AVE, Berkeley, CA 94703"
+    },
+    {
+      "name": "BONITA HOUSE",
+      "type": "Business",
+      "description": "Rental property, Corporation, 2 employees, NAICS 531110, located at 1919 ADDISON ST STE 204, Berkeley, CA 94704"
+    },
+    {
+      "name": "FAST BIZ - P.O. PACK",
+      "type": "Business",
+      "description": "Mail box rentals, Sole Ownership, 3 employees, NAICS 561431, located at 1700 SHATTUCK AVE 104, Berkeley, CA 94709"
+    },
+    {
+      "name": "ADAMS ANGLING BOOKS & PARAPHERNALIA",
+      "type": "Business",
+      "description": "Mailorder used books, Sole Ownership, 1 employee, NAICS 453310, located at 1170 KEELER AVE, Berkeley, CA 94708"
+    },
+    {
+      "name": "2312 ELLSWORTH LLC",
+      "type": "Business",
+      "description": "Rental property - 20 units, LLC, 1 employee, NAICS 531110, located at 2115 KALA BAGAI WAY, Berkeley, CA 94704"
+    },
+    {
+      "name": "RIBOGENICS, INC",
+      "type": "Business",
+      "description": "R&D biotechnology, Corporation, 1 employee, NAICS 541711, located at 2625 Durant Ave, Berkeley, CA 94720"
+    },
+    {
+      "name": "SACRED ROSE",
+      "type": "Business",
+      "description": "Art & tattoo studio, LLC, 0 employees, NAICS 812199, located at 1212 ORDWAY ST, Berkeley, CA 94706"
+    },
+    {
+      "name": "BERKELEY ODD FELLOWS LODGE 270",
+      "type": "Business",
+      "description": "Rental property, Corporation, 4 employees, NAICS 711310, located at 2288 FULTON ST STE 200, Berkeley, CA 94704"
+    },
+    {
+      "name": "BERKELEY 100 FOUNDATION",
+      "type": "Business",
+      "description": "Nonprofit science foundation, Corporation, 2 employees, NAICS 541690, located at 2222 HAROLD WAY, Berkeley, CA 94707"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ALIX SHEILANI",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "HSIEH JOHN SU",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "HEADS ABOVE THE REST II",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "BONITA HOUSE",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "FAST BIZ - P.O. PACK",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "ADAMS ANGLING BOOKS & PARAPHERNALIA",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "2312 ELLSWORTH LLC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "RIBOGENICS, INC",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "SACRED ROSE",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "BERKELEY ODD FELLOWS LODGE 270",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    },
+    {
+      "source": "BERKELEY 100 FOUNDATION",
+      "target": "Berkeley, CA",
+      "type": "located_in",
+      "description": "Headquarters located in Berkeley, CA"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 11
+  1. ALIX SHEILANI (Business): Business consulting, Sole Ownership, 1 employee, NAICS 541611, located at 1700 SHATTUCK AVE # 241, Berkeley, CA 94709
+  2. HSIEH JOHN SU (Business): Residential rental - 24 units, Sole Ownership, 0 employees, NAICS 531110, located at 1068 CRAGMONT AVE, C/O GARET O'KEEFE, Berkeley, CA 94708
+  3. HEADS ABOVE THE REST II (Business): Hair salon, Sole Ownership, 1 employee, NAICS 812112, located at 1732 ALCATRAZ AVE, Berkeley, CA 94703
+  4. BONITA HOUSE (Business): Rental property, Corporation, 2 employees, NAICS 531110, located at 1919 ADDISON ST STE 204, Berkeley, CA 94704
+  5. FAST BIZ - P.O. PACK (Business): Mail box rentals, Sole Ownership, 3 employees, NAICS 561431, located at 1700 SHATTUCK AVE 104, Berkeley, CA 94709
+  6. ADAMS ANGLING BOOKS & PARAPHERNALIA (Business): Mailorder used books, Sole Ownership, 1 employee, NAICS 453310, located at 1170 KEELER AVE, Berkeley, CA 94708
+  7. 2312 ELLSWORTH LLC (Business): Rental property - 20 units, LLC, 1 employee, NAICS 531110, located at 2115 KALA BAGAI WAY, Berkeley, CA 94704
+  8. RIBOGENICS, INC (Business): R&D biotechnology, Corporation, 1 employee, NAICS 541711, located at 2625 Durant Ave, Berkeley, CA 94720
+  9. SACRED ROSE (Business): Art & tattoo studio, LLC, 0 employees, NAICS 812199, located at 1212 ORDWAY ST, Berkeley, CA 94706
+  10. BERKELEY ODD FELLOWS LODGE 270 (Business): Rental property, Corporation, 4 employees, NAICS 711310, located at 2288 FULTON ST STE 200, Berkeley, CA 94704
+  ... and 1 more entities
+
+Relationships extracted: 11
+  1. ALIX SHEILANI -> Berkeley, CA (located_in)
+  2. HSIEH JOHN SU -> Berkeley, CA (located_in)
+  3. HEADS ABOVE THE REST II -> Berkeley, CA (located_in)
+  4. BONITA HOUSE -> Berkeley, CA (located_in)
+  5. FAST BIZ - P.O. PACK -> Berkeley, CA (located_in)
+  6. ADAMS ANGLING BOOKS & PARAPHERNALIA -> Berkeley, CA (located_in)
+  7. 2312 ELLSWORTH LLC -> Berkeley, CA (located_in)
+  8. RIBOGENICS, INC -> Berkeley, CA (located_in)
+  9. SACRED ROSE -> Berkeley, CA (located_in)
+  10. BERKELEY ODD FELLOWS LODGE 270 -> Berkeley, CA (located_in)
+  ... and 1 more relationships
+
+CHUNK 116 COMPLETE - Entities: 11, Relationships: 11
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:28.473428 - Model: gpt-4.1-mini
+============================================================
+Input chunk (6294 chars):
+CORP, B1_PER_SUB_TYPE=Non Profit Organizations, DBA=PARKER STREET FOUNDATION, NAICS=813410 - Civic and Social Organizations, Tax_Code=N, Employee_Num=1, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=PARKER STREET FOUNDATION, B1_ADDRESS1=2330 PARKER ST, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94704-2818, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2330 PARKER ST, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 16: APN=056 194500301, RecordID=BL-018513, BusDesc=CATERING, B1_P...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "PARKER STREET FOUNDATION",
+      "type": "Organization",
+      "description": "Non Profit Organization, Corporation, Civic and Social Organizations NAICS 813410, located at 2330 PARKER ST, BERKELEY, CA 94704-2818, 1 employee"
+    },
+    {
+      "name": "XULO",
+      "type": "Organization",
+      "description": "Retail Trade, LLC, Caterers NAICS 722320, located at 1532 WARD ST, BERKELEY, CA 94703, 3 employees"
+    },
+    {
+      "name": "MARREE",
+      "type": "Organization",
+      "description": "Retail Trade, Sole Ownership, Clothing Accessories Stores NAICS 448150, located at 1314 ALCATRAZ AVE, BERKELEY, CA 94702, 1 employee"
+    },
+    {
+      "name": "KAIZEN CHIROPRACTIC + WELLNESS",
+      "type": "Organization",
+      "description": "Professional SemiProfessional, Corporation, Offices of Chiropractors NAICS 621310, located at 2459 ASHBY AVE, BERKELEY, CA 94705, 5 employees"
+    },
+    {
+      "name": "PING KUEN CONST CO",
+      "type": "Organization",
+      "description": "Construction or Contractor, General Contractor, 2 employees, located at 875 ISLAND DR STE A, ALAMEDA, CA 94502"
+    },
+    {
+      "name": "SHIBUMI GALLERY LLC",
+      "type": "Organization",
+      "description": "Retail Trade, LLC, Jewelry Stores NAICS 448310, located at 770 CAMELIA ST # A, BERKELEY, CA 94710, 5 employees"
+    },
+    {
+      "name": "ASHKAR OMAR",
+      "type": "Organization",
+      "description": "Retail Trade, Sole Ownership, Tobacco Stores NAICS 453991, located at 850 sunnyhills rd, OAKLAND, CA 94610, 1 employee"
+    },
+    {
+      "name": "HESHY FRIED CATERING LLC",
+      "type": "Organization",
+      "description": "Retail Trade, LLC, Caterers NAICS 722320, located at 2307 MCGEE AVE, BERKELEY, CA 94703, 1 employee"
+    },
+    {
+      "name": "SIYA",
+      "type": "Organization",
+      "description": "Retail Trade, Corporation, Jewelry Stores NAICS 448310, located at 1038 UNIVERSITY AVE, BERKELEY, CA 94710, 0 employees"
+    },
+    {
+      "name": "IYASARE",
+      "type": "Organization",
+      "description": "Retail Trade, LLC, Full-Service Restaurants NAICS 722511, located at 1830 4TH ST, BERKELEY, CA 94710, 42 employees"
+    },
+    {
+      "name": "BERKELEY INN",
+      "type": "Organization",
+      "description": "Rental of Real Property, LLC, Hotels and Motels NAICS 721110, located at 860 EDDY ST, SAN FRANCISCO, CA 94109, 4 employees"
+    },
+    {
+      "name": "HANA DESIGN",
+      "type": "Organization",
+      "description": "Retail Trade, Sole Ownership, Furniture Stores NAICS 442110, located at 902 THE ALAMEDA, BERKELEY, CA 94707, 0 employees"
+    },
+    {
+      "name": "SOVONIGHT",
+      "type": "Organization",
+      "description": "Retail Trade, Sole Ownership, Art Dealers NAICS 453920, located at 2300 GRANT ST, BERKELEY, CA 94703, 0 employees"
+    },
+    {
+      "name": "VINE STREET SALON",
+      "type": "Organization",
+      "description": "Business Personal Repair Services, Partnership, Beauty Salons NAICS 812112, located at 2118 VINE ST STE D, BERKELEY, CA 94709, 3 employees"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PARKER STREET FOUNDATION",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "XULO",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "MARREE",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "KAIZEN CHIROPRACTIC + WELLNESS",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "PING KUEN CONST CO",
+      "target": "ALAMEDA",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "SHIBUMI GALLERY LLC",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "ASHKAR OMAR",
+      "target": "OAKLAND",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "HESHY FRIED CATERING LLC",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "SIYA",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "IYASARE",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "BERKELEY INN",
+      "target": "SAN FRANCISCO",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "HANA DESIGN",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "SOVONIGHT",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    },
+    {
+      "source": "VINE STREET SALON",
+      "target": "BERKELEY",
+      "type": "located_in",
+      "description": "Address city"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 14
+  1. PARKER STREET FOUNDATION (Organization): Non Profit Organization, Corporation, Civic and Social Organizations NAICS 813410, located at 2330 PARKER ST, BERKELEY, CA 94704-2818, 1 employee
+  2. XULO (Organization): Retail Trade, LLC, Caterers NAICS 722320, located at 1532 WARD ST, BERKELEY, CA 94703, 3 employees
+  3. MARREE (Organization): Retail Trade, Sole Ownership, Clothing Accessories Stores NAICS 448150, located at 1314 ALCATRAZ AVE, BERKELEY, CA 94702, 1 employee
+  4. KAIZEN CHIROPRACTIC + WELLNESS (Organization): Professional SemiProfessional, Corporation, Offices of Chiropractors NAICS 621310, located at 2459 ASHBY AVE, BERKELEY, CA 94705, 5 employees
+  5. PING KUEN CONST CO (Organization): Construction or Contractor, General Contractor, 2 employees, located at 875 ISLAND DR STE A, ALAMEDA, CA 94502
+  6. SHIBUMI GALLERY LLC (Organization): Retail Trade, LLC, Jewelry Stores NAICS 448310, located at 770 CAMELIA ST # A, BERKELEY, CA 94710, 5 employees
+  7. ASHKAR OMAR (Organization): Retail Trade, Sole Ownership, Tobacco Stores NAICS 453991, located at 850 sunnyhills rd, OAKLAND, CA 94610, 1 employee
+  8. HESHY FRIED CATERING LLC (Organization): Retail Trade, LLC, Caterers NAICS 722320, located at 2307 MCGEE AVE, BERKELEY, CA 94703, 1 employee
+  9. SIYA (Organization): Retail Trade, Corporation, Jewelry Stores NAICS 448310, located at 1038 UNIVERSITY AVE, BERKELEY, CA 94710, 0 employees
+  10. IYASARE (Organization): Retail Trade, LLC, Full-Service Restaurants NAICS 722511, located at 1830 4TH ST, BERKELEY, CA 94710, 42 employees
+  ... and 4 more entities
+
+Relationships extracted: 14
+  1. PARKER STREET FOUNDATION -> BERKELEY (located_in)
+  2. XULO -> BERKELEY (located_in)
+  3. MARREE -> BERKELEY (located_in)
+  4. KAIZEN CHIROPRACTIC + WELLNESS -> BERKELEY (located_in)
+  5. PING KUEN CONST CO -> ALAMEDA (located_in)
+  6. SHIBUMI GALLERY LLC -> BERKELEY (located_in)
+  7. ASHKAR OMAR -> OAKLAND (located_in)
+  8. HESHY FRIED CATERING LLC -> BERKELEY (located_in)
+  9. SIYA -> BERKELEY (located_in)
+  10. IYASARE -> BERKELEY (located_in)
+  ... and 4 more relationships
+
+CHUNK 2 COMPLETE - Entities: 14, Relationships: 14
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:28.477958 - Model: gpt-4.1-mini
+============================================================
+Input chunk (6042 chars):
+of Residential Buildings and Dwellings, Tax_Code=L, Employee_Num=0, Bus_Own_Type=LLC, B1_BUSINESS_NAME=SHAHNAMEH LLC, B1_ADDRESS1=PO BOX 3492, B1_CITY=OAKLAND, B1_STATE=CA, B1_ZIP=946090492, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=1611 RUSSELL St, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94703.0 Record 148: APN=062 291600400, RecordID=BL-031135, BusDesc=PRIVATE INVESTIGATOR, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=CLARICK G. BROWN INVEST., NAICS=561611 - Investi...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "SHAHNAMEH LLC",
+      "type": "Organization",
+      "description": "LLC, Business Owner, owner of residential buildings and dwellings, located at PO BOX 3492, Oakland, CA, situs at 1611 RUSSELL St, Berkeley, CA 94703"
+    },
+    {
+      "name": "CLARICK G. BROWN INVEST.",
+      "type": "Organization",
+      "description": "Sole Ownership, Business Owner, Private Investigator, located at 37 AVIS RD, Berkeley, CA 94707"
+    },
+    {
+      "name": "BAY AREA UNDERPINNING",
+      "type": "Organization",
+      "description": "Corporation, Business Owner, General Contractor, located at 2333 COURAGE DR STE C, Fairfield, CA 94533-6715, situs at Berkeley, CA 94704"
+    },
+    {
+      "name": "INGRAM PUBLISHER SERVICES LLC",
+      "type": "Organization",
+      "description": "LLC, Business Owner, Corporate Headquarters, located at 1 INGRAM BLVD, La Vergne, TN 37086, situs at 819 BANCROFT Way, Berkeley, CA 94710"
+    },
+    {
+      "name": "TONI A JOHNS",
+      "type": "Person",
+      "description": "Sole Ownership, Business Owner, Rental Property - 4 Units, located at 2407 TENTH ST, Berkeley, CA 94710"
+    },
+    {
+      "name": "MINOL INC",
+      "type": "Organization",
+      "description": "Corporation, Business Owner, Water Submeters for Multi-Family Bldgs, located at 15280 ADDISON RD STE 100, Addison, TX 75001-4503, situs at Berkeley, CA 94704"
+    },
+    {
+      "name": "BEATON MELINA",
+      "type": "Person",
+      "description": "Sole Ownership, Business Owner, Rental Property - Triplex, located at 1536 HARMON ST, Berkeley, CA 94703"
+    },
+    {
+      "name": "ZEBRA INC",
+      "type": "Organization",
+      "description": "Corporation, Business Owner, Tattoo Parlor, located at 2467 TELEGRAPH AVE, Berkeley, CA 94704"
+    },
+    {
+      "name": "KAVA MASSIH ARCHITECTS",
+      "type": "Organization",
+      "description": "Corporation, Business Owner, Architect Services, located at 920 GRAYSON ST, Berkeley, CA 94710"
+    },
+    {
+      "name": "LAWRENCE EDWARD H JR TR",
+      "type": "Person",
+      "description": "Sole Ownership, Business Owner, Residential Rental Property, located at 1905 MAR WEST ST, Belvedere Tiburon, CA 94920"
+    },
+    {
+      "name": "AMY L. ATTIYEH",
+      "type": "Person",
+      "description": "Sole Ownership, Business Owner, Psychotherapy, located at 1806 M L KING JR WAY, Berkeley, CA 94709"
+    },
+    {
+      "name": "WILLIAMS SUSAN MA MFT",
+      "type": "Person",
+      "description": "Sole Ownership, Business Owner, Psychotherapy, located at 2832 WEBSTER ST, Berkeley, CA 94705"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SHAHNAMEH LLC",
+      "target": "Residential Buildings and Dwellings",
+      "type": "owner_of",
+      "description": "SHAHNAMEH LLC owns residential buildings and dwellings."
+    },
+    {
+      "source": "CLARICK G. BROWN INVEST.",
+      "target": "PRIVATE INVESTIGATOR",
+      "type": "business_type",
+      "description": "CLARICK G. BROWN INVEST. is a Private Investigator business."
+    },
+    {
+      "source": "BAY AREA UNDERPINNING",
+      "target": "GENERAL CONTRACTOR",
+      "type": "business_type",
+      "description": "BAY AREA UNDERPINNING is a General Contractor."
+    },
+    {
+      "source": "INGRAM PUBLISHER SERVICES LLC",
+      "target": "CORPORATE HEADQUARTERS",
+      "type": "business_type",
+      "description": "INGRAM PUBLISHER SERVICES LLC is a Corporate Headquarters."
+    },
+    {
+      "source": "TONI A JOHNS",
+      "target": "RENTAL PROPERTY - 4 UNITS",
+      "type": "business_type",
+      "description": "TONI A JOHNS owns a Rental Property with 4 units."
+    },
+    {
+      "source": "MINOL INC",
+      "target": "WATER SUBMETERS FOR MULTI-FAMILY BLDGS",
+      "type": "business_type",
+      "description": "MINOL INC provides water submeters for multi-family buildings."
+    },
+    {
+      "source": "BEATON MELINA",
+      "target": "RENTAL PROPERTY - TRIPLEX",
+      "type": "business_type",
+      "description": "BEATON MELINA owns a rental triplex property."
+    },
+    {
+      "source": "ZEBRA INC",
+      "target": "TATTOO PARLOR",
+      "type": "business_type",
+      "description": "ZEBRA INC operates a tattoo parlor."
+    },
+    {
+      "source": "KAVA MASSIH ARCHITECTS",
+      "target": "ARCHITECT SERVICES",
+      "type": "business_type",
+      "description": "KAVA MASSIH ARCHITECTS provides architect services."
+    },
+    {
+      "source": "LAWRENCE EDWARD H JR TR",
+      "target": "RESIDENTIAL RENTAL PROPERTY",
+      "type": "business_type",
+      "description": "LAWRENCE EDWARD H JR TR owns residential rental property."
+    },
+    {
+      "source": "AMY L. ATTIYEH",
+      "target": "PSYCHOTHERAPY",
+      "type": "business_type",
+      "description": "AMY L. ATTIYEH provides psychotherapy services."
+    },
+    {
+      "source": "WILLIAMS SUSAN MA MFT",
+      "target": "PSYCHOTHERAPY",
+      "type": "business_type",
+      "description": "WILLIAMS SUSAN MA MFT provides psychotherapy services."
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. SHAHNAMEH LLC (Organization): LLC, Business Owner, owner of residential buildings and dwellings, located at PO BOX 3492, Oakland, CA, situs at 1611 RUSSELL St, Berkeley, CA 94703
+  2. CLARICK G. BROWN INVEST. (Organization): Sole Ownership, Business Owner, Private Investigator, located at 37 AVIS RD, Berkeley, CA 94707
+  3. BAY AREA UNDERPINNING (Organization): Corporation, Business Owner, General Contractor, located at 2333 COURAGE DR STE C, Fairfield, CA 94533-6715, situs at Berkeley, CA 94704
+  4. INGRAM PUBLISHER SERVICES LLC (Organization): LLC, Business Owner, Corporate Headquarters, located at 1 INGRAM BLVD, La Vergne, TN 37086, situs at 819 BANCROFT Way, Berkeley, CA 94710
+  5. TONI A JOHNS (Person): Sole Ownership, Business Owner, Rental Property - 4 Units, located at 2407 TENTH ST, Berkeley, CA 94710
+  6. MINOL INC (Organization): Corporation, Business Owner, Water Submeters for Multi-Family Bldgs, located at 15280 ADDISON RD STE 100, Addison, TX 75001-4503, situs at Berkeley, CA 94704
+  7. BEATON MELINA (Person): Sole Ownership, Business Owner, Rental Property - Triplex, located at 1536 HARMON ST, Berkeley, CA 94703
+  8. ZEBRA INC (Organization): Corporation, Business Owner, Tattoo Parlor, located at 2467 TELEGRAPH AVE, Berkeley, CA 94704
+  9. KAVA MASSIH ARCHITECTS (Organization): Corporation, Business Owner, Architect Services, located at 920 GRAYSON ST, Berkeley, CA 94710
+  10. LAWRENCE EDWARD H JR TR (Person): Sole Ownership, Business Owner, Residential Rental Property, located at 1905 MAR WEST ST, Belvedere Tiburon, CA 94920
+  ... and 2 more entities
+
+Relationships extracted: 12
+  1. SHAHNAMEH LLC -> Residential Buildings and Dwellings (owner_of)
+  2. CLARICK G. BROWN INVEST. -> PRIVATE INVESTIGATOR (business_type)
+  3. BAY AREA UNDERPINNING -> GENERAL CONTRACTOR (business_type)
+  4. INGRAM PUBLISHER SERVICES LLC -> CORPORATE HEADQUARTERS (business_type)
+  5. TONI A JOHNS -> RENTAL PROPERTY - 4 UNITS (business_type)
+  6. MINOL INC -> WATER SUBMETERS FOR MULTI-FAMILY BLDGS (business_type)
+  7. BEATON MELINA -> RENTAL PROPERTY - TRIPLEX (business_type)
+  8. ZEBRA INC -> TATTOO PARLOR (business_type)
+  9. KAVA MASSIH ARCHITECTS -> ARCHITECT SERVICES (business_type)
+  10. LAWRENCE EDWARD H JR TR -> RESIDENTIAL RENTAL PROPERTY (business_type)
+  ... and 2 more relationships
+
+CHUNK 12 COMPLETE - Entities: 12, Relationships: 12
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:28.605132 - Model: gpt-4.1-mini
+============================================================
+Input chunk (5872 chars):
+Employee_Num=0, Bus_Own_Type=LLC, B1_BUSINESS_NAME=HEARST REAL ESTATE LLC, B1_ADDRESS1=2105 MARTIN LUTHER KING JR WAY FL 2, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94709-1647, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=1509 HEARST AVE, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94703.0 Record 1239: APN=060 239201700, RecordID=BL-051953, BusDesc=PERSONAL PROP. APPRAISAL, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=RACHEL GOODENOW APPRAISALS & CONSULTING, NAICS=541611 - Admi...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "HEARST REAL ESTATE LLC",
+      "type": "Organization",
+      "description": "LLC business owner, located at 2105 MARTIN LUTHER KING JR WAY FL 2, Berkeley, CA 94709-1647"
+    },
+    {
+      "name": "RACHEL GOODENOW APPRAISALS & CONSULTING",
+      "type": "Organization",
+      "description": "Sole Ownership business with 1 employee, DBA for administrative management and general management consulting services, located at 1350 CURTIS ST, Berkeley, CA 94702"
+    },
+    {
+      "name": "RESEARCH&DEVELOPMENT GLASS PRO",
+      "type": "Organization",
+      "description": "Corporation with 5 employees, engaged in manufacturing laboratory apparatus, located at 1808 HARMON ST, Berkeley, CA 94703-2416"
+    },
+    {
+      "name": "DOUBLETREE BY HILTONHOTEL BERKELEY MARINA",
+      "type": "Organization",
+      "description": "LLC with 115 employees, residential hotel business located at 200 MARINA BLVD, Berkeley, CA 94710-1608"
+    },
+    {
+      "name": "HILL RICHARD F",
+      "type": "Person",
+      "description": "Sole Ownership, attorney at law with 1 employee, located at 1816 5TH ST, Berkeley, CA 94710-1915"
+    },
+    {
+      "name": "PAPPAS NICK A",
+      "type": "Person",
+      "description": "Sole Ownership, residential rental 10 units with no employees, located at 12650 SILVER WOLF RD, Reno, NV 89511, situs Berkeley CA"
+    },
+    {
+      "name": "KARBASSI P & GHAZANFARI MARIO",
+      "type": "Person",
+      "description": "Sole Ownership, residential rental 6 units with no employees, located at PO BOX 3492, Oakland, CA 94609, situs Berkeley CA"
+    },
+    {
+      "name": "EL GRULLENSE",
+      "type": "Organization",
+      "description": "Sole Ownership food truck retail trade business with no employees, located at 3850 SAN PABLO DAM RD, EL SOBRANTE, CA 94803-2822, situs Berkeley CA"
+    },
+    {
+      "name": "PARTOS ANDREW",
+      "type": "Person",
+      "description": "Sole Ownership rental property with 2 employees, located at 2208 BLAKE ST, Berkeley, CA 94704, situs Berkeley CA"
+    },
+    {
+      "name": "ONE STOP MARKET GROUP LLC",
+      "type": "Organization",
+      "description": "LLC grocery store with no employees, located at 1027 UNIVERSITY AVE, Berkeley, CA 94710-2134"
+    },
+    {
+      "name": "CLIFFORD R",
+      "type": "Person",
+      "description": "Sole Ownership residential rental 4 units with no employees, located at 2014 VINE ST, Berkeley, CA 94709"
+    },
+    {
+      "name": "LINDSEY ANTIN INDIVIDUAL AND FAMILY COUNSELING DBA LOYAL BLUE COUNSELING",
+      "type": "Organization",
+      "description": "Corporation psychotherapy practice with 11 employees, located at 2709 ALCATRAZ AVENUE, Berkeley, CA 94705"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HEARST REAL ESTATE LLC",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business located in city Berkeley, CA"
+    },
+    {
+      "source": "RACHEL GOODENOW APPRAISALS & CONSULTING",
+      "target": "Rachel Goodenow",
+      "type": "owned_by",
+      "description": "Sole ownership by Rachel Goodenow"
+    },
+    {
+      "source": "RESEARCH&DEVELOPMENT GLASS PRO",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business located in city Berkeley, CA"
+    },
+    {
+      "source": "DOUBLETREE BY HILTONHOTEL BERKELEY MARINA",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Business located in city Berkeley, CA"
+    },
+    {
+      "source": "HILL RICHARD F",
+      "target": "Richard F Hill",
+      "type": "owned_by",
+      "description": "Sole ownership by Richard F Hill"
+    },
+    {
+      "source": "PAPPAS NICK A",
+      "target": "Nick A Pappas",
+      "type": "owned_by",
+      "description": "Sole ownership by Nick A Pappas"
+    },
+    {
+      "source": "KARBASSI P & GHAZANFARI MARIO",
+      "target": "Karbassi P and Ghazanfari Mario",
+      "type": "owned_by",
+      "description": "Sole ownership by Karbassi P and Ghazanfari Mario"
+    },
+    {
+      "source": "EL GRULLENSE",
+      "target": "El Grullense Owner",
+      "type": "owned_by",
+      "description": "Sole ownership for food truck business"
+    },
+    {
+      "source": "PARTOS ANDREW",
+      "target": "Andrew Partos",
+      "type": "owned_by",
+      "description": "Sole ownership by Andrew Partos"
+    },
+    {
+      "source": "ONE STOP MARKET GROUP LLC",
+      "target": "Berkeley",
+      "type": "located_in",
+      "description": "Located in city Berkeley, CA"
+    },
+    {
+      "source": "CLIFFORD R",
+      "target": "Clifford R Owner",
+      "type": "owned_by",
+      "description": "Sole ownership by Clifford R"
+    },
+    {
+      "source": "LINDSEY ANTIN INDIVIDUAL AND FAMILY COUNSELING DBA LOYAL BLUE COUNSELING",
+      "target": "Lindsey Antin",
+      "type": "owned_by",
+      "description": "Corporation owned by Lindsey Antin"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. HEARST REAL ESTATE LLC (Organization): LLC business owner, located at 2105 MARTIN LUTHER KING JR WAY FL 2, Berkeley, CA 94709-1647
+  2. RACHEL GOODENOW APPRAISALS & CONSULTING (Organization): Sole Ownership business with 1 employee, DBA for administrative management and general management consulting services, located at 1350 CURTIS ST, Berkeley, CA 94702
+  3. RESEARCH&DEVELOPMENT GLASS PRO (Organization): Corporation with 5 employees, engaged in manufacturing laboratory apparatus, located at 1808 HARMON ST, Berkeley, CA 94703-2416
+  4. DOUBLETREE BY HILTONHOTEL BERKELEY MARINA (Organization): LLC with 115 employees, residential hotel business located at 200 MARINA BLVD, Berkeley, CA 94710-1608
+  5. HILL RICHARD F (Person): Sole Ownership, attorney at law with 1 employee, located at 1816 5TH ST, Berkeley, CA 94710-1915
+  6. PAPPAS NICK A (Person): Sole Ownership, residential rental 10 units with no employees, located at 12650 SILVER WOLF RD, Reno, NV 89511, situs Berkeley CA
+  7. KARBASSI P & GHAZANFARI MARIO (Person): Sole Ownership, residential rental 6 units with no employees, located at PO BOX 3492, Oakland, CA 94609, situs Berkeley CA
+  8. EL GRULLENSE (Organization): Sole Ownership food truck retail trade business with no employees, located at 3850 SAN PABLO DAM RD, EL SOBRANTE, CA 94803-2822, situs Berkeley CA
+  9. PARTOS ANDREW (Person): Sole Ownership rental property with 2 employees, located at 2208 BLAKE ST, Berkeley, CA 94704, situs Berkeley CA
+  10. ONE STOP MARKET GROUP LLC (Organization): LLC grocery store with no employees, located at 1027 UNIVERSITY AVE, Berkeley, CA 94710-2134
+  ... and 2 more entities
+
+Relationships extracted: 12
+  1. HEARST REAL ESTATE LLC -> Berkeley (located_in)
+  2. RACHEL GOODENOW APPRAISALS & CONSULTING -> Rachel Goodenow (owned_by)
+  3. RESEARCH&DEVELOPMENT GLASS PRO -> Berkeley (located_in)
+  4. DOUBLETREE BY HILTONHOTEL BERKELEY MARINA -> Berkeley (located_in)
+  5. HILL RICHARD F -> Richard F Hill (owned_by)
+  6. PAPPAS NICK A -> Nick A Pappas (owned_by)
+  7. KARBASSI P & GHAZANFARI MARIO -> Karbassi P and Ghazanfari Mario (owned_by)
+  8. EL GRULLENSE -> El Grullense Owner (owned_by)
+  9. PARTOS ANDREW -> Andrew Partos (owned_by)
+  10. ONE STOP MARKET GROUP LLC -> Berkeley (located_in)
+  ... and 2 more relationships
+
+CHUNK 103 COMPLETE - Entities: 12, Relationships: 12
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:28.625786 - Model: gpt-4.1-mini
+============================================================
+Input chunk (6048 chars):
+ROOFING, NAICS=238160 - Roofing Contractors, Tax_Code=C, Employee_Num=2, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=QUANG & CO ROOFING, B1_ADDRESS1=927 E 17TH ST, B1_CITY=OAKLAND, B1_STATE=CA, B1_ZIP=94606, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=0 VARIOUS, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 1227: APN=058 217600301, RecordID=BL-052963, BusDesc=HAIR SALON, B1_PER_SUB_TYPE=Business Personal Repair Svs, DBA=IMAGE BEAUTY HAIR SALON, NAICS=812112 - Beauty S...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "QUANG & CO ROOFING",
+      "type": "Business",
+      "description": "Roofing Contractors, NAICS 238160, Corporation, 2 employees, Tax Code C, located at 927 E 17TH ST, Oakland, CA 94606; Situs address Berkeley, CA 94704"
+    },
+    {
+      "name": "IMAGE BEAUTY HAIR SALON",
+      "type": "Business",
+      "description": "Beauty Salon, NAICS 812112, Sole Ownership, 2 employees, Tax Code B, located at 1780 SHATTUCK AVE, Berkeley, CA 94709"
+    },
+    {
+      "name": "DON'S TIRE SERVICE INC",
+      "type": "Business",
+      "description": "Tire Service, NAICS 811198, Sole Ownership, 20 employees, Tax Code B, located at 820 GILMAN STREET, Berkeley, CA 94710"
+    },
+    {
+      "name": "ABC SHUTTLE SERVICE",
+      "type": "Business",
+      "description": "Shuttle Service, NAICS 485999, Sole Ownership, 2 employees, Tax Code B, located at 1650 6TH ST STE 244, PMB#663, Berkeley, CA 94710; Situs address Berkeley, CA 94704"
+    },
+    {
+      "name": "DOROTHY'S CLOSET",
+      "type": "Business",
+      "description": "Community Clothing Program, NAICS 448190, Corporation, 35 employees, Tax Code N, located at PO BOX 12701, Berkeley, CA 94712-3701; Situs address 2425 CHANNING Way, Berkeley, CA 94704"
+    },
+    {
+      "name": "PEACE CAMP",
+      "type": "Business",
+      "description": "Home Office (Non-Profit), NAICS 721214, Sole Ownership, 0 employees, Tax Code N, located at PO BOX 448, Lakeport, CA 954530448; Situs address 1606 BONITA AVE, Berkeley, CA 94709"
+    },
+    {
+      "name": "DEKKER ELLEN",
+      "type": "Business",
+      "description": "Psychotherapy, NAICS 621330, Sole Ownership, 0 employees, Tax Code P, located at 5383 BRYANT AVE, Oakland, CA 94618-1429; Situs address 2927 SHATTUCK Ave, Berkeley, CA 94705"
+    },
+    {
+      "name": "MORAN MOTOSPORT",
+      "type": "Business",
+      "description": "Auto Repair/Dealer, NAICS 811111, Corporation, 3 employees, Tax Code B, located at 751 FOLGER AVE, Berkeley, CA 94710-2809"
+    },
+    {
+      "name": "ESLAMI A ALI",
+      "type": "Business",
+      "description": "Residential Rental (U1), NAICS 531110, Sole Ownership, 4 employees, Tax Code L, located at PO BOX 4623, Berkeley, CA 94704-0623; Situs address 2511 ETNA St, Berkeley, CA 94704"
+    },
+    {
+      "name": "THE BELLOS GROUP",
+      "type": "Business",
+      "description": "Business Consulting, NAICS 541611, Sole Ownership, 1 employee, Tax Code P, located at PO BOX 9571, Berkeley, CA 94709-0571; Situs address 2022 CEDAR St, Berkeley, CA 94709"
+    },
+    {
+      "name": "CG APPLIANCE INC",
+      "type": "Business",
+      "description": "Appliance Sales (Dealer), NAICS 449210, Corporation, 19 employees, Tax Code R, located at 6422 MISSION ST, Daly City, CA 94014; Situs address Berkeley, CA 94704"
+    },
+    {
+      "name": "AARON SOFFIN LLC",
+      "type": "Business",
+      "description": "Film & Video Editing, NAICS 512191, LLC, 1 employee, Tax Code E, located at 2913 FULTON ST, Berkeley, CA 94705"
+    },
+    {
+      "name": "HEARST REAL ESTATE LLC",
+      "type": "Business",
+      "description": "Rental Property, NAICS 531110, Tax Code L (other details incomplete)"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Businesses",
+      "target": "NAICS Codes",
+      "type": "classified_as",
+      "description": "Each business is classified by its NAICS industry code representing its business category"
+    },
+    {
+      "source": "Businesses",
+      "target": "Ownership Types",
+      "type": "has_ownership_type",
+      "description": "Each business has a specified ownership type such as Corporation, Sole Ownership, or LLC"
+    },
+    {
+      "source": "Businesses",
+      "target": "Locations",
+      "type": "located_at",
+      "description": "Businesses have addresses located in various cities/states/zip codes"
+    },
+    {
+      "source": "Businesses",
+      "target": "Tax Codes",
+      "type": "assigned_tax_code",
+      "description": "Businesses are assigned specific tax codes identified as C, B, N, P, L, R, or E"
+    },
+    {
+      "source": "Business Owners",
+      "target": "Businesses",
+      "type": "contacts_for",
+      "description": "Business owners are indicated as contact persons for each business"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 13
+  1. QUANG & CO ROOFING (Business): Roofing Contractors, NAICS 238160, Corporation, 2 employees, Tax Code C, located at 927 E 17TH ST, Oakland, CA 94606; Situs address Berkeley, CA 94704
+  2. IMAGE BEAUTY HAIR SALON (Business): Beauty Salon, NAICS 812112, Sole Ownership, 2 employees, Tax Code B, located at 1780 SHATTUCK AVE, Berkeley, CA 94709
+  3. DON'S TIRE SERVICE INC (Business): Tire Service, NAICS 811198, Sole Ownership, 20 employees, Tax Code B, located at 820 GILMAN STREET, Berkeley, CA 94710
+  4. ABC SHUTTLE SERVICE (Business): Shuttle Service, NAICS 485999, Sole Ownership, 2 employees, Tax Code B, located at 1650 6TH ST STE 244, PMB#663, Berkeley, CA 94710; Situs address Berkeley, CA 94704
+  5. DOROTHY'S CLOSET (Business): Community Clothing Program, NAICS 448190, Corporation, 35 employees, Tax Code N, located at PO BOX 12701, Berkeley, CA 94712-3701; Situs address 2425 CHANNING Way, Berkeley, CA 94704
+  6. PEACE CAMP (Business): Home Office (Non-Profit), NAICS 721214, Sole Ownership, 0 employees, Tax Code N, located at PO BOX 448, Lakeport, CA 954530448; Situs address 1606 BONITA AVE, Berkeley, CA 94709
+  7. DEKKER ELLEN (Business): Psychotherapy, NAICS 621330, Sole Ownership, 0 employees, Tax Code P, located at 5383 BRYANT AVE, Oakland, CA 94618-1429; Situs address 2927 SHATTUCK Ave, Berkeley, CA 94705
+  8. MORAN MOTOSPORT (Business): Auto Repair/Dealer, NAICS 811111, Corporation, 3 employees, Tax Code B, located at 751 FOLGER AVE, Berkeley, CA 94710-2809
+  9. ESLAMI A ALI (Business): Residential Rental (U1), NAICS 531110, Sole Ownership, 4 employees, Tax Code L, located at PO BOX 4623, Berkeley, CA 94704-0623; Situs address 2511 ETNA St, Berkeley, CA 94704
+  10. THE BELLOS GROUP (Business): Business Consulting, NAICS 541611, Sole Ownership, 1 employee, Tax Code P, located at PO BOX 9571, Berkeley, CA 94709-0571; Situs address 2022 CEDAR St, Berkeley, CA 94709
+  ... and 3 more entities
+
+Relationships extracted: 5
+  1. Businesses -> NAICS Codes (classified_as)
+  2. Businesses -> Ownership Types (has_ownership_type)
+  3. Businesses -> Locations (located_at)
+  4. Businesses -> Tax Codes (assigned_tax_code)
+  5. Business Owners -> Businesses (contacts_for)
+
+CHUNK 102 COMPLETE - Entities: 13, Relationships: 5
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:29.035579 - Model: gpt-4.1
+============================================================
+Input chunk (5994 chars):
+Tax_Code=P, Employee_Num=1, Bus_Own_Type=Sole Ownership, B1_BUSINESS_NAME=KENDRA DUNLAP LMFT, B1_ADDRESS1=2029 DURANT AVE # B204, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=947041564, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2029 DURANT Ave, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94704.0 Record 435: APN=ZZZZZZZZZZZZZ, RecordID=BL-018362, BusDesc=GOV CONSULTING, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=JUSTICE BENEFITS INC, NAICS=541611 - Administrative Management and...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "KENDRA DUNLAP LMFT",
+      "type": "Organization",
+      "description": "Sole ownership business; Professional SemiProfessional (likely mental health); 1 employee; Business owner: Kendra Dunlap; Address: 2029 Durant Ave # B204, Berkeley, CA 94704"
+    },
+    {
+      "name": "JUSTICE BENEFITS INC",
+      "type": "Organization",
+      "description": "Partnership; Government Consulting; 0 employees; DBA: JUSTICE BENEFITS INC; Business owner; Address: 1711 E Belt Line Rd, Coppell, TX 75019-9606; Situs in Berkeley, CA; NAICS 541611 - Administrative Management and General Management Consulting Services"
+    },
+    {
+      "name": "DATER JUDY",
+      "type": "Organization",
+      "description": "Sole ownership business; Graphic Design Services; 0 employees; DBA: DATER JUDY; Business owner; Address: 2430 Fifth St Ste J, Berkeley, CA 94710; NAICS 541430"
+    },
+    {
+      "name": "BASS MEDICAL GROUP",
+      "type": "Organization",
+      "description": "Corporation; Doctors Office; 12 employees; DBA: BASS MEDICAL GROUP; Business owner; Address: 2637 Shadelands Dr, Walnut Creek, CA 94598; Situs: 2510 Webster St, Berkeley, CA 94705; NAICS 621111"
+    },
+    {
+      "name": "SEIDER KEN PHD",
+      "type": "Organization",
+      "description": "Sole ownership; Psychologist; 2 employees; DBA: SEIDER KEN PHD; Business owner; Address: 2920 Domingo Ave #201, Berkeley, CA 94705; NAICS 621330"
+    },
+    {
+      "name": "DAVIS PERCY & RUBY",
+      "type": "Organization",
+      "description": "Rental Property/3 Units; Sole ownership; 0 employees; DBA: DAVIS PERCY & RUBY; Address: 1647 Ashby Ave, Berkeley, CA 94703; NAICS 531110"
+    },
+    {
+      "name": "AMERICAN INTL MONTESSORI INC",
+      "type": "Organization",
+      "description": "Corporation; Montessori School; 30 employees; DBA: AMERICAN INTL MONTESSORI INC; Address: 3339 M L King Jr Way, Berkeley, CA 94703-2720; NAICS 611110"
+    },
+    {
+      "name": "SALIENT GLOBAL TECHNOLOGIES",
+      "type": "Organization",
+      "description": "Corporation; Computer Programming Services; 3 employees; DBA: SALIENT GLOBAL TECHNOLOGIES; Address: 510 Garcia Ave Ste E, Pittsburg, CA 94565-7405; Situs in Berkeley, CA; NAICS 238990"
+    },
+    {
+      "name": "MANN PHILLIP V",
+      "type": "Organization",
+      "description": "Sole ownership; Commercial Rental; 9 employees; DBA: MANN PHILLIP V; Address: 1070 Parkview Ave, Pasadena, CA 911032356; Situs: 2246 San Pablo Ave, Berkeley, CA 94702; NAICS 531120"
+    },
+    {
+      "name": "MONTEREY FISH MARKET",
+      "type": "Organization",
+      "description": "Corporation; Retail Market; 8 employees; DBA: MONTEREY FISH MARKET; Address: 350 Bay St Ste 100-359, San Francisco, CA 941331966; Situs: 1582 Hopkins St, Berkeley, CA 94707; NAICS 445220"
+    },
+    {
+      "name": "4TH STREET HOLDINGS LLC",
+      "type": "Organization",
+      "description": "LLC; Commercial Rental; 0 employees; DBA: 4TH STREET HOLDINGS LLC; Address: 5 3rd St Ste 1225, San Francisco, CA 94103-3228; Situs: 1700 Fifth St, Berkeley, CA 94710; NAICS 531120"
+    },
+    {
+      "name": "BAY AREA CENTER FOR IMMIGRATION EVALUATIONS",
+      "type": "Organization",
+      "description": "Sole ownership; Psychological Evaluations; 0 employees; DBA: BAY AREA CENTER FOR IMMIGRATION EVALUATIONS; Business owner; Address: 2421 4th St, Berkeley, CA 94710-2430; Situs: 2421 Fourth St, Berkeley, CA 94710; NAICS 541199"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "KENDRA DUNLAP LMFT",
+      "target": "Kendra Dunlap",
+      "type": "owned_by",
+      "description": "Business is solely owned by Kendra Dunlap"
+    },
+    {
+      "source": "DATER JUDY",
+      "target": "Judy Dater",
+      "type": "owned_by",
+      "description": "Business is solely owned by Judy Dater"
+    },
+    {
+      "source": "SEIDER KEN PHD",
+      "target": "Ken Seider",
+      "type": "owned_by",
+      "description": "Business is solely owned by Ken Seider, PhD"
+    },
+    {
+      "source": "MANN PHILLIP V",
+      "target": "Phillip V Mann",
+      "type": "owned_by",
+      "description": "Business is solely owned by Phillip V Mann"
+    },
+    {
+      "source": "BAY AREA CENTER FOR IMMIGRATION EVALUATIONS",
+      "target": "Unknown (Sole Owner)",
+      "type": "owned_by",
+      "description": "Business is a sole ownership, owner name not specified"
+    },
+    {
+      "source": "DAVIS PERCY & RUBY",
+      "target": "Percy & Ruby Davis",
+      "type": "owned_by",
+      "description": "Rental business is solely owned by Percy & Ruby Davis"
+    },
+    {
+      "source": "BASS MEDICAL GROUP",
+      "target": "Corporation",
+      "type": "organizational_structure",
+      "description": "Business entity is a corporation"
+    },
+    {
+      "source": "JUSTICE BENEFITS INC",
+      "target": "Partnership",
+      "type": "organizational_structure",
+      "description": "Business entity is a partnership"
+    },
+    {
+      "source": "AMERICAN INTL MONTESSORI INC",
+      "target": "Corporation",
+      "type": "organizational_structure",
+      "description": "Business entity is a corporation"
+    },
+    {
+      "source": "SALIENT GLOBAL TECHNOLOGIES",
+      "target": "Corporation",
+      "type": "organizational_structure",
+      "description": "Business entity is a corporation"
+    },
+    {
+      "source": "MONTEREY FISH MARKET",
+      "target": "Corporation",
+      "type": "organizational_structure",
+      "description": "Business entity is a corporation"
+    },
+    {
+      "source": "4TH STREET HOLDINGS LLC",
+      "target": "LLC",
+      "type": "organizational_structure",
+      "description": "Business entity is a limited liability company"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. KENDRA DUNLAP LMFT (Organization): Sole ownership business; Professional SemiProfessional (likely mental health); 1 employee; Business owner: Kendra Dunlap; Address: 2029 Durant Ave # B204, Berkeley, CA 94704
+  2. JUSTICE BENEFITS INC (Organization): Partnership; Government Consulting; 0 employees; DBA: JUSTICE BENEFITS INC; Business owner; Address: 1711 E Belt Line Rd, Coppell, TX 75019-9606; Situs in Berkeley, CA; NAICS 541611 - Administrative Management and General Management Consulting Services
+  3. DATER JUDY (Organization): Sole ownership business; Graphic Design Services; 0 employees; DBA: DATER JUDY; Business owner; Address: 2430 Fifth St Ste J, Berkeley, CA 94710; NAICS 541430
+  4. BASS MEDICAL GROUP (Organization): Corporation; Doctors Office; 12 employees; DBA: BASS MEDICAL GROUP; Business owner; Address: 2637 Shadelands Dr, Walnut Creek, CA 94598; Situs: 2510 Webster St, Berkeley, CA 94705; NAICS 621111
+  5. SEIDER KEN PHD (Organization): Sole ownership; Psychologist; 2 employees; DBA: SEIDER KEN PHD; Business owner; Address: 2920 Domingo Ave #201, Berkeley, CA 94705; NAICS 621330
+  6. DAVIS PERCY & RUBY (Organization): Rental Property/3 Units; Sole ownership; 0 employees; DBA: DAVIS PERCY & RUBY; Address: 1647 Ashby Ave, Berkeley, CA 94703; NAICS 531110
+  7. AMERICAN INTL MONTESSORI INC (Organization): Corporation; Montessori School; 30 employees; DBA: AMERICAN INTL MONTESSORI INC; Address: 3339 M L King Jr Way, Berkeley, CA 94703-2720; NAICS 611110
+  8. SALIENT GLOBAL TECHNOLOGIES (Organization): Corporation; Computer Programming Services; 3 employees; DBA: SALIENT GLOBAL TECHNOLOGIES; Address: 510 Garcia Ave Ste E, Pittsburg, CA 94565-7405; Situs in Berkeley, CA; NAICS 238990
+  9. MANN PHILLIP V (Organization): Sole ownership; Commercial Rental; 9 employees; DBA: MANN PHILLIP V; Address: 1070 Parkview Ave, Pasadena, CA 911032356; Situs: 2246 San Pablo Ave, Berkeley, CA 94702; NAICS 531120
+  10. MONTEREY FISH MARKET (Organization): Corporation; Retail Market; 8 employees; DBA: MONTEREY FISH MARKET; Address: 350 Bay St Ste 100-359, San Francisco, CA 941331966; Situs: 1582 Hopkins St, Berkeley, CA 94707; NAICS 445220
+  ... and 2 more entities
+
+Relationships extracted: 12
+  1. KENDRA DUNLAP LMFT -> Kendra Dunlap (owned_by)
+  2. DATER JUDY -> Judy Dater (owned_by)
+  3. SEIDER KEN PHD -> Ken Seider (owned_by)
+  4. MANN PHILLIP V -> Phillip V Mann (owned_by)
+  5. BAY AREA CENTER FOR IMMIGRATION EVALUATIONS -> Unknown (Sole Owner) (owned_by)
+  6. DAVIS PERCY & RUBY -> Percy & Ruby Davis (owned_by)
+  7. BASS MEDICAL GROUP -> Corporation (organizational_structure)
+  8. JUSTICE BENEFITS INC -> Partnership (organizational_structure)
+  9. AMERICAN INTL MONTESSORI INC -> Corporation (organizational_structure)
+  10. SALIENT GLOBAL TECHNOLOGIES -> Corporation (organizational_structure)
+  ... and 2 more relationships
+
+CHUNK 36 COMPLETE - Entities: 12, Relationships: 12
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:29.149974 - Model: gpt-4.1-mini
+============================================================
+Input chunk (6332 chars):
+B1_ZIP=91501, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=2285 SAN PABLO AVE, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94702.0 Record 1431: APN=057 205602700, RecordID=BL-017096, BusDesc=YOGA INSTRUCTION, B1_PER_SUB_TYPE=Professional SemiProfessional, DBA=ANNEMARIA RAJALA YOGA, NAICS=611699 - All Other Miscellaneous Schools and Instruction, Tax_Code=P, Employee_Num=0, Bus_Own_Type=Sole Ownership, B1_BUSINESS_NAME=ANNEMARIA RAJALA YOGA, B1_ADDRESS1=1938 HEARST AVE, B1_CITY=BERK...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "ANNEMARIA RAJALA YOGA",
+      "type": "Organization",
+      "description": "Business providing yoga instruction, DBA ANNEMARIA RAJALA YOGA, Sole Ownership, located at 1938 HEARST AVE, BERKELEY, CA 947092128"
+    },
+    {
+      "name": "BERKELEY WIRELESS",
+      "type": "Organization",
+      "description": "Business selling phones, DBA BERKELEY WIRELESS, Sole Ownership, located at 1943 ASHBY AVE, BERKELEY, CA 94703-2505"
+    },
+    {
+      "name": "EASTMAN KODAK",
+      "type": "Organization",
+      "description": "Business providing copier repair, Corporation, located at 343 STATE ST, ROCHESTER, NY 14650"
+    },
+    {
+      "name": "HILTI INC",
+      "type": "Organization",
+      "description": "Business wholesaling construction tools, Corporation, located at P O BOX 21148, TULSA, OK 74121"
+    },
+    {
+      "name": "STORE MASTER FUNDING XI LLC",
+      "type": "Organization",
+      "description": "Business involved in commercial lease, LLC, located at 8377 E HARTFORD DR STE 100, SCOTTSDALE, AZ 85255-5686"
+    },
+    {
+      "name": "IY DEVELOPMENT & RENOVATION INC",
+      "type": "Organization",
+      "description": "General contractor business, Corporation, located at 1770 POST ST #294, SAN FRANCISCO, CA 94115"
+    },
+    {
+      "name": "THE WONDERSTRUCK PRINTMAKER",
+      "type": "Organization",
+      "description": "Retail trade business online printmaking, Sole Ownership, located at 2435 SACRAMENTO ST, BERKELEY, CA 947022129"
+    },
+    {
+      "name": "ENNOVA TECHNOLOGIES INC",
+      "type": "Organization",
+      "description": "Software development business, Corporation, located at 2150 ALLSTON WAY STE 250, BERKELEY, CA 947041377"
+    },
+    {
+      "name": "MOORE/IACOFANO/GOLTSMAN",
+      "type": "Organization",
+      "description": "Design/planner business, Corporation, located at 800 HEARST AVE, BERKELEY, CA 94710"
+    },
+    {
+      "name": "KERWOOD APARTMENTS LLC",
+      "type": "Organization",
+      "description": "Residential rental business (18 units), LLC, located at 6114 LA SALLE AVE # 197, OAKLAND, CA 946112802"
+    },
+    {
+      "name": "THE SANVILLE INSTITUTE",
+      "type": "Organization",
+      "description": "Non-profit organization, Corporation, located at PO BOX 7862, BERKELEY, CA 947070862"
+    },
+    {
+      "name": "JD SPECIALTIES",
+      "type": "Organization",
+      "description": "Business installing toilet partitions, Corporation, located at PO BOX 536, ACAMPO, CA 95220-0536"
+    },
+    {
+      "name": "Business Owner",
+      "type": "Role",
+      "description": "Contact type for businesses listed"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Business Owner",
+      "target": "ANNEMARIA RAJALA YOGA",
+      "type": "contact_for",
+      "description": "Business Owner contact for ANNEMARIA RAJALA YOGA"
+    },
+    {
+      "source": "Business Owner",
+      "target": "BERKELEY WIRELESS",
+      "type": "contact_for",
+      "description": "Business Owner contact for BERKELEY WIRELESS"
+    },
+    {
+      "source": "Business Owner",
+      "target": "EASTMAN KODAK",
+      "type": "contact_for",
+      "description": "Business Owner contact for EASTMAN KODAK"
+    },
+    {
+      "source": "Business Owner",
+      "target": "HILTI INC",
+      "type": "contact_for",
+      "description": "Business Owner contact for HILTI INC"
+    },
+    {
+      "source": "Business Owner",
+      "target": "STORE MASTER FUNDING XI LLC",
+      "type": "contact_for",
+      "description": "Business Owner contact for STORE MASTER FUNDING XI LLC"
+    },
+    {
+      "source": "Business Owner",
+      "target": "IY DEVELOPMENT & RENOVATION INC",
+      "type": "contact_for",
+      "description": "Business Owner contact for IY DEVELOPMENT & RENOVATION INC"
+    },
+    {
+      "source": "Business Owner",
+      "target": "THE WONDERSTRUCK PRINTMAKER",
+      "type": "contact_for",
+      "description": "Business Owner contact for THE WONDERSTRUCK PRINTMAKER"
+    },
+    {
+      "source": "Business Owner",
+      "target": "ENNOVA TECHNOLOGIES INC",
+      "type": "contact_for",
+      "description": "Business Owner contact for ENNOVA TECHNOLOGIES INC"
+    },
+    {
+      "source": "Business Owner",
+      "target": "MOORE/IACOFANO/GOLTSMAN",
+      "type": "contact_for",
+      "description": "Business Owner contact for MOORE/IACOFANO/GOLTSMAN"
+    },
+    {
+      "source": "Business Owner",
+      "target": "KERWOOD APARTMENTS LLC",
+      "type": "contact_for",
+      "description": "Business Owner contact for KERWOOD APARTMENTS LLC"
+    },
+    {
+      "source": "Business Owner",
+      "target": "THE SANVILLE INSTITUTE",
+      "type": "contact_for",
+      "description": "Business Owner contact for THE SANVILLE INSTITUTE"
+    },
+    {
+      "source": "Business Owner",
+      "target": "JD SPECIALTIES",
+      "type": "contact_for",
+      "description": "Business Owner contact for JD SPECIALTIES"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 13
+  1. ANNEMARIA RAJALA YOGA (Organization): Business providing yoga instruction, DBA ANNEMARIA RAJALA YOGA, Sole Ownership, located at 1938 HEARST AVE, BERKELEY, CA 947092128
+  2. BERKELEY WIRELESS (Organization): Business selling phones, DBA BERKELEY WIRELESS, Sole Ownership, located at 1943 ASHBY AVE, BERKELEY, CA 94703-2505
+  3. EASTMAN KODAK (Organization): Business providing copier repair, Corporation, located at 343 STATE ST, ROCHESTER, NY 14650
+  4. HILTI INC (Organization): Business wholesaling construction tools, Corporation, located at P O BOX 21148, TULSA, OK 74121
+  5. STORE MASTER FUNDING XI LLC (Organization): Business involved in commercial lease, LLC, located at 8377 E HARTFORD DR STE 100, SCOTTSDALE, AZ 85255-5686
+  6. IY DEVELOPMENT & RENOVATION INC (Organization): General contractor business, Corporation, located at 1770 POST ST #294, SAN FRANCISCO, CA 94115
+  7. THE WONDERSTRUCK PRINTMAKER (Organization): Retail trade business online printmaking, Sole Ownership, located at 2435 SACRAMENTO ST, BERKELEY, CA 947022129
+  8. ENNOVA TECHNOLOGIES INC (Organization): Software development business, Corporation, located at 2150 ALLSTON WAY STE 250, BERKELEY, CA 947041377
+  9. MOORE/IACOFANO/GOLTSMAN (Organization): Design/planner business, Corporation, located at 800 HEARST AVE, BERKELEY, CA 94710
+  10. KERWOOD APARTMENTS LLC (Organization): Residential rental business (18 units), LLC, located at 6114 LA SALLE AVE # 197, OAKLAND, CA 946112802
+  ... and 3 more entities
+
+Relationships extracted: 12
+  1. Business Owner -> ANNEMARIA RAJALA YOGA (contact_for)
+  2. Business Owner -> BERKELEY WIRELESS (contact_for)
+  3. Business Owner -> EASTMAN KODAK (contact_for)
+  4. Business Owner -> HILTI INC (contact_for)
+  5. Business Owner -> STORE MASTER FUNDING XI LLC (contact_for)
+  6. Business Owner -> IY DEVELOPMENT & RENOVATION INC (contact_for)
+  7. Business Owner -> THE WONDERSTRUCK PRINTMAKER (contact_for)
+  8. Business Owner -> ENNOVA TECHNOLOGIES INC (contact_for)
+  9. Business Owner -> MOORE/IACOFANO/GOLTSMAN (contact_for)
+  10. Business Owner -> KERWOOD APARTMENTS LLC (contact_for)
+  ... and 2 more relationships
+
+CHUNK 119 COMPLETE - Entities: 13, Relationships: 12
+
+============================================================
+CHUNK EXTRACTION - 2025-06-21 21:01:29.351882 - Model: gpt-4.1
+============================================================
+Input chunk (6010 chars):
+B1_PER_SUB_TYPE=Retail Trade, DBA=BKK THAI CUISINE, NAICS=722511 - Full-Service Restaurants, Tax_Code=R, Employee_Num=10, Bus_Own_Type=Corporation, B1_BUSINESS_NAME=BKK THAI CUISINE, B1_ADDRESS1=1459 UNIVERSITY AVE, B1_CITY=BERKELEY, B1_STATE=CA, B1_ZIP=94702-1508, B1_CONTACT_TYPE=Business Owner, B1_FULL_ADDRESS=1459 UNIVERSITY Ave, B1_SITUS_CITY=BERKELEY, B1_SITUS_STATE=CA, B1_SITUS_ZIP=94702.0 Record 447: APN=055 183000100, RecordID=BL-042463, BusDesc=RES. RENTAL - 3 UNITS, B1_PER_SUB_TYPE=Ren...
+
+Model Response:
+{
+  "entities": [
+    {
+      "name": "BKK THAI CUISINE",
+      "type": "Organization",
+      "description": "Retail trade business, Full-Service Restaurant, Corporation, 10 employees, located at 1459 UNIVERSITY AVE, BERKELEY, CA 94702-1508"
+    },
+    {
+      "name": "DIN IMAM U",
+      "type": "Organization",
+      "description": "Rental of Real Property business, Residential Rental - 3 Units, Sole Ownership, 4 employees, business license at 760 LA PALOMA RD, EL SOBRANTE, CA 94803 173; situs at 2248 DWIGHT WAY, BERKELEY, CA 94704"
+    },
+    {
+      "name": "L A N BEAUTY SALON",
+      "type": "Organization",
+      "description": "Beauty Salon, Cosmetology and Barber Schools, Sole Ownership, 1 employee, located at 2048 UNIVERSITY AVE, BERKELEY, CA 94704-1006"
+    },
+    {
+      "name": "SORENSEN STAFFING LLC",
+      "type": "Organization",
+      "description": "Business Personal Repair Services, Domestic Service Recruitment (remote), LLC, 1 employee, located at 1412 66TH ST, BERKELEY, CA 94702-2703"
+    },
+    {
+      "name": "ZAYO GROUP LLC",
+      "type": "Organization",
+      "description": "Telecommunications Provider, Wired Telecommunications Carriers, LLC, 0 employees, located at 1550 LATIMER ST, LONGWOOD, FL 80202; situs in BERKELEY, CA"
+    },
+    {
+      "name": "KIZER RAND",
+      "type": "Organization",
+      "description": "Retail trade business, Mobile Food Services (Middle Eastern food/drink), Sole Ownership, 0 employees, located at 1285 ALVARADO RD, BERKELEY, CA 94705-1545"
+    },
+    {
+      "name": "KORMAN DAVID",
+      "type": "Organization",
+      "description": "Rental of Real Property, RES. RENTAL - 7 UNITS, Sole Ownership, 0 employees, located at 2377 VIRGINIA ST, BERKELEY, CA 94709"
+    },
+    {
+      "name": "LELAND LENA",
+      "type": "Organization",
+      "description": "Rental of Real Property, Rooming House, Sole Ownership, 0 employees, located at 610 WOODMONT AVE, BERKELEY, CA 94708"
+    },
+    {
+      "name": "A L B INC",
+      "type": "Organization",
+      "description": "Construction or Contractor, Concrete and Asphalt Restoration, Corporation, 5 employees, located at 552 W 10TH ST, PITTSBURG, CA 945651802; situs in BERKELEY, CA"
+    },
+    {
+      "name": "OPTIONS RECOVERY SERVICES",
+      "type": "Organization",
+      "description": "Non Profit Organization, Day Treatment Program, Corporation, 20 employees, located at 1931 CENTER STREET, BERKELEY, CA 94704"
+    },
+    {
+      "name": "MCCOY INSULATION",
+      "type": "Organization",
+      "description": "Construction or Contractor, General Contractor, Sole Ownership, 4 employees, located at 1936 101ST AVE, OAKLAND, CA 94603; situs in BERKELEY, CA"
+    },
+    {
+      "name": "GRANT CONSTRUCTION",
+      "type": "Organization",
+      "description": "Construction or Contractor, General Contractor, Sole Ownership, 1 employee, located at 720 PERALTA AVE, BERKELEY, CA 94707"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BKK THAI CUISINE",
+      "target": "1459 UNIVERSITY AVE, BERKELEY, CA 94702-1508",
+      "type": "located_at",
+      "description": "Business address and physical location"
+    },
+    {
+      "source": "DIN IMAM U",
+      "target": "760 LA PALOMA RD, EL SOBRANTE, CA 94803 173",
+      "type": "registered_at",
+      "description": "Business mailing address"
+    },
+    {
+      "source": "DIN IMAM U",
+      "target": "2248 DWIGHT WAY, BERKELEY, CA 94704",
+      "type": "situs_address",
+      "description": "Physical site address in Berkeley"
+    },
+    {
+      "source": "L A N BEAUTY SALON",
+      "target": "2048 UNIVERSITY AVE, BERKELEY, CA 94704-1006",
+      "type": "located_at",
+      "description": "Business and situs address"
+    },
+    {
+      "source": "SORENSEN STAFFING LLC",
+      "target": "1412 66TH ST, BERKELEY, CA 94702-2703",
+      "type": "located_at",
+      "description": "Mailing address"
+    },
+    {
+      "source": "ZAYO GROUP LLC",
+      "target": "1550 LATIMER ST, LONGWOOD, FL 80202",
+      "type": "registered_at",
+      "description": "Business address; situs in Berkeley, CA"
+    },
+    {
+      "source": "ZAYO GROUP LLC",
+      "target": "BERKELEY, CA",
+      "type": "situs_address",
+      "description": "Business provides services in Berkeley, CA"
+    },
+    {
+      "source": "KIZER RAND",
+      "target": "1285 ALVARADO RD, BERKELEY, CA 94705-1545",
+      "type": "located_at",
+      "description": "Business address"
+    },
+    {
+      "source": "KORMAN DAVID",
+      "target": "2377 VIRGINIA ST, BERKELEY, CA 94709",
+      "type": "located_at",
+      "description": "Business and situs address"
+    },
+    {
+      "source": "LELAND LENA",
+      "target": "610 WOODMONT AVE, BERKELEY, CA 94708",
+      "type": "located_at",
+      "description": "Business and situs address"
+    },
+    {
+      "source": "A L B INC",
+      "target": "552 W 10TH ST, PITTSBURG, CA 945651802",
+      "type": "registered_at",
+      "description": "Business address; operates in Berkeley, CA"
+    },
+    {
+      "source": "A L B INC",
+      "target": "BERKELEY, CA",
+      "type": "situs_address",
+      "description": "Business operates in Berkeley, CA"
+    },
+    {
+      "source": "OPTIONS RECOVERY SERVICES",
+      "target": "1931 CENTER STREET, BERKELEY, CA 94704",
+      "type": "located_at",
+      "description": "Business and situs address"
+    },
+    {
+      "source": "MCCOY INSULATION",
+      "target": "1936 101ST AVE, OAKLAND, CA 94603",
+      "type": "registered_at",
+      "description": "Business address; operates in Berkeley, CA"
+    },
+    {
+      "source": "MCCOY INSULATION",
+      "target": "BERKELEY, CA",
+      "type": "situs_address",
+      "description": "Business operates in Berkeley, CA"
+    },
+    {
+      "source": "GRANT CONSTRUCTION",
+      "target": "720 PERALTA AVE, BERKELEY, CA 94707",
+      "type": "located_at",
+      "description": "Business and situs address"
+    }
+  ]
+}
+============================================================
+
+EXTRACTION RESULTS:
+Entities extracted: 12
+  1. BKK THAI CUISINE (Organization): Retail trade business, Full-Service Restaurant, Corporation, 10 employees, located at 1459 UNIVERSITY AVE, BERKELEY, CA 94702-1508
+  2. DIN IMAM U (Organization): Rental of Real Property business, Residential Rental - 3 Units, Sole Ownership, 4 employees, business license at 760 LA PALOMA RD, EL SOBRANTE, CA 94803 173; situs at 2248 DWIGHT WAY, BERKELEY, CA 94704
+  3. L A N BEAUTY SALON (Organization): Beauty Salon, Cosmetology and Barber Schools, Sole Ownership, 1 employee, located at 2048 UNIVERSITY AVE, BERKELEY, CA 94704-1006
+  4. SORENSEN STAFFING LLC (Organization): Business Personal Repair Services, Domestic Service Recruitment (remote), LLC, 1 employee, located at 1412 66TH ST, BERKELEY, CA 94702-2703
+  5. ZAYO GROUP LLC (Organization): Telecommunications Provider, Wired Telecommunications Carriers, LLC, 0 employees, located at 1550 LATIMER ST, LONGWOOD, FL 80202; situs in BERKELEY, CA
+  6. KIZER RAND (Organization): Retail trade business, Mobile Food Services (Middle Eastern food/drink), Sole Ownership, 0 employees, located at 1285 ALVARADO RD, BERKELEY, CA 94705-1545
+  7. KORMAN DAVID (Organization): Rental of Real Property, RES. RENTAL - 7 UNITS, Sole Ownership, 0 employees, located at 2377 VIRGINIA ST, BERKELEY, CA 94709
+  8. LELAND LENA (Organization): Rental of Real Property, Rooming House, Sole Ownership, 0 employees, located at 610 WOODMONT AVE, BERKELEY, CA 94708
+  9. A L B INC (Organization): Construction or Contractor, Concrete and Asphalt Restoration, Corporation, 5 employees, located at 552 W 10TH ST, PITTSBURG, CA 945651802; situs in BERKELEY, CA
+  10. OPTIONS RECOVERY SERVICES (Organization): Non Profit Organization, Day Treatment Program, Corporation, 20 employees, located at 1931 CENTER STREET, BERKELEY, CA 94704
+  ... and 2 more entities
+
+Relationships extracted: 16
+  1. BKK THAI CUISINE -> 1459 UNIVERSITY AVE, BERKELEY, CA 94702-1508 (located_at)
+  2. DIN IMAM U -> 760 LA PALOMA RD, EL SOBRANTE, CA 94803 173 (registered_at)
+  3. DIN IMAM U -> 2248 DWIGHT WAY, BERKELEY, CA 94704 (situs_address)
+  4. L A N BEAUTY SALON -> 2048 UNIVERSITY AVE, BERKELEY, CA 94704-1006 (located_at)
+  5. SORENSEN STAFFING LLC -> 1412 66TH ST, BERKELEY, CA 94702-2703 (located_at)
+  6. ZAYO GROUP LLC -> 1550 LATIMER ST, LONGWOOD, FL 80202 (registered_at)
+  7. ZAYO GROUP LLC -> BERKELEY, CA (situs_address)
+  8. KIZER RAND -> 1285 ALVARADO RD, BERKELEY, CA 94705-1545 (located_at)
+  9. KORMAN DAVID -> 2377 VIRGINIA ST, BERKELEY, CA 94709 (located_at)
+  10. LELAND LENA -> 610 WOODMONT AVE, BERKELEY, CA 94708 (located_at)
+  ... and 6 more relationships
+
+CHUNK 37 COMPLETE - Entities: 12, Relationships: 16
