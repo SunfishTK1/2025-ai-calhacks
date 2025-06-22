@@ -1,0 +1,61 @@
+{
+  "name": "Kip’s Bar and Grill",
+  "address": "2439 Durant Ave, Berkeley, CA 94704, USA",
+  "phone": "(510) 848-4340",
+  "website": "http://kipsberkeley.com",
+  "hours": {
+    "mon–sun": "6 PM–2 AM"
+  },
+  "established": "1954",
+  "type": "American bar & grill, dive bar, college crowd spot",
+  "menu_highlights": [
+    "Large burgers",
+    "Super nachos",
+    "$2 tacos (Taco Tuesday)",
+    "$30 margarita fishbowls",
+    "Strong cocktails",
+    "Bar food: wings, tater tots, pizza (although some missing)"
+  ],
+  "vibe": {
+    "crowd": "UC Berkeley students, grads, locals",
+    "atmosphere": "lively, casual, college-town, divey",
+    "events": [
+      "Taco Tuesday",
+      "Trivia Night",
+      "Karaoke (Wed & Sun)",
+      "DJ & dance floor (Thu–Sat)",
+      "Salsa/Bachata nights"
+    ]
+  },
+  "reviews": {
+    "yelp_rating": 3.2,
+    "restaurantguru_rating": 3.5,
+    "birdeye_rating": 3.8,
+    "common_feedback": [
+      "Good value and large portions",
+      "Fun vibes, strong drinks",
+      "Service casual; can be hit-or-miss",
+      "Dive bar feel; not upscale",
+      "Crowd can be 'frat bros' or uneven mix",
+      "Sometimes cover fee (~$20 on busy nights)"
+    ],
+    "sample_quotes": [
+      "Honestly not as bad as I thought it would be. Came on a Saturday night… Make sure to get in before 10:30 bc there is an outrageous $20 cover fee" :contentReference[oaicite:0]{index=0},
+      "Would definitely recommend their Taco Tuesdays… The dance floor's music ranges a lot" :contentReference[oaicite:1]{index=1},
+      "Hottest bartender on the planet… drinks are strong and the eye candy is vibrant" :contentReference[oaicite:2]{index=2},
+      "Morons Run This Place… security is idiotic frat boys" :contentReference[oaicite:3]{index=3}
+    ]
+  },
+  "parking": "Street and garage nearby; some private lot",
+  "payment": [
+    "Credit cards",
+    "Apple Pay",
+    "Android Pay"
+  ],
+  "wifi": "Available (fees noted)",
+  "delivery": "Available via Grubhub",
+  "social_media": {
+    "instagram": "@kipsberkeley",
+    "latest_event_post": "Salsa Bachata night this week" :contentReference[oaicite:4]{index=4}
+  }
+}
