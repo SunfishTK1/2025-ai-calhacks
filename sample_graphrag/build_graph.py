@@ -33,32 +33,74 @@ logger.info("=== GraphRAG Builder Starting ===")
 
 # Rate limiting setup
 class RateLimiter:
-    def __init__(self, max_requests_per_minute=700):
+    def __init__(self, max_requests_per_minute=700, max_tokens_per_minute=100000):
         self.max_requests = max_requests_per_minute
+        self.max_tokens = max_tokens_per_minute
         self.requests = deque()
+        self.tokens = deque()  # Store (timestamp, token_count) tuples
         self.lock = threading.Lock()
     
-    def wait_if_needed(self):
+    def wait_if_needed(self, estimated_tokens=1000):
         with self.lock:
             now = time.time()
+            
             # Remove requests older than 1 minute
             while self.requests and now - self.requests[0] > 60:
                 self.requests.popleft()
             
-            # If we're at the limit, wait
+            # Remove token records older than 1 minute
+            while self.tokens and now - self.tokens[0][0] > 60:
+                self.tokens.popleft()
+            
+            # Calculate current token usage
+            current_tokens = sum(token_count for _, token_count in self.tokens)
+            
+            # Check if we need to wait for requests or tokens
+            requests_sleep = 0
+            tokens_sleep = 0
+            
             if len(self.requests) >= self.max_requests:
-                sleep_time = 60 - (now - self.requests[0]) + 0.1  # Small buffer
-                logger.info(f"Rate limit reached, sleeping for {sleep_time:.2f} seconds")
+                requests_sleep = 60 - (now - self.requests[0]) + 0.1
+                
+            if current_tokens + estimated_tokens > self.max_tokens:
+                # Find when enough tokens will expire to allow this request
+                tokens_needed = current_tokens + estimated_tokens - self.max_tokens
+                for timestamp, token_count in self.tokens:
+                    tokens_needed -= token_count
+                    if tokens_needed <= 0:
+                        tokens_sleep = max(0, 60 - (now - timestamp)) + 0.1
+                        break
+            
+            # Sleep for the longer of the two limits
+            sleep_time = max(requests_sleep, tokens_sleep)
+            if sleep_time > 0:
+                if requests_sleep > tokens_sleep:
+                    logger.info(f"Request rate limit reached, sleeping for {sleep_time:.2f} seconds")
+                else:
+                    logger.info(f"Token rate limit reached ({current_tokens} tokens), sleeping for {sleep_time:.2f} seconds")
                 time.sleep(sleep_time)
+                
                 # Clean up again after sleeping
                 now = time.time()
                 while self.requests and now - self.requests[0] > 60:
                     self.requests.popleft()
+                while self.tokens and now - self.tokens[0][0] > 60:
+                    self.tokens.popleft()
             
             # Record this request
             self.requests.append(now)
+    
+    def record_tokens(self, token_count):
+        """Record actual token usage after API call"""
+        with self.lock:
+            now = time.time()
+            self.tokens.append((now, token_count))
+            
+            # Clean up old records
+            while self.tokens and now - self.tokens[0][0] > 60:
+                self.tokens.popleft()
 
-rate_limiter = RateLimiter(max_requests_per_minute=700)
+rate_limiter = RateLimiter(max_requests_per_minute=700, max_tokens_per_minute=100000)
 
 # Configuration
 endpoint = os.getenv("ENDPOINT_URL", "https://2025-ai-hackberkeley.openai.azure.com/")
@@ -174,8 +216,11 @@ class GraphRAGBuilder:
         try:
             logger.debug("Sending request to Azure OpenAI for entity extraction")
             
+            # Estimate token usage (rough approximation: 1 token ≈ 4 characters)
+            estimated_tokens = (len(text_chunk) + len(prompt)) // 4 + 2000  # Add buffer for response
+            
             # Apply rate limiting before making the request
-            rate_limiter.wait_if_needed()
+            rate_limiter.wait_if_needed(estimated_tokens)
             
             response = client.chat.completions.create(
                 model=deployment,
@@ -185,6 +230,15 @@ class GraphRAGBuilder:
                 ],
                 max_completion_tokens=90000,
             )
+            
+            # Record actual token usage if available
+            if hasattr(response, 'usage') and response.usage:
+                actual_tokens = response.usage.total_tokens
+                rate_limiter.record_tokens(actual_tokens)
+                logger.debug(f"Used {actual_tokens} tokens for this request")
+            else:
+                # Fallback to estimated tokens
+                rate_limiter.record_tokens(estimated_tokens)
             
             result = response.choices[0].message.content
             logger.debug(f"Received response of {len(result)} characters")
@@ -246,13 +300,25 @@ class GraphRAGBuilder:
         """Get embedding for text using Azure OpenAI"""
         logger.debug(f"Getting embedding for text of length {len(text)}")
         try:
+            # Estimate token usage for embeddings (typically much smaller than chat completions)
+            estimated_tokens = len(text) // 4 + 10
+            
             # Apply rate limiting before making the request
-            rate_limiter.wait_if_needed()
+            rate_limiter.wait_if_needed(estimated_tokens)
             
             response = client.embeddings.create(
                 model=embedding_deployment,
                 input=text
             )
+            
+            # Record token usage (embeddings usually return token count in usage)
+            if hasattr(response, 'usage') and response.usage:
+                actual_tokens = response.usage.total_tokens
+                rate_limiter.record_tokens(actual_tokens)
+                logger.debug(f"Used {actual_tokens} tokens for embedding")
+            else:
+                rate_limiter.record_tokens(estimated_tokens)
+            
             logger.debug(f"Successfully got embedding with {len(response.data[0].embedding)} dimensions")
             return response.data[0].embedding
         except Exception as e:
@@ -400,8 +466,11 @@ class GraphRAGBuilder:
                 try:
                     logger.debug(f"Requesting community summary for community {comm_id}")
                     
+                    # Estimate token usage for community summary
+                    estimated_tokens = len(summary_prompt) // 4 + 500  # Smaller response expected
+                    
                     # Apply rate limiting before making the request
-                    rate_limiter.wait_if_needed()
+                    rate_limiter.wait_if_needed(estimated_tokens)
                     
                     response = client.chat.completions.create(
                         model=deployment,
@@ -411,6 +480,14 @@ class GraphRAGBuilder:
                         ],
                         max_completion_tokens=90000,
                     )
+                    
+                    # Record actual token usage if available
+                    if hasattr(response, 'usage') and response.usage:
+                        actual_tokens = response.usage.total_tokens
+                        rate_limiter.record_tokens(actual_tokens)
+                        logger.debug(f"Used {actual_tokens} tokens for community summary")
+                    else:
+                        rate_limiter.record_tokens(estimated_tokens)
                     
                     summary_text = response.choices[0].message.content
                     

@@ -1,899 +1,1046 @@
-2025-06-21 16:39:55,479 - INFO - === GraphRAG Builder Starting ===
-2025-06-21 16:39:55,520 - INFO - Initializing GraphRAGBuilder with chunk_size=500
-2025-06-21 16:39:55,520 - INFO - GraphRAGBuilder initialized successfully
-2025-06-21 16:39:55,520 - INFO - Converting CSV to text...
-2025-06-21 16:39:55,520 - INFO - Starting CSV to text conversion for: biz.csv
-2025-06-21 16:39:55,558 - INFO - Successfully loaded CSV with 12335 rows and 21 columns
-2025-06-21 16:39:55,559 - INFO - CSV columns: ['APN', 'RecordID', 'BusDesc', 'B1_PER_SUB_TYPE', 'DBA', 'NAICS', 'Tax_Code', 'Employee_Num', 'Bus_Own_Type', 'B1_BUSINESS_NAME', 'B1_ADDRESS1', 'B1_ADDRESS2', 'B1_CITY', 'B1_STATE', 'B1_ZIP', 'B1_CONTACT_TYPE', 'B1_FULL_ADDRESS', 'B1_SITUS_CITY', 'B1_SITUS_STATE', 'B1_SITUS_ZIP', 'Business_Location']
-2025-06-21 16:39:55,563 - INFO - Processed 100/12335 rows
-2025-06-21 16:39:55,565 - INFO - Processed 200/12335 rows
-2025-06-21 16:39:55,567 - INFO - Processed 300/12335 rows
-2025-06-21 16:39:55,568 - INFO - Processed 400/12335 rows
-2025-06-21 16:39:55,571 - INFO - Processed 500/12335 rows
-2025-06-21 16:39:55,573 - INFO - Processed 600/12335 rows
-2025-06-21 16:39:55,575 - INFO - Processed 700/12335 rows
-2025-06-21 16:39:55,577 - INFO - Processed 800/12335 rows
-2025-06-21 16:39:55,579 - INFO - Processed 900/12335 rows
-2025-06-21 16:39:55,580 - INFO - Processed 1000/12335 rows
-2025-06-21 16:39:55,582 - INFO - Processed 1100/12335 rows
-2025-06-21 16:39:55,584 - INFO - Processed 1200/12335 rows
-2025-06-21 16:39:55,585 - INFO - Processed 1300/12335 rows
-2025-06-21 16:39:55,587 - INFO - Processed 1400/12335 rows
-2025-06-21 16:39:55,589 - INFO - Processed 1500/12335 rows
-2025-06-21 16:39:55,591 - INFO - Processed 1600/12335 rows
-2025-06-21 16:39:55,593 - INFO - Processed 1700/12335 rows
-2025-06-21 16:39:55,595 - INFO - Processed 1800/12335 rows
-2025-06-21 16:39:55,597 - INFO - Processed 1900/12335 rows
-2025-06-21 16:39:55,598 - INFO - Processed 2000/12335 rows
-2025-06-21 16:39:55,600 - INFO - Processed 2100/12335 rows
-2025-06-21 16:39:55,602 - INFO - Processed 2200/12335 rows
-2025-06-21 16:39:55,604 - INFO - Processed 2300/12335 rows
-2025-06-21 16:39:55,606 - INFO - Processed 2400/12335 rows
-2025-06-21 16:39:55,608 - INFO - Processed 2500/12335 rows
-2025-06-21 16:39:55,610 - INFO - Processed 2600/12335 rows
-2025-06-21 16:39:55,612 - INFO - Processed 2700/12335 rows
-2025-06-21 16:39:55,614 - INFO - Processed 2800/12335 rows
-2025-06-21 16:39:55,615 - INFO - Processed 2900/12335 rows
-2025-06-21 16:39:55,617 - INFO - Processed 3000/12335 rows
-2025-06-21 16:39:55,619 - INFO - Processed 3100/12335 rows
-2025-06-21 16:39:55,621 - INFO - Processed 3200/12335 rows
-2025-06-21 16:39:55,623 - INFO - Processed 3300/12335 rows
-2025-06-21 16:39:55,625 - INFO - Processed 3400/12335 rows
-2025-06-21 16:39:55,626 - INFO - Processed 3500/12335 rows
-2025-06-21 16:39:55,628 - INFO - Processed 3600/12335 rows
-2025-06-21 16:39:55,630 - INFO - Processed 3700/12335 rows
-2025-06-21 16:39:55,631 - INFO - Processed 3800/12335 rows
-2025-06-21 16:39:55,633 - INFO - Processed 3900/12335 rows
-2025-06-21 16:39:55,635 - INFO - Processed 4000/12335 rows
-2025-06-21 16:39:55,636 - INFO - Processed 4100/12335 rows
-2025-06-21 16:39:55,638 - INFO - Processed 4200/12335 rows
-2025-06-21 16:39:55,640 - INFO - Processed 4300/12335 rows
-2025-06-21 16:39:55,641 - INFO - Processed 4400/12335 rows
-2025-06-21 16:39:55,643 - INFO - Processed 4500/12335 rows
-2025-06-21 16:39:55,645 - INFO - Processed 4600/12335 rows
-2025-06-21 16:39:55,646 - INFO - Processed 4700/12335 rows
-2025-06-21 16:39:55,648 - INFO - Processed 4800/12335 rows
-2025-06-21 16:39:55,650 - INFO - Processed 4900/12335 rows
-2025-06-21 16:39:55,651 - INFO - Processed 5000/12335 rows
-2025-06-21 16:39:55,653 - INFO - Processed 5100/12335 rows
-2025-06-21 16:39:55,655 - INFO - Processed 5200/12335 rows
-2025-06-21 16:39:55,657 - INFO - Processed 5300/12335 rows
-2025-06-21 16:39:55,658 - INFO - Processed 5400/12335 rows
-2025-06-21 16:39:55,660 - INFO - Processed 5500/12335 rows
-2025-06-21 16:39:55,661 - INFO - Processed 5600/12335 rows
-2025-06-21 16:39:55,663 - INFO - Processed 5700/12335 rows
-2025-06-21 16:39:55,665 - INFO - Processed 5800/12335 rows
-2025-06-21 16:39:55,666 - INFO - Processed 5900/12335 rows
-2025-06-21 16:39:55,668 - INFO - Processed 6000/12335 rows
-2025-06-21 16:39:55,670 - INFO - Processed 6100/12335 rows
-2025-06-21 16:39:55,672 - INFO - Processed 6200/12335 rows
-2025-06-21 16:39:55,673 - INFO - Processed 6300/12335 rows
-2025-06-21 16:39:55,675 - INFO - Processed 6400/12335 rows
-2025-06-21 16:39:55,677 - INFO - Processed 6500/12335 rows
-2025-06-21 16:39:55,679 - INFO - Processed 6600/12335 rows
-2025-06-21 16:39:55,681 - INFO - Processed 6700/12335 rows
-2025-06-21 16:39:55,682 - INFO - Processed 6800/12335 rows
-2025-06-21 16:39:55,684 - INFO - Processed 6900/12335 rows
-2025-06-21 16:39:55,686 - INFO - Processed 7000/12335 rows
-2025-06-21 16:39:55,687 - INFO - Processed 7100/12335 rows
-2025-06-21 16:39:55,689 - INFO - Processed 7200/12335 rows
-2025-06-21 16:39:55,691 - INFO - Processed 7300/12335 rows
-2025-06-21 16:39:55,692 - INFO - Processed 7400/12335 rows
-2025-06-21 16:39:55,694 - INFO - Processed 7500/12335 rows
-2025-06-21 16:39:55,696 - INFO - Processed 7600/12335 rows
-2025-06-21 16:39:55,698 - INFO - Processed 7700/12335 rows
-2025-06-21 16:39:55,699 - INFO - Processed 7800/12335 rows
-2025-06-21 16:39:55,701 - INFO - Processed 7900/12335 rows
-2025-06-21 16:39:55,703 - INFO - Processed 8000/12335 rows
-2025-06-21 16:39:55,705 - INFO - Processed 8100/12335 rows
-2025-06-21 16:39:55,707 - INFO - Processed 8200/12335 rows
-2025-06-21 16:39:55,709 - INFO - Processed 8300/12335 rows
-2025-06-21 16:39:55,711 - INFO - Processed 8400/12335 rows
-2025-06-21 16:39:55,713 - INFO - Processed 8500/12335 rows
-2025-06-21 16:39:55,714 - INFO - Processed 8600/12335 rows
-2025-06-21 16:39:55,716 - INFO - Processed 8700/12335 rows
-2025-06-21 16:39:55,718 - INFO - Processed 8800/12335 rows
-2025-06-21 16:39:55,720 - INFO - Processed 8900/12335 rows
-2025-06-21 16:39:55,722 - INFO - Processed 9000/12335 rows
-2025-06-21 16:39:55,724 - INFO - Processed 9100/12335 rows
-2025-06-21 16:39:55,726 - INFO - Processed 9200/12335 rows
-2025-06-21 16:39:55,728 - INFO - Processed 9300/12335 rows
-2025-06-21 16:39:55,729 - INFO - Processed 9400/12335 rows
-2025-06-21 16:39:55,731 - INFO - Processed 9500/12335 rows
-2025-06-21 16:39:55,733 - INFO - Processed 9600/12335 rows
-2025-06-21 16:39:55,734 - INFO - Processed 9700/12335 rows
-2025-06-21 16:39:55,736 - INFO - Processed 9800/12335 rows
-2025-06-21 16:39:55,738 - INFO - Processed 9900/12335 rows
-2025-06-21 16:39:55,740 - INFO - Processed 10000/12335 rows
-2025-06-21 16:39:55,742 - INFO - Processed 10100/12335 rows
-2025-06-21 16:39:55,743 - INFO - Processed 10200/12335 rows
-2025-06-21 16:39:55,745 - INFO - Processed 10300/12335 rows
-2025-06-21 16:39:55,747 - INFO - Processed 10400/12335 rows
-2025-06-21 16:39:55,748 - INFO - Processed 10500/12335 rows
-2025-06-21 16:39:55,750 - INFO - Processed 10600/12335 rows
-2025-06-21 16:39:55,752 - INFO - Processed 10700/12335 rows
-2025-06-21 16:39:55,753 - INFO - Processed 10800/12335 rows
-2025-06-21 16:39:55,755 - INFO - Processed 10900/12335 rows
-2025-06-21 16:39:55,757 - INFO - Processed 11000/12335 rows
-2025-06-21 16:39:55,758 - INFO - Processed 11100/12335 rows
-2025-06-21 16:39:55,760 - INFO - Processed 11200/12335 rows
-2025-06-21 16:39:55,762 - INFO - Processed 11300/12335 rows
-2025-06-21 16:39:55,763 - INFO - Processed 11400/12335 rows
-2025-06-21 16:39:55,765 - INFO - Processed 11500/12335 rows
-2025-06-21 16:39:55,767 - INFO - Processed 11600/12335 rows
-2025-06-21 16:39:55,768 - INFO - Processed 11700/12335 rows
-2025-06-21 16:39:55,770 - INFO - Processed 11800/12335 rows
-2025-06-21 16:39:55,772 - INFO - Processed 11900/12335 rows
-2025-06-21 16:39:55,774 - INFO - Processed 12000/12335 rows
-2025-06-21 16:39:55,775 - INFO - Processed 12100/12335 rows
-2025-06-21 16:39:55,777 - INFO - Processed 12200/12335 rows
-2025-06-21 16:39:55,779 - INFO - Processed 12300/12335 rows
-2025-06-21 16:39:55,782 - INFO - CSV conversion complete. Generated text with 6261055 characters
-2025-06-21 16:39:55,787 - INFO - Chunking text...
-2025-06-21 16:39:55,788 - INFO - Starting text chunking with chunk_size=500
-2025-06-21 16:39:55,803 - INFO - Total words to chunk: 512875
-2025-06-21 16:39:55,813 - INFO - Created 1026 chunks
-2025-06-21 16:39:55,817 - INFO - Processing 1026 chunks...
-2025-06-21 16:39:55,817 - INFO - Processing chunk 1/1026...
-2025-06-21 16:40:36,966 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:40:37,074 - INFO - Extracted 56 entities and 42 relationships
-2025-06-21 16:40:37,579 - INFO - Processing chunk 2/1026...
-2025-06-21 16:40:57,803 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:40:57,806 - INFO - Extracted 29 entities and 27 relationships
-2025-06-21 16:40:58,308 - INFO - Processing chunk 3/1026...
-2025-06-21 16:43:58,182 - INFO - === GraphRAG Builder Starting ===
-2025-06-21 16:43:58,221 - INFO - Initializing GraphRAGBuilder with chunk_size=500
-2025-06-21 16:43:58,222 - INFO - GraphRAGBuilder initialized successfully. Model outputs will be saved to: model_outputs_20250621_164358.txt
-2025-06-21 16:43:58,222 - INFO - Converting CSV to text...
-2025-06-21 16:43:58,222 - INFO - Starting CSV to text conversion for: biz.csv
-2025-06-21 16:43:58,259 - INFO - Successfully loaded CSV with 12335 rows and 21 columns
-2025-06-21 16:43:58,259 - INFO - CSV columns: ['APN', 'RecordID', 'BusDesc', 'B1_PER_SUB_TYPE', 'DBA', 'NAICS', 'Tax_Code', 'Employee_Num', 'Bus_Own_Type', 'B1_BUSINESS_NAME', 'B1_ADDRESS1', 'B1_ADDRESS2', 'B1_CITY', 'B1_STATE', 'B1_ZIP', 'B1_CONTACT_TYPE', 'B1_FULL_ADDRESS', 'B1_SITUS_CITY', 'B1_SITUS_STATE', 'B1_SITUS_ZIP', 'Business_Location']
-2025-06-21 16:43:58,264 - INFO - Processed 100/12335 rows
-2025-06-21 16:43:58,266 - INFO - Processed 200/12335 rows
-2025-06-21 16:43:58,268 - INFO - Processed 300/12335 rows
-2025-06-21 16:43:58,269 - INFO - Processed 400/12335 rows
-2025-06-21 16:43:58,271 - INFO - Processed 500/12335 rows
-2025-06-21 16:43:58,273 - INFO - Processed 600/12335 rows
-2025-06-21 16:43:58,274 - INFO - Processed 700/12335 rows
-2025-06-21 16:43:58,276 - INFO - Processed 800/12335 rows
-2025-06-21 16:43:58,278 - INFO - Processed 900/12335 rows
-2025-06-21 16:43:58,280 - INFO - Processed 1000/12335 rows
-2025-06-21 16:43:58,282 - INFO - Processed 1100/12335 rows
-2025-06-21 16:43:58,284 - INFO - Processed 1200/12335 rows
-2025-06-21 16:43:58,286 - INFO - Processed 1300/12335 rows
-2025-06-21 16:43:58,288 - INFO - Processed 1400/12335 rows
-2025-06-21 16:43:58,290 - INFO - Processed 1500/12335 rows
-2025-06-21 16:43:58,291 - INFO - Processed 1600/12335 rows
-2025-06-21 16:43:58,293 - INFO - Processed 1700/12335 rows
-2025-06-21 16:43:58,295 - INFO - Processed 1800/12335 rows
-2025-06-21 16:43:58,297 - INFO - Processed 1900/12335 rows
-2025-06-21 16:43:58,299 - INFO - Processed 2000/12335 rows
-2025-06-21 16:43:58,301 - INFO - Processed 2100/12335 rows
-2025-06-21 16:43:58,302 - INFO - Processed 2200/12335 rows
-2025-06-21 16:43:58,304 - INFO - Processed 2300/12335 rows
-2025-06-21 16:43:58,306 - INFO - Processed 2400/12335 rows
-2025-06-21 16:43:58,308 - INFO - Processed 2500/12335 rows
-2025-06-21 16:43:58,310 - INFO - Processed 2600/12335 rows
-2025-06-21 16:43:58,311 - INFO - Processed 2700/12335 rows
-2025-06-21 16:43:58,313 - INFO - Processed 2800/12335 rows
-2025-06-21 16:43:58,315 - INFO - Processed 2900/12335 rows
-2025-06-21 16:43:58,317 - INFO - Processed 3000/12335 rows
-2025-06-21 16:43:58,318 - INFO - Processed 3100/12335 rows
-2025-06-21 16:43:58,320 - INFO - Processed 3200/12335 rows
-2025-06-21 16:43:58,322 - INFO - Processed 3300/12335 rows
-2025-06-21 16:43:58,323 - INFO - Processed 3400/12335 rows
-2025-06-21 16:43:58,325 - INFO - Processed 3500/12335 rows
-2025-06-21 16:43:58,327 - INFO - Processed 3600/12335 rows
-2025-06-21 16:43:58,329 - INFO - Processed 3700/12335 rows
-2025-06-21 16:43:58,331 - INFO - Processed 3800/12335 rows
-2025-06-21 16:43:58,332 - INFO - Processed 3900/12335 rows
-2025-06-21 16:43:58,334 - INFO - Processed 4000/12335 rows
-2025-06-21 16:43:58,336 - INFO - Processed 4100/12335 rows
-2025-06-21 16:43:58,337 - INFO - Processed 4200/12335 rows
-2025-06-21 16:43:58,339 - INFO - Processed 4300/12335 rows
-2025-06-21 16:43:58,341 - INFO - Processed 4400/12335 rows
-2025-06-21 16:43:58,342 - INFO - Processed 4500/12335 rows
-2025-06-21 16:43:58,344 - INFO - Processed 4600/12335 rows
-2025-06-21 16:43:58,346 - INFO - Processed 4700/12335 rows
-2025-06-21 16:43:58,347 - INFO - Processed 4800/12335 rows
-2025-06-21 16:43:58,349 - INFO - Processed 4900/12335 rows
-2025-06-21 16:43:58,351 - INFO - Processed 5000/12335 rows
-2025-06-21 16:43:58,352 - INFO - Processed 5100/12335 rows
-2025-06-21 16:43:58,354 - INFO - Processed 5200/12335 rows
-2025-06-21 16:43:58,356 - INFO - Processed 5300/12335 rows
-2025-06-21 16:43:58,358 - INFO - Processed 5400/12335 rows
-2025-06-21 16:43:58,359 - INFO - Processed 5500/12335 rows
-2025-06-21 16:43:58,361 - INFO - Processed 5600/12335 rows
-2025-06-21 16:43:58,363 - INFO - Processed 5700/12335 rows
-2025-06-21 16:43:58,364 - INFO - Processed 5800/12335 rows
-2025-06-21 16:43:58,366 - INFO - Processed 5900/12335 rows
-2025-06-21 16:43:58,368 - INFO - Processed 6000/12335 rows
-2025-06-21 16:43:58,369 - INFO - Processed 6100/12335 rows
-2025-06-21 16:43:58,371 - INFO - Processed 6200/12335 rows
-2025-06-21 16:43:58,373 - INFO - Processed 6300/12335 rows
-2025-06-21 16:43:58,374 - INFO - Processed 6400/12335 rows
-2025-06-21 16:43:58,376 - INFO - Processed 6500/12335 rows
-2025-06-21 16:43:58,378 - INFO - Processed 6600/12335 rows
-2025-06-21 16:43:58,380 - INFO - Processed 6700/12335 rows
-2025-06-21 16:43:58,381 - INFO - Processed 6800/12335 rows
-2025-06-21 16:43:58,383 - INFO - Processed 6900/12335 rows
-2025-06-21 16:43:58,384 - INFO - Processed 7000/12335 rows
-2025-06-21 16:43:58,386 - INFO - Processed 7100/12335 rows
-2025-06-21 16:43:58,388 - INFO - Processed 7200/12335 rows
-2025-06-21 16:43:58,389 - INFO - Processed 7300/12335 rows
-2025-06-21 16:43:58,391 - INFO - Processed 7400/12335 rows
-2025-06-21 16:43:58,393 - INFO - Processed 7500/12335 rows
-2025-06-21 16:43:58,395 - INFO - Processed 7600/12335 rows
-2025-06-21 16:43:58,396 - INFO - Processed 7700/12335 rows
-2025-06-21 16:43:58,398 - INFO - Processed 7800/12335 rows
-2025-06-21 16:43:58,399 - INFO - Processed 7900/12335 rows
-2025-06-21 16:43:58,401 - INFO - Processed 8000/12335 rows
-2025-06-21 16:43:58,403 - INFO - Processed 8100/12335 rows
-2025-06-21 16:43:58,404 - INFO - Processed 8200/12335 rows
-2025-06-21 16:43:58,406 - INFO - Processed 8300/12335 rows
-2025-06-21 16:43:58,407 - INFO - Processed 8400/12335 rows
-2025-06-21 16:43:58,409 - INFO - Processed 8500/12335 rows
-2025-06-21 16:43:58,411 - INFO - Processed 8600/12335 rows
-2025-06-21 16:43:58,413 - INFO - Processed 8700/12335 rows
-2025-06-21 16:43:58,415 - INFO - Processed 8800/12335 rows
-2025-06-21 16:43:58,416 - INFO - Processed 8900/12335 rows
-2025-06-21 16:43:58,418 - INFO - Processed 9000/12335 rows
-2025-06-21 16:43:58,420 - INFO - Processed 9100/12335 rows
-2025-06-21 16:43:58,422 - INFO - Processed 9200/12335 rows
-2025-06-21 16:43:58,423 - INFO - Processed 9300/12335 rows
-2025-06-21 16:43:58,425 - INFO - Processed 9400/12335 rows
-2025-06-21 16:43:58,427 - INFO - Processed 9500/12335 rows
-2025-06-21 16:43:58,429 - INFO - Processed 9600/12335 rows
-2025-06-21 16:43:58,430 - INFO - Processed 9700/12335 rows
-2025-06-21 16:43:58,432 - INFO - Processed 9800/12335 rows
-2025-06-21 16:43:58,434 - INFO - Processed 9900/12335 rows
-2025-06-21 16:43:58,436 - INFO - Processed 10000/12335 rows
-2025-06-21 16:43:58,437 - INFO - Processed 10100/12335 rows
-2025-06-21 16:43:58,439 - INFO - Processed 10200/12335 rows
-2025-06-21 16:43:58,441 - INFO - Processed 10300/12335 rows
-2025-06-21 16:43:58,443 - INFO - Processed 10400/12335 rows
-2025-06-21 16:43:58,445 - INFO - Processed 10500/12335 rows
-2025-06-21 16:43:58,447 - INFO - Processed 10600/12335 rows
-2025-06-21 16:43:58,448 - INFO - Processed 10700/12335 rows
-2025-06-21 16:43:58,450 - INFO - Processed 10800/12335 rows
-2025-06-21 16:43:58,452 - INFO - Processed 10900/12335 rows
-2025-06-21 16:43:58,454 - INFO - Processed 11000/12335 rows
-2025-06-21 16:43:58,455 - INFO - Processed 11100/12335 rows
-2025-06-21 16:43:58,457 - INFO - Processed 11200/12335 rows
-2025-06-21 16:43:58,458 - INFO - Processed 11300/12335 rows
-2025-06-21 16:43:58,460 - INFO - Processed 11400/12335 rows
-2025-06-21 16:43:58,462 - INFO - Processed 11500/12335 rows
-2025-06-21 16:43:58,464 - INFO - Processed 11600/12335 rows
-2025-06-21 16:43:58,466 - INFO - Processed 11700/12335 rows
-2025-06-21 16:43:58,467 - INFO - Processed 11800/12335 rows
-2025-06-21 16:43:58,469 - INFO - Processed 11900/12335 rows
-2025-06-21 16:43:58,471 - INFO - Processed 12000/12335 rows
-2025-06-21 16:43:58,472 - INFO - Processed 12100/12335 rows
-2025-06-21 16:43:58,474 - INFO - Processed 12200/12335 rows
-2025-06-21 16:43:58,476 - INFO - Processed 12300/12335 rows
-2025-06-21 16:43:58,479 - INFO - CSV conversion complete. Generated text with 6261055 characters
-2025-06-21 16:43:58,482 - INFO - Chunking text...
-2025-06-21 16:43:58,482 - INFO - Starting text chunking with chunk_size=500
-2025-06-21 16:43:58,497 - INFO - Total words to chunk: 512875
-2025-06-21 16:43:58,506 - INFO - Created 1026 chunks
-2025-06-21 16:43:58,509 - INFO - Processing 1026 chunks...
-2025-06-21 16:43:58,509 - INFO - Processing chunk 1/1026...
-2025-06-21 16:44:21,499 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:44:21,508 - INFO - Extracted 39 entities and 28 relationships
-2025-06-21 16:44:21,509 - INFO - Chunk 1 complete - Running totals: 39 entities, 28 relationships
-2025-06-21 16:44:22,014 - INFO - Processing chunk 2/1026...
-2025-06-21 16:44:48,139 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:44:48,198 - INFO - Extracted 43 entities and 41 relationships
-2025-06-21 16:44:48,198 - INFO - Chunk 2 complete - Running totals: 82 entities, 69 relationships
-2025-06-21 16:44:48,703 - INFO - Processing chunk 3/1026...
-2025-06-21 16:46:29,137 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:46:29,143 - INFO - Extracted 100 entities and 151 relationships
-2025-06-21 16:46:29,143 - INFO - Chunk 3 complete - Running totals: 182 entities, 220 relationships
-2025-06-21 16:46:29,645 - INFO - Processing chunk 4/1026...
-2025-06-21 16:47:02,047 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:47:02,052 - INFO - Extracted 34 entities and 70 relationships
-2025-06-21 16:47:02,052 - INFO - Chunk 4 complete - Running totals: 216 entities, 290 relationships
-2025-06-21 16:47:02,555 - INFO - Processing chunk 5/1026...
-2025-06-21 16:47:26,298 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:47:26,303 - INFO - Extracted 41 entities and 42 relationships
-2025-06-21 16:47:26,303 - INFO - Chunk 5 complete - Running totals: 257 entities, 332 relationships
-2025-06-21 16:47:26,807 - INFO - Processing chunk 6/1026...
-2025-06-21 16:47:55,317 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:47:55,323 - INFO - Extracted 35 entities and 26 relationships
-2025-06-21 16:47:55,324 - INFO - Chunk 6 complete - Running totals: 292 entities, 358 relationships
-2025-06-21 16:47:55,829 - INFO - Processing chunk 7/1026...
-2025-06-21 16:48:36,607 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:48:36,613 - INFO - Extracted 40 entities and 26 relationships
-2025-06-21 16:48:36,613 - INFO - Chunk 7 complete - Running totals: 332 entities, 384 relationships
-2025-06-21 16:48:37,118 - INFO - Processing chunk 8/1026...
-2025-06-21 16:48:56,925 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:48:56,931 - INFO - Extracted 13 entities and 39 relationships
-2025-06-21 16:48:56,931 - INFO - Chunk 8 complete - Running totals: 345 entities, 423 relationships
-2025-06-21 16:48:57,437 - INFO - Processing chunk 9/1026...
-2025-06-21 16:49:27,537 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:49:27,545 - INFO - Extracted 42 entities and 36 relationships
-2025-06-21 16:49:27,546 - INFO - Chunk 9 complete - Running totals: 387 entities, 459 relationships
-2025-06-21 16:49:28,051 - INFO - Processing chunk 10/1026...
-2025-06-21 16:50:30,337 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:50:30,339 - INFO - Extracted 54 entities and 70 relationships
-2025-06-21 16:50:30,339 - INFO - Chunk 10 complete - Running totals: 441 entities, 529 relationships
-2025-06-21 16:50:30,844 - INFO - Processing chunk 11/1026...
-2025-06-21 16:50:58,103 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:50:58,105 - INFO - Extracted 30 entities and 24 relationships
-2025-06-21 16:50:58,105 - INFO - Chunk 11 complete - Running totals: 471 entities, 553 relationships
-2025-06-21 16:50:58,606 - INFO - Processing chunk 12/1026...
-2025-06-21 16:51:39,979 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:51:39,983 - INFO - Extracted 42 entities and 30 relationships
-2025-06-21 16:51:39,983 - INFO - Chunk 12 complete - Running totals: 513 entities, 583 relationships
-2025-06-21 16:51:40,485 - INFO - Processing chunk 13/1026...
-2025-06-21 16:52:10,201 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:52:10,208 - INFO - Extracted 41 entities and 37 relationships
-2025-06-21 16:52:10,209 - INFO - Chunk 13 complete - Running totals: 554 entities, 620 relationships
-2025-06-21 16:52:10,714 - INFO - Processing chunk 14/1026...
-2025-06-21 16:55:31,791 - INFO - === GraphRAG Builder Starting ===
-2025-06-21 16:55:31,831 - INFO - Initializing GraphRAGBuilder with chunk_size=500
-2025-06-21 16:55:31,831 - INFO - GraphRAGBuilder initialized successfully. Model outputs will be saved to: model_outputs_20250621_165531.txt
-2025-06-21 16:55:31,831 - INFO - Converting CSV to text...
-2025-06-21 16:55:31,831 - INFO - Starting CSV to text conversion for: biz.csv
-2025-06-21 16:55:31,867 - INFO - Successfully loaded CSV with 12335 rows and 21 columns
-2025-06-21 16:55:31,867 - INFO - CSV columns: ['APN', 'RecordID', 'BusDesc', 'B1_PER_SUB_TYPE', 'DBA', 'NAICS', 'Tax_Code', 'Employee_Num', 'Bus_Own_Type', 'B1_BUSINESS_NAME', 'B1_ADDRESS1', 'B1_ADDRESS2', 'B1_CITY', 'B1_STATE', 'B1_ZIP', 'B1_CONTACT_TYPE', 'B1_FULL_ADDRESS', 'B1_SITUS_CITY', 'B1_SITUS_STATE', 'B1_SITUS_ZIP', 'Business_Location']
-2025-06-21 16:55:31,872 - INFO - Processed 100/12335 rows
-2025-06-21 16:55:31,874 - INFO - Processed 200/12335 rows
-2025-06-21 16:55:31,876 - INFO - Processed 300/12335 rows
-2025-06-21 16:55:31,878 - INFO - Processed 400/12335 rows
-2025-06-21 16:55:31,880 - INFO - Processed 500/12335 rows
-2025-06-21 16:55:31,882 - INFO - Processed 600/12335 rows
-2025-06-21 16:55:31,883 - INFO - Processed 700/12335 rows
-2025-06-21 16:55:31,885 - INFO - Processed 800/12335 rows
-2025-06-21 16:55:31,886 - INFO - Processed 900/12335 rows
-2025-06-21 16:55:31,888 - INFO - Processed 1000/12335 rows
-2025-06-21 16:55:31,890 - INFO - Processed 1100/12335 rows
-2025-06-21 16:55:31,891 - INFO - Processed 1200/12335 rows
-2025-06-21 16:55:31,893 - INFO - Processed 1300/12335 rows
-2025-06-21 16:55:31,894 - INFO - Processed 1400/12335 rows
-2025-06-21 16:55:31,896 - INFO - Processed 1500/12335 rows
-2025-06-21 16:55:31,898 - INFO - Processed 1600/12335 rows
-2025-06-21 16:55:31,899 - INFO - Processed 1700/12335 rows
-2025-06-21 16:55:31,901 - INFO - Processed 1800/12335 rows
-2025-06-21 16:55:31,903 - INFO - Processed 1900/12335 rows
-2025-06-21 16:55:31,904 - INFO - Processed 2000/12335 rows
-2025-06-21 16:55:31,906 - INFO - Processed 2100/12335 rows
-2025-06-21 16:55:31,908 - INFO - Processed 2200/12335 rows
-2025-06-21 16:55:31,909 - INFO - Processed 2300/12335 rows
-2025-06-21 16:55:31,911 - INFO - Processed 2400/12335 rows
-2025-06-21 16:55:31,913 - INFO - Processed 2500/12335 rows
-2025-06-21 16:55:31,915 - INFO - Processed 2600/12335 rows
-2025-06-21 16:55:31,916 - INFO - Processed 2700/12335 rows
-2025-06-21 16:55:31,918 - INFO - Processed 2800/12335 rows
-2025-06-21 16:55:31,919 - INFO - Processed 2900/12335 rows
-2025-06-21 16:55:31,921 - INFO - Processed 3000/12335 rows
-2025-06-21 16:55:31,923 - INFO - Processed 3100/12335 rows
-2025-06-21 16:55:31,924 - INFO - Processed 3200/12335 rows
-2025-06-21 16:55:31,926 - INFO - Processed 3300/12335 rows
-2025-06-21 16:55:31,927 - INFO - Processed 3400/12335 rows
-2025-06-21 16:55:31,929 - INFO - Processed 3500/12335 rows
-2025-06-21 16:55:31,931 - INFO - Processed 3600/12335 rows
-2025-06-21 16:55:31,932 - INFO - Processed 3700/12335 rows
-2025-06-21 16:55:31,934 - INFO - Processed 3800/12335 rows
-2025-06-21 16:55:31,936 - INFO - Processed 3900/12335 rows
-2025-06-21 16:55:31,937 - INFO - Processed 4000/12335 rows
-2025-06-21 16:55:31,939 - INFO - Processed 4100/12335 rows
-2025-06-21 16:55:31,940 - INFO - Processed 4200/12335 rows
-2025-06-21 16:55:31,942 - INFO - Processed 4300/12335 rows
-2025-06-21 16:55:31,943 - INFO - Processed 4400/12335 rows
-2025-06-21 16:55:31,945 - INFO - Processed 4500/12335 rows
-2025-06-21 16:55:31,947 - INFO - Processed 4600/12335 rows
-2025-06-21 16:55:31,949 - INFO - Processed 4700/12335 rows
-2025-06-21 16:55:31,950 - INFO - Processed 4800/12335 rows
-2025-06-21 16:55:31,952 - INFO - Processed 4900/12335 rows
-2025-06-21 16:55:31,953 - INFO - Processed 5000/12335 rows
-2025-06-21 16:55:31,955 - INFO - Processed 5100/12335 rows
-2025-06-21 16:55:31,956 - INFO - Processed 5200/12335 rows
-2025-06-21 16:55:31,958 - INFO - Processed 5300/12335 rows
-2025-06-21 16:55:31,960 - INFO - Processed 5400/12335 rows
-2025-06-21 16:55:31,961 - INFO - Processed 5500/12335 rows
-2025-06-21 16:55:31,963 - INFO - Processed 5600/12335 rows
-2025-06-21 16:55:31,965 - INFO - Processed 5700/12335 rows
-2025-06-21 16:55:31,966 - INFO - Processed 5800/12335 rows
-2025-06-21 16:55:31,968 - INFO - Processed 5900/12335 rows
-2025-06-21 16:55:31,969 - INFO - Processed 6000/12335 rows
-2025-06-21 16:55:31,971 - INFO - Processed 6100/12335 rows
-2025-06-21 16:55:31,973 - INFO - Processed 6200/12335 rows
-2025-06-21 16:55:31,974 - INFO - Processed 6300/12335 rows
-2025-06-21 16:55:31,976 - INFO - Processed 6400/12335 rows
-2025-06-21 16:55:31,977 - INFO - Processed 6500/12335 rows
-2025-06-21 16:55:31,979 - INFO - Processed 6600/12335 rows
-2025-06-21 16:55:31,981 - INFO - Processed 6700/12335 rows
-2025-06-21 16:55:31,982 - INFO - Processed 6800/12335 rows
-2025-06-21 16:55:31,984 - INFO - Processed 6900/12335 rows
-2025-06-21 16:55:31,986 - INFO - Processed 7000/12335 rows
-2025-06-21 16:55:31,987 - INFO - Processed 7100/12335 rows
-2025-06-21 16:55:31,989 - INFO - Processed 7200/12335 rows
-2025-06-21 16:55:31,990 - INFO - Processed 7300/12335 rows
-2025-06-21 16:55:31,992 - INFO - Processed 7400/12335 rows
-2025-06-21 16:55:31,994 - INFO - Processed 7500/12335 rows
-2025-06-21 16:55:31,995 - INFO - Processed 7600/12335 rows
-2025-06-21 16:55:31,997 - INFO - Processed 7700/12335 rows
-2025-06-21 16:55:31,999 - INFO - Processed 7800/12335 rows
-2025-06-21 16:55:32,000 - INFO - Processed 7900/12335 rows
-2025-06-21 16:55:32,002 - INFO - Processed 8000/12335 rows
-2025-06-21 16:55:32,003 - INFO - Processed 8100/12335 rows
-2025-06-21 16:55:32,005 - INFO - Processed 8200/12335 rows
-2025-06-21 16:55:32,006 - INFO - Processed 8300/12335 rows
-2025-06-21 16:55:32,008 - INFO - Processed 8400/12335 rows
-2025-06-21 16:55:32,010 - INFO - Processed 8500/12335 rows
-2025-06-21 16:55:32,011 - INFO - Processed 8600/12335 rows
-2025-06-21 16:55:32,013 - INFO - Processed 8700/12335 rows
-2025-06-21 16:55:32,015 - INFO - Processed 8800/12335 rows
-2025-06-21 16:55:32,019 - INFO - Processed 8900/12335 rows
-2025-06-21 16:55:32,021 - INFO - Processed 9000/12335 rows
-2025-06-21 16:55:32,022 - INFO - Processed 9100/12335 rows
-2025-06-21 16:55:32,024 - INFO - Processed 9200/12335 rows
-2025-06-21 16:55:32,027 - INFO - Processed 9300/12335 rows
-2025-06-21 16:55:32,031 - INFO - Processed 9400/12335 rows
-2025-06-21 16:55:32,033 - INFO - Processed 9500/12335 rows
-2025-06-21 16:55:32,034 - INFO - Processed 9600/12335 rows
-2025-06-21 16:55:32,036 - INFO - Processed 9700/12335 rows
-2025-06-21 16:55:32,037 - INFO - Processed 9800/12335 rows
-2025-06-21 16:55:32,039 - INFO - Processed 9900/12335 rows
-2025-06-21 16:55:32,040 - INFO - Processed 10000/12335 rows
-2025-06-21 16:55:32,042 - INFO - Processed 10100/12335 rows
-2025-06-21 16:55:32,044 - INFO - Processed 10200/12335 rows
-2025-06-21 16:55:32,045 - INFO - Processed 10300/12335 rows
-2025-06-21 16:55:32,047 - INFO - Processed 10400/12335 rows
-2025-06-21 16:55:32,049 - INFO - Processed 10500/12335 rows
-2025-06-21 16:55:32,050 - INFO - Processed 10600/12335 rows
-2025-06-21 16:55:32,052 - INFO - Processed 10700/12335 rows
-2025-06-21 16:55:32,053 - INFO - Processed 10800/12335 rows
-2025-06-21 16:55:32,055 - INFO - Processed 10900/12335 rows
-2025-06-21 16:55:32,057 - INFO - Processed 11000/12335 rows
-2025-06-21 16:55:32,058 - INFO - Processed 11100/12335 rows
-2025-06-21 16:55:32,060 - INFO - Processed 11200/12335 rows
-2025-06-21 16:55:32,062 - INFO - Processed 11300/12335 rows
-2025-06-21 16:55:32,063 - INFO - Processed 11400/12335 rows
-2025-06-21 16:55:32,065 - INFO - Processed 11500/12335 rows
-2025-06-21 16:55:32,067 - INFO - Processed 11600/12335 rows
-2025-06-21 16:55:32,068 - INFO - Processed 11700/12335 rows
-2025-06-21 16:55:32,070 - INFO - Processed 11800/12335 rows
-2025-06-21 16:55:32,072 - INFO - Processed 11900/12335 rows
-2025-06-21 16:55:32,073 - INFO - Processed 12000/12335 rows
-2025-06-21 16:55:32,075 - INFO - Processed 12100/12335 rows
-2025-06-21 16:55:32,076 - INFO - Processed 12200/12335 rows
-2025-06-21 16:55:32,078 - INFO - Processed 12300/12335 rows
-2025-06-21 16:55:32,081 - INFO - CSV conversion complete. Generated text with 6261055 characters
-2025-06-21 16:55:32,084 - INFO - Chunking text...
-2025-06-21 16:55:32,084 - INFO - Starting text chunking with chunk_size=500
-2025-06-21 16:55:32,099 - INFO - Total words to chunk: 512875
-2025-06-21 16:55:32,108 - INFO - Created 1026 chunks
-2025-06-21 16:55:32,111 - INFO - Processing 1026 chunks with 10 concurrent workers...
-2025-06-21 16:55:32,112 - INFO - Processing chunk 1...
-2025-06-21 16:55:32,112 - INFO - Processing chunk 2...
-2025-06-21 16:55:32,112 - INFO - Processing chunk 3...
-2025-06-21 16:55:32,112 - INFO - Processing chunk 4...
-2025-06-21 16:55:32,112 - INFO - Processing chunk 5...
-2025-06-21 16:55:32,113 - INFO - Processing chunk 6...
-2025-06-21 16:55:32,113 - INFO - Processing chunk 7...
-2025-06-21 16:55:32,113 - INFO - Processing chunk 8...
-2025-06-21 16:55:32,113 - INFO - Processing chunk 9...
-2025-06-21 16:55:32,113 - INFO - Processing chunk 10...
-2025-06-21 16:55:50,291 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:55:50,300 - INFO - Extracted 21 entities and 14 relationships
-2025-06-21 16:55:50,301 - INFO - Chunk 5 complete - Extracted 21 entities, 14 relationships
-2025-06-21 16:55:50,301 - INFO - Processing chunk 11...
-2025-06-21 16:55:50,301 - INFO - Completed chunk 5/1026
-2025-06-21 16:55:59,469 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:55:59,473 - INFO - Extracted 39 entities and 27 relationships
-2025-06-21 16:55:59,474 - INFO - Chunk 2 complete - Extracted 39 entities, 27 relationships
-2025-06-21 16:55:59,474 - INFO - Processing chunk 12...
-2025-06-21 16:55:59,474 - INFO - Completed chunk 2/1026
-2025-06-21 16:56:04,760 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:04,761 - INFO - Extracted 35 entities and 36 relationships
-2025-06-21 16:56:04,761 - INFO - Chunk 9 complete - Extracted 35 entities, 36 relationships
-2025-06-21 16:56:04,762 - INFO - Processing chunk 13...
-2025-06-21 16:56:04,762 - INFO - Completed chunk 9/1026
-2025-06-21 16:56:05,643 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:05,645 - INFO - Extracted 26 entities and 13 relationships
-2025-06-21 16:56:05,646 - INFO - Chunk 6 complete - Extracted 26 entities, 13 relationships
-2025-06-21 16:56:05,646 - INFO - Processing chunk 14...
-2025-06-21 16:56:05,646 - INFO - Completed chunk 6/1026
-2025-06-21 16:56:10,117 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:10,118 - INFO - Extracted 46 entities and 43 relationships
-2025-06-21 16:56:10,118 - INFO - Chunk 10 complete - Extracted 46 entities, 43 relationships
-2025-06-21 16:56:10,118 - INFO - Processing chunk 15...
-2025-06-21 16:56:10,118 - INFO - Completed chunk 10/1026
-2025-06-21 16:56:11,685 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:11,694 - INFO - Extracted 36 entities and 26 relationships
-2025-06-21 16:56:11,694 - INFO - Chunk 8 complete - Extracted 36 entities, 26 relationships
-2025-06-21 16:56:11,694 - INFO - Processing chunk 16...
-2025-06-21 16:56:11,694 - INFO - Completed chunk 8/1026
-2025-06-21 16:56:14,032 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:14,036 - INFO - Extracted 40 entities and 28 relationships
-2025-06-21 16:56:14,036 - INFO - Chunk 3 complete - Extracted 40 entities, 28 relationships
-2025-06-21 16:56:14,036 - INFO - Processing chunk 17...
-2025-06-21 16:56:14,036 - INFO - Completed chunk 3/1026
-2025-06-21 16:56:17,452 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:17,457 - INFO - Extracted 30 entities and 24 relationships
-2025-06-21 16:56:17,458 - INFO - Chunk 11 complete - Extracted 30 entities, 24 relationships
-2025-06-21 16:56:17,458 - INFO - Processing chunk 18...
-2025-06-21 16:56:17,461 - INFO - Completed chunk 11/1026
-2025-06-21 16:56:20,149 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:20,324 - INFO - Extracted 48 entities and 49 relationships
-2025-06-21 16:56:20,325 - INFO - Chunk 1 complete - Extracted 48 entities, 49 relationships
-2025-06-21 16:56:20,326 - INFO - Processing chunk 19...
-2025-06-21 16:56:20,326 - INFO - Completed chunk 1/1026
-2025-06-21 16:56:22,584 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:22,587 - INFO - Extracted 53 entities and 56 relationships
-2025-06-21 16:56:22,587 - INFO - Chunk 4 complete - Extracted 53 entities, 56 relationships
-2025-06-21 16:56:22,587 - INFO - Processing chunk 20...
-2025-06-21 16:56:22,587 - INFO - Completed chunk 4/1026
-2025-06-21 16:56:25,449 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:25,453 - INFO - Extracted 49 entities and 38 relationships
-2025-06-21 16:56:25,453 - INFO - Chunk 7 complete - Extracted 49 entities, 38 relationships
-2025-06-21 16:56:25,453 - INFO - Processing chunk 21...
-2025-06-21 16:56:25,453 - INFO - Completed chunk 7/1026
-2025-06-21 16:56:37,617 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:37,623 - INFO - Extracted 39 entities and 48 relationships
-2025-06-21 16:56:37,623 - INFO - Chunk 12 complete - Extracted 39 entities, 48 relationships
-2025-06-21 16:56:37,623 - INFO - Processing chunk 22...
-2025-06-21 16:56:37,623 - INFO - Completed chunk 12/1026
-2025-06-21 16:56:37,752 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:37,753 - INFO - Extracted 24 entities and 12 relationships
-2025-06-21 16:56:37,753 - INFO - Chunk 15 complete - Extracted 24 entities, 12 relationships
-2025-06-21 16:56:37,753 - INFO - Processing chunk 23...
-2025-06-21 16:56:37,753 - INFO - Completed chunk 15/1026
-2025-06-21 16:56:45,892 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:45,894 - INFO - Extracted 34 entities and 24 relationships
-2025-06-21 16:56:45,895 - INFO - Chunk 20 complete - Extracted 34 entities, 24 relationships
-2025-06-21 16:56:45,895 - INFO - Processing chunk 24...
-2025-06-21 16:56:45,895 - INFO - Completed chunk 20/1026
-2025-06-21 16:56:47,594 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:47,597 - INFO - Extracted 22 entities and 36 relationships
-2025-06-21 16:56:47,597 - INFO - Chunk 16 complete - Extracted 22 entities, 36 relationships
-2025-06-21 16:56:47,597 - INFO - Processing chunk 25...
-2025-06-21 16:56:47,597 - INFO - Completed chunk 16/1026
-2025-06-21 16:56:50,053 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:50,058 - INFO - Extracted 31 entities and 20 relationships
-2025-06-21 16:56:50,059 - INFO - Chunk 21 complete - Extracted 31 entities, 20 relationships
-2025-06-21 16:56:50,059 - INFO - Processing chunk 26...
-2025-06-21 16:56:50,059 - INFO - Completed chunk 21/1026
-2025-06-21 16:56:55,682 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:55,686 - INFO - Extracted 29 entities and 26 relationships
-2025-06-21 16:56:55,686 - INFO - Chunk 19 complete - Extracted 29 entities, 26 relationships
-2025-06-21 16:56:55,686 - INFO - Processing chunk 27...
-2025-06-21 16:56:55,697 - INFO - Completed chunk 19/1026
-2025-06-21 16:56:58,580 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:58,583 - INFO - Extracted 70 entities and 58 relationships
-2025-06-21 16:56:58,583 - INFO - Chunk 14 complete - Extracted 70 entities, 58 relationships
-2025-06-21 16:56:58,583 - INFO - Processing chunk 28...
-2025-06-21 16:56:58,584 - INFO - Completed chunk 14/1026
-2025-06-21 16:56:59,496 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:56:59,503 - INFO - Extracted 35 entities and 36 relationships
-2025-06-21 16:56:59,503 - INFO - Chunk 18 complete - Extracted 35 entities, 36 relationships
-2025-06-21 16:56:59,503 - INFO - Processing chunk 29...
-2025-06-21 16:56:59,509 - INFO - Completed chunk 18/1026
-2025-06-21 16:57:02,321 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:02,323 - INFO - Extracted 47 entities and 35 relationships
-2025-06-21 16:57:02,323 - INFO - Chunk 13 complete - Extracted 47 entities, 35 relationships
-2025-06-21 16:57:02,323 - INFO - Processing chunk 30...
-2025-06-21 16:57:02,323 - INFO - Completed chunk 13/1026
-2025-06-21 16:57:02,888 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:02,891 - INFO - Extracted 67 entities and 58 relationships
-2025-06-21 16:57:02,891 - INFO - Chunk 17 complete - Extracted 67 entities, 58 relationships
-2025-06-21 16:57:02,891 - INFO - Processing chunk 31...
-2025-06-21 16:57:02,891 - INFO - Completed chunk 17/1026
-2025-06-21 16:57:08,444 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:08,450 - INFO - Extracted 35 entities and 23 relationships
-2025-06-21 16:57:08,450 - INFO - Chunk 23 complete - Extracted 35 entities, 23 relationships
-2025-06-21 16:57:08,450 - INFO - Processing chunk 32...
-2025-06-21 16:57:08,450 - INFO - Completed chunk 23/1026
-2025-06-21 16:57:13,270 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:13,273 - INFO - Extracted 36 entities and 23 relationships
-2025-06-21 16:57:13,273 - INFO - Chunk 26 complete - Extracted 36 entities, 23 relationships
-2025-06-21 16:57:13,273 - INFO - Processing chunk 33...
-2025-06-21 16:57:13,274 - INFO - Completed chunk 26/1026
-2025-06-21 16:57:19,113 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:19,115 - INFO - Extracted 32 entities and 33 relationships
-2025-06-21 16:57:19,115 - INFO - Chunk 24 complete - Extracted 32 entities, 33 relationships
-2025-06-21 16:57:19,115 - INFO - Processing chunk 34...
-2025-06-21 16:57:19,115 - INFO - Completed chunk 24/1026
-2025-06-21 16:57:25,836 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:25,841 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 16:57:25,841 - INFO - Chunk 30 complete - Extracted 36 entities, 24 relationships
-2025-06-21 16:57:25,841 - INFO - Processing chunk 35...
-2025-06-21 16:57:25,841 - INFO - Completed chunk 30/1026
-2025-06-21 16:57:26,182 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:26,186 - INFO - Extracted 31 entities and 24 relationships
-2025-06-21 16:57:26,186 - INFO - Chunk 28 complete - Extracted 31 entities, 24 relationships
-2025-06-21 16:57:26,187 - INFO - Processing chunk 36...
-2025-06-21 16:57:26,187 - INFO - Completed chunk 28/1026
-2025-06-21 16:57:27,050 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:27,054 - INFO - Extracted 47 entities and 35 relationships
-2025-06-21 16:57:27,054 - INFO - Chunk 22 complete - Extracted 47 entities, 35 relationships
-2025-06-21 16:57:27,055 - INFO - Processing chunk 37...
-2025-06-21 16:57:27,055 - INFO - Completed chunk 22/1026
-2025-06-21 16:57:31,781 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:31,785 - INFO - Extracted 46 entities and 36 relationships
-2025-06-21 16:57:31,786 - INFO - Chunk 27 complete - Extracted 46 entities, 36 relationships
-2025-06-21 16:57:31,786 - INFO - Processing chunk 38...
-2025-06-21 16:57:31,786 - INFO - Completed chunk 27/1026
-2025-06-21 16:57:33,895 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:33,897 - INFO - Extracted 45 entities and 33 relationships
-2025-06-21 16:57:33,897 - INFO - Chunk 25 complete - Extracted 45 entities, 33 relationships
-2025-06-21 16:57:33,898 - INFO - Processing chunk 39...
-2025-06-21 16:57:33,898 - INFO - Completed chunk 25/1026
-2025-06-21 16:57:38,446 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:38,451 - INFO - Extracted 39 entities and 26 relationships
-2025-06-21 16:57:38,452 - INFO - Chunk 29 complete - Extracted 39 entities, 26 relationships
-2025-06-21 16:57:38,452 - INFO - Processing chunk 40...
-2025-06-21 16:57:38,455 - INFO - Completed chunk 29/1026
-2025-06-21 16:57:43,103 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:43,109 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 16:57:43,110 - INFO - Chunk 31 complete - Extracted 36 entities, 24 relationships
-2025-06-21 16:57:43,110 - INFO - Processing chunk 41...
-2025-06-21 16:57:43,110 - INFO - Completed chunk 31/1026
-2025-06-21 16:57:45,938 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:45,945 - INFO - Extracted 40 entities and 34 relationships
-2025-06-21 16:57:45,946 - INFO - Chunk 32 complete - Extracted 40 entities, 34 relationships
-2025-06-21 16:57:45,946 - INFO - Processing chunk 42...
-2025-06-21 16:57:45,946 - INFO - Completed chunk 32/1026
-2025-06-21 16:57:48,858 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:48,861 - INFO - Extracted 35 entities and 39 relationships
-2025-06-21 16:57:48,861 - INFO - Chunk 33 complete - Extracted 35 entities, 39 relationships
-2025-06-21 16:57:48,862 - INFO - Processing chunk 43...
-2025-06-21 16:57:48,862 - INFO - Completed chunk 33/1026
-2025-06-21 16:57:59,700 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:57:59,711 - INFO - Extracted 55 entities and 44 relationships
-2025-06-21 16:57:59,713 - INFO - Chunk 35 complete - Extracted 55 entities, 44 relationships
-2025-06-21 16:57:59,714 - INFO - Processing chunk 44...
-2025-06-21 16:57:59,716 - INFO - Completed chunk 35/1026
-2025-06-21 16:58:02,685 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:02,691 - INFO - Extracted 33 entities and 36 relationships
-2025-06-21 16:58:02,692 - INFO - Chunk 39 complete - Extracted 33 entities, 36 relationships
-2025-06-21 16:58:02,692 - INFO - Processing chunk 45...
-2025-06-21 16:58:02,692 - INFO - Completed chunk 39/1026
-2025-06-21 16:58:08,705 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:08,712 - INFO - Extracted 42 entities and 33 relationships
-2025-06-21 16:58:08,713 - INFO - Chunk 34 complete - Extracted 42 entities, 33 relationships
-2025-06-21 16:58:08,713 - INFO - Processing chunk 46...
-2025-06-21 16:58:08,714 - INFO - Completed chunk 34/1026
-2025-06-21 16:58:09,787 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:09,788 - INFO - Extracted 47 entities and 60 relationships
-2025-06-21 16:58:09,789 - INFO - Chunk 38 complete - Extracted 47 entities, 60 relationships
-2025-06-21 16:58:09,789 - INFO - Processing chunk 47...
-2025-06-21 16:58:09,789 - INFO - Completed chunk 38/1026
-2025-06-21 16:58:11,008 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:11,013 - INFO - Extracted 36 entities and 46 relationships
-2025-06-21 16:58:11,013 - INFO - Chunk 36 complete - Extracted 36 entities, 46 relationships
-2025-06-21 16:58:11,014 - INFO - Processing chunk 48...
-2025-06-21 16:58:11,016 - INFO - Completed chunk 36/1026
-2025-06-21 16:58:15,236 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:15,241 - INFO - Extracted 33 entities and 22 relationships
-2025-06-21 16:58:15,242 - INFO - Chunk 40 complete - Extracted 33 entities, 22 relationships
-2025-06-21 16:58:15,242 - INFO - Processing chunk 49...
-2025-06-21 16:58:15,243 - INFO - Completed chunk 40/1026
-2025-06-21 16:58:17,916 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:17,919 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 16:58:17,919 - INFO - Chunk 42 complete - Extracted 36 entities, 24 relationships
-2025-06-21 16:58:17,919 - INFO - Processing chunk 50...
-2025-06-21 16:58:17,919 - INFO - Completed chunk 42/1026
-2025-06-21 16:58:19,450 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:19,451 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:19,457 - INFO - Extracted 22 entities and 11 relationships
-2025-06-21 16:58:19,457 - INFO - Extracted 39 entities and 46 relationships
-2025-06-21 16:58:19,457 - INFO - Chunk 44 complete - Extracted 22 entities, 11 relationships
-2025-06-21 16:58:19,458 - INFO - Processing chunk 51...
-2025-06-21 16:58:19,459 - INFO - Completed chunk 44/1026
-2025-06-21 16:58:19,460 - INFO - Chunk 41 complete - Extracted 39 entities, 46 relationships
-2025-06-21 16:58:19,460 - INFO - Processing chunk 52...
-2025-06-21 16:58:19,460 - INFO - Completed chunk 41/1026
-2025-06-21 16:58:30,138 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:30,147 - INFO - Extracted 48 entities and 84 relationships
-2025-06-21 16:58:30,147 - INFO - Chunk 37 complete - Extracted 48 entities, 84 relationships
-2025-06-21 16:58:30,147 - INFO - Processing chunk 53...
-2025-06-21 16:58:30,147 - INFO - Completed chunk 37/1026
-2025-06-21 16:58:33,704 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:33,710 - INFO - Extracted 44 entities and 33 relationships
-2025-06-21 16:58:33,711 - INFO - Chunk 45 complete - Extracted 44 entities, 33 relationships
-2025-06-21 16:58:33,711 - INFO - Processing chunk 54...
-2025-06-21 16:58:33,711 - INFO - Completed chunk 45/1026
-2025-06-21 16:58:34,501 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:34,506 - INFO - Extracted 27 entities and 30 relationships
-2025-06-21 16:58:34,506 - INFO - Chunk 46 complete - Extracted 27 entities, 30 relationships
-2025-06-21 16:58:34,506 - INFO - Processing chunk 55...
-2025-06-21 16:58:34,507 - INFO - Completed chunk 46/1026
-2025-06-21 16:58:44,918 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:44,922 - INFO - Extracted 33 entities and 22 relationships
-2025-06-21 16:58:44,922 - INFO - Chunk 50 complete - Extracted 33 entities, 22 relationships
-2025-06-21 16:58:44,922 - INFO - Processing chunk 56...
-2025-06-21 16:58:44,922 - INFO - Completed chunk 50/1026
-2025-06-21 16:58:46,532 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:46,540 - INFO - Extracted 13 entities and 114 relationships
-2025-06-21 16:58:46,541 - INFO - Chunk 43 complete - Extracted 13 entities, 114 relationships
-2025-06-21 16:58:46,541 - INFO - Processing chunk 57...
-2025-06-21 16:58:46,542 - INFO - Completed chunk 43/1026
-2025-06-21 16:58:46,786 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:46,790 - INFO - Extracted 25 entities and 24 relationships
-2025-06-21 16:58:46,791 - INFO - Chunk 52 complete - Extracted 25 entities, 24 relationships
-2025-06-21 16:58:46,791 - INFO - Processing chunk 58...
-2025-06-21 16:58:46,791 - INFO - Completed chunk 52/1026
-2025-06-21 16:58:48,578 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:48,586 - INFO - Extracted 28 entities and 22 relationships
-2025-06-21 16:58:48,586 - INFO - Chunk 51 complete - Extracted 28 entities, 22 relationships
-2025-06-21 16:58:48,587 - INFO - Processing chunk 59...
-2025-06-21 16:58:48,587 - INFO - Completed chunk 51/1026
-2025-06-21 16:58:50,166 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:50,168 - INFO - Extracted 28 entities and 22 relationships
-2025-06-21 16:58:50,168 - INFO - Chunk 49 complete - Extracted 28 entities, 22 relationships
-2025-06-21 16:58:50,169 - INFO - Processing chunk 60...
-2025-06-21 16:58:50,169 - INFO - Completed chunk 49/1026
-2025-06-21 16:58:54,209 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:58:54,216 - INFO - Extracted 12 entities and 96 relationships
-2025-06-21 16:58:54,217 - INFO - Chunk 47 complete - Extracted 12 entities, 96 relationships
-2025-06-21 16:58:54,217 - INFO - Processing chunk 61...
-2025-06-21 16:58:54,217 - INFO - Completed chunk 47/1026
-2025-06-21 16:59:00,551 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:00,559 - INFO - Extracted 46 entities and 36 relationships
-2025-06-21 16:59:00,560 - INFO - Chunk 53 complete - Extracted 46 entities, 36 relationships
-2025-06-21 16:59:00,560 - INFO - Processing chunk 62...
-2025-06-21 16:59:00,560 - INFO - Completed chunk 53/1026
-2025-06-21 16:59:00,853 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:00,861 - INFO - Extracted 43 entities and 33 relationships
-2025-06-21 16:59:00,861 - INFO - Chunk 54 complete - Extracted 43 entities, 33 relationships
-2025-06-21 16:59:00,861 - INFO - Processing chunk 63...
-2025-06-21 16:59:00,863 - INFO - Completed chunk 54/1026
-2025-06-21 16:59:02,350 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:02,355 - INFO - Extracted 48 entities and 48 relationships
-2025-06-21 16:59:02,355 - INFO - Chunk 48 complete - Extracted 48 entities, 48 relationships
-2025-06-21 16:59:02,355 - INFO - Processing chunk 64...
-2025-06-21 16:59:02,355 - INFO - Completed chunk 48/1026
-2025-06-21 16:59:03,933 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:03,938 - INFO - Extracted 34 entities and 23 relationships
-2025-06-21 16:59:03,938 - INFO - Chunk 59 complete - Extracted 34 entities, 23 relationships
-2025-06-21 16:59:03,938 - INFO - Processing chunk 65...
-2025-06-21 16:59:03,938 - INFO - Completed chunk 59/1026
-2025-06-21 16:59:04,912 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:04,916 - INFO - Extracted 33 entities and 37 relationships
-2025-06-21 16:59:04,916 - INFO - Chunk 55 complete - Extracted 33 entities, 37 relationships
-2025-06-21 16:59:04,916 - INFO - Processing chunk 66...
-2025-06-21 16:59:04,916 - INFO - Completed chunk 55/1026
-2025-06-21 16:59:15,078 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:15,085 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 16:59:15,085 - INFO - Chunk 58 complete - Extracted 36 entities, 24 relationships
-2025-06-21 16:59:15,085 - INFO - Processing chunk 67...
-2025-06-21 16:59:15,085 - INFO - Completed chunk 58/1026
-2025-06-21 16:59:19,724 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:19,734 - INFO - Extracted 35 entities and 24 relationships
-2025-06-21 16:59:19,736 - INFO - Chunk 57 complete - Extracted 35 entities, 24 relationships
-2025-06-21 16:59:19,736 - INFO - Processing chunk 68...
-2025-06-21 16:59:19,736 - INFO - Completed chunk 57/1026
-2025-06-21 16:59:22,341 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:22,349 - INFO - Extracted 67 entities and 55 relationships
-2025-06-21 16:59:22,350 - INFO - Chunk 61 complete - Extracted 67 entities, 55 relationships
-2025-06-21 16:59:22,350 - INFO - Processing chunk 69...
-2025-06-21 16:59:22,350 - INFO - Completed chunk 61/1026
-2025-06-21 16:59:23,083 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:23,092 - INFO - Extracted 11 entities and 66 relationships
-2025-06-21 16:59:23,092 - INFO - Chunk 63 complete - Extracted 11 entities, 66 relationships
-2025-06-21 16:59:23,092 - INFO - Processing chunk 70...
-2025-06-21 16:59:23,092 - INFO - Completed chunk 63/1026
-2025-06-21 16:59:25,802 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:25,810 - INFO - Extracted 30 entities and 24 relationships
-2025-06-21 16:59:25,810 - INFO - Chunk 60 complete - Extracted 30 entities, 24 relationships
-2025-06-21 16:59:25,811 - INFO - Processing chunk 71...
-2025-06-21 16:59:25,812 - INFO - Completed chunk 60/1026
-2025-06-21 16:59:27,823 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:27,830 - INFO - Extracted 14 entities and 15 relationships
-2025-06-21 16:59:27,831 - INFO - Chunk 64 complete - Extracted 14 entities, 15 relationships
-2025-06-21 16:59:27,831 - INFO - Processing chunk 72...
-2025-06-21 16:59:27,831 - INFO - Completed chunk 64/1026
-2025-06-21 16:59:28,144 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:28,151 - INFO - Extracted 60 entities and 48 relationships
-2025-06-21 16:59:28,152 - INFO - Chunk 56 complete - Extracted 60 entities, 48 relationships
-2025-06-21 16:59:28,152 - INFO - Processing chunk 73...
-2025-06-21 16:59:28,152 - INFO - Completed chunk 56/1026
-2025-06-21 16:59:34,221 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:34,237 - INFO - Extracted 34 entities and 24 relationships
-2025-06-21 16:59:34,237 - INFO - Chunk 62 complete - Extracted 34 entities, 24 relationships
-2025-06-21 16:59:34,237 - INFO - Processing chunk 74...
-2025-06-21 16:59:34,237 - INFO - Completed chunk 62/1026
-2025-06-21 16:59:37,998 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:38,005 - INFO - Extracted 33 entities and 22 relationships
-2025-06-21 16:59:38,006 - INFO - Chunk 65 complete - Extracted 33 entities, 22 relationships
-2025-06-21 16:59:38,006 - INFO - Processing chunk 75...
-2025-06-21 16:59:38,006 - INFO - Completed chunk 65/1026
-2025-06-21 16:59:44,825 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:44,827 - INFO - Extracted 31 entities and 24 relationships
-2025-06-21 16:59:44,828 - INFO - Chunk 67 complete - Extracted 31 entities, 24 relationships
-2025-06-21 16:59:44,828 - INFO - Processing chunk 76...
-2025-06-21 16:59:44,828 - INFO - Completed chunk 67/1026
-2025-06-21 16:59:48,362 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:48,366 - INFO - Extracted 13 entities and 50 relationships
-2025-06-21 16:59:48,366 - INFO - Chunk 70 complete - Extracted 13 entities, 50 relationships
-2025-06-21 16:59:48,366 - INFO - Processing chunk 77...
-2025-06-21 16:59:48,366 - INFO - Completed chunk 70/1026
-2025-06-21 16:59:50,606 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:50,610 - INFO - Extracted 37 entities and 37 relationships
-2025-06-21 16:59:50,610 - INFO - Chunk 66 complete - Extracted 37 entities, 37 relationships
-2025-06-21 16:59:50,611 - INFO - Processing chunk 78...
-2025-06-21 16:59:50,611 - INFO - Completed chunk 66/1026
-2025-06-21 16:59:52,073 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:52,078 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 16:59:52,079 - INFO - Chunk 71 complete - Extracted 36 entities, 24 relationships
-2025-06-21 16:59:52,080 - INFO - Processing chunk 79...
-2025-06-21 16:59:52,084 - INFO - Completed chunk 71/1026
-2025-06-21 16:59:53,615 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:53,619 - INFO - Extracted 54 entities and 46 relationships
-2025-06-21 16:59:53,619 - INFO - Chunk 68 complete - Extracted 54 entities, 46 relationships
-2025-06-21 16:59:53,619 - INFO - Processing chunk 80...
-2025-06-21 16:59:53,620 - INFO - Completed chunk 68/1026
-2025-06-21 16:59:55,654 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:55,657 - INFO - Extracted 29 entities and 23 relationships
-2025-06-21 16:59:55,657 - INFO - Chunk 69 complete - Extracted 29 entities, 23 relationships
-2025-06-21 16:59:55,657 - INFO - Processing chunk 81...
-2025-06-21 16:59:55,657 - INFO - Completed chunk 69/1026
-2025-06-21 16:59:59,333 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 16:59:59,341 - INFO - Extracted 25 entities and 26 relationships
-2025-06-21 16:59:59,341 - INFO - Chunk 74 complete - Extracted 25 entities, 26 relationships
-2025-06-21 16:59:59,341 - INFO - Processing chunk 82...
-2025-06-21 16:59:59,341 - INFO - Completed chunk 74/1026
-2025-06-21 17:00:00,201 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:00,204 - INFO - Extracted 35 entities and 24 relationships
-2025-06-21 17:00:00,204 - INFO - Chunk 73 complete - Extracted 35 entities, 24 relationships
-2025-06-21 17:00:00,204 - INFO - Processing chunk 83...
-2025-06-21 17:00:00,204 - INFO - Completed chunk 73/1026
-2025-06-21 17:00:00,366 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:00,372 - INFO - Extracted 44 entities and 33 relationships
-2025-06-21 17:00:00,372 - INFO - Chunk 72 complete - Extracted 44 entities, 33 relationships
-2025-06-21 17:00:00,372 - INFO - Processing chunk 84...
-2025-06-21 17:00:00,372 - INFO - Completed chunk 72/1026
-2025-06-21 17:00:01,148 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:01,151 - INFO - Extracted 28 entities and 24 relationships
-2025-06-21 17:00:01,151 - INFO - Chunk 75 complete - Extracted 28 entities, 24 relationships
-2025-06-21 17:00:01,151 - INFO - Processing chunk 85...
-2025-06-21 17:00:01,151 - INFO - Completed chunk 75/1026
-2025-06-21 17:00:10,524 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:10,532 - INFO - Extracted 13 entities and 39 relationships
-2025-06-21 17:00:10,534 - INFO - Chunk 77 complete - Extracted 13 entities, 39 relationships
-2025-06-21 17:00:10,534 - INFO - Processing chunk 86...
-2025-06-21 17:00:10,537 - INFO - Completed chunk 77/1026
-2025-06-21 17:00:11,600 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:11,602 - INFO - Extracted 17 entities and 22 relationships
-2025-06-21 17:00:11,602 - INFO - Chunk 76 complete - Extracted 17 entities, 22 relationships
-2025-06-21 17:00:11,602 - INFO - Processing chunk 87...
-2025-06-21 17:00:11,602 - INFO - Completed chunk 76/1026
-2025-06-21 17:00:18,887 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:18,890 - INFO - Extracted 37 entities and 36 relationships
-2025-06-21 17:00:18,890 - INFO - Chunk 82 complete - Extracted 37 entities, 36 relationships
-2025-06-21 17:00:18,890 - INFO - Processing chunk 88...
-2025-06-21 17:00:18,890 - INFO - Completed chunk 82/1026
-2025-06-21 17:00:22,537 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:22,542 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 17:00:22,542 - INFO - Chunk 80 complete - Extracted 36 entities, 24 relationships
-2025-06-21 17:00:22,542 - INFO - Processing chunk 89...
-2025-06-21 17:00:22,542 - INFO - Completed chunk 80/1026
-2025-06-21 17:00:23,731 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:23,734 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 17:00:23,734 - INFO - Chunk 79 complete - Extracted 36 entities, 24 relationships
-2025-06-21 17:00:23,734 - INFO - Processing chunk 90...
-2025-06-21 17:00:23,734 - INFO - Completed chunk 79/1026
-2025-06-21 17:00:25,329 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:25,336 - INFO - Extracted 42 entities and 48 relationships
-2025-06-21 17:00:25,336 - INFO - Chunk 78 complete - Extracted 42 entities, 48 relationships
-2025-06-21 17:00:25,336 - INFO - Processing chunk 91...
-2025-06-21 17:00:25,336 - INFO - Completed chunk 78/1026
-2025-06-21 17:00:36,463 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:36,472 - INFO - Extracted 34 entities and 24 relationships
-2025-06-21 17:00:36,472 - INFO - Chunk 83 complete - Extracted 34 entities, 24 relationships
-2025-06-21 17:00:36,472 - INFO - Processing chunk 92...
-2025-06-21 17:00:37,998 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:38,008 - INFO - Extracted 39 entities and 32 relationships
-2025-06-21 17:00:38,009 - INFO - Chunk 86 complete - Extracted 39 entities, 32 relationships
-2025-06-21 17:00:38,009 - INFO - Processing chunk 93...
-2025-06-21 17:00:45,001 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:45,010 - INFO - Extracted 47 entities and 48 relationships
-2025-06-21 17:00:45,010 - INFO - Chunk 84 complete - Extracted 47 entities, 48 relationships
-2025-06-21 17:00:45,010 - INFO - Processing chunk 94...
-2025-06-21 17:00:45,234 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
-2025-06-21 17:00:45,239 - INFO - Extracted 36 entities and 24 relationships
-2025-06-21 17:00:45,239 - INFO - Chunk 91 complete - Extracted 36 entities, 24 relationships
-2025-06-21 17:00:45,240 - INFO - Processing chunk 95...
+2025-06-21 17:09:30,521 - INFO - === GraphRAG Builder Starting ===
+2025-06-21 17:09:30,562 - INFO - Initializing GraphRAGBuilder with chunk_size=500
+2025-06-21 17:09:30,562 - INFO - GraphRAGBuilder initialized successfully. Model outputs will be saved to: model_outputs_20250621_170930.txt
+2025-06-21 17:09:30,563 - INFO - Converting CSV to text...
+2025-06-21 17:09:30,563 - INFO - Starting CSV to text conversion for: biz.csv
+2025-06-21 17:09:30,600 - INFO - Successfully loaded CSV with 12335 rows and 21 columns
+2025-06-21 17:09:30,600 - INFO - CSV columns: ['APN', 'RecordID', 'BusDesc', 'B1_PER_SUB_TYPE', 'DBA', 'NAICS', 'Tax_Code', 'Employee_Num', 'Bus_Own_Type', 'B1_BUSINESS_NAME', 'B1_ADDRESS1', 'B1_ADDRESS2', 'B1_CITY', 'B1_STATE', 'B1_ZIP', 'B1_CONTACT_TYPE', 'B1_FULL_ADDRESS', 'B1_SITUS_CITY', 'B1_SITUS_STATE', 'B1_SITUS_ZIP', 'Business_Location']
+2025-06-21 17:09:30,604 - INFO - Processed 100/12335 rows
+2025-06-21 17:09:30,606 - INFO - Processed 200/12335 rows
+2025-06-21 17:09:30,608 - INFO - Processed 300/12335 rows
+2025-06-21 17:09:30,609 - INFO - Processed 400/12335 rows
+2025-06-21 17:09:30,611 - INFO - Processed 500/12335 rows
+2025-06-21 17:09:30,613 - INFO - Processed 600/12335 rows
+2025-06-21 17:09:30,615 - INFO - Processed 700/12335 rows
+2025-06-21 17:09:30,616 - INFO - Processed 800/12335 rows
+2025-06-21 17:09:30,618 - INFO - Processed 900/12335 rows
+2025-06-21 17:09:30,620 - INFO - Processed 1000/12335 rows
+2025-06-21 17:09:30,621 - INFO - Processed 1100/12335 rows
+2025-06-21 17:09:30,623 - INFO - Processed 1200/12335 rows
+2025-06-21 17:09:30,624 - INFO - Processed 1300/12335 rows
+2025-06-21 17:09:30,626 - INFO - Processed 1400/12335 rows
+2025-06-21 17:09:30,628 - INFO - Processed 1500/12335 rows
+2025-06-21 17:09:30,630 - INFO - Processed 1600/12335 rows
+2025-06-21 17:09:30,632 - INFO - Processed 1700/12335 rows
+2025-06-21 17:09:30,633 - INFO - Processed 1800/12335 rows
+2025-06-21 17:09:30,635 - INFO - Processed 1900/12335 rows
+2025-06-21 17:09:30,636 - INFO - Processed 2000/12335 rows
+2025-06-21 17:09:30,638 - INFO - Processed 2100/12335 rows
+2025-06-21 17:09:30,640 - INFO - Processed 2200/12335 rows
+2025-06-21 17:09:30,641 - INFO - Processed 2300/12335 rows
+2025-06-21 17:09:30,643 - INFO - Processed 2400/12335 rows
+2025-06-21 17:09:30,645 - INFO - Processed 2500/12335 rows
+2025-06-21 17:09:30,647 - INFO - Processed 2600/12335 rows
+2025-06-21 17:09:30,648 - INFO - Processed 2700/12335 rows
+2025-06-21 17:09:30,650 - INFO - Processed 2800/12335 rows
+2025-06-21 17:09:30,652 - INFO - Processed 2900/12335 rows
+2025-06-21 17:09:30,654 - INFO - Processed 3000/12335 rows
+2025-06-21 17:09:30,655 - INFO - Processed 3100/12335 rows
+2025-06-21 17:09:30,657 - INFO - Processed 3200/12335 rows
+2025-06-21 17:09:30,658 - INFO - Processed 3300/12335 rows
+2025-06-21 17:09:30,660 - INFO - Processed 3400/12335 rows
+2025-06-21 17:09:30,662 - INFO - Processed 3500/12335 rows
+2025-06-21 17:09:30,664 - INFO - Processed 3600/12335 rows
+2025-06-21 17:09:30,665 - INFO - Processed 3700/12335 rows
+2025-06-21 17:09:30,667 - INFO - Processed 3800/12335 rows
+2025-06-21 17:09:30,668 - INFO - Processed 3900/12335 rows
+2025-06-21 17:09:30,670 - INFO - Processed 4000/12335 rows
+2025-06-21 17:09:30,672 - INFO - Processed 4100/12335 rows
+2025-06-21 17:09:30,673 - INFO - Processed 4200/12335 rows
+2025-06-21 17:09:30,675 - INFO - Processed 4300/12335 rows
+2025-06-21 17:09:30,677 - INFO - Processed 4400/12335 rows
+2025-06-21 17:09:30,678 - INFO - Processed 4500/12335 rows
+2025-06-21 17:09:30,680 - INFO - Processed 4600/12335 rows
+2025-06-21 17:09:30,682 - INFO - Processed 4700/12335 rows
+2025-06-21 17:09:30,683 - INFO - Processed 4800/12335 rows
+2025-06-21 17:09:30,685 - INFO - Processed 4900/12335 rows
+2025-06-21 17:09:30,687 - INFO - Processed 5000/12335 rows
+2025-06-21 17:09:30,688 - INFO - Processed 5100/12335 rows
+2025-06-21 17:09:30,690 - INFO - Processed 5200/12335 rows
+2025-06-21 17:09:30,691 - INFO - Processed 5300/12335 rows
+2025-06-21 17:09:30,693 - INFO - Processed 5400/12335 rows
+2025-06-21 17:09:30,695 - INFO - Processed 5500/12335 rows
+2025-06-21 17:09:30,696 - INFO - Processed 5600/12335 rows
+2025-06-21 17:09:30,698 - INFO - Processed 5700/12335 rows
+2025-06-21 17:09:30,700 - INFO - Processed 5800/12335 rows
+2025-06-21 17:09:30,701 - INFO - Processed 5900/12335 rows
+2025-06-21 17:09:30,703 - INFO - Processed 6000/12335 rows
+2025-06-21 17:09:30,705 - INFO - Processed 6100/12335 rows
+2025-06-21 17:09:30,706 - INFO - Processed 6200/12335 rows
+2025-06-21 17:09:30,708 - INFO - Processed 6300/12335 rows
+2025-06-21 17:09:30,709 - INFO - Processed 6400/12335 rows
+2025-06-21 17:09:30,711 - INFO - Processed 6500/12335 rows
+2025-06-21 17:09:30,713 - INFO - Processed 6600/12335 rows
+2025-06-21 17:09:30,715 - INFO - Processed 6700/12335 rows
+2025-06-21 17:09:30,716 - INFO - Processed 6800/12335 rows
+2025-06-21 17:09:30,718 - INFO - Processed 6900/12335 rows
+2025-06-21 17:09:30,719 - INFO - Processed 7000/12335 rows
+2025-06-21 17:09:30,721 - INFO - Processed 7100/12335 rows
+2025-06-21 17:09:30,723 - INFO - Processed 7200/12335 rows
+2025-06-21 17:09:30,724 - INFO - Processed 7300/12335 rows
+2025-06-21 17:09:30,726 - INFO - Processed 7400/12335 rows
+2025-06-21 17:09:30,728 - INFO - Processed 7500/12335 rows
+2025-06-21 17:09:30,730 - INFO - Processed 7600/12335 rows
+2025-06-21 17:09:30,731 - INFO - Processed 7700/12335 rows
+2025-06-21 17:09:30,733 - INFO - Processed 7800/12335 rows
+2025-06-21 17:09:30,734 - INFO - Processed 7900/12335 rows
+2025-06-21 17:09:30,736 - INFO - Processed 8000/12335 rows
+2025-06-21 17:09:30,738 - INFO - Processed 8100/12335 rows
+2025-06-21 17:09:30,739 - INFO - Processed 8200/12335 rows
+2025-06-21 17:09:30,741 - INFO - Processed 8300/12335 rows
+2025-06-21 17:09:30,743 - INFO - Processed 8400/12335 rows
+2025-06-21 17:09:30,744 - INFO - Processed 8500/12335 rows
+2025-06-21 17:09:30,746 - INFO - Processed 8600/12335 rows
+2025-06-21 17:09:30,748 - INFO - Processed 8700/12335 rows
+2025-06-21 17:09:30,749 - INFO - Processed 8800/12335 rows
+2025-06-21 17:09:30,751 - INFO - Processed 8900/12335 rows
+2025-06-21 17:09:30,752 - INFO - Processed 9000/12335 rows
+2025-06-21 17:09:30,754 - INFO - Processed 9100/12335 rows
+2025-06-21 17:09:30,756 - INFO - Processed 9200/12335 rows
+2025-06-21 17:09:30,757 - INFO - Processed 9300/12335 rows
+2025-06-21 17:09:30,759 - INFO - Processed 9400/12335 rows
+2025-06-21 17:09:30,761 - INFO - Processed 9500/12335 rows
+2025-06-21 17:09:30,763 - INFO - Processed 9600/12335 rows
+2025-06-21 17:09:30,764 - INFO - Processed 9700/12335 rows
+2025-06-21 17:09:30,766 - INFO - Processed 9800/12335 rows
+2025-06-21 17:09:30,767 - INFO - Processed 9900/12335 rows
+2025-06-21 17:09:30,769 - INFO - Processed 10000/12335 rows
+2025-06-21 17:09:30,771 - INFO - Processed 10100/12335 rows
+2025-06-21 17:09:30,772 - INFO - Processed 10200/12335 rows
+2025-06-21 17:09:30,774 - INFO - Processed 10300/12335 rows
+2025-06-21 17:09:30,776 - INFO - Processed 10400/12335 rows
+2025-06-21 17:09:30,777 - INFO - Processed 10500/12335 rows
+2025-06-21 17:09:30,779 - INFO - Processed 10600/12335 rows
+2025-06-21 17:09:30,781 - INFO - Processed 10700/12335 rows
+2025-06-21 17:09:30,782 - INFO - Processed 10800/12335 rows
+2025-06-21 17:09:30,784 - INFO - Processed 10900/12335 rows
+2025-06-21 17:09:30,785 - INFO - Processed 11000/12335 rows
+2025-06-21 17:09:30,787 - INFO - Processed 11100/12335 rows
+2025-06-21 17:09:30,789 - INFO - Processed 11200/12335 rows
+2025-06-21 17:09:30,790 - INFO - Processed 11300/12335 rows
+2025-06-21 17:09:30,792 - INFO - Processed 11400/12335 rows
+2025-06-21 17:09:30,793 - INFO - Processed 11500/12335 rows
+2025-06-21 17:09:30,795 - INFO - Processed 11600/12335 rows
+2025-06-21 17:09:30,826 - INFO - Processed 11700/12335 rows
+2025-06-21 17:09:30,828 - INFO - Processed 11800/12335 rows
+2025-06-21 17:09:30,829 - INFO - Processed 11900/12335 rows
+2025-06-21 17:09:30,832 - INFO - Processed 12000/12335 rows
+2025-06-21 17:09:30,836 - INFO - Processed 12100/12335 rows
+2025-06-21 17:09:30,839 - INFO - Processed 12200/12335 rows
+2025-06-21 17:09:30,840 - INFO - Processed 12300/12335 rows
+2025-06-21 17:09:30,843 - INFO - CSV conversion complete. Generated text with 6261055 characters
+2025-06-21 17:09:30,846 - INFO - Chunking text...
+2025-06-21 17:09:30,846 - INFO - Starting text chunking with chunk_size=500
+2025-06-21 17:09:30,862 - INFO - Total words to chunk: 512875
+2025-06-21 17:09:30,871 - INFO - Created 1026 chunks
+2025-06-21 17:09:30,874 - INFO - Processing 1026 chunks with 50 concurrent workers...
+2025-06-21 17:09:30,874 - INFO - Processing chunk 1...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 2...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 3...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 4...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 5...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 6...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 7...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 8...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 9...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 10...
+2025-06-21 17:09:30,875 - INFO - Processing chunk 11...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 12...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 13...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 14...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 15...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 16...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 17...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 18...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 19...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 20...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 21...
+2025-06-21 17:09:30,876 - INFO - Processing chunk 22...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 23...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 24...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 25...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 26...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 27...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 28...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 29...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 30...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 31...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 32...
+2025-06-21 17:09:30,877 - INFO - Processing chunk 33...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 34...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 35...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 36...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 37...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 38...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 39...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 40...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 41...
+2025-06-21 17:09:30,878 - INFO - Processing chunk 42...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 43...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 44...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 45...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 46...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 47...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 48...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 49...
+2025-06-21 17:09:30,879 - INFO - Processing chunk 50...
+2025-06-21 17:09:53,082 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:09:53,091 - INFO - Extracted 24 entities and 12 relationships
+2025-06-21 17:09:53,091 - INFO - Chunk 18 complete - Extracted 24 entities, 12 relationships
+2025-06-21 17:09:53,092 - INFO - Processing chunk 51...
+2025-06-21 17:09:53,092 - INFO - Completed chunk 18/1026
+2025-06-21 17:09:56,048 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:09:56,051 - INFO - Extracted 31 entities and 24 relationships
+2025-06-21 17:09:56,052 - INFO - Chunk 10 complete - Extracted 31 entities, 24 relationships
+2025-06-21 17:09:56,052 - INFO - Processing chunk 52...
+2025-06-21 17:09:56,052 - INFO - Completed chunk 10/1026
+2025-06-21 17:09:58,408 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:09:58,411 - INFO - Extracted 27 entities and 13 relationships
+2025-06-21 17:09:58,411 - INFO - Chunk 6 complete - Extracted 27 entities, 13 relationships
+2025-06-21 17:09:58,411 - INFO - Processing chunk 53...
+2025-06-21 17:09:58,411 - INFO - Completed chunk 6/1026
+2025-06-21 17:09:58,799 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:09:58,800 - INFO - Extracted 31 entities and 26 relationships
+2025-06-21 17:09:58,800 - INFO - Chunk 29 complete - Extracted 31 entities, 26 relationships
+2025-06-21 17:09:58,800 - INFO - Processing chunk 54...
+2025-06-21 17:09:58,800 - INFO - Completed chunk 29/1026
+2025-06-21 17:10:02,360 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:02,365 - INFO - Extracted 23 entities and 12 relationships
+2025-06-21 17:10:02,366 - INFO - Chunk 37 complete - Extracted 23 entities, 12 relationships
+2025-06-21 17:10:02,366 - INFO - Processing chunk 55...
+2025-06-21 17:10:02,366 - INFO - Completed chunk 37/1026
+2025-06-21 17:10:02,413 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:02,416 - INFO - Extracted 47 entities and 36 relationships
+2025-06-21 17:10:02,417 - INFO - Chunk 38 complete - Extracted 47 entities, 36 relationships
+2025-06-21 17:10:02,418 - INFO - Processing chunk 56...
+2025-06-21 17:10:02,418 - INFO - Completed chunk 38/1026
+2025-06-21 17:10:02,480 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:02,481 - INFO - Extracted 60 entities and 48 relationships
+2025-06-21 17:10:02,481 - INFO - Chunk 30 complete - Extracted 60 entities, 48 relationships
+2025-06-21 17:10:02,481 - INFO - Processing chunk 57...
+2025-06-21 17:10:02,481 - INFO - Completed chunk 30/1026
+2025-06-21 17:10:02,772 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:02,776 - INFO - Extracted 31 entities and 28 relationships
+2025-06-21 17:10:02,777 - INFO - Chunk 4 complete - Extracted 31 entities, 28 relationships
+2025-06-21 17:10:02,778 - INFO - Processing chunk 58...
+2025-06-21 17:10:02,778 - INFO - Completed chunk 4/1026
+2025-06-21 17:10:02,850 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:02,853 - INFO - Extracted 34 entities and 24 relationships
+2025-06-21 17:10:02,853 - INFO - Chunk 17 complete - Extracted 34 entities, 24 relationships
+2025-06-21 17:10:02,853 - INFO - Processing chunk 59...
+2025-06-21 17:10:02,853 - INFO - Completed chunk 17/1026
+2025-06-21 17:10:02,905 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:02,905 - INFO - Retrying request to /chat/completions in 30.000000 seconds
+2025-06-21 17:10:02,968 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:02,970 - INFO - Retrying request to /chat/completions in 30.000000 seconds
+2025-06-21 17:10:04,443 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:04,444 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:04,448 - INFO - Extracted 36 entities and 24 relationships
+2025-06-21 17:10:04,449 - INFO - Extracted 33 entities and 22 relationships
+2025-06-21 17:10:04,449 - INFO - Chunk 32 complete - Extracted 36 entities, 24 relationships
+2025-06-21 17:10:04,449 - INFO - Processing chunk 60...
+2025-06-21 17:10:04,450 - INFO - Completed chunk 32/1026
+2025-06-21 17:10:04,452 - INFO - Chunk 34 complete - Extracted 33 entities, 22 relationships
+2025-06-21 17:10:04,452 - INFO - Processing chunk 61...
+2025-06-21 17:10:04,452 - INFO - Completed chunk 34/1026
+2025-06-21 17:10:04,566 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:04,567 - INFO - Retrying request to /chat/completions in 28.000000 seconds
+2025-06-21 17:10:04,576 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:04,576 - INFO - Retrying request to /chat/completions in 28.000000 seconds
+2025-06-21 17:10:05,290 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:05,292 - INFO - Extracted 27 entities and 39 relationships
+2025-06-21 17:10:05,292 - INFO - Chunk 33 complete - Extracted 27 entities, 39 relationships
+2025-06-21 17:10:05,293 - INFO - Processing chunk 62...
+2025-06-21 17:10:05,293 - INFO - Completed chunk 33/1026
+2025-06-21 17:10:05,408 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:05,408 - INFO - Retrying request to /chat/completions in 27.000000 seconds
+2025-06-21 17:10:06,167 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:06,172 - INFO - Extracted 33 entities and 36 relationships
+2025-06-21 17:10:06,172 - INFO - Chunk 9 complete - Extracted 33 entities, 36 relationships
+2025-06-21 17:10:06,172 - INFO - Processing chunk 63...
+2025-06-21 17:10:06,172 - INFO - Completed chunk 9/1026
+2025-06-21 17:10:06,303 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:06,304 - INFO - Retrying request to /chat/completions in 26.000000 seconds
+2025-06-21 17:10:06,471 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:06,474 - INFO - Extracted 23 entities and 34 relationships
+2025-06-21 17:10:06,475 - INFO - Chunk 49 complete - Extracted 23 entities, 34 relationships
+2025-06-21 17:10:06,475 - INFO - Processing chunk 64...
+2025-06-21 17:10:06,475 - INFO - Completed chunk 49/1026
+2025-06-21 17:10:06,587 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:06,588 - INFO - Retrying request to /chat/completions in 26.000000 seconds
+2025-06-21 17:10:06,994 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:06,997 - INFO - Extracted 12 entities and 36 relationships
+2025-06-21 17:10:06,997 - INFO - Chunk 26 complete - Extracted 12 entities, 36 relationships
+2025-06-21 17:10:06,997 - INFO - Processing chunk 65...
+2025-06-21 17:10:06,997 - INFO - Completed chunk 26/1026
+2025-06-21 17:10:07,116 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:07,118 - INFO - Retrying request to /chat/completions in 25.000000 seconds
+2025-06-21 17:10:07,196 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:07,199 - INFO - Extracted 35 entities and 24 relationships
+2025-06-21 17:10:07,199 - INFO - Chunk 41 complete - Extracted 35 entities, 24 relationships
+2025-06-21 17:10:07,199 - INFO - Processing chunk 66...
+2025-06-21 17:10:07,199 - INFO - Completed chunk 41/1026
+2025-06-21 17:10:07,338 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:07,342 - INFO - Retrying request to /chat/completions in 25.000000 seconds
+2025-06-21 17:10:07,844 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:07,849 - INFO - Extracted 29 entities and 25 relationships
+2025-06-21 17:10:07,850 - INFO - Chunk 22 complete - Extracted 29 entities, 25 relationships
+2025-06-21 17:10:07,850 - INFO - Processing chunk 67...
+2025-06-21 17:10:07,854 - INFO - Completed chunk 22/1026
+2025-06-21 17:10:07,860 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:07,862 - INFO - Extracted 39 entities and 26 relationships
+2025-06-21 17:10:07,862 - INFO - Chunk 43 complete - Extracted 39 entities, 26 relationships
+2025-06-21 17:10:07,862 - INFO - Processing chunk 68...
+2025-06-21 17:10:07,862 - INFO - Completed chunk 43/1026
+2025-06-21 17:10:08,020 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:08,021 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:08,022 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:08,023 - INFO - Retrying request to /chat/completions in 25.000000 seconds
+2025-06-21 17:10:08,024 - INFO - Retrying request to /chat/completions in 25.000000 seconds
+2025-06-21 17:10:08,026 - INFO - Extracted 13 entities and 37 relationships
+2025-06-21 17:10:08,026 - INFO - Chunk 11 complete - Extracted 13 entities, 37 relationships
+2025-06-21 17:10:08,026 - INFO - Processing chunk 69...
+2025-06-21 17:10:08,026 - INFO - Completed chunk 11/1026
+2025-06-21 17:10:08,197 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:08,197 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:08,198 - INFO - Retrying request to /chat/completions in 24.000000 seconds
+2025-06-21 17:10:08,200 - INFO - Extracted 23 entities and 13 relationships
+2025-06-21 17:10:08,200 - INFO - Chunk 13 complete - Extracted 23 entities, 13 relationships
+2025-06-21 17:10:08,200 - INFO - Processing chunk 70...
+2025-06-21 17:10:08,200 - INFO - Completed chunk 13/1026
+2025-06-21 17:10:08,314 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:08,316 - INFO - Retrying request to /chat/completions in 24.000000 seconds
+2025-06-21 17:10:08,508 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:08,514 - INFO - Extracted 35 entities and 26 relationships
+2025-06-21 17:10:08,514 - INFO - Chunk 8 complete - Extracted 35 entities, 26 relationships
+2025-06-21 17:10:08,514 - INFO - Processing chunk 71...
+2025-06-21 17:10:08,514 - INFO - Completed chunk 8/1026
+2025-06-21 17:10:08,669 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:08,670 - INFO - Retrying request to /chat/completions in 24.000000 seconds
+2025-06-21 17:10:09,685 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:09,690 - INFO - Extracted 53 entities and 41 relationships
+2025-06-21 17:10:09,690 - INFO - Chunk 1 complete - Extracted 53 entities, 41 relationships
+2025-06-21 17:10:09,690 - INFO - Processing chunk 72...
+2025-06-21 17:10:09,692 - INFO - Completed chunk 1/1026
+2025-06-21 17:10:09,942 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:09,943 - INFO - Retrying request to /chat/completions in 23.000000 seconds
+2025-06-21 17:10:10,121 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:10,126 - INFO - Extracted 39 entities and 36 relationships
+2025-06-21 17:10:10,126 - INFO - Chunk 46 complete - Extracted 39 entities, 36 relationships
+2025-06-21 17:10:10,127 - INFO - Processing chunk 73...
+2025-06-21 17:10:10,127 - INFO - Completed chunk 46/1026
+2025-06-21 17:10:10,257 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:10,258 - INFO - Retrying request to /chat/completions in 22.000000 seconds
+2025-06-21 17:10:11,111 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:11,337 - INFO - Extracted 49 entities and 37 relationships
+2025-06-21 17:10:11,337 - INFO - Chunk 47 complete - Extracted 49 entities, 37 relationships
+2025-06-21 17:10:11,338 - INFO - Processing chunk 74...
+2025-06-21 17:10:11,338 - INFO - Completed chunk 47/1026
+2025-06-21 17:10:11,448 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:11,449 - INFO - Retrying request to /chat/completions in 21.000000 seconds
+2025-06-21 17:10:11,795 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:11,800 - INFO - Extracted 26 entities and 24 relationships
+2025-06-21 17:10:11,800 - INFO - Chunk 15 complete - Extracted 26 entities, 24 relationships
+2025-06-21 17:10:11,800 - INFO - Processing chunk 75...
+2025-06-21 17:10:11,802 - INFO - Completed chunk 15/1026
+2025-06-21 17:10:11,923 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:11,924 - INFO - Retrying request to /chat/completions in 21.000000 seconds
+2025-06-21 17:10:12,077 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:12,082 - INFO - Extracted 42 entities and 28 relationships
+2025-06-21 17:10:12,083 - INFO - Chunk 7 complete - Extracted 42 entities, 28 relationships
+2025-06-21 17:10:12,083 - INFO - Processing chunk 76...
+2025-06-21 17:10:12,083 - INFO - Completed chunk 7/1026
+2025-06-21 17:10:12,254 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:12,254 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:12,255 - INFO - Retrying request to /chat/completions in 20.000000 seconds
+2025-06-21 17:10:12,257 - INFO - Extracted 34 entities and 23 relationships
+2025-06-21 17:10:12,257 - INFO - Chunk 36 complete - Extracted 34 entities, 23 relationships
+2025-06-21 17:10:12,258 - INFO - Processing chunk 77...
+2025-06-21 17:10:12,258 - INFO - Completed chunk 36/1026
+2025-06-21 17:10:12,442 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:12,443 - INFO - Retrying request to /chat/completions in 20.000000 seconds
+2025-06-21 17:10:13,507 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:13,514 - INFO - Extracted 44 entities and 30 relationships
+2025-06-21 17:10:13,515 - INFO - Chunk 5 complete - Extracted 44 entities, 30 relationships
+2025-06-21 17:10:13,515 - INFO - Processing chunk 78...
+2025-06-21 17:10:13,516 - INFO - Completed chunk 5/1026
+2025-06-21 17:10:13,642 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:13,643 - INFO - Retrying request to /chat/completions in 19.000000 seconds
+2025-06-21 17:10:13,955 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:13,960 - INFO - Extracted 58 entities and 46 relationships
+2025-06-21 17:10:13,960 - INFO - Chunk 16 complete - Extracted 58 entities, 46 relationships
+2025-06-21 17:10:13,960 - INFO - Processing chunk 79...
+2025-06-21 17:10:13,960 - INFO - Completed chunk 16/1026
+2025-06-21 17:10:14,082 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:14,083 - INFO - Retrying request to /chat/completions in 18.000000 seconds
+2025-06-21 17:10:14,245 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:14,248 - INFO - Extracted 36 entities and 24 relationships
+2025-06-21 17:10:14,248 - INFO - Chunk 27 complete - Extracted 36 entities, 24 relationships
+2025-06-21 17:10:14,248 - INFO - Processing chunk 80...
+2025-06-21 17:10:14,248 - INFO - Completed chunk 27/1026
+2025-06-21 17:10:14,367 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:14,369 - INFO - Retrying request to /chat/completions in 18.000000 seconds
+2025-06-21 17:10:14,850 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:14,853 - INFO - Extracted 33 entities and 22 relationships
+2025-06-21 17:10:14,853 - INFO - Chunk 12 complete - Extracted 33 entities, 22 relationships
+2025-06-21 17:10:14,853 - INFO - Processing chunk 81...
+2025-06-21 17:10:14,853 - INFO - Completed chunk 12/1026
+2025-06-21 17:10:14,973 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:14,973 - INFO - Retrying request to /chat/completions in 18.000000 seconds
+2025-06-21 17:10:15,088 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:15,094 - INFO - Extracted 43 entities and 33 relationships
+2025-06-21 17:10:15,094 - INFO - Chunk 35 complete - Extracted 43 entities, 33 relationships
+2025-06-21 17:10:15,094 - INFO - Processing chunk 82...
+2025-06-21 17:10:15,096 - INFO - Completed chunk 35/1026
+2025-06-21 17:10:15,233 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:15,234 - INFO - Retrying request to /chat/completions in 17.000000 seconds
+2025-06-21 17:10:15,385 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:15,389 - INFO - Extracted 35 entities and 23 relationships
+2025-06-21 17:10:15,390 - INFO - Chunk 50 complete - Extracted 35 entities, 23 relationships
+2025-06-21 17:10:15,390 - INFO - Processing chunk 83...
+2025-06-21 17:10:15,390 - INFO - Completed chunk 50/1026
+2025-06-21 17:10:15,508 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:15,509 - INFO - Retrying request to /chat/completions in 17.000000 seconds
+2025-06-21 17:10:17,038 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:17,039 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:17,047 - INFO - Extracted 43 entities and 42 relationships
+2025-06-21 17:10:17,047 - INFO - Extracted 37 entities and 35 relationships
+2025-06-21 17:10:17,047 - INFO - Chunk 3 complete - Extracted 43 entities, 42 relationships
+2025-06-21 17:10:17,047 - INFO - Processing chunk 84...
+2025-06-21 17:10:17,047 - INFO - Completed chunk 3/1026
+2025-06-21 17:10:17,049 - INFO - Chunk 23 complete - Extracted 37 entities, 35 relationships
+2025-06-21 17:10:17,049 - INFO - Processing chunk 85...
+2025-06-21 17:10:17,049 - INFO - Completed chunk 23/1026
+2025-06-21 17:10:17,192 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:17,193 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:17,194 - INFO - Retrying request to /chat/completions in 15.000000 seconds
+2025-06-21 17:10:17,194 - INFO - Retrying request to /chat/completions in 15.000000 seconds
+2025-06-21 17:10:17,653 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:17,755 - INFO - Extracted 47 entities and 37 relationships
+2025-06-21 17:10:17,755 - INFO - Chunk 42 complete - Extracted 47 entities, 37 relationships
+2025-06-21 17:10:17,755 - INFO - Processing chunk 86...
+2025-06-21 17:10:17,755 - INFO - Completed chunk 42/1026
+2025-06-21 17:10:17,876 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:17,877 - INFO - Retrying request to /chat/completions in 15.000000 seconds
+2025-06-21 17:10:18,089 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:18,093 - INFO - Extracted 44 entities and 32 relationships
+2025-06-21 17:10:18,093 - INFO - Chunk 25 complete - Extracted 44 entities, 32 relationships
+2025-06-21 17:10:18,093 - INFO - Processing chunk 87...
+2025-06-21 17:10:18,093 - INFO - Completed chunk 25/1026
+2025-06-21 17:10:18,211 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:18,212 - INFO - Retrying request to /chat/completions in 14.000000 seconds
+2025-06-21 17:10:18,883 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:18,883 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:18,890 - INFO - Extracted 48 entities and 36 relationships
+2025-06-21 17:10:18,890 - INFO - Chunk 31 complete - Extracted 48 entities, 36 relationships
+2025-06-21 17:10:18,890 - INFO - Processing chunk 88...
+2025-06-21 17:10:18,890 - INFO - Completed chunk 31/1026
+2025-06-21 17:10:18,991 - INFO - Extracted 66 entities and 83 relationships
+2025-06-21 17:10:18,992 - INFO - Chunk 24 complete - Extracted 66 entities, 83 relationships
+2025-06-21 17:10:18,992 - INFO - Processing chunk 89...
+2025-06-21 17:10:18,992 - INFO - Completed chunk 24/1026
+2025-06-21 17:10:19,009 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:19,022 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:19,022 - INFO - Retrying request to /chat/completions in 14.000000 seconds
+2025-06-21 17:10:19,098 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:19,099 - INFO - Retrying request to /chat/completions in 13.000000 seconds
+2025-06-21 17:10:19,107 - INFO - Extracted 88 entities and 82 relationships
+2025-06-21 17:10:19,107 - INFO - Chunk 2 complete - Extracted 88 entities, 82 relationships
+2025-06-21 17:10:19,107 - INFO - Processing chunk 90...
+2025-06-21 17:10:19,107 - INFO - Completed chunk 2/1026
+2025-06-21 17:10:19,218 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:19,218 - INFO - Retrying request to /chat/completions in 13.000000 seconds
+2025-06-21 17:10:20,725 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:20,733 - INFO - Extracted 41 entities and 48 relationships
+2025-06-21 17:10:20,733 - INFO - Chunk 39 complete - Extracted 41 entities, 48 relationships
+2025-06-21 17:10:20,733 - INFO - Processing chunk 91...
+2025-06-21 17:10:20,733 - INFO - Completed chunk 39/1026
+2025-06-21 17:10:20,844 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:20,845 - INFO - Retrying request to /chat/completions in 12.000000 seconds
+2025-06-21 17:10:20,970 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:20,972 - INFO - Extracted 43 entities and 35 relationships
+2025-06-21 17:10:20,972 - INFO - Chunk 44 complete - Extracted 43 entities, 35 relationships
+2025-06-21 17:10:20,972 - INFO - Processing chunk 92...
+2025-06-21 17:10:20,972 - INFO - Completed chunk 44/1026
+2025-06-21 17:10:21,089 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:21,090 - INFO - Retrying request to /chat/completions in 11.000000 seconds
+2025-06-21 17:10:21,647 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:21,752 - INFO - Extracted 55 entities and 48 relationships
+2025-06-21 17:10:21,752 - INFO - Chunk 20 complete - Extracted 55 entities, 48 relationships
+2025-06-21 17:10:21,753 - INFO - Processing chunk 93...
+2025-06-21 17:10:21,753 - INFO - Completed chunk 20/1026
+2025-06-21 17:10:21,866 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:21,867 - INFO - Retrying request to /chat/completions in 11.000000 seconds
+2025-06-21 17:10:22,571 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:22,677 - INFO - Extracted 68 entities and 56 relationships
+2025-06-21 17:10:22,677 - INFO - Chunk 21 complete - Extracted 68 entities, 56 relationships
+2025-06-21 17:10:22,677 - INFO - Processing chunk 94...
+2025-06-21 17:10:22,677 - INFO - Completed chunk 21/1026
+2025-06-21 17:10:22,791 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:22,792 - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-06-21 17:10:23,432 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:23,540 - INFO - Extracted 68 entities and 56 relationships
+2025-06-21 17:10:23,540 - INFO - Chunk 45 complete - Extracted 68 entities, 56 relationships
+2025-06-21 17:10:23,540 - INFO - Processing chunk 95...
+2025-06-21 17:10:23,541 - INFO - Completed chunk 45/1026
+2025-06-21 17:10:23,664 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:23,664 - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-06-21 17:10:24,762 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:24,869 - INFO - Extracted 46 entities and 59 relationships
+2025-06-21 17:10:24,869 - INFO - Chunk 19 complete - Extracted 46 entities, 59 relationships
+2025-06-21 17:10:24,869 - INFO - Processing chunk 96...
+2025-06-21 17:10:24,869 - INFO - Completed chunk 19/1026
+2025-06-21 17:10:24,983 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:24,983 - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-06-21 17:10:27,972 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:28,106 - INFO - Extracted 61 entities and 76 relationships
+2025-06-21 17:10:28,107 - INFO - Chunk 14 complete - Extracted 61 entities, 76 relationships
+2025-06-21 17:10:28,107 - INFO - Processing chunk 97...
+2025-06-21 17:10:28,107 - INFO - Completed chunk 14/1026
+2025-06-21 17:10:28,289 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:28,290 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-21 17:10:30,178 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:30,333 - INFO - Extracted 40 entities and 93 relationships
+2025-06-21 17:10:30,333 - INFO - Chunk 28 complete - Extracted 40 entities, 93 relationships
+2025-06-21 17:10:30,333 - INFO - Processing chunk 98...
+2025-06-21 17:10:30,333 - INFO - Completed chunk 28/1026
+2025-06-21 17:10:30,506 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:30,506 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:32,199 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:32,202 - INFO - Extracted 36 entities and 24 relationships
+2025-06-21 17:10:32,202 - INFO - Chunk 56 complete - Extracted 36 entities, 24 relationships
+2025-06-21 17:10:32,202 - INFO - Processing chunk 99...
+2025-06-21 17:10:32,202 - INFO - Completed chunk 56/1026
+2025-06-21 17:10:32,875 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:32,876 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:32,883 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:32,883 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:32,917 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:32,917 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:32,981 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:32,981 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:32,988 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:32,988 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:32,992 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:32,992 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,006 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,006 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,017 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,017 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,026 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,026 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,027 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,027 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,032 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,032 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,091 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:33,091 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,091 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,091 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,092 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,093 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,093 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,094 - INFO - Extracted 54 entities and 42 relationships
+2025-06-21 17:10:33,094 - INFO - Chunk 51 complete - Extracted 54 entities, 42 relationships
+2025-06-21 17:10:33,094 - INFO - Processing chunk 100...
+2025-06-21 17:10:33,095 - INFO - Completed chunk 51/1026
+2025-06-21 17:10:33,097 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,097 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,130 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,130 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,133 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,133 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,142 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,142 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,201 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,202 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,238 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,239 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:10:33,278 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,278 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:10:33,317 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,317 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:10:33,345 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,346 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:10:33,383 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,383 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,384 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:10:33,384 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:10:33,627 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:33,741 - INFO - Extracted 56 entities and 56 relationships
+2025-06-21 17:10:33,741 - INFO - Chunk 48 complete - Extracted 56 entities, 56 relationships
+2025-06-21 17:10:33,741 - INFO - Processing chunk 101...
+2025-06-21 17:10:33,741 - INFO - Completed chunk 48/1026
+2025-06-21 17:10:33,857 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:33,858 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:10:34,598 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:34,604 - INFO - Extracted 44 entities and 34 relationships
+2025-06-21 17:10:34,604 - INFO - Chunk 40 complete - Extracted 44 entities, 34 relationships
+2025-06-21 17:10:34,604 - INFO - Processing chunk 102...
+2025-06-21 17:10:34,604 - INFO - Completed chunk 40/1026
+2025-06-21 17:10:44,820 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:44,820 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:44,824 - INFO - Extracted 36 entities and 24 relationships
+2025-06-21 17:10:44,824 - INFO - Extracted 62 entities and 61 relationships
+2025-06-21 17:10:44,824 - INFO - Chunk 52 complete - Extracted 36 entities, 24 relationships
+2025-06-21 17:10:44,824 - INFO - Processing chunk 103...
+2025-06-21 17:10:44,826 - INFO - Chunk 55 complete - Extracted 62 entities, 61 relationships
+2025-06-21 17:10:44,826 - INFO - Completed chunk 52/1026
+2025-06-21 17:10:44,826 - INFO - Processing chunk 104...
+2025-06-21 17:10:44,827 - INFO - Completed chunk 55/1026
+2025-06-21 17:10:45,595 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:45,602 - INFO - Extracted 28 entities and 35 relationships
+2025-06-21 17:10:45,603 - INFO - Chunk 53 complete - Extracted 28 entities, 35 relationships
+2025-06-21 17:10:45,604 - INFO - Processing chunk 105...
+2025-06-21 17:10:45,605 - INFO - Completed chunk 53/1026
+2025-06-21 17:10:49,389 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:49,392 - INFO - Extracted 41 entities and 33 relationships
+2025-06-21 17:10:49,393 - INFO - Chunk 54 complete - Extracted 41 entities, 33 relationships
+2025-06-21 17:10:49,393 - INFO - Processing chunk 106...
+2025-06-21 17:10:49,393 - INFO - Completed chunk 54/1026
+2025-06-21 17:10:51,714 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:51,720 - INFO - Extracted 23 entities and 12 relationships
+2025-06-21 17:10:51,720 - INFO - Chunk 73 complete - Extracted 23 entities, 12 relationships
+2025-06-21 17:10:51,720 - INFO - Processing chunk 107...
+2025-06-21 17:10:51,721 - INFO - Completed chunk 73/1026
+2025-06-21 17:10:57,487 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:57,493 - INFO - Extracted 32 entities and 24 relationships
+2025-06-21 17:10:57,493 - INFO - Chunk 89 complete - Extracted 32 entities, 24 relationships
+2025-06-21 17:10:57,493 - INFO - Processing chunk 108...
+2025-06-21 17:10:57,493 - INFO - Completed chunk 89/1026
+2025-06-21 17:10:58,139 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:58,145 - INFO - Extracted 32 entities and 36 relationships
+2025-06-21 17:10:58,145 - INFO - Chunk 90 complete - Extracted 32 entities, 36 relationships
+2025-06-21 17:10:58,146 - INFO - Processing chunk 109...
+2025-06-21 17:10:58,146 - INFO - Completed chunk 90/1026
+2025-06-21 17:10:58,406 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:58,411 - INFO - Extracted 34 entities and 21 relationships
+2025-06-21 17:10:58,412 - INFO - Chunk 84 complete - Extracted 34 entities, 21 relationships
+2025-06-21 17:10:58,413 - INFO - Processing chunk 110...
+2025-06-21 17:10:58,413 - INFO - Completed chunk 84/1026
+2025-06-21 17:10:58,531 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:58,534 - INFO - Extracted 52 entities and 39 relationships
+2025-06-21 17:10:58,534 - INFO - Chunk 66 complete - Extracted 52 entities, 39 relationships
+2025-06-21 17:10:58,534 - INFO - Processing chunk 111...
+2025-06-21 17:10:58,534 - INFO - Completed chunk 66/1026
+2025-06-21 17:10:58,547 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:58,549 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:10:58,608 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:58,612 - INFO - Extracted 24 entities and 12 relationships
+2025-06-21 17:10:58,612 - INFO - Chunk 98 complete - Extracted 24 entities, 12 relationships
+2025-06-21 17:10:58,612 - INFO - Processing chunk 112...
+2025-06-21 17:10:58,612 - INFO - Completed chunk 98/1026
+2025-06-21 17:10:59,072 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:10:59,075 - INFO - Extracted 22 entities and 12 relationships
+2025-06-21 17:10:59,076 - INFO - Chunk 62 complete - Extracted 22 entities, 12 relationships
+2025-06-21 17:10:59,076 - INFO - Processing chunk 113...
+2025-06-21 17:10:59,076 - INFO - Completed chunk 62/1026
+2025-06-21 17:10:59,193 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:59,194 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-21 17:10:59,662 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:10:59,664 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-21 17:11:01,635 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:01,637 - INFO - Extracted 30 entities and 24 relationships
+2025-06-21 17:11:01,637 - INFO - Chunk 81 complete - Extracted 30 entities, 24 relationships
+2025-06-21 17:11:01,638 - INFO - Processing chunk 114...
+2025-06-21 17:11:01,638 - INFO - Completed chunk 81/1026
+2025-06-21 17:11:01,664 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:01,665 - INFO - Extracted 36 entities and 32 relationships
+2025-06-21 17:11:01,665 - INFO - Chunk 63 complete - Extracted 36 entities, 32 relationships
+2025-06-21 17:11:01,665 - INFO - Processing chunk 115...
+2025-06-21 17:11:01,665 - INFO - Completed chunk 63/1026
+2025-06-21 17:11:01,814 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:01,814 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:01,815 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:01,815 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:02,171 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:02,178 - INFO - Extracted 44 entities and 33 relationships
+2025-06-21 17:11:02,178 - INFO - Chunk 93 complete - Extracted 44 entities, 33 relationships
+2025-06-21 17:11:02,179 - INFO - Processing chunk 116...
+2025-06-21 17:11:02,179 - INFO - Completed chunk 93/1026
+2025-06-21 17:11:02,349 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:02,352 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:02,786 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:02,795 - INFO - Extracted 18 entities and 26 relationships
+2025-06-21 17:11:02,796 - INFO - Chunk 94 complete - Extracted 18 entities, 26 relationships
+2025-06-21 17:11:02,796 - INFO - Processing chunk 117...
+2025-06-21 17:11:02,799 - INFO - Completed chunk 94/1026
+2025-06-21 17:11:03,301 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:03,308 - INFO - Extracted 36 entities and 24 relationships
+2025-06-21 17:11:03,308 - INFO - Chunk 71 complete - Extracted 36 entities, 24 relationships
+2025-06-21 17:11:03,308 - INFO - Processing chunk 118...
+2025-06-21 17:11:03,308 - INFO - Completed chunk 71/1026
+2025-06-21 17:11:03,326 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:03,326 - INFO - Retrying request to /chat/completions in 29.000000 seconds
+2025-06-21 17:11:03,422 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:03,422 - INFO - Retrying request to /chat/completions in 29.000000 seconds
+2025-06-21 17:11:03,551 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:03,551 - INFO - Retrying request to /chat/completions in 29.000000 seconds
+2025-06-21 17:11:03,910 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:03,918 - INFO - Extracted 27 entities and 24 relationships
+2025-06-21 17:11:03,919 - INFO - Chunk 76 complete - Extracted 27 entities, 24 relationships
+2025-06-21 17:11:03,919 - INFO - Processing chunk 119...
+2025-06-21 17:11:03,919 - INFO - Completed chunk 76/1026
+2025-06-21 17:11:04,060 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:04,061 - INFO - Retrying request to /chat/completions in 29.000000 seconds
+2025-06-21 17:11:04,564 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:04,573 - INFO - Extracted 89 entities and 89 relationships
+2025-06-21 17:11:04,574 - INFO - Chunk 57 complete - Extracted 89 entities, 89 relationships
+2025-06-21 17:11:04,574 - INFO - Processing chunk 120...
+2025-06-21 17:11:04,574 - INFO - Completed chunk 57/1026
+2025-06-21 17:11:04,680 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:04,680 - INFO - Retrying request to /chat/completions in 28.000000 seconds
+2025-06-21 17:11:04,833 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:04,834 - INFO - Extracted 33 entities and 23 relationships
+2025-06-21 17:11:04,834 - INFO - Chunk 65 complete - Extracted 33 entities, 23 relationships
+2025-06-21 17:11:04,835 - INFO - Processing chunk 121...
+2025-06-21 17:11:04,835 - INFO - Completed chunk 65/1026
+2025-06-21 17:11:04,956 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:04,957 - INFO - Retrying request to /chat/completions in 28.000000 seconds
+2025-06-21 17:11:06,585 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:06,593 - INFO - Extracted 35 entities and 36 relationships
+2025-06-21 17:11:06,593 - INFO - Chunk 75 complete - Extracted 35 entities, 36 relationships
+2025-06-21 17:11:06,593 - INFO - Processing chunk 122...
+2025-06-21 17:11:06,593 - INFO - Completed chunk 75/1026
+2025-06-21 17:11:06,760 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:06,761 - INFO - Retrying request to /chat/completions in 26.000000 seconds
+2025-06-21 17:11:07,189 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:07,198 - INFO - Extracted 40 entities and 33 relationships
+2025-06-21 17:11:07,199 - INFO - Chunk 72 complete - Extracted 40 entities, 33 relationships
+2025-06-21 17:11:07,199 - INFO - Processing chunk 123...
+2025-06-21 17:11:07,199 - INFO - Completed chunk 72/1026
+2025-06-21 17:11:07,305 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:07,306 - INFO - Retrying request to /chat/completions in 25.000000 seconds
+2025-06-21 17:11:08,817 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:08,821 - INFO - Extracted 49 entities and 37 relationships
+2025-06-21 17:11:08,821 - INFO - Chunk 91 complete - Extracted 49 entities, 37 relationships
+2025-06-21 17:11:08,821 - INFO - Processing chunk 124...
+2025-06-21 17:11:08,821 - INFO - Completed chunk 91/1026
+2025-06-21 17:11:08,954 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:08,956 - INFO - Retrying request to /chat/completions in 24.000000 seconds
+2025-06-21 17:11:10,550 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:10,557 - INFO - Extracted 50 entities and 37 relationships
+2025-06-21 17:11:10,557 - INFO - Chunk 102 complete - Extracted 50 entities, 37 relationships
+2025-06-21 17:11:10,557 - INFO - Processing chunk 125...
+2025-06-21 17:11:10,557 - INFO - Completed chunk 102/1026
+2025-06-21 17:11:10,691 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:10,692 - INFO - Retrying request to /chat/completions in 22.000000 seconds
+2025-06-21 17:11:10,799 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:10,801 - INFO - Extracted 34 entities and 24 relationships
+2025-06-21 17:11:10,801 - INFO - Chunk 96 complete - Extracted 34 entities, 24 relationships
+2025-06-21 17:11:10,801 - INFO - Processing chunk 126...
+2025-06-21 17:11:10,807 - INFO - Completed chunk 96/1026
+2025-06-21 17:11:10,923 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:10,923 - INFO - Retrying request to /chat/completions in 22.000000 seconds
+2025-06-21 17:11:11,412 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:11,417 - INFO - Extracted 41 entities and 35 relationships
+2025-06-21 17:11:11,417 - INFO - Chunk 87 complete - Extracted 41 entities, 35 relationships
+2025-06-21 17:11:11,417 - INFO - Processing chunk 127...
+2025-06-21 17:11:11,417 - INFO - Completed chunk 87/1026
+2025-06-21 17:11:11,563 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:11,563 - INFO - Retrying request to /chat/completions in 21.000000 seconds
+2025-06-21 17:11:11,904 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:11,911 - INFO - Extracted 37 entities and 25 relationships
+2025-06-21 17:11:11,911 - INFO - Chunk 58 complete - Extracted 37 entities, 25 relationships
+2025-06-21 17:11:11,911 - INFO - Processing chunk 128...
+2025-06-21 17:11:11,913 - INFO - Completed chunk 58/1026
+2025-06-21 17:11:12,017 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:12,018 - INFO - Retrying request to /chat/completions in 21.000000 seconds
+2025-06-21 17:11:12,073 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:12,076 - INFO - Extracted 32 entities and 23 relationships
+2025-06-21 17:11:12,076 - INFO - Chunk 83 complete - Extracted 32 entities, 23 relationships
+2025-06-21 17:11:12,076 - INFO - Processing chunk 129...
+2025-06-21 17:11:12,076 - INFO - Completed chunk 83/1026
+2025-06-21 17:11:12,187 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:12,188 - INFO - Retrying request to /chat/completions in 21.000000 seconds
+2025-06-21 17:11:12,467 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:12,471 - INFO - Extracted 40 entities and 36 relationships
+2025-06-21 17:11:12,472 - INFO - Chunk 100 complete - Extracted 40 entities, 36 relationships
+2025-06-21 17:11:12,472 - INFO - Processing chunk 130...
+2025-06-21 17:11:12,473 - INFO - Completed chunk 100/1026
+2025-06-21 17:11:12,525 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:12,529 - INFO - Extracted 44 entities and 36 relationships
+2025-06-21 17:11:12,530 - INFO - Chunk 101 complete - Extracted 44 entities, 36 relationships
+2025-06-21 17:11:12,530 - INFO - Processing chunk 131...
+2025-06-21 17:11:12,531 - INFO - Completed chunk 101/1026
+2025-06-21 17:11:12,795 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:12,796 - INFO - Retrying request to /chat/completions in 20.000000 seconds
+2025-06-21 17:11:12,798 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:12,799 - INFO - Retrying request to /chat/completions in 20.000000 seconds
+2025-06-21 17:11:13,070 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:13,186 - INFO - Extracted 51 entities and 38 relationships
+2025-06-21 17:11:13,186 - INFO - Chunk 70 complete - Extracted 51 entities, 38 relationships
+2025-06-21 17:11:13,186 - INFO - Processing chunk 132...
+2025-06-21 17:11:13,186 - INFO - Completed chunk 70/1026
+2025-06-21 17:11:13,304 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:13,304 - INFO - Retrying request to /chat/completions in 19.000000 seconds
+2025-06-21 17:11:13,813 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:13,814 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:13,819 - INFO - Extracted 41 entities and 36 relationships
+2025-06-21 17:11:13,819 - INFO - Extracted 44 entities and 55 relationships
+2025-06-21 17:11:13,820 - INFO - Chunk 78 complete - Extracted 41 entities, 36 relationships
+2025-06-21 17:11:13,820 - INFO - Processing chunk 133...
+2025-06-21 17:11:13,820 - INFO - Completed chunk 78/1026
+2025-06-21 17:11:13,820 - INFO - Chunk 103 complete - Extracted 44 entities, 55 relationships
+2025-06-21 17:11:13,821 - INFO - Processing chunk 134...
+2025-06-21 17:11:13,821 - INFO - Completed chunk 103/1026
+2025-06-21 17:11:13,961 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:13,962 - INFO - Retrying request to /chat/completions in 19.000000 seconds
+2025-06-21 17:11:13,971 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:13,972 - INFO - Retrying request to /chat/completions in 19.000000 seconds
+2025-06-21 17:11:14,483 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:14,492 - INFO - Extracted 41 entities and 33 relationships
+2025-06-21 17:11:14,493 - INFO - Chunk 59 complete - Extracted 41 entities, 33 relationships
+2025-06-21 17:11:14,493 - INFO - Processing chunk 135...
+2025-06-21 17:11:14,493 - INFO - Completed chunk 59/1026
+2025-06-21 17:11:14,599 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:14,600 - INFO - Retrying request to /chat/completions in 18.000000 seconds
+2025-06-21 17:11:16,130 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:16,139 - INFO - Extracted 39 entities and 35 relationships
+2025-06-21 17:11:16,139 - INFO - Chunk 67 complete - Extracted 39 entities, 35 relationships
+2025-06-21 17:11:16,139 - INFO - Processing chunk 136...
+2025-06-21 17:11:16,139 - INFO - Completed chunk 67/1026
+2025-06-21 17:11:16,248 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:16,249 - INFO - Retrying request to /chat/completions in 17.000000 seconds
+2025-06-21 17:11:16,940 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:16,951 - INFO - Extracted 42 entities and 38 relationships
+2025-06-21 17:11:16,951 - INFO - Chunk 64 complete - Extracted 42 entities, 38 relationships
+2025-06-21 17:11:16,952 - INFO - Processing chunk 137...
+2025-06-21 17:11:16,952 - INFO - Completed chunk 64/1026
+2025-06-21 17:11:17,073 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:17,074 - INFO - Retrying request to /chat/completions in 16.000000 seconds
+2025-06-21 17:11:17,329 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:17,332 - INFO - Extracted 13 entities and 50 relationships
+2025-06-21 17:11:17,333 - INFO - Chunk 80 complete - Extracted 13 entities, 50 relationships
+2025-06-21 17:11:17,333 - INFO - Processing chunk 138...
+2025-06-21 17:11:17,333 - INFO - Completed chunk 80/1026
+2025-06-21 17:11:17,440 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:17,441 - INFO - Retrying request to /chat/completions in 15.000000 seconds
+2025-06-21 17:11:17,579 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:17,587 - INFO - Extracted 34 entities and 58 relationships
+2025-06-21 17:11:17,587 - INFO - Chunk 61 complete - Extracted 34 entities, 58 relationships
+2025-06-21 17:11:17,587 - INFO - Processing chunk 139...
+2025-06-21 17:11:17,587 - INFO - Completed chunk 61/1026
+2025-06-21 17:11:17,735 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:17,736 - INFO - Retrying request to /chat/completions in 15.000000 seconds
+2025-06-21 17:11:19,095 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:19,101 - INFO - Extracted 49 entities and 44 relationships
+2025-06-21 17:11:19,102 - INFO - Chunk 88 complete - Extracted 49 entities, 44 relationships
+2025-06-21 17:11:19,102 - INFO - Processing chunk 140...
+2025-06-21 17:11:19,102 - INFO - Completed chunk 88/1026
+2025-06-21 17:11:19,351 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:19,352 - INFO - Retrying request to /chat/completions in 13.000000 seconds
+2025-06-21 17:11:19,825 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:19,829 - INFO - Extracted 38 entities and 36 relationships
+2025-06-21 17:11:19,829 - INFO - Chunk 95 complete - Extracted 38 entities, 36 relationships
+2025-06-21 17:11:19,829 - INFO - Processing chunk 141...
+2025-06-21 17:11:19,829 - INFO - Completed chunk 95/1026
+2025-06-21 17:11:20,002 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:20,002 - INFO - Retrying request to /chat/completions in 13.000000 seconds
+2025-06-21 17:11:20,777 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:20,784 - INFO - Extracted 22 entities and 11 relationships
+2025-06-21 17:11:20,785 - INFO - Chunk 112 complete - Extracted 22 entities, 11 relationships
+2025-06-21 17:11:20,785 - INFO - Processing chunk 142...
+2025-06-21 17:11:20,786 - INFO - Completed chunk 112/1026
+2025-06-21 17:11:20,907 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:20,907 - INFO - Retrying request to /chat/completions in 12.000000 seconds
+2025-06-21 17:11:22,276 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:22,277 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:22,285 - INFO - Extracted 32 entities and 21 relationships
+2025-06-21 17:11:22,285 - INFO - Extracted 32 entities and 24 relationships
+2025-06-21 17:11:22,285 - INFO - Chunk 111 complete - Extracted 32 entities, 21 relationships
+2025-06-21 17:11:22,285 - INFO - Processing chunk 143...
+2025-06-21 17:11:22,285 - INFO - Completed chunk 111/1026
+2025-06-21 17:11:22,287 - INFO - Chunk 60 complete - Extracted 32 entities, 24 relationships
+2025-06-21 17:11:22,287 - INFO - Processing chunk 144...
+2025-06-21 17:11:22,287 - INFO - Completed chunk 60/1026
+2025-06-21 17:11:22,413 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:22,414 - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-06-21 17:11:22,548 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:22,548 - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-06-21 17:11:22,665 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:22,676 - INFO - Extracted 40 entities and 38 relationships
+2025-06-21 17:11:22,676 - INFO - Chunk 104 complete - Extracted 40 entities, 38 relationships
+2025-06-21 17:11:22,677 - INFO - Processing chunk 145...
+2025-06-21 17:11:22,677 - INFO - Completed chunk 104/1026
+2025-06-21 17:11:22,835 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:22,838 - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-06-21 17:11:23,138 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:23,144 - INFO - Extracted 38 entities and 25 relationships
+2025-06-21 17:11:23,145 - INFO - Chunk 79 complete - Extracted 38 entities, 25 relationships
+2025-06-21 17:11:23,145 - INFO - Processing chunk 146...
+2025-06-21 17:11:23,145 - INFO - Completed chunk 79/1026
+2025-06-21 17:11:23,310 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:23,312 - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-06-21 17:11:24,959 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:25,061 - INFO - Extracted 56 entities and 64 relationships
+2025-06-21 17:11:25,061 - INFO - Chunk 77 complete - Extracted 56 entities, 64 relationships
+2025-06-21 17:11:25,061 - INFO - Processing chunk 147...
+2025-06-21 17:11:25,061 - INFO - Completed chunk 77/1026
+2025-06-21 17:11:25,177 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:25,178 - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-06-21 17:11:25,724 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:25,733 - INFO - Extracted 58 entities and 60 relationships
+2025-06-21 17:11:25,733 - INFO - Chunk 92 complete - Extracted 58 entities, 60 relationships
+2025-06-21 17:11:25,733 - INFO - Processing chunk 148...
+2025-06-21 17:11:25,733 - INFO - Completed chunk 92/1026
+2025-06-21 17:11:25,854 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:25,854 - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-06-21 17:11:26,603 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:26,607 - INFO - Extracted 32 entities and 25 relationships
+2025-06-21 17:11:26,607 - INFO - Chunk 110 complete - Extracted 32 entities, 25 relationships
+2025-06-21 17:11:26,607 - INFO - Processing chunk 149...
+2025-06-21 17:11:26,607 - INFO - Completed chunk 110/1026
+2025-06-21 17:11:26,677 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:26,679 - INFO - Extracted 33 entities and 24 relationships
+2025-06-21 17:11:26,679 - INFO - Chunk 106 complete - Extracted 33 entities, 24 relationships
+2025-06-21 17:11:26,679 - INFO - Processing chunk 150...
+2025-06-21 17:11:26,679 - INFO - Completed chunk 106/1026
+2025-06-21 17:11:26,835 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:26,835 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-21 17:11:26,841 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:26,841 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-21 17:11:28,487 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:28,494 - INFO - Extracted 40 entities and 35 relationships
+2025-06-21 17:11:28,495 - INFO - Chunk 69 complete - Extracted 40 entities, 35 relationships
+2025-06-21 17:11:28,495 - INFO - Processing chunk 151...
+2025-06-21 17:11:28,495 - INFO - Completed chunk 69/1026
+2025-06-21 17:11:28,626 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:28,628 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-21 17:11:29,123 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:29,126 - INFO - Extracted 37 entities and 34 relationships
+2025-06-21 17:11:29,126 - INFO - Chunk 82 complete - Extracted 37 entities, 34 relationships
+2025-06-21 17:11:29,126 - INFO - Processing chunk 152...
+2025-06-21 17:11:29,126 - INFO - Completed chunk 82/1026
+2025-06-21 17:11:29,249 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:29,250 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-21 17:11:30,858 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:30,969 - INFO - Extracted 56 entities and 71 relationships
+2025-06-21 17:11:30,969 - INFO - Chunk 68 complete - Extracted 56 entities, 71 relationships
+2025-06-21 17:11:30,969 - INFO - Processing chunk 153...
+2025-06-21 17:11:30,969 - INFO - Completed chunk 68/1026
+2025-06-21 17:11:30,992 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:31,091 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:31,092 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:31,092 - INFO - Extracted 58 entities and 64 relationships
+2025-06-21 17:11:31,092 - INFO - Chunk 86 complete - Extracted 58 entities, 64 relationships
+2025-06-21 17:11:31,092 - INFO - Processing chunk 154...
+2025-06-21 17:11:31,092 - INFO - Completed chunk 86/1026
+2025-06-21 17:11:31,211 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:31,211 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:32,526 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:32,535 - INFO - Extracted 48 entities and 36 relationships
+2025-06-21 17:11:32,536 - INFO - Chunk 105 complete - Extracted 48 entities, 36 relationships
+2025-06-21 17:11:32,536 - INFO - Processing chunk 155...
+2025-06-21 17:11:32,536 - INFO - Completed chunk 105/1026
+2025-06-21 17:11:32,660 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:32,661 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,284 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,285 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:33,305 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,307 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:33,312 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,313 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:33,345 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,345 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:33,349 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,350 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:33,353 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,353 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:33,399 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,399 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-21 17:11:33,427 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,428 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,431 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,431 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,446 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,447 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,451 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,453 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,457 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,458 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,470 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,470 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,478 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,478 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,521 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,522 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,528 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,529 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,573 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,574 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,630 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:33,631 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,632 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,633 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,633 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,676 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,676 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,677 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,678 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,679 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,679 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,730 - INFO - Extracted 60 entities and 78 relationships
+2025-06-21 17:11:33,730 - INFO - Chunk 74 complete - Extracted 60 entities, 78 relationships
+2025-06-21 17:11:33,730 - INFO - Processing chunk 156...
+2025-06-21 17:11:33,775 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,776 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,842 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:33,843 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:33,934 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2025-06-21 17:11:33,938 - INFO - Extracted 38 entities and 48 relationships
+2025-06-21 17:11:33,938 - INFO - Chunk 107 complete - Extracted 38 entities, 48 relationships
+2025-06-21 17:11:33,938 - INFO - Processing chunk 157...
+2025-06-21 17:11:34,045 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,047 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:34,681 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,683 - ERROR - Error extracting entities: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2025-01-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit. For Free Account customers, upgrade to Pay as you Go here: https://aka.ms/429TrialUpgrade.'}}
+2025-06-21 17:11:34,685 - WARNING - Returning empty entities and relationships
+2025-06-21 17:11:34,685 - INFO - Chunk 153 complete - Extracted 0 entities, 0 relationships
+2025-06-21 17:11:34,685 - INFO - Processing chunk 158...
+2025-06-21 17:11:34,747 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,748 - ERROR - Error extracting entities: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2025-01-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit. For Free Account customers, upgrade to Pay as you Go here: https://aka.ms/429TrialUpgrade.'}}
+2025-06-21 17:11:34,748 - WARNING - Returning empty entities and relationships
+2025-06-21 17:11:34,748 - INFO - Chunk 129 complete - Extracted 0 entities, 0 relationships
+2025-06-21 17:11:34,748 - INFO - Processing chunk 159...
+2025-06-21 17:11:34,749 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,750 - ERROR - Error extracting entities: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2025-01-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit. For Free Account customers, upgrade to Pay as you Go here: https://aka.ms/429TrialUpgrade.'}}
+2025-06-21 17:11:34,750 - WARNING - Returning empty entities and relationships
+2025-06-21 17:11:34,750 - INFO - Chunk 147 complete - Extracted 0 entities, 0 relationships
+2025-06-21 17:11:34,750 - INFO - Processing chunk 160...
+2025-06-21 17:11:34,801 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,801 - ERROR - Error extracting entities: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2025-01-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit. For Free Account customers, upgrade to Pay as you Go here: https://aka.ms/429TrialUpgrade.'}}
+2025-06-21 17:11:34,802 - WARNING - Returning empty entities and relationships
+2025-06-21 17:11:34,802 - INFO - Chunk 154 complete - Extracted 0 entities, 0 relationships
+2025-06-21 17:11:34,802 - INFO - Processing chunk 161...
+2025-06-21 17:11:34,804 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,804 - ERROR - Error extracting entities: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2025-01-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit. For Free Account customers, upgrade to Pay as you Go here: https://aka.ms/429TrialUpgrade.'}}
+2025-06-21 17:11:34,804 - WARNING - Returning empty entities and relationships
+2025-06-21 17:11:34,805 - INFO - Chunk 136 complete - Extracted 0 entities, 0 relationships
+2025-06-21 17:11:34,805 - INFO - Processing chunk 162...
+2025-06-21 17:11:34,811 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,812 - ERROR - Error extracting entities: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2025-01-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit. For Free Account customers, upgrade to Pay as you Go here: https://aka.ms/429TrialUpgrade.'}}
+2025-06-21 17:11:34,812 - WARNING - Returning empty entities and relationships
+2025-06-21 17:11:34,812 - INFO - Chunk 152 complete - Extracted 0 entities, 0 relationships
+2025-06-21 17:11:34,812 - INFO - Processing chunk 163...
+2025-06-21 17:11:34,815 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,815 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:34,855 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,856 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:34,861 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,862 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:34,888 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,888 - ERROR - Error extracting entities: Error code: 429 - {'error': {'code': '429', 'message': 'Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2025-01-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit. For Free Account customers, upgrade to Pay as you Go here: https://aka.ms/429TrialUpgrade.'}}
+2025-06-21 17:11:34,890 - WARNING - Returning empty entities and relationships
+2025-06-21 17:11:34,890 - INFO - Chunk 155 complete - Extracted 0 entities, 0 relationships
+2025-06-21 17:11:34,890 - INFO - Processing chunk 164...
+2025-06-21 17:11:34,925 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,925 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,926 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:34,926 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:34,939 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,939 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:34,952 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:34,952 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-21 17:11:35,007 - INFO - HTTP Request: POST https://2025-ai-hackberkeley.openai.azure.com/openai/deployments/o4-mini/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2025-06-21 17:11:35,007 - INFO - Retrying request to /chat/completions in 1.000000 seconds
