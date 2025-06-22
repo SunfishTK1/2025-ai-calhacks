@@ -1,7 +1,7 @@
 {
-  "name": "Kip’s Bar and Grill",
-  "address": "2439 Durant Ave, Berkeley, CA 94704, USA",
-  "phone": "(510) 848-4340",
+  "name": "string",
+  "address": "string",
+  "phone": "string",
   "website": "http://kipsberkeley.com",
   "hours": {
     "mon–sun": "6 PM–2 AM"
